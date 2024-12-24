@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maps/Nameless Island & Abbey Dungeon.md",
+                "file": "Mobs/Mutant Dragon.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Nameless Island & Abbey Dungeon"
+              "title": "Mutant Dragon"
             }
           }
         ]
@@ -164,15 +164,20 @@
   },
   "active": "4237ae7cb6ca2ce9",
   "lastOpenFiles": [
-    "Maps/Thors Volcano Dungeon.md",
+    "1262.gif",
+    "Mobs/Mutant Dragon.md",
+    "Maps/Abyss Lake Dungeon.md",
     "Maps/Nameless Island & Abbey Dungeon.md",
+    "Sem título.canvas",
+    "Poring.md",
+    "Mobs.md",
+    "Maps/Thors Volcano Dungeon.md",
     "Maps/Veins.md",
     "Maps/Rachel Sanctuary.md",
     "Maps/Ice Cave.md",
     "Maps/Rachel.md",
     "Maps/Odin Temple.md",
     "Maps/Thanatos Tower.md",
-    "Maps/Abyss Lake Dungeon.md",
     "Maps/Hugel.md",
     "Maps/Lighthalzen.md",
     "Maps/Prontera.md",
@@ -186,11 +191,6 @@
     "Maps/Kiel Robot Factory.md",
     "Maps/Al De Baran.md",
     "Maps/Orc Dungeon.md",
-    "Maps/Geffenia.md",
-    "Maps/Geffen.md",
-    "Maps/Mt.Mjolnir.md",
-    "Maps/Glast Heim.md",
-    "Sem título.canvas",
     "Portais",
     "Img/Filds/prt_fild00.png",
     "Img/Mobs/Normais",
