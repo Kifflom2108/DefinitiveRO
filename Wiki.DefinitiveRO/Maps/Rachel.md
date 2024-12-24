@@ -1,0 +1,88 @@
+|   |   |
+|---|---|
+|**Map: ra_fild01**|**Area: Rachel Field  <br>- Audhumbla Grassland**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild01.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild01&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild01&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Gryphon **(**3 / 60 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1259)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Geographer **(**30 / 5~7 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1368)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Muscipular **(**60**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1780)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drosera **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1781)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Galion **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1783)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild02**|**Area: Rachel Field  <br>- Od Canyon**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild02.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild02&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild02&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Muscipular **(**60**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1780)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drosera **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1781)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Galion **(**15**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1783)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Atroce**[**MVP**]** **(**1 / 240~250 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1785)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild03**|**Area: Rachel Field  <br>- The Plain of Ida**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild03.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild03&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild03&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Drosera **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1781)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Galion **(**35**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1783)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Atroce**[**MVP**]** **(**1 / 180~190 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1785)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild04**|**Area: Rachel Field  <br>- Audhumbla Grassland**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild04.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild04&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild04&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Wild Rose **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1261)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**60**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Galion **(**3**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1783)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Atroce**[**MVP**]** **(**1 / 300~310 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1785)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild05**|**Area: Rachel Field  <br>- Audhumbla Grassland**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild05.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild05&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild05&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Geographer **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1368)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Hill Wind **(**70**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1680)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drosera **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1781)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild06**|**Area: Rachel Field  <br>- Portus Luna**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild06.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild06&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild06&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Anopheles **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1627)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Hill Wind **(**50**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1680)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drosera **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1781)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild07**|**Area: Rachel Field  <br>- Od Canyon**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild07.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild07&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild07&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**50**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Galion **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1783)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild08**|**Area: Rachel Field  <br>- The Plain of Ida**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild08.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild08&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild08&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Drops **(**40**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1113)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drosera **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1781)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**100**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild09**|**Area: Rachel Field  <br>- Audhumbla Grassland**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild09.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild09&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild09&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Harpy **(**1 / 60 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1376)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Metaling **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1613)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Hill Wind **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1680)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drosera **(**60**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1781)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild10**|**Area: Rachel Field  <br>- Od Canyon**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild10.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild10&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild10&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Galion **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1783)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**30**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild11**|**Area: Rachel Field  <br>- The Plain of Ida**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild11.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild11&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild11&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Red Plant **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1078)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Yellow Plant **(**15**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1081)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drops **(**100**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1113)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**2**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**40**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild12**|**Area: Rachel Field  <br>- The Plain of Ida**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild12.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild12&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild12&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Poporing **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1031)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Red Plant **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1078)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Yellow Plant **(**15**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1081)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drops **(**100**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1113)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**40**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ra_fild13**|**Area: Rachel Field  <br>- Shore of Tears**|
+|![](https://file5s.ratemyserver.net/maps/ra_fild13.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ra_fild13&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ra_fild13&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Drops **(**40**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1113)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**60**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)|

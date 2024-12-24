@@ -1,0 +1,39 @@
+|   |   |
+|---|---|
+|**Entrance to Thors Volcano Dungeon**  <br>- Map: ve_fild03 -|   |
+|![](https://file5s.ratemyserver.net/maps/ve_fild03.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ve_fild03&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Indicate Position of this map in World Map](https://ratemyserver.net/worldmap.php?selected_map=ve_fild03&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Red Plant **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1078)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Yellow Plant **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1081)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sandman **(**45**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1165)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sleeper **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1386)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Magmaring **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1836)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: thor_v01**|**Area: Thors Volcano Dungeon  <br>- Thors Volcano Dungeon F1**|
+|![](https://file5s.ratemyserver.net/maps/thor_v01.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=thor_v01&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is the entrance?](https://ratemyserver.net/worldmap.php?selected_dung=Thors%20Volcano%20Dungeon&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Sword Guardian / Sword Master **(**5 / 7 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1829)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Bow Guardian / Bow Master **(**5 / 7 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1830)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Salamander **(**5 / 60 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1831)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Kasa **(**45**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1833)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Magmaring **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1836)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Imp / Fire Imp **(**13**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1837)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Imp / Fire Imp **(**12 / 30 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1837)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Byorgue **(**1 / 60 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1839)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: thor_v02**|**Area: Thors Volcano Dungeon  <br>- Thors Volcano Dungeon F2**|
+|![](https://file5s.ratemyserver.net/maps/thor_v02.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=thor_v02&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is the entrance?](https://ratemyserver.net/worldmap.php?selected_dung=Thors%20Volcano%20Dungeon&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Kaho **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1072)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sword Guardian / Sword Master **(**1 / 120 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1829)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Bow Guardian / Bow Master **(**1 / 120 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1830)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Salamander **(**1 / 300 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1831)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Magmaring **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1836)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Imp / Fire Imp **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1837)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Knocker **(**55**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1838)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: thor_camp**|**Area: Thors Volcano Dungeon  <br>- Thor Volcano Camp**|
+|![](https://file5s.ratemyserver.net/maps/thor_camp.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=thor_camp&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is the entrance?](https://ratemyserver.net/worldmap.php?selected_dung=Thors%20Volcano%20Dungeon&re_mob=0)|**No monster on this map.**|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: thor_v03**|**Area: Thors Volcano Dungeon  <br>- Thors Volcano Dungeon F3**|
+|![](https://file5s.ratemyserver.net/maps/thor_v03.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=thor_v03&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is the entrance?](https://ratemyserver.net/worldmap.php?selected_dung=Thors%20Volcano%20Dungeon&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Sword Guardian / Sword Master **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1829)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sword Guardian / Sword Master **(**5 / 30 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1829)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Bow Guardian / Bow Master **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1830)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Bow Guardian / Bow Master **(**5 / 30 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1830)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Salamander **(**60**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1831)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Ifrit**[**MVP**]** **(**1 / 660~670 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1832)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Kasa **(**40**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1833)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Byorgue **(**5 / 30 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1839)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: que_thor**|**Area: Thors Volcano Dungeon  <br>- Thor Volcano Dungeon**|
+|![](https://file5s.ratemyserver.net/maps/que_thor.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=que_thor&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is the entrance?](https://ratemyserver.net/worldmap.php?selected_dung=Thors%20Volcano%20Dungeon&re_mob=0)|**No monster on this map.**|

@@ -1,0 +1,54 @@
+.:Monster on Maps:.
+
+**Veins Field**
+
+[« Back to Map Database](https://ratemyserver.net/index.php?page=map_db "select another field or dungeon from the map database page?")
+
+ [Switch to Renewal](https://ratemyserver.net/index.php?page=areainfo&area=2020&re_mob=1 "See Renewal Spawn")
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ve_fild01**|**Area: Veins Field**|
+|![](https://file5s.ratemyserver.net/maps/ve_fild01.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ve_fild01&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ve_fild01&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Side Winder **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1037)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Muka **(**70**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1055)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Red Plant **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1078)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Blue Plant **(**4 / 14 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1079)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Yellow Plant **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1081)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Shining Plant **(**1 / 16 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1083)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drops **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1113)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Atroce**[**MVP**]** **(**1 / 180~190 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1785)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ve_fild02**|**Area: Veins Field**|
+|![](https://file5s.ratemyserver.net/maps/ve_fild02.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ve_fild02&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ve_fild02&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Side Winder **(**1 / 15 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1037)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Side Winder **(**4**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1037)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Red Plant **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1078)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Yellow Plant **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1081)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Savage **(**60**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1166)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**18**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**2 / 11 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Atroce**[**MVP**]** **(**1 / 360~370 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1785)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ve_fild03**|**Area: Veins Field**|
+|![](https://file5s.ratemyserver.net/maps/ve_fild03.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ve_fild03&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ve_fild03&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Red Plant **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1078)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Yellow Plant **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1081)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sandman **(**45**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1165)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sleeper **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1386)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Magmaring **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1836)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ve_fild04**|**Area: Veins Field**|
+|![](https://file5s.ratemyserver.net/maps/ve_fild04.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ve_fild04&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ve_fild04&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Blue Plant **(**3 / 11 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1079)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Yellow Plant **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1081)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Desert Wolf **(**60**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1106)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Muscipular **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1780)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**20**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ve_fild05**|**Area: Veins Field**|
+|![](https://file5s.ratemyserver.net/maps/ve_fild05.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ve_fild05&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ve_fild05&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [White Plant **(**5 / 30 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1082)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Shining Plant **(**1 / 40 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1083)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sandman **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1165)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sandman **(**18 / 1 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1165)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sandman **(**2 / 2 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1165)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sleeper **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1386)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sleeper **(**40 / 2 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1386)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Sleeper **(**5 / 2 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1386)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Drosera **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1781)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Roween **(**15**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1782)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Galion **(**5**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1783)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ve_fild06**|**Area: Veins Field**|
+|![](https://file5s.ratemyserver.net/maps/ve_fild06.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ve_fild06&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ve_fild06&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Shining Plant **(**1 / 17 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1083)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**2 / 5 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**1 / 30 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)|
+
+  
+
+|   |   |
+|---|---|
+|![](https://ratemyserver.net/images/circle.gif)**Map: ve_fild07**|**Area: Veins Field**|
+|![](https://file5s.ratemyserver.net/maps/ve_fild07.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=ve_fild07&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Where is this?](https://ratemyserver.net/worldmap.php?selected_map=ve_fild07&re_mob=0)|**Click on a monster below to view its detail:**  <br>  <br><br>![](https://ratemyserver.net/images/bu2.gif) [Side Winder **(**70**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1037)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Shellfish **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1074)<br><br>![](https://ratemyserver.net/images/bu2.gif) [White Plant **(**10 / 10 min**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1082)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Raggler **(**35**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1254)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Aster **(**10**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1266)<br><br>![](https://ratemyserver.net/images/bu2.gif) [Stapo **(**30**)**](https://ratemyserver.net/index.php?page=mob_db&mob_id=1784)|
