@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "d954a84c9f622d25",
+        "id": "087b6b88e15d76f5",
         "type": "tabs",
         "children": [
           {
@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mobs/Mutant Dragon.md",
+                "file": "Mobs/Grove.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mutant Dragon"
+              "title": "Grove"
             }
           }
         ]
@@ -164,9 +164,27 @@
   },
   "active": "4237ae7cb6ca2ce9",
   "lastOpenFiles": [
-    "1262.gif",
-    "Mobs/Mutant Dragon.md",
+    "Mobs/Anopheles.md",
     "Maps/Abyss Lake Dungeon.md",
+    "Maps/Comodo.md",
+    "Maps/Al De Baran.md",
+    "Mobs/Mutant Dragon.md",
+    "Mobs/Grove.md",
+    "Img/601.gif",
+    "Img/7119.gif",
+    "Img/card 1.gif",
+    "Maps/Rachel.md",
+    "Maps/Lighthalzen.md",
+    "Maps/Hugel.md",
+    "Maps/Einbroch.md",
+    "Img/930.gif",
+    "Img/card.gif",
+    "Img/7054.gif",
+    "Img",
+    "Img/7296.gif",
+    "Pasted image 20241225063610.png",
+    "Img/1559.gif",
+    "Img/1035.gif",
     "Maps/Nameless Island & Abbey Dungeon.md",
     "Sem título.canvas",
     "Poring.md",
@@ -175,24 +193,16 @@
     "Maps/Veins.md",
     "Maps/Rachel Sanctuary.md",
     "Maps/Ice Cave.md",
-    "Maps/Rachel.md",
     "Maps/Odin Temple.md",
     "Maps/Thanatos Tower.md",
-    "Maps/Hugel.md",
-    "Maps/Lighthalzen.md",
     "Maps/Prontera.md",
-    "Maps/Einbroch.md",
     "Maps/Nifflheim.md",
-    "Maps/Comodo.md",
     "Maps/Umbala.md",
     "Maps/Juperos Ruins.md",
     "Maps/Yuno.md",
     "Maps/Magma Dungeon.md",
     "Maps/Kiel Robot Factory.md",
-    "Maps/Al De Baran.md",
-    "Maps/Orc Dungeon.md",
     "Portais",
-    "Img/Filds/prt_fild00.png",
     "Img/Mobs/Normais",
     "Img/Mobs/MVPs",
     "Img/Mobs",
@@ -200,7 +210,6 @@
     "Img/Filds",
     "Img/Cidades",
     "Mobs",
-    "Maps",
-    "Img"
+    "Maps"
   ]
 }
