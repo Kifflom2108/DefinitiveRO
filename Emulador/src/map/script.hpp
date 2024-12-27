@@ -1898,7 +1898,8 @@ enum e_special_effects {
 	EF_SOUL_REAPER,
 
 	EF_SOUL_EXPLOSION = 1242,
-	EF_MAX
+	EF_CUSTOM_plankton = 1243,
+	EF_MAX = 9999
 };
 
 enum e_hat_effects : int16{
@@ -2145,7 +2146,8 @@ enum e_hat_effects : int16{
 	FOOTPRINT_EF_DOGFOOT,
 	HAT_EF_C_AUSPICLOUD,
 	HAT_EF_AURA_OF_GHOST_S,
-	HAT_EF_MAX
+	HAT_EF_CUSTOM_plankton,
+	HAT_EF_MAX = 9999
 };
 
 enum e_convertpcinfo_type : uint8 {

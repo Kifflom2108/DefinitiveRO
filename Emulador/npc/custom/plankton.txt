@@ -1,0 +1,15 @@
+-	script	HATEFFECT	-1,{
+
+	OnPCUseItemEvent:
+		// Verifica se o item usado foi o ID 22777
+		if (@used_id == 22777) {
+			hateffect 176, true; // Ativa o efeito visual
+			addtimer 30000, strnpcinfo(3) + "::OnRemove"; // Remove o efeito após 30 segundos
+		}
+		end;
+
+	OnRemove:
+		hateffect 176, false; // Remove o efeito de ódio
+		end;
+
+}

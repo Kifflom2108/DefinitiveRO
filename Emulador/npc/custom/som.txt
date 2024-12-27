@@ -1,8 +1,5 @@
-
-
-
 // Adjust location and sprite display
-prontera, 156, 180, 3	script	Sound Player	99,{
+prontera, 156, 180, 3	script	HATEFFECT_SOUNDS	99,{
 
 // Sets player temporary variable for round-robin cycling
 // This temporary variable will reset back to zero if player relogs.
@@ -12,33 +9,49 @@ prontera, 156, 180, 3	script	Sound Player	99,{
 // (Without the '@' symbol)
 set @soundef_number, @soundef_number + 1;
 
-// Random sound effects
+// Random sound effects and hateffect activation
 switch (@soundef_number)
 {
 
-	// Example list of sound effects
-	case 1:
-	soundeffect "plankton.wav",0;
-	break;
+    case 1:
+        soundeffectall "plankton.wav", 0;
+        hateffect 176, true; // Ativa o efeito visual
+        addtimer 5000, strnpcinfo(3) + "::OnRemoveHateEffect"; // Remove o efeito após 5 segundos
+        break;
 
-	case 2:
-	soundeffect "se_wolf1.wav",0;
-	break;
+    case 2:
+        soundeffectall "se_wolf1.wav", 0;
+        hateffect 176, true; // Ativa o efeito visual
+        addtimer 5000, strnpcinfo(3) + "::OnRemoveHateEffect"; // Remove o efeito após 5 segundos
+        break;
 
-	case 3:
-	soundeffect "plankton.wav",0;
-	break;
-
-	// ... And so on
+    case 3:
+        soundeffectall "plankton.wav", 0;
+        hateffect 176, true; // Ativa o efeito visual
+        addtimer 5000, strnpcinfo(3) + "::OnRemoveHateEffect"; // Remove o efeito após 5 segundos
+        break;
 }
 
 // After reaching max sound effects number, the script
-// will cycle back to beggining.
+// will cycle back to beginning.
 if (@soundef_number >= 3)
 {
-	set @soundef_number, 0;
+    set @soundef_number, 0;
 }
 
+// Define NPC as available after 30 seconds
+addtimer 30000, strnpcinfo(3) + "::OnReactivateNPC"; // Reativa o NPC após 30 segundos
 end;
+
+// Function to remove hateffect after 5 seconds
+OnRemoveHateEffect:
+    hateffect 176, false; // Remove o efeito visual
+    end;
+
+// Function to reactivate the NPC after 30 seconds
+OnReactivateNPC:
+    // NPC can be used again
+    set $@npc_available, 1;
+    end;
 
 }

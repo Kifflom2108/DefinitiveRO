@@ -22093,6 +22093,10 @@ Body:
     Type: Usable
     Buy: 10
     Weight: 100
+    Script: |
+      hateffect 176, true;
+      addtimer 4900, "HATEFFECT::OnRemove";
+      soundeffectall "plankton.wav",0;
     Classes:
       Normal: true
       Upper: true
@@ -22101,3 +22105,4 @@ Body:
       Third_Upper: true
       Third_Baby: true
     EquipLevelMin: 1
+    

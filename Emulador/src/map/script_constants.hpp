@@ -9505,6 +9505,7 @@
 	export_constant(EF_CURSE_EXPLOSION);
 	export_constant(EF_SOUL_REAPER);
 	export_constant(EF_SOUL_EXPLOSION);
+	export_constant(EF_CUSTOM_plankton);
 
 	/* hat effects */
 	export_constant(HAT_EF_BLOSSOM_FLUTTERING);
@@ -9751,6 +9752,7 @@
 	export_constant(FOOTPRINT_EF_DOGFOOT);
 	export_constant(HAT_EF_C_AUSPICLOUD);
 	export_constant(HAT_EF_AURA_OF_GHOST_S);
+	export_constant(HAT_EF_CUSTOM_plankton);
 
 	/* pet catch */
 	export_constant(PET_CATCH_UNIVERSAL_NO_BOSS);
