@@ -2539,8 +2539,8 @@ new_1-2,38,182,3	script	Entrance Guard#nv	92,{
 			getitem 611,2; //Spectacles
 			getitem 569,300; //Novice_Potion
 			close2;
-			savepoint "new_1-2",23,188,1,1;
-			warp "new_1-3",96,21;
+			savepoint "yuno",157,167,1,1;
+			warp "1@ge_sn",99,48;
 			end;
 		case 2:
 			mes "[Muriel]";

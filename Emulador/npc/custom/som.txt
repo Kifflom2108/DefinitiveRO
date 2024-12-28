@@ -1,57 +1,14 @@
-// Adjust location and sprite display
-prontera, 156, 180, 3	script	HATEFFECT_SOUNDS	3254,{
-
-// Sets player temporary variable for round-robin cycling
-// This temporary variable will reset back to zero if player relogs.
-// If you do not wish for this, change the type of variable.
-// From : @soundef_number
-// To : soundef_number
-// (Without the '@' symbol)
-set @soundef_number, @soundef_number + 1;
-
-// Random sound effects and hateffect activation
-switch (@soundef_number)
-{
-
-    case 1:
+prontera,155,180,5	script	Cornfarmer	465,{	
+		if (plankton > gettimetick(2)){
+			end;
+		}
+		plankton = gettimetick(2) + 10;
         soundeffectall "plankton.wav", 0;
         hateffect 176, true; // Ativa o efeito visual
-        addtimer 5000, strnpcinfo(3) + "::OnRemoveHateEffect"; // Remove o efeito após 5 segundos
-        break;
-
-    case 2:
-        soundeffectall "se_wolf1.wav", 0;
-        hateffect 176, true; // Ativa o efeito visual
-        addtimer 5000, strnpcinfo(3) + "::OnRemoveHateEffect"; // Remove o efeito após 5 segundos
-        break;
-
-    case 3:
-        soundeffectall "plankton.wav", 0;
-        hateffect 176, true; // Ativa o efeito visual
-        addtimer 5000, strnpcinfo(3) + "::OnRemoveHateEffect"; // Remove o efeito após 5 segundos
-        break;
-}
-
-// After reaching max sound effects number, the script
-// will cycle back to beginning.
-if (@soundef_number >= 3)
-{
-    set @soundef_number, 0;
-}
-
-// Define NPC as available after 30 seconds
-addtimer 30000, strnpcinfo(3) + "::OnReactivateNPC"; // Reativa o NPC após 30 segundos
-end;
-
-// Function to remove hateffect after 5 seconds
-OnRemoveHateEffect:
-    hateffect 176, false; // Remove o efeito visual
-    end;
-
-// Function to reactivate the NPC after 30 seconds
-OnReactivateNPC:
-    // NPC can be used again
-    set $@npc_available, 1;
-    end;
+        addtimer 5000, strnpcinfo(3) + "::OnRemoveHateEffect";
+        end;
+        OnRemoveHateEffect:
+        hateffect 176, false; // Remove o efeito visual
+        end;
 
 }
