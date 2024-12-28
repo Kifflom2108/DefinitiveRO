@@ -1,5 +1,5 @@
 // Adjust location and sprite display
-prontera, 156, 180, 3	script	HATEFFECT_SOUNDS	99,{
+prontera, 156, 180, 3	script	HATEFFECT_SOUNDS	3254,{
 
 // Sets player temporary variable for round-robin cycling
 // This temporary variable will reset back to zero if player relogs.

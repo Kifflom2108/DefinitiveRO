@@ -63702,25 +63702,6 @@ Body:
     Script: |
       specialeffect2 EF_POTION_BERSERK;
       sc_start SC_INFINITY_DRINK,1800000,0;
-  - Id: 23484
-    AegisName: Firstaid_Box_5
-    Name: First aid Box (5)
-    Type: Usable
-    EquipLevelMin: 5
-    Trade:
-      NoDrop: true
-      NoTrade: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
-    Script: |
-      getitem 11518,10;
-      getitem 11614,20;
-      getitem 12325,15;
-      getitem 22542,1;
-      getitem 23485,1;
   - Id: 23485
     AegisName: Firstaid_Box_10
     Name: First aid Box (10)
