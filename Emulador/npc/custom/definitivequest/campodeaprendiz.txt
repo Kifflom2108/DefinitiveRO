@@ -13,6 +13,8 @@ prontera,150,150,4	script	PoringQuestNPC	101,{
         if (select("Sim:Não") == 1) {
             set Quest_Poring, 2; // Marca a quest como ativa
             set Poring_Count, 0; // Inicializa o contador de Porings
+            setquest 61000; // Adiciona a quest (ID da quest configurada no seu `quest_db`)
+            questinfo_refresh(); // Atualiza as informações da aba de quests no cliente
             mes "Ótimo! Volte quando tiver matado 10 Porings.";
             close;
         } else {
@@ -31,12 +33,13 @@ prontera,150,150,4	script	PoringQuestNPC	101,{
             mes "Aqui está sua recompensa.";
             getitem 501, 10; // Dá 10 Poções como recompensa
             set Quest_Poring, 1; // Marca a quest como concluída
+            erasequest 61000; // Remove a quest da aba de quests
             close;
         }
     }
 
     close;
-}
+
 
 // Esse evento é chamado sempre que o jogador mata um monstro
 OnNPCKillEvent:
@@ -47,6 +50,7 @@ OnNPCKillEvent:
         } else {
             dispbottom "Porings derrotados: " + Poring_Count + "/10.";
         }
+        questinfo_refresh(); // Atualiza a aba de quests no cliente
     }
     end;
 }

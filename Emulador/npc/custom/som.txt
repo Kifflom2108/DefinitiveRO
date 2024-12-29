@@ -1,4 +1,4 @@
-prontera,155,180,5	script	Cornfarmer	465,{	
+prontera,155,180,5	script	Cornfarmer	677,{	
 		if (plankton > gettimetick(2)){
 			end;
 		}
