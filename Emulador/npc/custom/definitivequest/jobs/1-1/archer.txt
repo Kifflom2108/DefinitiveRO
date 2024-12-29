@@ -1,37 +1,21 @@
-//= Archer Job Quest
-//===== Current Version: ===================================== 
-//= 0.1
-//===== Additional Comments: ================================= 
-//= 0.1 
-//= 0.2
-//= 0.3 
-//= 0.4 
-//= 0.5 
-//= 0.6 
-//= 0.7 
-//= 0.8 
-//= 0.9  
-//= 1.0
-//============================================================ 
-
 payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 	if (Upper == 1) {
 		if (Class == Job_Novice_High && (ADVJOB == Job_Sniper || ADVJOB == Job_Clown || ADVJOB == Job_Gypsy)) {
 			mes "[Mestre Da Guilda]";
-			mes "Ei, eu te conheço.";
-			mes "Você fez esse teste";
-			mes "antes, não fez?";
+			mes "Ei, eu te conheço!";
+			mes "Você já fez esse teste antes, não?";
+
 			next;
 			mes "[Mestre Da Guilda]";
-			mes "Ah, você deve ter ido";
-			mes "para Valhalla e renascido.";
-			mes "Uau, isso é tão impressionante!";
+			mes "Ah, você deve ter ido para Valhalla e renascido.";
+			mes "Uau, isso é impressionante!";
 
 			next;
 			if (!callfunc("F_CanChangeJob")) {
 				mes "[Mestre Da Guilda]";
 				mes "Err...";
-				mes "É melhor você aprender todas as Habilidades Básicas primeiro antes de se tornar um Arqueiro.";
+				mes "É melhor você aprender todas as Habilidades Básicas antes de se tornar um Arqueiro.";
+
 				next;
 				mes "[Mestre Da Guilda]";
 				mes "Certo, até mais.";
@@ -137,36 +121,36 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			mes "vamos ver...";
 			next;
 			mes "[Mestre Da Guilda]";
-			mes "Vou avaliar o valor dos diferentes tipos de Troncos, necessários para produzir um Arco, que você trouxe.";
+			mes "Vou avaliar os diferentes tipos de Troncos que você trouxe, necessários para produzir um Arco.";
 			next;
 			if (countitem(1066) == 0 && countitem(1067) == 0 && countitem(1068) == 0 && countitem(1019) == 0) {
 				mes "[Mestre Da Guilda]";
 				mes "Hmm...";
-				mes "Infelizmente você não trouxe nenhum dos itens necessários. Não há nada para eu avaliar.";
+				mes "Infelizmente, você não trouxe nenhum dos itens necessários. Não há nada para avaliar.";
 				close;
 			}
 			mes "[Mestre Da Guilda]";
-			if (countitem(1066) != 0) mes " Grau S : " + countitem(1066) + " un, Grau: " + .@archer_item1 + " . ";
-			if (countitem(1067) != 0) mes " Grau A : " + countitem(1067) + " un, Grau : " + .@archer_item2 + " . ";
-			if (countitem(1068) != 0) mes " Grau B : " + countitem(1068) + " un, Grau : " + .@archer_item3 + " . ";
-			if (countitem(1019) != 0) mes " Grau C : " + countitem(1019) + " un, Grau : " + .@archer_item4 + " . ";
-			if (.@total_archer < 25) {
-				mes "Total de Graus: ^FF0000" + .@total_archer + "^000000 / 40";
+			if (countitem(1066) != 0) mes "Grau S : " + countitem(1066) + " un, Pontos : " + .@archer_item1 + " . ";
+			if (countitem(1067) != 0) mes "Grau A : " + countitem(1067) + " un, Pontos : " + .@archer_item2 + " . ";
+			if (countitem(1068) != 0) mes "Grau B : " + countitem(1068) + " un, Pontos : " + .@archer_item3 + " . ";
+			if (countitem(1019) != 0) mes "Grau C : " + countitem(1019) + " un, Pontos : " + .@archer_item4 + " . ";
+			if (.@total_archer < 100) {
+				mes "Total de Pontos: ^FF0000" + .@total_archer + "^000000 / 100";
 				next;
 				mes "[Mestre Da Guilda]";
-				mes "Menos de 25!? Você precisa ter um grau de pelo menos 25! Vamos, tente mais um pouco!";
+				mes "Você precisa de pelo menos 100 pontos! Vamos, tente mais um pouco!";
 				close;
 			}
 			else {
-				mes "Total de Graus: ^0000FF" + .@total_archer + "^000000 / 40";
+				mes "Total de Pontos: ^0000FF" + .@total_archer + "^000000 / 100";
 				next;
 				mes "[Mestre Da Guilda]";
-				if (.@total_archer > 40) {
-					mes "Uau! Mais de 40!";
+				if (.@total_archer > 150) {
+					mes "Uau! Mais de 150 pontos!";
 					mes "Excelente! Parabéns!";
 				}
-				else if (.@total_archer > 30) {
-					mes "Mais de 30! Bom trabalho!";
+				else if (.@total_archer > 120) {
+					mes "Mais de 120 pontos! Bom trabalho!";
 					mes "Parabéns!";
 				}
 				else {
@@ -176,10 +160,10 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			next;
 			mes "[Mestre Da Guilda]";
 			mes "Vou transferir esses Troncos para o nosso Departamento de Produção de Arcos. Agora que você atendeu aos requisitos, deixe-me promovê-lo imediatamente!";
-			if (countitem(1066) != 0) delitem 1066,countitem(1066); //Tree_Of_Archer_1
-			if (countitem(1067) != 0) delitem 1067,countitem(1067); //Tree_Of_Archer_2
-			if (countitem(1068) != 0) delitem 1068,countitem(1068); //Tree_Of_Archer_3
-			if (countitem(1019) != 0) delitem 1019,countitem(1019); //Wooden_Block
+			if (countitem(1066) != 0) delitem 1066,countitem(1066);
+			if (countitem(1067) != 0) delitem 1067,countitem(1067);
+			if (countitem(1068) != 0) delitem 1068,countitem(1068);
+			if (countitem(1019) != 0) delitem 1019,countitem(1019);
 		}
 	next;
 	callfunc "Job_Change",Job_Archer;
@@ -193,9 +177,9 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 	mes "Claro, esperamos que você contribua para o futuro da Guilda dos Arqueiros com seus esforços.";
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Ah, seu arco chegou do Departamento de Produção de Arcos. Aqui, pegue-o! É seu~";
-	getitem 1702,1; //Arco_
-	getitem 1750,.@total_archer2; //Flecha
+	mes "Ah, seu arco chegou do Departamento de Produção de Arcos. Aqui, pegue-o! É seu";
+	getitem 1702,1;
+	getitem 1750,.@total_archer2;
 	next;
 	mes "[Mestre Da Guilda]";
 	mes "Agora, siga em frente. Caçe com orgulho, sabendo que foi treinado por um dos melhores!";
@@ -209,26 +193,29 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			mes "[Mestre Da Guilda]";
 			mes "Mas...";
 			mes "Você já é um Arqueiro. Já deve saber disso...";
+			close;
 		}
 		else {
 			next;
 			mes "[Mestre Da Guilda]";
-			mes "Espere um segundo. Você já escolheu outra classe. Não precisa saber disso~";
+			mes "Espere um segundo. Você já escolheu outra classe. Não precisa saber disso";
+			close;
 		}
-		mes "Então... Sim... Não há realmente motivo para eu te contar os requisitos...";
+		mes "Então... Não há realmente motivo para eu te contar os requisitos...";
+		close;
 	}
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Primeiro de tudo, você precisa ser nível 9 de classe como Aprendiz e saber todas as Habilidades Básicas.";
+	mes "Primeiro de tudo, você precisa ser nível 10 de classe como Aprendiz e ter aprendido todas as Habilidades Básicas.";
 	next;
 	mes "[Mestre Da Guilda]";
 	mes "Um Arqueiro precisa de concentração e reflexos extremamente altos, então não aceitamos aqueles que têm pouca paciência.";
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Você também precisa coletar ^FF0000Troncos^000000. Existem 4 tipos diferentes de Troncos, cada um com uma qualidade diferente. Você receberá diferentes graus para seus Troncos, dependendo de sua qualidade.";
+	mes "Você também precisa coletar ^FF0000Troncos^000000. Existem 4 tipos diferentes de Troncos, cada um com uma qualidade diferente. Você receberá diferentes Pontos para seus Troncos, dependendo de sua qualidade.";
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Para se tornar um Arqueiro, você deve receber pelo menos ^0000FF25^000000 pontos de 40. Você pode pegar Troncos nos 'Salgueiro,' a árvore. Tenha cuidado, pois eles são monstros difíceis.";
+	mes "Para se tornar um Arqueiro, você deve receber pelo menos ^0000FF25^000000 pontos de 40. Você pode pegar Troncos na árvore 'Salgueiro'. Tenha cuidado, pois são monstros difíceis.";
 	close;
 	case 3:
 	close;

@@ -576,6 +576,7 @@ novice00,130,49,4	script	Porteiro#1	8W_SOLDIER,{
 	if (JobLevel < 10) {
 		mes "Vejo que você ainda não alcançou o Job Level 10.";
 		mes "Volte quando estiver pronto!";
+        cutin "", 255;
 		close;
 	}
 
@@ -583,6 +584,7 @@ novice00,130,49,4	script	Porteiro#1	8W_SOLDIER,{
 	if (SkillPoint > 0) {
 		mes "Você ainda tem pontos de habilidade não distribuídos.";
 		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
 		close;
 	}
 
@@ -642,6 +644,7 @@ novice01,130,49,4	script	Porteiro#1	8W_SOLDIER,{
 	if (JobLevel < 10) {
 		mes "Vejo que você ainda não alcançou o Job Level 10.";
 		mes "Volte quando estiver pronto!";
+        cutin "", 255;
 		close;
 	}
 
@@ -649,6 +652,7 @@ novice01,130,49,4	script	Porteiro#1	8W_SOLDIER,{
 	if (SkillPoint > 0) {
 		mes "Você ainda tem pontos de habilidade não distribuídos.";
 		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
 		close;
 	}
 
@@ -708,6 +712,7 @@ novice02,130,49,4	script	Porteiro#1	8W_SOLDIER,{
 	if (JobLevel < 10) {
 		mes "Vejo que você ainda não alcançou o Job Level 10.";
 		mes "Volte quando estiver pronto!";
+        cutin "", 255;
 		close;
 	}
 
@@ -715,6 +720,7 @@ novice02,130,49,4	script	Porteiro#1	8W_SOLDIER,{
 	if (SkillPoint > 0) {
 		mes "Você ainda tem pontos de habilidade não distribuídos.";
 		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
 		close;
 	}
 

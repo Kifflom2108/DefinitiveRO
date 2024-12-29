@@ -4,6 +4,7 @@ prontera,155,180,5	script	Cornfarmer	677,{
 		}
 		plankton = gettimetick(2) + 10;
         soundeffectall "plankton.wav", 0;
+        navigateto "geffen", 119, 62; // Navegação para Mago
         hateffect 176, true; // Ativa o efeito visual
         addtimer 5000, strnpcinfo(3) + "::OnRemoveHateEffect";
         end;
