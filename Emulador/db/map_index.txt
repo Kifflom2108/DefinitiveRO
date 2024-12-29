@@ -1270,6 +1270,14 @@ iz_in_d
 jor_sklf1
 jor_sklf2
 cmd_bhole
+novice00
+novice01
+novice02
+novice03
+novice04
+novice05
+novice06
+novice07
 
 //======================================================================================
 // - Other/Extra maps -

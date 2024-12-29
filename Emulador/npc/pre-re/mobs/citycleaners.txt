@@ -1,24 +1,41 @@
-//===== rAthena Script =======================================
-//= City Cleaners Monster Spawn Script
-//===== By: ==================================================
-//= Euphy
-//===== Current Version: =====================================
-//= 1.0
-//===== Compatible With: =====================================
-//= rAthena Project
-//===== Description: =========================================
-//= Spawns monsters to clean up cities.
-//===== Additional Comments: =================================
-//= 1.0 First version, Pre-Renewal spawns.
-//============================================================
-
 //==================================================
 // Thief Bug City Spawns
 //==================================================
-payon_in02,23,68,5,5	monster	Thief Bug	1051,7,1200000,600000
-jawaii_in,73,117,4,4	monster	Thief Bug	1051,1,5400000,3000000
-jawaii_in,83,117,5,5	monster	Thief Bug	1051,1,4800000,2400000
+payon_in02,23,68,5,5	monster	Thief Bug	1051,7,20,15
+jawaii_in,73,117,4,4	monster	Thief Bug	1051,1,20,15
+jawaii_in,83,117,5,5	monster	Thief Bug	1051,1,20,15
 
 //==================================================
 // Wild Rose City Spawns
 //==================================================
+// novice00
+novice00,0,0	monster	Poring	1002,13,20,15
+novice00,0,0	monster	Drops	1113,8,20,15
+
+// novice01
+novice01,0,0	monster	Fabre	1184,10,20,15
+novice01,0,0	monster	Pupa	1008,10,20,15
+
+// novice02
+novice02,0,0	monster	Lunatic	1063,7,20,15
+novice02,0,0	monster	Chonchon	1183,8,20,15
+
+// novice03
+novice03,0,0	monster	Picky	1240,8,20,15
+novice03,0,0	monster	Picky	1050,7,20,15
+
+// novice04
+novice04,0,0	monster	Willow	1010,7,20,15
+novice04,0,0	monster	Savage Babe	1167,9,20,15
+
+// novice05
+novice05,0,0	monster	Tarou	1175,5,20,15
+novice05,0,0	monster	Roda Frog	1012,10,20,15
+
+// novice06
+novice06,0,0	monster	Thief Bug	1051,10,20,15
+novice06,0,0	monster	Spore	1014,6,20,15
+
+// novice07
+novice07,0,0	monster	Thief Bug	1053,5,20,15
+novice07,0,0	monster	Baby Desert Wolf	1107,5,20,15
