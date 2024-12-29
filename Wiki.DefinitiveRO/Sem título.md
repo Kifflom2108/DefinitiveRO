@@ -1,5 +1,7 @@
+npc de saida = 130,48
+quest= 107,56
+kafrat = 112,56
 
 
-1@ge_sn,99,48 = mapa batalha aprendiz
 
 Rota de up Espadachin = 

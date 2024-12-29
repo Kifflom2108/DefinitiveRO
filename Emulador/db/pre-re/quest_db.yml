@@ -59,7 +59,7 @@ Body:
   - Id: 1003
     Title: Job Change to Acolyte
   - Id: 1004
-    Title: Job Change to Archer
+    Title: Mudança de Classe para Arqueiro
   - Id: 1005
     Title: Job Change to Mage
   - Id: 1006
@@ -7102,7 +7102,7 @@ Body:
   - Id: 62238
     Title: Midgardian Mercenary timer
     TimeLimit: +1h
-  - Id: 723074
+  - Id: 72300
     Title: "Paradise Advanced: Naomi Hunt 1"
     Targets:
       - Mob: SIROMA

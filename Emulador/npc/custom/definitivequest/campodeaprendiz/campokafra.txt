@@ -1,0 +1,392 @@
+novice00,112,56,3	script	Kafra Map Changer#novice	4_F_KAFRA1,{
+	cutin "kafra_01", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	mes "[Kafra Employee]";
+	mes "Olá, aventureiro!";
+	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	next;
+	mes "[Kafra Employee]";
+	mes "Para qual mapa você gostaria de ir?";
+	next;
+
+	switch(select(
+		"Poring e Drops",
+		"Fabre e Pupa",
+		"Lunatic e Chonchon",
+		"Pickys",
+		"Willow e Savage Babe",
+		"Tarou e Roda Frog",
+		"Thief Bug e Spore",
+		"Thief Bug Famale e Baby Desert Wolf"
+	)) {
+		case 1:
+			warp("novice00",96,48);
+			break;
+		case 2:
+			warp("novice01",96,48);
+			break;
+		case 3:
+			warp("novice02",96,48);
+			break;
+		case 4:
+			warp("novice03",96,48);
+			break;
+		case 5:
+			warp("novice04",96,48);
+			break;
+		case 6:
+			warp("novice05",96,48);
+			break;
+		case 7:
+			warp("novice06",96,48);
+			break;
+		case 8:
+			warp("novice07",96,48);
+			break;
+	}
+	cutin "", 255; // Remove a imagem ao final do diálogo
+	close;
+}
+
+novice01,112,56,3	script	Kafra Map Changer#novice01	4_F_KAFRA2,{
+	cutin "kafra_02", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	mes "[Kafra Employee]";
+	mes "Olá, aventureiro!";
+	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	next;
+	mes "[Kafra Employee]";
+	mes "Para qual mapa você gostaria de ir?";
+	next;
+
+	switch(select(
+		"Poring e Drops",
+		"Fabre e Pupa",
+		"Lunatic e Chonchon",
+		"Pickys",
+		"Willow e Savage Babe",
+		"Tarou e Roda Frog",
+		"Thief Bug e Spore",
+		"Thief Bug Famale e Baby Desert Wolf"
+	)) {
+		case 1:
+			warp("novice00",96,48);
+			break;
+		case 2:
+			warp("novice01",96,48);
+			break;
+		case 3:
+			warp("novice02",96,48);
+			break;
+		case 4:
+			warp("novice03",96,48);
+			break;
+		case 5:
+			warp("novice04",96,48);
+			break;
+		case 6:
+			warp("novice05",96,48);
+			break;
+		case 7:
+			warp("novice06",96,48);
+			break;
+		case 8:
+			warp("novice07",96,48);
+			break;
+	}
+	cutin "", 255; // Remove a imagem ao final do diálogo
+	close;
+}
+
+novice02,112,56,3	script	Kafra Map Changer#novice02	4_F_KAFRA3,{
+	cutin "kafra_03", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	mes "[Kafra Employee]";
+	mes "Olá, aventureiro!";
+	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	next;
+	mes "[Kafra Employee]";
+	mes "Para qual mapa você gostaria de ir?";
+	next;
+
+	switch(select(
+		"Poring e Drops",
+		"Fabre e Pupa",
+		"Lunatic e Chonchon",
+		"Pickys",
+		"Willow e Savage Babe",
+		"Tarou e Roda Frog",
+		"Thief Bug e Spore",
+		"Thief Bug Famale e Baby Desert Wolf"
+	)) {
+		case 1:
+			warp("novice00",96,48);
+			break;
+		case 2:
+			warp("novice01",96,48);
+			break;
+		case 3:
+			warp("novice02",96,48);
+			break;
+		case 4:
+			warp("novice03",96,48);
+			break;
+		case 5:
+			warp("novice04",96,48);
+			break;
+		case 6:
+			warp("novice05",96,48);
+			break;
+		case 7:
+			warp("novice06",96,48);
+			break;
+		case 8:
+			warp("novice07",96,48);
+			break;
+	}
+	cutin "", 255; // Remove a imagem ao final do diálogo
+	close;
+}
+
+novice03,112,56,3	script	Kafra Map Changer#novice03	4_F_KAFRA4,{
+	cutin "kafra_04", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	mes "[Kafra Employee]";
+	mes "Olá, aventureiro!";
+	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	next;
+	mes "[Kafra Employee]";
+	mes "Para qual mapa você gostaria de ir?";
+	next;
+
+	switch(select(
+		"Poring e Drops",
+		"Fabre e Pupa",
+		"Lunatic e Chonchon",
+		"Pickys",
+		"Willow e Savage Babe",
+		"Tarou e Roda Frog",
+		"Thief Bug e Spore",
+		"Thief Bug Famale e Baby Desert Wolf"
+	)) {
+		case 1:
+			warp("novice00",96,48);
+			break;
+		case 2:
+			warp("novice01",96,48);
+			break;
+		case 3:
+			warp("novice02",96,48);
+			break;
+		case 4:
+			warp("novice03",96,48);
+			break;
+		case 5:
+			warp("novice04",96,48);
+			break;
+		case 6:
+			warp("novice05",96,48);
+			break;
+		case 7:
+			warp("novice06",96,48);
+			break;
+		case 8:
+			warp("novice07",96,48);
+			break;
+	}
+	cutin "", 255; // Remove a imagem ao final do diálogo
+	close;
+}
+
+novice04,112,56,3	script	Kafra Map Changer#novice04	4_F_KAFRA6,{
+	cutin "kafra_06", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	mes "[Kafra Employee]";
+	mes "Olá, aventureiro!";
+	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	next;
+	mes "[Kafra Employee]";
+	mes "Para qual mapa você gostaria de ir?";
+	next;
+
+	switch(select(
+		"Poring e Drops",
+		"Fabre e Pupa",
+		"Lunatic e Chonchon",
+		"Pickys",
+		"Willow e Savage Babe",
+		"Tarou e Roda Frog",
+		"Thief Bug e Spore",
+		"Thief Bug Famale e Baby Desert Wolf"
+	)) {
+		case 1:
+			warp("novice00",96,48);
+			break;
+		case 2:
+			warp("novice01",96,48);
+			break;
+		case 3:
+			warp("novice02",96,48);
+			break;
+		case 4:
+			warp("novice03",96,48);
+			break;
+		case 5:
+			warp("novice04",96,48);
+			break;
+		case 6:
+			warp("novice05",96,48);
+			break;
+		case 7:
+			warp("novice06",96,48);
+			break;
+		case 8:
+			warp("novice07",96,48);
+			break;
+	}
+	cutin "", 255; // Remove a imagem ao final do diálogo
+	close;
+}
+
+novice05,112,56,3	script	Kafra Map Changer#novice05	4_F_KAFRA8,{
+	cutin "kafra_08", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	mes "[Kafra Employee]";
+	mes "Olá, aventureiro!";
+	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	next;
+	mes "[Kafra Employee]";
+	mes "Para qual mapa você gostaria de ir?";
+	next;
+
+	switch(select(
+		"Poring e Drops",
+		"Fabre e Pupa",
+		"Lunatic e Chonchon",
+		"Pickys",
+		"Willow e Savage Babe",
+		"Tarou e Roda Frog",
+		"Thief Bug e Spore",
+		"Thief Bug Famale e Baby Desert Wolf"
+	)) {
+		case 1:
+			warp("novice00",96,48);
+			break;
+		case 2:
+			warp("novice01",96,48);
+			break;
+		case 3:
+			warp("novice02",96,48);
+			break;
+		case 4:
+			warp("novice03",96,48);
+			break;
+		case 5:
+			warp("novice04",96,48);
+			break;
+		case 6:
+			warp("novice05",96,48);
+			break;
+		case 7:
+			warp("novice06",96,48);
+			break;
+		case 8:
+			warp("novice07",96,48);
+			break;
+	}
+	cutin "", 255; // Remove a imagem ao final do diálogo
+	close;
+}
+
+novice06,112,56,3	script	Kafra Map Changer#novice06	4_F_KAFRA9,{
+	cutin "kafra_09", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	mes "[Kafra Employee]";
+	mes "Olá, aventureiro!";
+	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	next;
+	mes "[Kafra Employee]";
+	mes "Para qual mapa você gostaria de ir?";
+	next;
+
+	switch(select(
+		"Poring e Drops",
+		"Fabre e Pupa",
+		"Lunatic e Chonchon",
+		"Pickys",
+		"Willow e Savage Babe",
+		"Tarou e Roda Frog",
+		"Thief Bug e Spore",
+		"Thief Bug Famale e Baby Desert Wolf"
+	)) {
+		case 1:
+			warp("novice00",96,48);
+			break;
+		case 2:
+			warp("novice01",96,48);
+			break;
+		case 3:
+			warp("novice02",96,48);
+			break;
+		case 4:
+			warp("novice03",96,48);
+			break;
+		case 5:
+			warp("novice04",96,48);
+			break;
+		case 6:
+			warp("novice05",96,48);
+			break;
+		case 7:
+			warp("novice06",96,48);
+			break;
+		case 8:
+			warp("novice07",96,48);
+			break;
+	}
+	cutin "", 255; // Remove a imagem ao final do diálogo
+	close;
+}
+
+novice07,112,56,3	script	Kafra Map Changer#novice07	4_F_KAFRA7,{
+	cutin "kafra_07", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	mes "[Kafra Employee]";
+	mes "Olá, aventureiro!";
+	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	next;
+	mes "[Kafra Employee]";
+	mes "Para qual mapa você gostaria de ir?";
+	next;
+
+	switch(select(
+		"Poring e Drops",
+		"Fabre e Pupa",
+		"Lunatic e Chonchon",
+		"Pickys",
+		"Willow e Savage Babe",
+		"Tarou e Roda Frog",
+		"Thief Bug e Spore",
+		"Thief Bug Famale e Baby Desert Wolf"
+	)) {
+		case 1:
+			warp("novice00",96,48);
+			break;
+		case 2:
+			warp("novice01",96,48);
+			break;
+		case 3:
+			warp("novice02",96,48);
+			break;
+		case 4:
+			warp("novice03",96,48);
+			break;
+		case 5:
+			warp("novice04",96,48);
+			break;
+		case 6:
+			warp("novice05",96,48);
+			break;
+		case 7:
+			warp("novice06",96,48);
+			break;
+		case 8:
+			warp("novice07",96,48);
+			break;
+	}
+	cutin "", 255; // Remove a imagem ao final do diálogo
+	close;
+}
+

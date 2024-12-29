@@ -1,0 +1,1108 @@
+novice00,107,56,4	script	Caçador de Porings#0	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice00 == 1) {
+        mes "[Caçador de Porings]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+        
+    }
+
+    if (Quest_novice00 == 0) {
+        mes "[Caçador de Porings]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Porings e 15 Drops.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "Poção de Aprendiz , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice00, 2;
+            set Poring_Count, 0;
+            set Drop_Count, 0;
+            mes "Ótimo! Vá e mate 15 Porings e 15 Drops.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice00 == 2) {
+        if (Poring_Count < 15 || Drop_Count < 15) {
+            mes "[Caçador de Porings]";
+            mes "Você ainda não completou a missão.";
+            mes "Porings derrotados: " + Poring_Count + "/15";
+            mes "Drops derrotados: " + Drop_Count + "/15";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Porings]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            getitem 501, 10;       
+            getitem 22777, 5;      
+            set Zeny, Zeny + 500; 
+            set Quest_novice00, 1;
+            getexp 500, 300;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice00 == 2 && killedrid == 1002) {
+        set Poring_Count, Poring_Count + 1;
+        dispbottom "Porings derrotados: " + Poring_Count + "/15.";
+    }
+    if (Quest_novice00 == 2 && killedrid == 1113) {
+            set Drop_Count, Drop_Count + 1; 
+            dispbottom "Drops coletados: " + Drop_Count + "/15.";
+        }
+    if (Quest_novice00 == 2 && Poring_Count == 15 && Drop_Count == 15) {
+            dispbottom "Você completou a missão de matar 15 Porings e 15 drops!";
+        }
+    
+    end;
+}
+
+novice01,107,56,4	script	Caçador de Fabres e Pupas#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice01 == 1) {
+        mes "[Caçador de Fabres e Pupas]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice01 == 0) {
+        mes "[Caçador de Fabres e Pupas]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Fabres e 10 Pupas.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "Poções de Aprendiz , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice01, 2; 
+            set Fabre_Count, 0;
+            set Pupa_Count, 0;
+            mes "Ótimo! Vá e mate 15 Fabre e 10 Pupa.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice01 == 2) {
+        if (Fabre_Count < 15 || Pupa_Count < 10) {
+            mes "[Caçador de Fabres e Pupas]";
+            mes "Você ainda não completou a missão.";
+            mes "Fabres derrotados: " + Fabre_Count + "/15";
+            mes "Pupas derrotados: " + Pupa_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Fabres e Pupas]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            getitem 501, 40;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 1500; 
+            set Quest_novice01, 1;  
+            getexp 900, 500;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice01 == 2 && killedrid == 1184) {
+        set Fabre_Count, Fabre_Count + 1;
+        dispbottom "Fabres derrotados: " + Fabre_Count + "/15.";
+    }
+    if (Quest_novice01 == 2 && killedrid == 1008) {
+            set Pupa_Count, Pupa_Count + 1;
+            dispbottom "Pupas coletados: " + Pupa_Count + "/10.";
+        }
+    if (Quest_novice01 == 2 && Fabre_Count == 15 && Pupa_Count == 15) {
+            dispbottom "Você completou a missão de matar 15 Fabres e 15 Pupas!";
+        }
+    
+    end;
+}
+
+novice02,107,56,4	script	Caçador de Lunatics e Chonchons#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice02 == 1) {
+        mes "[Caçador de Lunatics e Chonchons]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice02 == 0) {
+        mes "[Caçador de Lunatics e Chonchons]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Lunatics e 10 Chonchons.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "Poções de Aprendiz , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice02, 2; 
+            set Lunatic_Count, 0;
+            set Chonchon_Count, 0;
+            mes "Ótimo! Vá e mate 15 Lunatic e 10 Chonchon.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice02 == 2) {
+        if (Lunatic_Count < 15 || Chonchon_Count < 10) {
+            mes "[Caçador de Lunatics e Chonchons]";
+            mes "Você ainda não completou a missão.";
+            mes "Lunatics derrotados: " + Lunatic_Count + "/15";
+            mes "Chonchons derrotados: " + Chonchon_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Lunatics e Chonchons]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            getitem 501, 80;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 2500; 
+            set Quest_novice02, 1;  
+            getexp 900, 500;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice02 == 2 && killedrid == 1063) {
+        set Lunatic_Count, Lunatic_Count + 1;
+        dispbottom "Lunatics derrotados: " + Lunatic_Count + "/15.";
+    }
+    if (Quest_novice02 == 2 && killedrid == 1183) {
+            set Chonchon_Count, Chonchon_Count + 1;
+            dispbottom "Chonchons coletados: " + Chonchon_Count + "/10.";
+        }
+    if (Quest_novice02 == 2 && Lunatic_Count == 15 && Chonchon_Count == 15) {
+            dispbottom "Você completou a missão de matar 15 Lunatics e 15 Chonchons!";
+        }
+    
+    end;
+}
+
+novice03,107,56,4	script	Caçador de Pickys e Condors#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice03 == 1) {
+        mes "[Caçador de Pickys e Condors]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice03 == 0) {
+        mes "[Caçador de Pickys e Condors]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Pickys e 10 Condors.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "Poções de Aprendiz , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice03, 2; 
+            set Picky_Count, 0;
+            set Condor_Count, 0;
+            mes "Ótimo! Vá e mate 15 Picky e 10 Condor.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice03 == 2) {
+        if (Picky_Count < 15 || Condor_Count < 10) {
+            mes "[Caçador de Pickys e Condors]";
+            mes "Você ainda não completou a missão.";
+            mes "Pickys derrotados: " + Picky_Count + "/15";
+            mes "Condors derrotados: " + Condor_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Pickys e Condors]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            getitem 501, 80;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 2500; 
+            set Quest_novice03, 1;  
+            getexp 900, 500;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice03 == 2 && killedrid == 1240) {
+        set Picky_Count, Picky_Count + 1;
+        dispbottom "Pickys derrotados: " + Picky_Count + "/15.";
+    }
+    if (Quest_novice03 == 2 && killedrid == 1009) {
+            set Condor_Count, Condor_Count + 1;
+            dispbottom "Condors coletados: " + Condor_Count + "/10.";
+        }
+    if (Quest_novice03 == 2 && Picky_Count == 15 && Condor_Count == 15) {
+            dispbottom "Você completou a missão de matar 15 Pickys e 15 Condors!";
+        }
+    
+    end;
+}
+
+novice04,107,56,4	script	Caçador de Willows e Savages#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice04 == 1) {
+        mes "[Caçador de Willows e Savages]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice04 == 0) {
+        mes "[Caçador de Willows e Savages]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Willows e 10 Savages.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "Poções de Aprendiz , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice04, 2; 
+            set Willow_Count, 0;
+            set Savage_Count, 0;
+            mes "Ótimo! Vá e mate 15 Willow e 10 Savage.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice04 == 2) {
+        if (Willow_Count < 15 || Savage_Count < 10) {
+            mes "[Caçador de Willows e Savages]";
+            mes "Você ainda não completou a missão.";
+            mes "Willows derrotados: " + Willow_Count + "/15";
+            mes "Savages derrotados: " + Savage_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Willows e Savages]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            getitem 501, 80;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 2500; 
+            set Quest_novice04, 1;  
+            getexp 900, 500;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice04 == 2 && killedrid == 1010) {
+        set Willow_Count, Willow_Count + 1;
+        dispbottom "Willows derrotados: " + Willow_Count + "/15.";
+    }
+    if (Quest_novice04 == 2 && killedrid == 1167) {
+            set Savage_Count, Savage_Count + 1;
+            dispbottom "Savages coletados: " + Savage_Count + "/10.";
+        }
+    if (Quest_novice04 == 2 && Willow_Count == 15 && Savage_Count == 15) {
+            dispbottom "Você completou a missão de matar 15 Willows e 15 Savages!";
+        }
+    
+    end;
+}
+
+novice05,107,56,4	script	Caçador de Tarous e Rodas#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice05 == 1) {
+        mes "[Caçador de Tarous e Rodas]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice05 == 0) {
+        mes "[Caçador de Tarous e Rodas]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Tarous e 10 Rodas.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "Poções de Aprendiz , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice05, 2; 
+            set Tarou_Count, 0;
+            set Roda_Count, 0;
+            mes "Ótimo! Vá e mate 15 Tarou e 10 Roda.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice05 == 2) {
+        if (Tarou_Count < 15 || Roda_Count < 10) {
+            mes "[Caçador de Tarous e Rodas]";
+            mes "Você ainda não completou a missão.";
+            mes "Tarous derrotados: " + Tarou_Count + "/15";
+            mes "Rodas derrotados: " + Roda_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Tarous e Rodas]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            getitem 501, 80;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 2500; 
+            set Quest_novice05, 1;  
+            getexp 900, 500;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice05 == 2 && killedrid == 1175) {
+        set Tarou_Count, Tarou_Count + 1;
+        dispbottom "Tarous derrotados: " + Tarou_Count + "/15.";
+    }
+    if (Quest_novice05 == 2 && killedrid == 1012) {
+            set Roda_Count, Roda_Count + 1;
+            dispbottom "Rodas coletados: " + Roda_Count + "/10.";
+        }
+    if (Quest_novice05 == 2 &&Tarou_Count == 15 && Roda_Count == 15) {
+            dispbottom "Você completou a missão de matar 15 Tarous e 15 Rodas!";
+        }
+    
+    end;
+}
+
+novice06,107,56,4	script	Caçador de Bugs e Spores#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice06 == 1) {
+        mes "[Caçador de Bugs e Spores]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice06 == 0) {
+        mes "[Caçador de Bugs e Spores]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Bugs e 10 Spores.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "Poções de Aprendiz , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice06, 2; 
+            set Bug_Count, 0;
+            set Spore_Count, 0;
+            mes "Ótimo! Vá e mate 15 Bug e 10 Spore.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice06 == 2) {
+        if (Bug_Count < 15 || Spore_Count < 10) {
+            mes "[Caçador de Bugs e Spores]";
+            mes "Você ainda não completou a missão.";
+            mes "Bugs derrotados: " + Bug_Count + "/15";
+            mes "Spores derrotados: " + Spore_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Bugs e Spores]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            getitem 501, 80;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 2500; 
+            set Quest_novice06, 1;  
+            getexp 900, 500;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice06 == 2 && killedrid == 1051) {
+        set Bug_Count, Bug_Count + 1;
+        dispbottom "Bugs derrotados: " + Bug_Count + "/15.";
+    }
+    if (Quest_novice06 == 2 && killedrid == 1014) {
+            set Spore_Count, Spore_Count + 1;
+            dispbottom "Spores coletados: " + Spore_Count + "/10.";
+        }
+    if (Quest_novice06 == 2 && Bug_Count == 15 && Spore_Count == 15) {
+            dispbottom "Você completou a missão de matar 15 Bugs e 15 Spores!";
+        }
+    
+    end;
+}
+
+novice07,107,56,4	script	Caçador de Bugs e Wolfs#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice07 == 1) {
+        mes "[Caçador de Bugs e Wolfs]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice07 == 0) {
+        mes "[Caçador de Bugs e Wolfs]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Bugs e 10 Wolfs.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "Poções de Aprendiz , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice07, 2; 
+            set Bug_Count, 0;
+            set Wolf_Count, 0;
+            mes "Ótimo! Vá e mate 15 Bug e 10 Wolf.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice07 == 2) {
+        if (Bug_Count < 15 || Wolf_Count < 10) {
+            mes "[Caçador de Bugs e Wolfs]";
+            mes "Você ainda não completou a missão.";
+            mes "Bugs derrotados: " + Bug_Count + "/15";
+            mes "Wolfs derrotados: " + Wolf_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Bugs e Wolfs]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            getitem 501, 80;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 2500; 
+            set Quest_novice07, 1;  
+            getexp 900, 500;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice07 == 2 && killedrid == 1053) {
+        set Bug_Count, Bug_Count + 1;
+        dispbottom "Bugs derrotados: " + Bug_Count + "/15.";
+    }
+    if (Quest_novice07 == 2 && killedrid == 1107) {
+            set Wolf_Count, Wolf_Count + 1;
+            dispbottom "Wolfs coletados: " + Wolf_Count + "/10.";
+        }
+    if (Quest_novice07 == 2 && Bug_Count == 15 && Wolf_Count == 15) {
+            dispbottom "Você completou a missão de matar 15 Bugs e 15 Wolfs!";
+        }
+    
+    end;
+}
+
+novice00,130,49,4	script	Porteiro#1	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+}
+
+novice01,130,49,4	script	Porteiro#1	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+}
+    
+novice02,130,49,4	script	Porteiro#1	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+}
+    
+novice03,130,49,4	script	Porteiro#1	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+        cutin "", 255;
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+}
+    
+novice04,130,49,4	script	Porteiro#1	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+        cutin "", 255;
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+}
+    
+novice05,130,49,4	script	Porteiro#1	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+        cutin "", 255;
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+}
+    
+novice06,130,49,4	script	Porteiro#1	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+        cutin "", 255;
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+}
+    
+novice07,130,49,4	script	Porteiro#1	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+        cutin "", 255;
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+}
+    
+    
