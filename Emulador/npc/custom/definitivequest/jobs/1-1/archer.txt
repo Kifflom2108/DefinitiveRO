@@ -127,6 +127,7 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 				mes "[Mestre Da Guilda]";
 				mes "Hmm...";
 				mes "Infelizmente, você não trouxe nenhum dos itens necessários. Não há nada para avaliar.";
+				navigateto "payon_in02", 26, 67;
 				close;
 			}
 			mes "[Mestre Da Guilda]";
@@ -139,6 +140,7 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 				next;
 				mes "[Mestre Da Guilda]";
 				mes "Você precisa de pelo menos 100 pontos! Vamos, tente mais um pouco!";
+				navigateto "payon_in02", 26, 67;
 				close;
 			}
 			else {
@@ -182,7 +184,9 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 	getitem 1750,.@total_archer2;
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Agora, siga em frente. Caçe com orgulho, sabendo que foi treinado por um dos melhores!";
+	mes "Agora começe o treinamento, fale com o instrutor arqueiro na sala ao lado.";
+	navigateto "payon_in02", 22, 31;
+	setquest 75001;
 	close;
 	case 2:
 	mes "[Mestre Da Guilda]";
@@ -193,7 +197,7 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			mes "[Mestre Da Guilda]";
 			mes "Mas...";
 			mes "Você já é um Arqueiro. Já deve saber disso...";
-			close;
+			next;
 		}
 		else {
 			next;
@@ -201,6 +205,7 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			mes "Espere um segundo. Você já escolheu outra classe. Não precisa saber disso";
 			close;
 		}
+		mes "[Mestre Da Guilda]";
 		mes "Então... Não há realmente motivo para eu te contar os requisitos...";
 		close;
 	}
@@ -215,7 +220,7 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 	mes "Você também precisa coletar ^FF0000Troncos^000000. Existem 4 tipos diferentes de Troncos, cada um com uma qualidade diferente. Você receberá diferentes Pontos para seus Troncos, dependendo de sua qualidade.";
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Para se tornar um Arqueiro, você deve receber pelo menos ^0000FF25^000000 pontos de 40. Você pode pegar Troncos na árvore 'Salgueiro'. Tenha cuidado, pois são monstros difíceis.";
+	mes "Para se tornar um Arqueiro, você deve receber pelo menos ^0000FF25^000000 pontos de 100. Você pode pegar Troncos na árvore 'Willow'. Tenha cuidado, pois são monstros difíceis.";
 	close;
 	case 3:
 	close;

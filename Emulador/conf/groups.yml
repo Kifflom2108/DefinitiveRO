@@ -80,17 +80,17 @@ Body:
       whereis: true
       # Feature commands
       refresh: true
-      noask: true
+      noask: false
       noks: true
-      autoloot: true
-      alootid: true
-      autoloottype: true
+      autoloot: false
+      alootid: false
+      autoloottype: false
       autotrade: true
-      request: true
+      request: false
       go: true
-      breakguild: true
-      channel: true
-      langtype: true
+      breakguild: false
+      channel: false
+      langtype: false
     Permissions:
       attendance: false
   - Id: 2
