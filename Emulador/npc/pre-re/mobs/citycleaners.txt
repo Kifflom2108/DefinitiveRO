@@ -1,27 +1,27 @@
 //==================================================
 // Thief Bug City Spawns
 //==================================================
-payon_in02,23,68,5,5	monster	Willow	1010,5,20,15
-jawaii_in,73,117,4,4	monster	Thief Bug	1051,1,20,15
-jawaii_in,83,117,5,5	monster	Thief Bug	1051,1,20,15
+payon_in02,23,68,5,5	monster	Willow	1010,5,6000,9500
+jawaii_in,73,117,4,4	monster	Thief Bug	1051,1,6000,9500
+jawaii_in,83,117,5,5	monster	Thief Bug	1051,1,6000,9500
 
 //==================================================
 // Wild Rose City Spawns
 //==================================================
 // novice00
-novice00,0,0	monster	Poring			1002,6,20,15
-novice00,0,0	monster	Drops			1113,5,20,15
-novice01,0,0	monster	Fabre			1184,6,20,15
-novice01,0,0	monster	Pupa			1008,6,20,15
-novice02,0,0	monster	Lunatic			1063,5,20,15
-novice02,0,0	monster	Chonchon		1183,4,20,15
-novice03,0,0	monster	Picky			1240,6,20,15
-novice03,0,0	monster	Condor			1009,5,20,15
-novice04,0,0	monster	Willow			1010,5,20,15
-novice04,0,0	monster	Savage Babe		1167,6,20,15
-novice05,0,0	monster	Tarou			1175,5,20,15
-novice05,0,0	monster	Roda Frog		1012,8,20,15
-novice06,0,0	monster	Thief Bug		1051,7,20,15
-novice06,0,0	monster	Spore			1014,6,20,15
-novice07,0,0	monster	Thief Bug		1053,5,20,15
-novice07,0,0	monster	Baby Desert Wolf	1107,5,20,15
+novice00,0,0	monster	Poring			1002,6,6000,9500
+novice00,0,0	monster	Drops			1113,5,6000,9500
+novice01,0,0	monster	Fabre			1184,6,6000,9500
+novice01,0,0	monster	Pupa			1008,6,6000,9500
+novice02,0,0	monster	Lunatic			1063,5,6000,9500
+novice02,0,0	monster	Chonchon		1183,4,6000,9500
+novice03,0,0	monster	Picky			1240,6,6000,9500
+novice03,0,0	monster	Condor			1009,5,6000,9500
+novice04,0,0	monster	Willow			1010,5,6000,9500
+novice04,0,0	monster	Savage Babe		1167,6,6000,9500
+novice05,0,0	monster	Tarou			1175,5,6000,9500
+novice05,0,0	monster	Roda Frog		1012,8,6000,9500
+novice06,0,0	monster	Thief Bug		1051,8,6000,9500
+novice06,0,0	monster	Spore			1014,8,6000,9500
+novice07,0,0	monster	Thief Bug		1053,5,6000,9500
+novice07,0,0	monster	Baby Desert Wolf	1107,5,6000,9500

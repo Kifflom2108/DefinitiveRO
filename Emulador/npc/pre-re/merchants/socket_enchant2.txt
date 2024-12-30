@@ -14,5 +14,3 @@
 //= 1.1 Duplicates now spawn from floating NPCs. [L0ne_W0lf]
 //= 1.1a Added 'disable_items' command. [Euphy]
 //============================================================ 
-
-moc_ruins,154,86,3	duplicate(SocketEnchant2)	Leablem#moc	86

@@ -8,4 +8,3 @@
 
 // Teleport to Lutie
 //============================================================
-aldebaran,223,222,4	duplicate(Mr. Claus)	Mr. Claus#1	718

@@ -7,4 +7,3 @@
 //= 1.0 Moved Piano3 to pre-re/re paths. [Daegaladh]
 //============================================================
 
-nif_in,114,181,0	duplicate(Piano3)	#Piano3	HIDDEN_NPC,1,1

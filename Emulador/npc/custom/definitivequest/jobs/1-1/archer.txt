@@ -32,7 +32,8 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			skill "AC_CHARGEARROW",1,SKILL_PERM;
 			mes "[Mestre Da Guilda]";
 			mes "Embora não haja uma";
-			mes "recompensa especial para você desta vez, espero que entenda. Cuide-se.";
+			mes "recompensa especial para você desta vez, espero que entenda.";
+			mes " Cuide-se.";
 			close;
 		}
 		else {
@@ -41,7 +42,8 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			mes "fazendo aqui...?";
 			next;
 			mes "[Mestre Da Guilda]";
-			mes "Eu posso perceber que você não tem o perfil para ser um Arqueiro. Parece que você foi feito para fazer";
+			mes "Eu posso perceber que você não tem o perfil para ser um Arqueiro."; 
+			mes "Parece que você foi feito para fazer";
 			mes "algo diferente...";
 		}
 	}
@@ -61,7 +63,7 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			mes "Você não parece nem um pouco com um Aprendiz...";
 			next;
 			mes "[Mestre Da Guilda]";
-			mes "De qualquer forma, seja o que for que você seja, não pode escolher o trabalho de Arqueiro.";
+			mes "De qualquer forma, Seja lá o que você for, não pode escolher o trabalho de Arqueiro.";
 			close;
 		}
 		if (job_archer_q == 0) {
@@ -126,7 +128,8 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			if (countitem(1066) == 0 && countitem(1067) == 0 && countitem(1068) == 0 && countitem(1019) == 0) {
 				mes "[Mestre Da Guilda]";
 				mes "Hmm...";
-				mes "Infelizmente, você não trouxe nenhum dos itens necessários. Não há nada para avaliar.";
+				mes "Infelizmente, você não trouxe nenhum dos itens necessários.";
+				mes "Não há nada para avaliar.";
 				navigateto "payon_in02", 26, 67;
 				close;
 			}
@@ -139,7 +142,9 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 				mes "Total de Pontos: ^FF0000" + .@total_archer + "^000000 / 100";
 				next;
 				mes "[Mestre Da Guilda]";
-				mes "Você precisa de pelo menos 100 pontos! Vamos, tente mais um pouco!";
+				mes "Você precisa de pelo menos 100 pontos!.";
+				mes "Vamos, tente mais um pouco!";
+				emotion ET_GO;
 				navigateto "payon_in02", 26, 67;
 				close;
 			}
@@ -161,7 +166,8 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			}
 			next;
 			mes "[Mestre Da Guilda]";
-			mes "Vou transferir esses Troncos para o nosso Departamento de Produção de Arcos. Agora que você atendeu aos requisitos, deixe-me promovê-lo imediatamente!";
+			mes "Vou transferir esses Troncos para o nosso Departamento de Produção de Arcos.";
+			mes "Agora que você atendeu aos requisitos, deixe-me promovê-lo imediatamente!";
 			if (countitem(1066) != 0) delitem 1066,countitem(1066);
 			if (countitem(1067) != 0) delitem 1067,countitem(1067);
 			if (countitem(1068) != 0) delitem 1068,countitem(1068);
@@ -179,12 +185,14 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 	mes "Claro, esperamos que você contribua para o futuro da Guilda dos Arqueiros com seus esforços.";
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Ah, seu arco chegou do Departamento de Produção de Arcos. Aqui, pegue-o! É seu";
-	getitem 1702,1;
+	mes "Ah, seu arco chegou do Departamento de Produção de Arcos.";
+	mes "Aqui, pegue-o! É seu";
+	getitem 1703,1;
 	getitem 1750,.@total_archer2;
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Agora começe o treinamento, fale com o instrutor arqueiro na sala ao lado.";
+	mes "Agora inicie o treinamento.";
+	mes "Converse com o instrutor arqueiro na sala ao lado.";
 	navigateto "payon_in02", 22, 31;
 	setquest 75001;
 	close;
@@ -196,13 +204,16 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 			next;
 			mes "[Mestre Da Guilda]";
 			mes "Mas...";
-			mes "Você já é um Arqueiro. Já deve saber disso...";
+			mes "Você já é um Arqueiro.";
+			mes "Já deve saber disso...";
 			next;
 		}
 		else {
 			next;
 			mes "[Mestre Da Guilda]";
-			mes "Espere um segundo. Você já escolheu outra classe. Não precisa saber disso";
+			mes "Espere um segundo.";
+			mes "Você já escolheu outra classe.";
+			mes "Não precisa saber disso";
 			close;
 		}
 		mes "[Mestre Da Guilda]";
@@ -217,13 +228,73 @@ payon_in02,64,71,4	script	Mestre Da Guilda#archer	85,{
 	mes "Um Arqueiro precisa de concentração e reflexos extremamente altos, então não aceitamos aqueles que têm pouca paciência.";
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Você também precisa coletar ^FF0000Troncos^000000. Existem 4 tipos diferentes de Troncos, cada um com uma qualidade diferente. Você receberá diferentes Pontos para seus Troncos, dependendo de sua qualidade.";
+	mes "Você também precisa coletar ^FF0000Troncos^000000.";
+	mes "Existem 4 tipos diferentes de Troncos, cada um com uma qualidade diferente.";
+	mes "Você receberá diferentes Pontos para seus Troncos, dependendo de sua qualidade.";
 	next;
 	mes "[Mestre Da Guilda]";
-	mes "Para se tornar um Arqueiro, você deve receber pelo menos ^0000FF25^000000 pontos de 100. Você pode pegar Troncos na árvore 'Willow'. Tenha cuidado, pois são monstros difíceis.";
+	mes "Para se tornar um Arqueiro, você deve receber pelo menos ^0000FF25^000000 pontos de 100.";
+	mes "Você pode pegar Troncos na árvore 'Willow'.";
+	mes "Tenha cuidado, pois são monstros difíceis.";
 	close;
 	case 3:
 	close;
 	}
 }
 
+payon_in02,22,31,4	script	Instrutor#archer	732,{
+	if (BaseJob == Job_Archer){
+		if (checkquest (75001) == 1){
+		completequest 75001;
+		}
+		if (checkquest(75002) == -1) {
+            mes "[Instrutor]";
+            mes "Você é novo por aqui, não é?";
+            mes "Bom, antes de empunhar um arco com propósito, precisa entender o que significa caçar.";
+            mes "Não se trata apenas de acertar o alvo.";
+            next;
+            mes "É sobre respeitar o ciclo da natureza.";
+            mes "Há uma criatura chamada Willow.";
+            mes "Quero que cace dez delas.";
+            mes "Considere isso um teste de suas habilidades e paciência.";
+            mes "Não volte até que tenha completado a tarefa.";
+            setquest 75002;
+        } else if (checkquest(75002) == 1 && Willow_Count >= 10) {
+            mes "[Instrutor]";
+			mes "Você fez bem. Não esperava menos."; 
+			mes "Mas a jornada de um arqueiro não termina aqui.";
+			mes "Há mais para aprender, e há alguém que pode te ensinar o próximo passo.";
+			next;
+			mes "Procure por Kaelen, o Rastreador, nos arredores de Payon.";
+			mes "Ele é tão habilidoso quanto imprevisível.";
+			mes "Se passar pelo teste dele, estará no caminho certo.";
+            completequest 75002;
+			erasequest(75002);
+			set Willow_Count, Willow_Count == 0;
+			getitem 1750, 500;
+			getitem 1755, 500;
+
+        }else if (checkquest(75002) == 1) {
+            mes "[Instrutor]";
+            mes "Ainda está trabalhando no teste?";
+            mes "Não se esqueça: quero que cace Willows para demonstrar suas habilidades.";
+			emotion ET_GO;
+        } 
+		close;
+	}else{
+		mes "Seja lá o que você for, não tenho nada para te ensinar.";
+		close;
+	}
+
+	OnNPCKillEvent:	
+    if (checkquest(75002) == 1 && killedrid == 1010 && Willow_Count < 10) {
+        set Willow_Count, Willow_Count + 1;
+        dispbottom "Willow derrotados: " + Willow_Count + "/10.";
+    }else if (checkquest(75002) == 1 && killedrid == 1010 && Willow_Count >= 10){
+		dispbottom "Você completou a missão de caçar 10 Willow!";	
+	}
+    end;
+}
+
+
+// gsmi , gnor , id 634 , arqueiro com ilustração 
