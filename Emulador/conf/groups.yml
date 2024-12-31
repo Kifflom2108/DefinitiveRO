@@ -80,7 +80,7 @@ Body:
       whereis: true
       # Feature commands
       refresh: true
-      noask: false
+      noask: true
       noks: true
       autoloot: false
       alootid: false

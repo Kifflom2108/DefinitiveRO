@@ -1,0 +1,8 @@
+novice00	mapflag	nodrop
+novice01	mapflag	nodrop
+novice02	mapflag	nodrop
+novice03	mapflag	nodrop
+novice04	mapflag	nodrop
+novice05	mapflag	nodrop
+novice06	mapflag	nodrop
+novice07	mapflag	nodrop
