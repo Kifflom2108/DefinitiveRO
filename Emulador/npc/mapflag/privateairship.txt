@@ -1,0 +1,24 @@
+//===== rAthena Script =======================================
+//= Mapflags:
+//= privateairship_source, privateairship_destination
+//===== Description: =========================================
+//= Private Airship available sources and destinations
+//===== Changelogs: ==========================================
+//= 1.0 First Version. [Lemongrass]
+//============================================================
+
+//============================================================
+// Available Sources
+//============================================================
+
+payon	mapflag	privateairship_source
+prontera	mapflag	privateairship_source
+
+
+//============================================================
+// Available Destinations
+//============================================================
+payon	mapflag	privateairship_destination
+prontera	mapflag	privateairship_destination
+alberta	mapflag	privateairship_destination
+

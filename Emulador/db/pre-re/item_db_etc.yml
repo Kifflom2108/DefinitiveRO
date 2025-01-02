@@ -21160,3 +21160,24 @@ Body:
     Locations:
       Ammo: true
     EquipLevelMin: 99
+  - Id: 6909
+    AegisName: Nyangvine_Fruit
+    Name: Actinidia Cat Fruit
+    Type: Etc
+    Buy: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+  - Id: 25464
+    AegisName: Passaporte
+    Name: Passaporte
+    Type: Etc
+    Buy: 20
+    Flags:
+      BuyingStore: true
+      DropEffect: GREEN_PILLAR

@@ -403,9 +403,9 @@ cmd_fild07,136,134,4	script	Kafra Employee::kaf_cmd_fild07	721,{
 	callfunc "F_KafEnd",0,1,"in Pyros Lighthouse";
 }
 
-// Izlude
+// izlude 136,93
 //============================================================
--	script	::kaf_izlude	-1,{
+izlude,136,93,3	script	Kafra Employee::iz	114,{
 	cutin "kafra_01",2;
 	callfunc "F_KafSet";
 	mes "[Kafra Employee]";

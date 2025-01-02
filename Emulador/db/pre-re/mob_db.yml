@@ -152,7 +152,6 @@ Body:
     WalkSpeed: 400
     AttackDelay: 1872
     AttackMotion: 672
-    ClientAttackMotion: 288
     DamageMotion: 480
     Ai: 02
     Drops:
@@ -173,25 +172,27 @@ Body:
       - Item: Poring_Card
         Rate: 1
         StealProtected: true
-#  - Id: 1003
-#    AegisName: TESTEGG
-#    Name: Test Egg
-#    Level: 2
-#    Hp: 100000
-#    BaseExp: 10
-#    JobExp: 10
-#    Attack: 3
-#    Attack2: 9
-#    Defense: 99
-#    Agi: 99
-#    SkillRange: 10
-#    ChaseRange: 12
-#    Size: Small
-#    Race: Insect
-#    Element: Earth
-#    ElementLevel: 1
-#    WalkSpeed: 512
-#    AttackMotion: 512
+      - Item: Passaporte
+        Rate: 9000
+  - Id: 1003
+    AegisName: TESTEGG
+    Name: Test Egg
+    Level: 2
+    Hp: 100000
+    BaseExp: 10
+    JobExp: 10
+    Attack: 3
+    Attack2: 9
+    Defense: 99
+    Agi: 99
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Small
+    Race: Insect
+    Element: Earth
+    ElementLevel: 1
+    WalkSpeed: 512
+    AttackMotion: 512
   - Id: 1004
     AegisName: HORNET
     Name: Hornet

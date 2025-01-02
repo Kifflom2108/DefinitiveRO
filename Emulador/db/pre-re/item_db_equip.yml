@@ -25681,6 +25681,7 @@ Body:
     AegisName: Assassin_Mask
     Name: Assassin Mask
     Type: Armor
+    View: 12
     Buy: 20
     Weight: 100
     Jobs:
@@ -25690,7 +25691,6 @@ Body:
       Head_Low: true
     ArmorLevel: 1
     EquipLevelMin: 70
-    View: 180
   - Id: 5055
     AegisName: Novice_Egg_Cap
     Name: Novice False Eggshell
@@ -26318,12 +26318,12 @@ Body:
     AegisName: Cone_Hat_
     Name: Holiday Hat
     Type: Armor
+    View: 23
     Weight: 400
     Locations:
       Head_Top: true
     ArmorLevel: 1
     Refineable: true
-    View: 144
   - Id: 5098
     AegisName: Tiger_Mask
     Name: Tiger Mask
@@ -27922,6 +27922,7 @@ Body:
     AegisName: Baseball_Cap_
     Name: Independence Memorial Hat
     Type: Armor
+    View: 73
     Buy: 20
     Weight: 20
     Defense: 3
@@ -27930,7 +27931,6 @@ Body:
       Head_Top: true
     ArmorLevel: 1
     Refineable: true
-    View: 216
   - Id: 5191
     AegisName: Ribbon_Black
     Name: Black Ribbon
@@ -29033,26 +29033,26 @@ Body:
     AegisName: Elven_Blindfold
     Name: Elven Blindfold
     Type: Armor
+    View: 82
     Buy: 20
     Weight: 200
     Defense: 1
     Locations:
       Head_Mid: true
     ArmorLevel: 1
-    View: 288
     Script: |
       bonus2 bResEff,Eff_Blind,10000;
   - Id: 5245
     AegisName: Elven_Sunglasses
     Name: Elven Sunglasses
     Type: Armor
+    View: 144
     Buy: 20
     Weight: 200
     Defense: 1
     Locations:
       Head_Mid: true
     ArmorLevel: 1
-    View: 289
     Script: |
       bonus2 bResEff,Eff_Blind,500;
   - Id: 5246
@@ -29093,26 +29093,26 @@ Body:
     AegisName: Robotic_Blindfold
     Name: Robotic Blindfold
     Type: Armor
+    View: 177
     Buy: 20
     Weight: 200
     Defense: 1
     Locations:
       Head_Mid: true
     ArmorLevel: 1
-    View: 292
     Script: |
       bonus2 bResEff,Eff_Blind,10000;
   - Id: 5249
     AegisName: Human_Blindfold
     Name: Human Blindfold
     Type: Armor
+    View: 177
     Buy: 20
     Weight: 200
     Defense: 1
     Locations:
       Head_Mid: true
     ArmorLevel: 1
-    View: 293
     Script: |
       bonus2 bResEff,Eff_Blind,10000;
   - Id: 5250
@@ -29720,6 +29720,7 @@ Body:
     AegisName: euRO_Baseball_Cap
     Name: Europe Baseball Cap
     Type: Armor
+    View: 73
     Weight: 200
     Defense: 3
     Slots: 1
@@ -29727,7 +29728,6 @@ Body:
       Head_Top: true
     ArmorLevel: 1
     Refineable: true
-    View: 216
   - Id: 5283
     AegisName: Chick_Hat
     Name: Chick Hat
@@ -33864,6 +33864,7 @@ Body:
     AegisName: Hawk_Eyes01
     Name: hawk Eyes
     Type: Armor
+    View: 179
     Buy: 10
     Weight: 100
     Jobs:
@@ -33874,13 +33875,13 @@ Body:
       Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 60
-    View: 23
     Script: |
       bonus bDex,1;
   - Id: 5517
     AegisName: Hawk_Eyes02
     Name: Hawk Eyes
     Type: Armor
+    View: 179
     Buy: 10
     Weight: 100
     Jobs:
@@ -33891,13 +33892,13 @@ Body:
       Head_Mid: true
     ArmorLevel: 1
     EquipLevelMin: 60
-    View: 23
     Script: |
       bonus bDex,1;
   - Id: 5518
     AegisName: L_Magestic_Goat2
     Name: Gigantic Majestic Goat
     Type: Armor
+    View: 180
     Buy: 20
     Weight: 800
     Defense: 5
@@ -33906,7 +33907,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 50
     Refineable: true
-    View: 513
     Script: |
       bonus2 bSubRace,RC_DemiHuman,12;
       bonus2 bSubRace,RC_Player_Human,12;

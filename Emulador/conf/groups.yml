@@ -82,15 +82,15 @@ Body:
       refresh: true
       noask: true
       noks: true
-      autoloot: false
-      alootid: false
-      autoloottype: false
+      autoloot: true
+      alootid: true
+      autoloottype: true
       autotrade: true
-      request: false
+      request: true
       go: true
-      breakguild: false
-      channel: false
-      langtype: false
+      breakguild: true
+      channel: true
+      langtype: true
     Permissions:
       attendance: false
   - Id: 2

@@ -111,7 +111,7 @@ izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
             if (select("Inscrever-se.:Cancelar.") == 1) {
                 savepoint "izlude_in", 65, 165, 1, 1;
                 set job_sword_q, 1;
-                setquest 1014;
+                setquest 1016;
                 mes "[Espadachim]";
                 mes "Ah, sim. Sua inscrição será analisada o mais rápido possível.";
                 next;
@@ -152,7 +152,7 @@ izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
             next;
             callfunc "Job_Change", Job_Swordman;
             set job_sword_q, 0;
-            completequest 1014;
+            completequest 1016;
             setquest 75100;
             navigateto "izlude_in", 124, 175;
             mes "[Espadachim]";
@@ -197,6 +197,9 @@ izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
         mes "Ah, juventude!";
         close;
     }
+OnInit:
+    questinfo QTYPE_JOB2,QMARK_YELLOW,"BaseJob == Job_Novice" ;
+	end;
 }
 
 izlude_in,62,170,6	script	Espadachim#swd_2	85,{
@@ -224,6 +227,10 @@ izlude_in,62,170,6	script	Espadachim#swd_2	85,{
         warp "izlude_in", 39, 170;
         end;
     }
+OnInit:
+    questinfo QTYPE_JOB2,QMARK_YELLOW,"checkquest(1016) == 1" ;
+	end;
+
 }
 
 izlude_in,30,175,4	script	Espadachim#swd_3	92,{
@@ -284,6 +291,9 @@ izlude_in,30,163,0	script	Equipe do Salão de Testes#swd_1	105,{
     10,
     245;
     end;
+OnInit:
+    questinfo QTYPE_JOB2,QMARK_YELLOW,"checkquest(1016) == 1" ; 
+	end;
 }
 
 
@@ -638,7 +648,7 @@ job_sword1,200,63	monster	Fabre	1184,2,60000,30000
 
 /////////////////////////////////////////Caminho do Espadachim////////////////////////////////////////////
 
-izlude_in,124,175,4	script	Jake#swordman	752,{
+izlude_in,124,175,4	script	Jake#swordman	4_M_CRU_OLD,{
     if (BaseJob == Job_Swordman) {
         if (checkquest(75100) == 1) {
             completequest 75100;
@@ -649,10 +659,10 @@ izlude_in,124,175,4	script	Jake#swordman	752,{
             mes "Como parte de seu treinamento contínuo, preciso que você complete uma tarefa de coleta.";
             mes "Estamos reunindo alguns itens simbólicos para nossos futuros guerreiros e gostaria de contar com sua ajuda.";
             mes "Os itens que preciso são os seguintes:";
-            mes "1. ^0000FF10 Trevos^000000";
-            mes "2. ^0000FF10 Jellopys^000000";
-            mes "3. ^0000FF10 Plumas^000000";
-            mes "4. ^0000FF10 Felpas^000000";
+            mes "<ITEM>10 Trevos<INFO>705</INFO></ITEM>";
+            mes "<ITEM>10 Jellopys<INFO>909</INFO></ITEM>";
+            mes "<ITEM>10 Plumas<INFO>949</INFO></ITEM>";
+            mes "<ITEM>10 Felpas<INFO>914</INFO></ITEM>";
             next;
             mes "^8B0000[instrutor Jake]^000000";
             mes "Cada um desses itens tem um significado profundo para nós espadachins:";
@@ -665,7 +675,7 @@ izlude_in,124,175,4	script	Jake#swordman	752,{
             mes "Quando você conseguir esses itens, traga-os até mim, e em troca, darei uma recompensa que o ajudará em sua jornada.";
             mes "Boa sorte, espadachim! Vou aguardar sua volta.";
             setquest 75101;
-            close;
+            end;
 
         } else if (checkquest(75101) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) {
             mes "^8B0000[instrutor Jake]^000000";
@@ -678,15 +688,16 @@ izlude_in,124,175,4	script	Jake#swordman	752,{
             mes "Ensinarei o Caminho da espada!";
             completequest 75101;
             setquest 75102;
-            navigateto "prt_fild07", 376, 24;
+            navigateto "prt_fild07", 376, 243;
+            getexp (5500, 5000);
+            getitem (673,40);
             set Zeny, Zeny + 5500;
-            getitem 569, 100;
-            //getitem poção de alma E
+            getitem(569, 100);
             delitem(949, 10);
             delitem(914, 10);
             delitem(909, 10);
             delitem(705, 10);
-            next;
+            close;
 
         } else if (checkquest(75101) == 1) {
             mes "^8B0000[instrutor Jake]^000000";
@@ -702,6 +713,11 @@ izlude_in,124,175,4	script	Jake#swordman	752,{
         mes "^FF0000Seja lá o que você for, não tenho nada para te ensinar.^000000";
         close;
     }
+    
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75101) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75101) == 1";
+	end;
 
 }
 
@@ -714,8 +730,14 @@ prt_fild07,376,244,4	script	Jake#swordman2	752,{
 		if (checkquest(75103) == -1) {
 			setquest 75103;
 		}
-		else if (checkquest(75101) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) {
-
+		else if (checkquest(75103) == 1 && countitem(949) >= 1) {
+            completequest 75103;
+            setquest 75104;
+            navigateto "prt_fild07", 376, 243;
+            getexp (5500, 5000);
+            getitem (673,40);
+            set Zeny, Zeny + 5500;
+            close;
 		}
 		else if (checkquest(75103) == 1) {
             mes "^8B0000[instrutor Jake]^000000";  
@@ -728,48 +750,35 @@ prt_fild07,376,244,4	script	Jake#swordman2	752,{
         } 
 		close;
 	}
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75103) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75103) == 1";
+	end;
 }
 
 prt_fild07,376,220,4	script	Jake#swordman3	752,{
 			if (BaseJob == Job_Swordman) {
-				if (checkquest(75102) == 1) { // Completar Quest Anterior
-					completequest 75102;
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
 				}
-				if (checkquest(75103) == -1) { // Iniciar Quest
-					setquest 75103;
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
 				}
-				else if (checkquest(75101) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
-					completequest 75103;
+				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
 				}
-				else if (checkquest(75103) == 1) { // Incompleta
+				else if (checkquest(75105) == 1) { // Incompleta
 					emotion ET_GO;
 				}
-				else if (checkquest(75103) == 2) { // Já Entregue
+				else if (checkquest(75105) == 2) { // Já Entregue
 					emotion ET_OK;
 				}
 			}
 			close;
-		}
-	
-prontera,150,150,4	script	Jake#swordman4	752,{
-			if (BaseJob == Job_Swordman) {
-				if (checkquest(75102) == 1) { // Completar Quest Anterior
-					completequest 75102;
-				}
-				if (checkquest(75103) == -1) { // Iniciar Quest
-					setquest 75103;
-                    announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-				}
-				else if (checkquest(75101) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
-					completequest 75103;
-				}
-				else if (checkquest(75103) == 1) { // Incompleta
-					emotion ET_GO;
-				}
-				else if (checkquest(75103) == 2) { // Já Entregue
-					emotion ET_OK;
-				}
-			}
-			close;
-		}
-
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
