@@ -120,7 +120,7 @@ Body:
     Buy: 1200
     Weight: 150
     Script: |
-      itemheal rand(325,515),0;
+      itemheal rand(325,405),0;
   - Id: 505
     AegisName: Blue_Potion
     Name: Blue Potion
