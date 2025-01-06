@@ -13,3 +13,36 @@
 		end;
 
 }
+
+-	script	AddExpCommand	-1,{
+
+	OnInit:
+		// Registra o comando @addexp
+		bindatcmd "addexp", strnpcinfo(3) + "::OnAddExp";
+		end;
+
+	OnAddExp:
+		// Somente GMs podem usar este comando
+		if (getgmlevel() < 99) {
+			dispbottom "Este comando é restrito a GMs.";
+			end;
+		}
+
+		// Input para Base EXP
+		dispbottom "Digite a quantidade de Base EXP que deseja adicionar:";
+		input .@base_exp;
+
+		// Input para Job EXP
+		dispbottom "Digite a quantidade de Job EXP que deseja adicionar:";
+		input .@job_exp;
+
+		// Adiciona a experiência ao jogador
+		BaseExp += .@base_exp;
+		JobExp += .@job_exp;
+
+		// Mensagem de confirmação
+		dispbottom "Experiência adicionada com sucesso!";
+		dispbottom "Base EXP: " + .@base_exp + " | Job EXP: " + .@job_exp;
+
+		end;
+}

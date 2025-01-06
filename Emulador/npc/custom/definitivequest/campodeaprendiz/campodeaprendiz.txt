@@ -386,7 +386,7 @@ novice04,107,56,4	script	Caçador de Willows e Savages#1	4_M_KNIGHT_SILVER,{
 		    sc_start SC_BLESSING,300000,10;
             getitem 569, 50;    
             getitem 22777, 5;     
-            setquest 75094;
+            completequest 75094;
             set Zeny, Zeny + 2500; 
             set Quest_novice04, 1;  
             getexp 900, 500;

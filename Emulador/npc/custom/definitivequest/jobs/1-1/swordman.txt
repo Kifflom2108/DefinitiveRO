@@ -661,7 +661,6 @@ izlude_in,124,175,4	script	Jake#swordman	4_M_CRU_OLD,{
             mes "Os itens que preciso são os seguintes:";
             mes "<ITEM>10 Trevos<INFO>705</INFO></ITEM>";
             mes "<ITEM>10 Jellopys<INFO>909</INFO></ITEM>";
-            mes "<ITEM>10 Plumas<INFO>949</INFO></ITEM>";
             mes "<ITEM>10 Felpas<INFO>914</INFO></ITEM>";
             next;
             mes "^8B0000[instrutor Jake]^000000";
@@ -677,7 +676,7 @@ izlude_in,124,175,4	script	Jake#swordman	4_M_CRU_OLD,{
             setquest 75101;
             end;
 
-        } else if (checkquest(75101) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) {
+        } else if (checkquest(75101) == 1 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) {
             mes "^8B0000[instrutor Jake]^000000";
             mes "Você conseguiu todos os itens! Excelente trabalho, espadachim!";
             mes "Esses itens simbolizam os valores que todo espadachim deve carregar em sua jornada.";
@@ -756,7 +755,7 @@ OnInit:
 	end;
 }
 
-prt_fild07,376,220,4	script	Jake#swordman3	752,{
+gef_fild02,368,74,4	script	Jake#swordman3	752,{
 			if (BaseJob == Job_Swordman) {
 				if (checkquest(75104) == 1) { // Completar Quest Anterior
 					completequest 75104;
@@ -782,3 +781,223 @@ OnInit:
     questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
 	end;
 }
+
+prt_fild10,216,290,4	script	Jake#swordman4	752,{
+			if (BaseJob == Job_Swordman) {
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
+				}
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
+				}
+				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
+				}
+				else if (checkquest(75105) == 1) { // Incompleta
+					emotion ET_GO;
+				}
+				else if (checkquest(75105) == 2) { // Já Entregue
+					emotion ET_OK;
+				}
+			}
+			close;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
+
+
+prt_fild09,25,144,4	script	Jake#swordman5	752,{
+			if (BaseJob == Job_Swordman) {
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
+				}
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
+				}
+				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
+				}
+				else if (checkquest(75105) == 1) { // Incompleta
+					emotion ET_GO;
+				}
+				else if (checkquest(75105) == 2) { // Já Entregue
+					emotion ET_OK;
+				}
+			}
+			close;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
+
+
+gef_fild11,366,297,6	script	Jake#swordman6	752,{
+			if (BaseJob == Job_Swordman) {
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
+				}
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
+				}
+				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
+				}
+				else if (checkquest(75105) == 1) { // Incompleta
+					emotion ET_GO;
+				}
+				else if (checkquest(75105) == 2) { // Já Entregue
+					emotion ET_OK;
+				}
+			}
+			close;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
+
+gef_fild03,316,25,4	script	Jake#swordman7	752,{
+			if (BaseJob == Job_Swordman) {
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
+				}
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
+				}
+				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
+				}
+				else if (checkquest(75105) == 1) { // Incompleta
+					emotion ET_GO;
+				}
+				else if (checkquest(75105) == 2) { // Já Entregue
+					emotion ET_OK;
+				}
+			}
+			close;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
+
+in_orcs01,32,167,3	script	Jake#swordman8	752,{
+			if (BaseJob == Job_Swordman) {
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
+				}
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
+				}
+				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
+				}
+				else if (checkquest(75105) == 1) { // Incompleta
+					emotion ET_GO;
+				}
+				else if (checkquest(75105) == 2) { // Já Entregue
+					emotion ET_OK;
+				}
+			}
+			close;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
+
+orcsdun02,28,183,3	script	Jake#swordman9	752,{
+			if (BaseJob == Job_Swordman) {
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
+				}
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
+				}
+				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
+				}
+				else if (checkquest(75105) == 1) { // Incompleta
+					emotion ET_GO;
+				}
+				else if (checkquest(75105) == 2) { // Já Entregue
+					emotion ET_OK;
+				}
+			}
+			close;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
+
+mjolnir_07,26,376,3	script	Jake#swordman10	752,{
+			if (BaseJob == Job_Swordman) {
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
+				}
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
+				}
+				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
+				}
+				else if (checkquest(75105) == 1) { // Incompleta
+					emotion ET_GO;
+				}
+				else if (checkquest(75105) == 2) { // Já Entregue
+					emotion ET_OK;
+				}
+			}
+			close;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
+
+prt_fild11,25,285,3	script	Jake#swordman11	752,{
+			if (BaseJob == Job_Swordman) {
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
+				}
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
+				}
+				else if (checkquest(75105) == 1 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
+				}
+				else if (checkquest(75105) == 1) { // Incompleta
+					emotion ET_GO;
+				}
+				else if (checkquest(75105) == 2) { // Já Entregue
+					emotion ET_OK;
+				}
+			}
+			close;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
+
+
