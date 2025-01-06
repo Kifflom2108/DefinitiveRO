@@ -33,3 +33,5 @@
 //guild_vs5,0,0,0	warp	warp4	0,0,hoge,0,0
 //guild_vs5,0,0,0	warp	warp4	0,0,hoge,0,0
 //guild_vs5,0,0,0	warp	warp4	0,0,hoge,0,0
+moc_para01,48,86,0	warp	warp4	2,2,prontera,150,150
+prontera,155,195,0	warp	warp4	2,2,moc_para01,42,86
