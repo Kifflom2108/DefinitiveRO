@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sem título.md",
+                "file": "Conteúdo disponível inicialmente.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sem título"
+              "title": "Conteúdo disponível inicialmente"
             }
           }
         ]
@@ -166,7 +166,7 @@
   "lastOpenFiles": [
     "Maps/Abyss Lake Dungeon.md",
     "Maps/Comodo.md",
-    "Sem título.md",
+    "Conteúdo disponível inicialmente.md",
     "Mobs/Grove.md",
     "Mobs/Anopheles.md",
     "Maps/Al De Baran.md",

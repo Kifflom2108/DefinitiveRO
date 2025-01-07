@@ -1539,6 +1539,7 @@ new_1-2,115,111,3	script	Instrutora de Itens#nv	726,{
         mes "Agora que você aprendeu sobre os itens e como usá-los, que tal dar o próximo passo?";
         mes "Ah, quase me esquecendo... Antes de ir, eu te desejo boa sorte em sua jornada!";
         mes "Agora, siga para o próximo instrutor. Boa sorte com a próxima fase do treinamento!";
+        getexp 28, 0;
         navigateto "new_1-2", 118, 108;
         set nov_4st_cos, 1;
         close;
@@ -1618,618 +1619,246 @@ new_1-2,118,108,3	script	Funcionária Kafra#nv1	117,{
         next;
         mes "[Funcionária Kafra]";
         mes "A taxa de aluguel dos Carrinhos varia conforme a cidade, mas, como sempre, oferecemos um serviço de alta qualidade!";
-        getexp 0, 28;
+        getexp 0, 40;
         navigateto "new_1-2", 161, 182;
         set nov_5st_cos, 1;
         close;
     }
 }
 
-
-new_1-2,161,182,5	script	Instrutor#nv	92,{
-    mes "[Edwin]";
-    mes "Bem-vindo à minha aula.";
-    mes "Escolha o assunto que";
-    mes "você deseja aprender mais.";
-    next;
-    while (1) {
-        switch (select("Janela de Info Básica:Janela de Grupo:Janela de Itens:Janela de Opções:Janela de Equipamentos:Cancelar")) {
-        case 1:
-            mes "[Edwin]";
-            mes "Vamos dar uma olhada na";
-            mes "Janela de Info Básica,";
-            mes "que tal?";
-            next;
-            mes "[Edwin]";
-            mes "Seu nome, Classe, Nível Base,";
-            mes "e o Nível de Classe estão exibidos nesta janela.";
-            mes "O nível ^800FFFBase^000000 é o nível do seu personagem.";
-            next;
-            mes "[Edwin]";
-            mes "O ^800fffNível de Classe^000000 mostrado abaixo do";
-            mes "Nível Base exibe o nível do Classe do seu personagem.";
-            mes "Quando você começa um Classe, você começa no";
-            mes "Nível de Classe 1.";
-            next;
-            mes "[Edwin]";
-            mes "Na janela de Info Básica, sua experiência atual é exibida na barra de experiência do Nível Base.";
-            next;
-            mes "[Edwin]";
-            mes "A experiência em Ragnarok Online é indicada por porcentagem.";
-            mes "A experiência Base e a experiência de Classe são separadas.";
-            next;
-            mes "[Edwin]";
-            mes "Quando a barra do Nível Base ou";
-            mes "da Barra de Nível de Classe atingir 100, ela será aumentada em um nível e a barra será reiniciada para 0 para o próximo nível.";
-            next;
-            mes "[Edwin]";
-            mes "HP significa 'pontos de vida'.";
-            mes "Quando o seu HP chegar a 0, você desmaiará e não poderá lutar.";
-            mes "Você pode retornar ao seu ponto de spawn ou esperar que alguém o reviva.";
-            next;
-            mes "[Edwin]";
-            mes "Se você morrer nos campos ou masmorras, receberá";
-            mes "uma penalidade de ^FF0000-1 % de EXP^000000, então tenha cuidado.";
-            next;
-            mes "[Edwin]";
-            mes "SP significa 'pontos de feitiço'.";
-            mes "Quando você se tornar uma classe de 1ª classe, aprenderá habilidades únicas dessa classe que exigem SP para usar.";
-            mes "Seu instrutor de habilidades pode ensinar mais sobre habilidades.";
-            next;
-            mes "[Edwin]";
-            mes "Se você quiser verificar o limite de peso dos itens que pode carregar, verifique no canto inferior esquerdo da";
-            mes "Janela de Info Básica.";
-            next;
-            mes "[Edwin]";
-            mes "O peso atual dos itens que você está carregando será exibido ao lado do seu limite máximo de peso.";
-            next;
-            mes "[Edwin]";
-            mes "Se você carregar mais de 50% do seu limite máximo de peso, seu HP e SP não serão restaurados ao descansar, então tenha cuidado.";
-            next;
-            mes "[Edwin]";
-            mes "O valor numérico ao lado do limite de peso mostra a quantidade atual de Zeny, a moeda de Midgard, que você possui.";
-            next;
-            mes "[Edwin]";
-            mes "No lado direito da";
-            mes "Janela de Info Básica, há uma série de botões que abrirão outras janelas de interface.";
-            mes "Clique neles um a um e veja o que você pode fazer com eles.";
-            next;
-            mes "[Edwin]";
-            mes "O atalho para minimizar e maximizar a Janela de Info Básica";
-            mes "é '^3355FFAlt^000000 + ^3355FFV^000000'.";
-            next;
-            break;
-        case 2:
-            mes "[Edwin]";
-            mes "Você pode abrir a Janela de Grupo";
-            mes "clicando no botão ^3355FFamigo^000000 na Janela de Info Básica.";
-            mes "O atalho para a Janela de Grupo é '^3355FFAlt^000000 + ^3355FFZ^000000.' Você pode usar essa janela para verificar os membros do seu grupo.";
-            next;
-            mes "[Edwin]";
-            mes "O mestre do grupo pode determinar";
-            mes "a distribuição de EXP e itens para o grupo.";
-            mes "Você também pode verificar a localização dos membros do seu grupo no Mini-Mapa.";
-            next;
-            mes "[Edwin]";
-            mes "Na Janela de Grupo, você pode clicar no botão ^3355FFAmigo^000000 para ver sua Lista de Amigos. Você pode usar a";
-            mes "Lista de Amigos para enviar sussurros";
-            mes "para seus amigos.";
-            next;
-            mes "[Edwin]";
-            mes "Você pode pedir ao seu instrutor de habilidades para aprender mais sobre como organizar grupos.";
-            mes "Mas acho que você pode tentar isso por conta própria.";
-            next;
-            break;
-        case 3:
-            mes "[Edwin]";
-            mes "A janela de itens é dividida em";
-            mes "3 seções: itens consumíveis, equipamentos e outros itens.";
-            next;
-            mes "[Edwin]";
-            mes "Seu limite de peso limita a quantidade de itens que você pode carregar.";
-            mes "Quando você estiver carregando muitas coisas, coloque seus itens extras no Armazenamento da Kafra.";
-            next;
-            mes "[Edwin]";
-            mes "Além disso, equipamentos e itens consumíveis podem ser atribuídos a uma Tecla de Atalho através da barra de Teclas de Atalho.";
-            next;
-            mes "[Edwin]";
-            mes "A janela de Teclas de Atalho é aberta pressionando a tecla ^3355FFF12^000000.";
-            mes "As teclas F1 a F9 são as teclas de atalho designadas.";
-            next;
-            mes "[Edwin]";
-            mes "Existem 3 conjuntos totais";
-            mes "de Teclas de Atalho. Você pode alternar";
-            mes "entre os conjuntos de Teclas de Atalho pressionando o botão F12.";
-            next;
-            break;
-        case 4:
-            mes "[Edwin]";
-            mes "Você pode abrir a Janela de Opções";
-            mes "pressionando o botão ^3355FFopções^000000 na Janela de Info Básica.";
-            mes "Você também pode pressionar as teclas '^3355FFAlt^000000 + ^3355FFO^000000'.";
-            next;
-            mes "[Edwin]";
-            mes "Na Janela de Opções, você pode ajustar som, skin da interface e a transparência da skin.";
-            next;
-            mes "[Edwin]";
-            mes "Com o botão de som, você pode ligar ou desligar a música de fundo, assim como ajustar o volume.";
-            mes "O mesmo pode ser feito para os efeitos sonoros.";
-            next;
-            mes "[Edwin]";
-            mes "Com a opção de Skin, você pode alterar a skin da interface para as janelas do jogo.";
-            mes "Role pela lista de skins que você tem e escolha";
-            mes "uma skin.";
-            next;
-            mes "[Edwin]";
-            mes "Você também pode baixar skins oficiais do nosso site oficial:";
-            mes "^0000FFhttp://definitivero.com^000000";
-            next;
-            mes "[Edwin]";
-            mes "A opção Snap permite que seu cursor do mouse seja automaticamente colocado em um alvo assim que ele estiver perto do alvo.";
-            next;
-            mes "[Edwin]";
-            mes "Quando você clica para atacar, o cursor do mouse mudará automaticamente para uma forma de espada.";
-            mes "A função de habilidades e itens também funciona com a função Snap.";
-            next;
-            mes "[Edwin]";
-            mes "Pode ser útil ou estranho se você não estiver acostumado com isso.";
-            mes "Mas assim que se familiarizar com a função Snap, você poderá ajustar suas próprias opções de snap.";
-            next;
-            mes "[Edwin]";
-            mes "Bem, tudo depende da sua experiência. Isso é tudo sobre a Janela de Opções.";
-            next;
-            break;
-        case 5:
-            mes "[Edwin]";
-            mes "Clique no botão ^3355FFequip^000000";
-            mes "na sua Janela de Info Básica,";
-            mes "ou apenas pressione as teclas '^3355FFAlt^000000 + ^3355FFQ^000000'.";
-            next;
-            mes "[Edwin]";
-            mes "Na Janela de Equipamentos,";
-            mes "você verá os itens equipados atualmente no seu personagem. No começo, todo personagem é equipado com uma Faca e";
-            mes "uma Camisa de Algodão.";
-            next;
-            mes "[Edwin]";
-            mes "Existem 2 maneiras de trocar seu equipamento. Dê um clique duplo no equipamento na Janela de Inventário ou clique e arraste um item para a";
-            mes "Janela de Equipamentos.";
-            next;
-            mes "[Edwin]";
-            mes "Você também pode atribuir equipamentos às Teclas de Atalho. Isso pode ser feito ao arrastar o equipamento do Inventário para a Janela de Teclas de Atalho.";
-            mes "('^3355FFF12^000000' tecla).";
-            next;
-            break;
-        case 6:
-            mes "[Edwin]";
-            mes "Se você tiver";
-            mes "alguma dúvida,";
-            mes "fique à vontade para me perguntar";
-            close;
-        }
+new_1-2,161,182,5	script	Edwin#nv	92,{
+    if (nov_6st_cos == 1) {
+        mes "[Edwin]";
+        mes "Excelente trabalho até agora! Continue com essa determinação.";
+        mes "Agora, siga para o próximo instrutor para dar continuidade ao seu treinamento.";
+        navigateto "new_1-2", 182, 182;
+        close;
+    } else {
+        mes "[Edwin]";
+        mes "Olá, seja bem-vindo! Eu sou Edwin, e estarei guiando você por algumas noções básicas essenciais.";
+        mes "Preparado para aprender? Vamos lá!";
+        next;
+        mes "[Edwin]";
+        mes "A Janela de Info Básica exibe informações importantes sobre o seu personagem.";
+        mes "Aqui você pode ver seu nome, Classe, Nível Base e Nível de Classe.";
+        mes "O ^800FFFNível Base^000000 representa o progresso geral do seu personagem.";
+        next;
+        mes "[Edwin]";
+        mes "Já o ^800FFFNível de Classe^000000 reflete o seu domínio nas habilidades da sua Classe.";
+        mes "Ao começar, você estará no Nível de Classe 1.";
+        next;
+        mes "[Edwin]";
+        mes "Sua experiência atual é mostrada como uma barra de progresso. Quando a barra atinge 100%, você sobe de nível!";
+        mes "É simples e satisfatório, não acha?";
+        next;
+        mes "[Edwin]";
+        mes "HP, ou Pontos de Vida, é vital. Se chegar a 0, você desmaia e terá que renascer no seu ponto de salvamento.";
+        mes "Mas cuidado: morrer em campos ou masmorras resulta em uma penalidade de ^FF0000-1% de EXP^000000.";
+        next;
+        mes "[Edwin]";
+        mes "SP, ou Pontos de Feitiço, são necessários para usar habilidades. Classes avançadas farão bom uso deles!";
+        mes "Seu instrutor de habilidades poderá ensiná-lo mais sobre isso.";
+        next;
+        mes "[Edwin]";
+        mes "Agora, sobre peso: carregar mais de 50% do seu limite de peso impede a recuperação natural de HP e SP.";
+        mes "Gerencie bem seus itens e use o Armazenamento da Kafra sempre que necessário.";
+        next;
+        mes "[Edwin]";
+        mes "A Janela de Info Básica também mostra a quantidade de Zeny, a moeda do continente. Certifique-se de verificar frequentemente!";
+        next;
+        mes "[Edwin]";
+        mes "No lado direito, há botões para acessar outras interfaces, como a Janela de Grupo ou de Amigos.";
+        mes "Explore essas opções e familiarize-se com elas.";
+        next;
+        mes "[Edwin]";
+        mes "Por exemplo, na Janela de Grupo, o líder pode configurar a distribuição de EXP e itens.";
+        mes "Você também pode verificar a localização dos membros no Mini-Mapa. Bem prático, não é?";
+        next;
+        mes "[Edwin]";
+        mes "Outra função útil é a Janela de Teclas de Atalho. Você pode acessá-la pressionando ^3355FFF12^000000.";
+        mes "Existem 3 conjuntos de atalhos que podem ser alternados facilmente.";
+        next;
+        mes "[Edwin]";
+        mes "Na Janela de Opções, você pode ajustar som, interface e outras preferências.";
+        mes "Experimente alterar a skin da interface ou ajustar o volume da música.";
+        next;
+        mes "[Edwin]";
+        mes "Ah, e sobre equipamentos: você pode equipá-los rapidamente clicando e arrastando para a Janela de Equipamentos.";
+        mes "Ou, se preferir, use atalhos para alternar entre diferentes conjuntos.";
+        next;
+        mes "[Edwin]";
+        mes "Bom, acho que isso cobre os aspectos básicos. Experimente navegar pela interface e, acima de tudo, divirta-se!";
+        mes "Agora, siga para o próximo instrutor. Cada passo é uma conquista!";
+        getexp 91, 78;
+        navigateto "new_1-2", 182, 182;
+        set nov_6st_cos, 1;
+        close;
     }
-
 }
 
-new_1-2,182,182,3	script	Instrutor Somatologia	754,{
-	mes "[Jare Riotte]";
-    mes "Bem-vindo, novo aventureiro.";
-    mes "Eu, Jare Riotte, vou ajudá-lo a aprender sobre os fundamentos";
-    mes "das Regras dos Status do Seu Personagem.";
-    next;
-    mes "[Jare Riotte]";
-    mes "Também conhecidos como 'Status',";
-    mes "seus status são os blocos fundamentais de construção do seu personagem.";
-    next;
-    mes "[Jare Riotte]";
-    mes "Estou disposto a ajudá-lo a aprender sobre os status mais do que qualquer outra coisa, então sinta-se à vontade para me perguntar sobre os status do personagem que";
-    mes "você possa estar curioso.";
-    next;
-    mes "[Jare Riotte]";
-    mes "Em Ragnarok Online,";
-    mes "os Status do Personagem são Força, Agilidade, Vitalidade, Inteligência, Destreza e Sorte.";
-    next;
-    mes "[Jare Riotte]";
-    mes "Quero que minha aula prossiga";
-    mes "de acordo com suas necessidades pessoais, então pergunte sobre o Status que você deseja entender melhor.";
-    mes "Primeiro, abra sua Janela de Status usando as teclas '^3355FFAlt^000000 + ^3355FFA^000000'.";
-    next;
-    while(1) {
-        switch(select("Força e Agilidade:Vitalidade e Inteligência:Destreza e Sorte:Não quero continuar.")) {
-        case 1:
-            mes "[Jare Riotte]";
-            mes "Deixe-me explicar a Força primeiro.";
-            mes "^4D4DFFForça (FOR)^000000 aumenta";
-            mes "^4D4DFFo dano de ataque físico (ATK)^000000";
-            mes "e o ^4D4DFFlimite máximo de peso^000000.";
-            next;
-            mes "[Jare Riotte]";
-            mes "1 FOR aumenta seu dano de ataque físico em 1 ponto.";
-            mes "Uma certa quantidade de bônus de dano de ataque é dada quando o status FOR é aumentado para um múltiplo de 10.";
-            next;
-            mes "[Jare Riotte]";
-            mes "A forma como o bônus de dano de ataque é calculado é pegando o valor total de força, removendo o último dígito e elevando o número restante ao quadrado.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Vamos supor que seu ataque seja exibido como '48 + 1'.";
-            mes "Isso é um total de 49 de força.";
-            mes "Quando removemos o último dígito, '9', ficamos com o número '4'.";
-            mes "4 multiplicado por si mesmo resulta em 16.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Então o bônus de ataque físico é 16. Agora, se você tivesse um total de 50 FOR, o bônus de ataque seria 25. E se sua FOR fosse 100, o bônus de ataque seria 100.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Ok, agora vamos passar";
-            mes "para a Agilidade (AGI).";
-            mes "A Agilidade afeta sua Taxa de Esquiva e Velocidade de Ataque.";
-            mes "Quanto maior sua Taxa de Esquiva, melhor a chance de evitar os ataques inimigos.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Sua Taxa de Esquiva";
-            mes "é igual ao número";
-            mes "do seu Nível Base somado";
-            mes "à sua AGI.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Então, se você tem 40 AGI e está no Nível Base 30, sua Taxa de Esquiva seria 70.";
-            mes "É muito simples! Seguindo a fórmula da Taxa de Esquiva, sua taxa de esquiva será um total de 70.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Agora, a AGI só se relaciona com a Taxa de Esquiva normal.";
-            mes "O Dodge Perfeito é outro fator que determina o sucesso em esquivar de ataques, mas vamos falar sobre isso quando discutirmos";
-            mes "o status de LUK.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Outro benefício de aumentar a AGI é que sua Velocidade de Ataque (ASPD) também aumentará, o que significa que o tempo entre seus ataques corpo a corpo será reduzido.";
-            next;
-            mes "[Jare Riotte]";
-            mes "A ASPD, no entanto,";
-            mes "varia de acordo com a Classe de Classe,";
-            mes "então lembre-se disso.";
-            next;
-            mes "[Jare Riotte]";
-            mes "^666666*Ufa!*^000000";
-            mes "Isso quase é demais";
-            mes "para um dia só. Vamos passar";
-            mes "para o próximo assunto?";
-            next;
-            break;
-        case 2:
-            mes "[Jare Riotte]";
-            mes "Nosso próximo assunto";
-            mes "será Vitalidade (VIT)";
-            mes "e Inteligência (INT).";
-            next;
-            mes "[Jare Riotte]";
-            mes "^4D4DFFVitalidade^000000 afeta a ^4D4DFFHP máxima, a quantidade de restauração de HP e a defesa^000000.";
-            mes "A quantidade de HP aumentada por VIT varia de acordo com a sua classe de Classe.";
-            next;
-            mes "[Jare Riotte]";
-            mes "De todas as classes de Classe, a classe Espadachim é a que mais se beneficia";
-            mes "do aumento de VIT.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Vamos verificar a defesa.";
-            mes "Na sua janela de status, sua defesa é exibida como DEF.";
-            mes "Dois valores numéricos são mostrados, e o segundo número reflete o acréscimo à sua defesa dado pela VIT.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Agora, o primeiro número";
-            mes "exibido na sua Defesa é a defesa calculada pelo seu Equipamento e Armaduras.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Agora, o equipamento que você usa reduz o dano dos inimigos por uma porcentagem do dano total, enquanto a VIT reduz por um valor fixo.";
-            mes "Por isso a Defesa é exibida com dois números.";
-            next;
-            mes "[Jare Riotte]";
-            mes "O próximo assunto";
-            mes "é Inteligência (INT).";
-            next;
-            mes "[Jare Riotte]";
-            mes "A INT afeta a sua quantidade máxima de ^4D4DFFSP^000000, a ^4D4DFFrestauração de SP^000000, o ^4D4DFFdano do seu ataque mágico (MATK)^000000 e sua ^4D4DFFdefesa contra ataque mágico (MDEF)^000000.";
-            next;
-            mes "[Jare Riotte]";
-            mes "A quantidade de SP e MATK aumentada";
-            mes "por 1 INT depende da Classe de Classe, assim como a VIT.";
-            mes "Isso significa que algumas classes se beneficiarão mais do que outras ao ter mais INT.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Assim como a DEF normal, sua Defesa Mágica (MDEF) aparece como dois valores numéricos diferentes.";
-            mes "A MDEF contribuída pela INT é o segundo valor de MDEF exibido.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Para estudar a manipulação dos elementos naturais, você deve priorizar a inteligência.";
-            mes "Portanto, Sábios e Magos";
-            mes "focam no status de INT.";
-            next;
-            break;
-        case 3:
-            mes "[Jare Riotte]";
-            mes "Nosso último assunto";
-            mes "é Destreza (DEX)";
-            mes "e Sorte (LUK).";
-            next;
-            mes "[Jare Riotte]";
-            mes "A Destreza afeta principalmente a sua precisão, velocidade de ataque (ASPD)";
-            mes "e a força média de seu ataque.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Deixe-me explicar...";
-            mes "Se você tem pouca DEX, a diferença entre o dano mínimo e";
-            mes "o dano máximo que você pode causar se torna enorme.";
-            mes "O dano dos seus ataques fica instável.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Se você estiver usando um ^4D4DFFArco^000000 como sua";
-            mes "arma principal, sua força de ataque será baseada na ^4D4DFFDEX^000000.";
-            mes "Então, Arqueiros devem focar em aumentar sua DEX.";
-            next;
-            mes "[Jare Riotte]";
-            mes "A quantidade de DEX que você";
-            mes "tem também afetará sua precisão de ataque.";
-            mes "A precisão de ataque é calculada somando seu Nível Base à sua DEX.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Por exemplo, se você estiver no";
-            mes "Nível Base 40 e tiver 20 DEX,";
-            mes "sua precisão de ataque seria 60.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Finalmente, a DEX também reduz o tempo de cast de feitiços e habilidades.";
-            mes "Portanto, ter um pouco de DEX seria";
-            mes "útil para Magos e Bruxos.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Agora, deixe-me falar";
-            mes "sobre o status LUK.";
-            next;
-            mes "[Jare Riotte]";
-            mes "LUK afeta coisas";
-            mes "como a sua Taxa de Esquiva,";
-            next;
-            mes "[Jare Riotte]";
-            mes "Porém, a principal função da LUK é ser um 'multiplicador' no sistema de sorte.";
-            next;
-            mes "[Jare Riotte]";
-            mes "Em termos simples";
-            mes "quanto maior a sua LUK, mais";
-            mes "chance você tem de";
-            mes "realizar uma esquiva bem-sucedida.";
-            mes "Você também pode dar ataque critico com mais facilidade.";
-            next;
-            break;
-        case 4:
-            mes "[Jare Riotte]";
-            mes "Não tem problema.";
-            mes "Venha novamente quando";
-            mes "tiver alguma dúvida!";
-            close;
-            break;
-        }
+new_1-2,182,182,3	script	Jare Riotte#nv	754,{
+    if (nov_7st_cos == 1) {
+        mes "[Jare Riotte]";
+        mes "Excelente trabalho até agora, aventureiro!";
+        mes "Fico realmente impressionado com o seu progresso. A dedicação que você tem demonstrado é algo raro e digno de respeito.";
+        navigateto "new_1-2", 184, 172;
+        close;
+    } else {
+        mes "[Jare Riotte]";
+        mes "Saudações, jovem aventureiro.";
+        mes "Eu sou Jare Riotte, e estou aqui para ajudá-lo a entender os fundamentos do que o aguarda.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Vamos começar com os Status principais: Força, Agilidade, Vitalidade, Inteligência, Destreza e Sorte.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Primeiro, abra sua Janela de Status pressionando '^3355FFAlt^000000 + ^3355FFA^000000'.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Agora, deixe-me explicar sobre a Força (FOR).";
+        mes "^4D4DFFForça^000000 aumenta o seu ^4D4DFFdano de ataque físico^000000 e o ^4D4DFFlimite de peso^000000 que você pode carregar.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Cada ponto em Força aumenta seu dano físico em 1, mas quando sua Força chega a múltiplos de 10, você ganha um bônus extra de dano.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Por exemplo, se você tem 49 de Força, remova o último dígito ('9'), e o restante ('4') é elevado ao quadrado, resultando em 16.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Se você tivesse 50 de Força, o bônus seria 25, e se tivesse 100, o bônus seria 100. É uma progressão simples, mas muito poderosa!";
+        next;
+        mes "[Jare Riotte]";
+        mes "Agora, vamos falar sobre Agilidade (AGI), que afeta sua Taxa de Esquiva e Velocidade de Ataque. Quanto mais ágil você for, mais fácil será evitar os ataques inimigos.";
+        next;
+        mes "[Jare Riotte]";
+        mes "A Taxa de Esquiva é calculada somando sua AGI com seu Nível Base. Por exemplo, com 40 AGI e Nível Base 30, sua Taxa de Esquiva seria 70.";
+        next;
+        mes "[Jare Riotte]";
+        mes "A Agilidade também influencia sua Velocidade de Ataque (ASPD), o que significa que você será mais rápido ao atacar. Lembre-se, isso depende da sua Classe de Personagem.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Agora, vamos falar sobre Vitalidade (VIT) e Inteligência (INT), que impactam diretamente sua sobrevivência e suas habilidades mágicas.";
+        next;
+        mes "[Jare Riotte]";
+        mes "^4D4DFFVitalidade^000000 aumenta sua ^4D4DFFHP máxima^000000, a recuperação de HP e sua defesa. Quanto mais Vitalidade você tiver, mais difícil será para os inimigos derrubá-lo.";
+        next;
+        mes "[Jare Riotte]";
+        mes "A quantidade de HP aumentada por VIT depende da sua classe. Por exemplo, os Espadachins se beneficiam bastante desse Status.";
+        next;
+        mes "[Jare Riotte]";
+        mes "A defesa, por sua vez, é composta por dois valores. O primeiro é a defesa proporcionada pelo seu equipamento, e o segundo, o aumento vindo da VIT.";
+        next;
+        mes "[Jare Riotte]";
+        mes "A defesa do equipamento reduz o dano inimigo por uma porcentagem, enquanto a VIT reduz por um valor fixo.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Agora, vamos falar sobre Inteligência (INT), que afeta sua ^4D4DFFSP máxima^000000, a ^4D4DFFrestauração de SP^000000, o ^4D4DFFdano de ataque mágico (MATK)^000000 e a ^4D4DFFdefesa contra ataques mágicos (MDEF)^000000.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Assim como a VIT, a quantidade de SP e MATK que você ganha com INT depende da sua classe. Magos, por exemplo, se beneficiam enormemente desse Status.";
+        next;
+        mes "[Jare Riotte]";
+        mes "A Defesa Mágica (MDEF) também é composta por dois valores, sendo que o segundo reflete o aumento proporcionado pela INT.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Se você pretende dominar a magia ou manipular os elementos, INT será crucial em sua jornada.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Agora, vamos falar sobre Destreza (DEX) e Sorte (LUK). A DEX afeta sua precisão, a velocidade de ataque e a força do seu ataque.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Com pouca DEX, a diferença entre o dano mínimo e máximo dos seus ataques será muito grande. Portanto, Arqueiros devem focar em DEX para aumentar a precisão e a força dos ataques.";
+        next;
+        mes "[Jare Riotte]";
+        mes "A precisão de ataque é calculada somando seu Nível Base com sua DEX. Por exemplo, se você tiver 40 de Nível Base e 20 de DEX, sua precisão será 60.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Além disso, DEX reduz o tempo de lançamento de feitiços e habilidades, o que também é útil para Magos e Bruxos.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Por fim, vamos falar sobre a Sorte (LUK), que influencia tanto a sua Taxa de Esquiva Perfeita quanto a chance de um ataque crítico.";
+        next;
+        mes "[Jare Riotte]";
+        mes "A cada 3 pontos em LUK, a chance de um ataque crítico aumenta em 1%, e a cada 10 pontos, você ganha 1% a mais de chance de esquiva perfeita.";
+        next;
+        mes "[Jare Riotte]";
+        mes "Agora, vá em frente e procure o próximo instrutor para continuar seu treinamento.";
+        getexp 91, 78;
+        navigateto "new_1-2", 184, 172;
+        set nov_7st_cos, 1;
+        close;
     }
-
 }
 
-new_1-2,184,172,1	script	Noções de Habilidades 	47,{
-    mes "[Leo Handerson]";
-    mes "Bem-vindo";
-    mes "Oh, olha só esse";
-    mes "fofo pequeno Aprendiz!";
-    next;
-    mes "[Leo Handerson]";
-    mes "Eu, Leo Handerson,";
-    mes "me sinto tão responsável pelo seu desempenho e estarei ensinando você da melhor forma possível.";
-    mes "Agora, por favor, selecione o assunto que você deseja aprender.";
-    emotion ET_CHUP;
-    next;
-    while (1) {
-        switch (select("Habilidades Passivas e Ativas:Habilidades Básicas:Uso de Emoticons:Cancelar.")) {
-        case 1:
-            mes "[Leo Handerson]";
-            mes "Primeiro, deixe-me explicar";
-            mes "sobre as Habilidades Passivas.";
-            mes "Por favor, abra";
-            mes "a sua Janela de Habilidades?";
-            mes "('^3355FFAlt^000000' + '^3355FFS^000000')";
-            next;
-            mes "[Leo Handerson]";
-            mes "Agora, você sabe que sempre que";
-            mes "seu Nível de Classe sobe, você ganha";
-            mes "um ^3355FFPonto de Habilidade^000000, certo? Os Pontos de Habilidade são usados para aprender suas habilidades";
-            next;
-            mes "[Leo Handerson]";
-            mes "Você vê o ícone de Habilidade Básica? Ele está no topo da Janela de Habilidades.";
-            mes "Clique no botão 'Lv Up' ao lado do ícone de Habilidade Básica para usar um Ponto de Habilidade em Habilidades Básicas.";
-            next;
-            mes "[Leo Handerson]";
-            mes "Você verá a palavra 'Passiva'";
-            mes "à direita do ícone de Habilidade Básica.";
-            mes "Isso significa que essa habilidade é Passiva, e não usa nenhum SP.";
-            next;
-            mes "[Leo Handerson]";
-            mes "Agora, por favor, clique com o botão direito no ícone de Habilidade Básica.";
-            mes "Você poderá ler uma breve descrição das Habilidades Básicas.";
-            next;
-            mes "[Leo Handerson]";
-            mes "Habilidades Ativas, ao contrário das Habilidades Passivas que não usam SP, requerem SP toda vez que";
-            mes "são usadas.";
-            next;
-            mes "[Leo Handerson]";
-            mes "Você pode usar uma Habilidade Ativa clicando duas vezes no seu ícone na Janela de Habilidades.";
-            next;
-            mes "[Leo Handerson]";
-            mes "Você também pode arrastar o ícone de uma habilidade da sua Janela de Habilidades e soltá-lo na sua barra de Hotkeys ('^3355FFF12^000000' tecla) para atribuir um Hotkey a essa habilidade.";
-            next;
-            mes "[Leo Handerson]";
-            mes "A quantidade de SP necessária";
-            mes "para usar uma Habilidade Ativa será exibida à direita do ícone da habilidade.";
-            next;
-            mes "[Leo Handerson]";
-            mes "Geralmente, Habilidades Passivas são habilidades relacionadas ao treinamento mental ou físico e condicionamento.";
-            mes "O uso de habilidades especiais ou ataques são Habilidades Ativas.";
-            next;
-            mes "[Leo Handerson]";
-            mes "Se você ainda não estiver";
-            mes "certeza sobre minha lição,";
-            mes "estarei disposto a explicar";
-            mes "novamente.";
-            next;
-            break;
-        case 2:
-            mes "[Leo Handerson]";
-            mes "As Habilidades Básicas são";
-            mes "habilidades puramente Passivas";
-            mes "que você precisa para jogar";
-            mes "Ragnarok Online.";
-            mes "Não se preocupe,";
-            mes "elas são fáceis de aprender.";
-            next;
-            mes "[Leo Handerson]";
-            mes "Quando você clicar com o botão direito do mouse na sua Janela de Habilidades";
-            mes "('^3355FFAlt^000000' + '^3355FFS^000000'), você pode verificar as descrições das habilidades, mas preparei essa lição para";
-            mes "o seu melhor entendimento.";
-            next;
-            while (1) {
-                switch (select("Trocas e Negociações:Organizando & Entrando em Grupo:Abrindo Sala de Chat:Uso de Armazenamento:Não, obrigado, eu já sei disso.")) {
-                case 1:
-                    mes "[Leo Handerson]";
-                    mes "Quando você visitar nosso site oficial em ^0000FFiro.ragnarokonline.com^000000, você pode encontrar uma explicação completa sobre trocas, ilustrada com imagens.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Para negociar itens";
-                    mes "ou zeny com outras pessoas,";
-                    mes "você precisa aprender pelo menos ^3355FFHabilidade Básica Nível 1^000000.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Quando você for negociar, deve estar";
-                    mes "perto da pessoa com quem deseja trocar itens ou zeny.";
-                    mes "Caso contrário, a troca não funcionará se essa pessoa estiver a mais de 2 células de distância.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Clique com o botão direito na pessoa";
-                    mes "uma vez e aparecerá um pequeno menu.";
-                    mes "Neste menu, escolha:";
-                    mes "^800fffSolicitar troca com^000000.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Depois, essa pessoa escolherá se aceita ou não sua solicitação.";
-                    mes "Se sua solicitação de troca for aceita, a Janela de Troca aparecerá.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Para trocar itens, arraste os itens da sua Janela de Inventário ('^3355FFAlt^000000' + '^3355FFE^000000') e solte-os no lado esquerdo da Janela de Troca.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Itens dados pela outra pessoa aparecerão no lado direito da Janela de Troca. Sempre verifique";
-                    mes "se a outra pessoa está trocando os itens que você concordou em trocar.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Para trocar Zeny, você pode digitar a quantidade de Zeny que deseja trocar.";
-                    mes "Após colocar itens ou Zeny na Janela de Troca, pressione o botão 'OK' na parte inferior da Janela para confirmar a troca.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Uma vez que a troca é confirmada,";
-                    mes "pressione o botão 'Trocar' para finalizar a troca.";
-                    mes "Se qualquer um dos jogadores não pressionar o botão 'OK', a troca não será concluída.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Se qualquer um dos jogadores pressionar o botão 'Cancelar' à direita da janela, a troca será cancelada.";
-                    next;
-                    break;
-                case 2:
-                    mes "[Leo Handerson]";
-                    mes "Agora, deixe-me explicar";
-                    mes "sobre o Sistema de Grupo.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "O sistema de Grupo permite";
-                    mes "que você organize um pequeno grupo com pessoas para caçar monstros de forma cooperativa, ou apenas para se divertir juntos.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Você pode organizar";
-                    mes "uma Grupo digitando";
-                    mes "o comando:";
-                    mes "^4F4FFF/organize ''Nome do Grupo''^000000";
-                    mes "na sua Janela de Chat.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Claro, você";
-                    mes "precisa ter pelo menos";
-                    mes "^4d4dffHabilidade Básica Nível 7^000000";
-                    mes "ou superior para usar o Sistema de Grupo.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Eu poderia explicar mais sobre";
-                    mes "a distribuição de itens ou a distribuição de experiência que os membros da Grupo ganharam juntos, mas você poderá testar isso por conta própria mais tarde.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Isso é tudo sobre";
-                    mes "o Sistema de Grupo";
-                    mes "Um adorável Aprendiz";
-                    mes "como você deve aprender";
-                    mes "isso bem rápido";
-                    emotion ET_CHUP;
-                    next;
-                    break;
-                case 3:
-                    mes "[Leo Handerson]";
-                    mes "Quando você tiver";
-                    mes "^4D4DFFNível 4 de Habilidade Básica^000000";
-                    mes "ou superior, você pode abrir sua própria Sala de Chat.";
-                    mes "Você pode clicar";
-                    mes "no botão ^3355FFchat^000000 na Janela de Informações Básicas ou apenas pressionar '^3355FFAlt^000000' + '^3355FFC^000000.'";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Uma vez que você abrir uma Sala de Chat,";
-                    mes "pode verificar as informações dos membros da sala clicando com o botão direito no nome de um personagem.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Você também pode registrar esse personagem como seu amigo da mesma forma.";
-                    mes "Se você for o mestre";
-                    mes "da sala, pode mudar";
-                    mes "a configuração da sala.";
-                    next;
-                    mes "[Leo Handerson]";
-                    mes "Enquanto estiver na Sala de Chat,";
-                    mes "você não ouvirá nenhum chat de fora da Sala de Chat.";
-                    mes "Lembre-se disso, ok?";
-                    next;
-                    break;
-                case 4:
-                    mes "[Leo Handerson]";
-                    mes "Funcionárias da Kafra";
-                    mes "te ensinarão como usar";
-                    mes "o Sistema de Armazenamento.";
-                    next;
-                    break;
-                case 5:
-                    mes "[Leo Handerson]";
-                    mes "Estou feliz que você";
-                    mes "já tenha compreendido!";
-                    close;
-                    break;
-
-                }
-            }
-        case 3:
-            mes "[Leo Handerson]";
-            mes "Você pode usar emoticons";
-            mes "para expressar suas emoções!";
-            next;
-            mes "[Leo Handerson]";
-            mes "Basta digitar o seguinte comando em";
-            mes "seu Chat:";
-            mes "^3355FF/exemoticon^000000.";
-            next;
-            break;
-        case 4:
-            mes "[Leo Handerson]";
-            mes "Obrigado por visitar!";
-            mes "Boa sorte em sua jornada!";
-            close;
-            break;
-        }
+new_1-2,184,172,1	script	Leo Handerson#nv 	47,{
+    if (nov_8st_cos == 1) {
+        mes "[Leo Handerson]";
+        mes "Agora, é hora de você trilhar seu próprio caminho.";
+        mes "Que a sabedoria e a força estejam sempre ao seu lado. Até logo, e boa sorte em sua jornada!";
+        navigateto "new_1-2", 17, 182;
+        close;
+    } else {
+        mes "[Leo Handerson]";
+        mes "Bem-vindo, jovem Aprendiz!";
+        mes "Ah, que prazer ver um novo rosto por aqui. Parece que você tem potencial!";
+        next;
+        mes "[Leo Handerson]";
+        mes "Sou Leo Handerson, e estou aqui para guiá-lo nesse início de jornada. Fique tranquilo, vou explicar tudo o que você precisa saber para dar os primeiros passos com confiança!";
+        emotion ET_CHUP;
+        next;
+        mes "[Leo Handerson]";
+        mes "Primeiro, vamos falar sobre as Habilidades Passivas. Elas são essenciais para o seu desenvolvimento e não consomem SP.";
+        mes "Abra sua Janela de Habilidades pressionando '^3355FFAlt^000000' + '^3355FFS^000000'.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Cada vez que você sobe de nível, ganha um Ponto de Habilidade. Esses pontos são usados para aprender novas habilidades, então aproveite bem cada um!";
+        next;
+        mes "[Leo Handerson]";
+        mes "Na Janela de Habilidades, você verá o ícone de Habilidade Básica. Clique no botão 'Lv Up' ao lado dele para usar um Ponto de Habilidade em Habilidades Básicas.";
+        next;
+        mes "[Leo Handerson]";
+        mes "As Habilidades Passivas são relacionadas ao seu treinamento físico ou mental. Elas melhoram sua capacidade de combate sem consumir SP, o que é uma grande vantagem.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Já as Habilidades Ativas, ao contrário, consomem SP toda vez que são usadas. Para usá-las, basta clicar duas vezes no ícone da habilidade na Janela de Habilidades.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Você também pode arrastar o ícone de uma habilidade para a barra de Hotkeys, pressionando '^3355FFF12^000000' para facilitar o acesso durante as batalhas.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Agora, vou falar sobre o Sistema de Troca de Itens. Para negociar com outros jogadores, você precisa aprender a Habilidade Básica Nível 1.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Para iniciar uma troca, basta clicar com o botão direito em um jogador e selecionar 'Solicitar troca'. Em seguida, arraste os itens da sua Janela de Inventário para a Janela de Troca.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Após isso, a outra pessoa decidirá se aceita ou não a troca. Se aceitar, basta pressionar o botão 'OK' para finalizar a negociação.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Lembre-se de verificar se a outra pessoa está trocando os itens que você concordou em dar. A troca só será concluída se ambos pressionarem 'OK'.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Agora, vamos para o Sistema de Grupo. Esse sistema permite que você organize um pequeno grupo de jogadores para caçar monstros ou simplesmente para socializar.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Para organizar um grupo, digite o comando ^4F4FFF/organize ''Nome do Grupo''^000000 na sua Janela de Chat.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Você precisa ter a Habilidade Básica Nível 7 ou superior para usar o Sistema de Grupo. Depois de organizar seu grupo, você pode testar a distribuição de itens e a experiência entre os membros.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Além disso, com a Habilidade Básica Nível 4 ou superior, você pode criar sua própria Sala de Chat. Basta clicar no botão ^3355FFchat^000000 na Janela de Informações Básicas ou pressionar '^3355FFAlt^000000' + '^3355FFC^000000'.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Na Sala de Chat, você pode verificar as informações dos membros clicando com o botão direito no nome deles.";
+        next;
+        mes "[Leo Handerson]";
+        mes "Agora que você tem todas essas informações, está pronto para seguir em frente! Boa sorte. O mundo está esperando por você!";
+        getexp 91, 78;
+        navigateto "new_1-2", 17,182;
+        set nov_8st_cos, 1;
+        close;
     }
-
 }
 
 new_1-2,121,101,2	script	Soldado Guia#nv1	105,{
@@ -2248,245 +1877,131 @@ new_1-2,121,101,2	script	Soldado Guia#nv1	105,{
 }
 
 
-new_1-2,17,182,5	script	Assistente#nv	84,{
-    if (nov_2nd_cos < 11) {
+new_1-2,17,182,5	script	Elmeen#nv	84,{
+    if (nov_9st_cos == 1) {
         mes "[Elmeen]";
-        mes "Parabéns!";
-        mes "Você passou no primeiro curso de treinamento! Uau Acho que agora você entende um pouco mais sobre Ragnarok Online.";
-        next;
-        mes "[Elmeen]";
-        mes "Você aprenderá os fundamentos da batalha real nesta aula.";
-        mes "Se você fez o seu melhor durante a aula informativa, você deve ter recebido alguns equipamentos iniciais.";
-        next;
-        mes "[Elmeen]";
-        mes "Por favor, verifique seus";
-        mes "equipamentos antes de entrar em combate.";
-        mes "Você tem certeza de que equipou todos os seus itens, suas armas e armaduras?";
-        next;
-        switch (select("Sim:Não")) {
-        case 1:
-            mes "[Elmeen]";
-            mes "Primeiro, coloque o cursor sobre um monstro.";
-            mes "Quando você clicar com o botão esquerdo, você atacará o monstro uma vez.";
-            next;
-            mes "[Elmeen]";
-            mes "Se você estiver com preguiça de ficar clicando com o botão esquerdo, clique com o botão esquerdo no monstro enquanto mantém pressionada a tecla '^4D4DFFCtrl^000000'.";
-            mes "Assim, você continuará atacando o monstro até que um de vocês morra ou você fuja.";
-            next;
-            mes "[Elmeen]";
-            mes "Você também pode simplesmente segurar o botão esquerdo do mouse enquanto o cursor estiver sobre o monstro.";
-            mes "Ainda assim, há pessoas que são tão preguiçosas que nem querem usar a tecla '^4D4DFFCtrl^000000' cada vez que atacam um monstro.";
-            next;
-            mes "[Elmeen]";
-            mes "Se você for uma delas, digite o comando ^E79E29//nc^000000 na sua janela de chat.";
-            mes "Então, ao clicar com o botão esquerdo";
-            mes "em um monstro, você o atacará continuamente!";
-            next;
-            mes "[Elmeen]";
-            mes "Se um monstro tiver a propriedade Undead, você pode usar a habilidade 'Cura' para atacá-lo, caso você a tenha.";
-            next;
-            mes "[Elmeen]";
-            mes "Quando você usar a habilidade Cura enquanto mantém pressionada a tecla '^4D4DFFShift^000000', você poderá mirar no monstro com a habilidade Cura para danificá-lo.";
-            next;
-            mes "[Elmeen]";
-            mes "Claro, para essa habilidade, temos uma opção muito conveniente para os preguiçosos também.";
-            mes "Digite o comando ^E79E29//ns^000000 na sua janela de chat.";
-            next;
-            mes "[Elmeen]";
-            mes "Isso permitirá que você ataque monstros usando a habilidade Cura sem precisar segurar a tecla Shift. Prático, né?";
-            next;
-            mes "[Elmeen]";
-            mes "Você entendeu esses comandos de batalha? Agora, vou te ensinar sobre o comportamento e as propriedades dos monstros, a experiência ganha na batalha e os itens que você pode obter dos monstros mortos.";
-            next;
-            mes "[Elmeen]";
-            mes "O Treinamento de Combate de Campo pode ser bastante perigoso para novos aventureiros. Deixe-me dar";
-            mes "um pouco mais de força através do poder da minha magia.";
-            next;
-            mes "[Elmeen]";
-            mes "Haaaaaaa!";
-            if (nov_2nd_cos < 1) {
-                if (BaseLevel == 1) {
-                    set nov_2nd_cos,
-                    12;
-                    getexp 9,
-                    0;
-                }
-                else if (BaseLevel == 2) {
-                    set nov_2nd_cos,
-                    13;
-                    getexp 16,
-                    0;
-                }
-                else if (BaseLevel == 3) {
-                    set nov_2nd_cos,
-                    14;
-                    getexp 25,
-                    0;
-                }
-                else if (BaseLevel == 4) {
-                    set nov_2nd_cos,
-                    15;
-                    getexp 36,
-                    0;
-                }
-                else if (BaseLevel == 5) {
-                    set nov_2nd_cos,
-                    16;
-                    getexp 77,
-                    0;
-                }
-                else if (BaseLevel == 6) {
-                    set nov_2nd_cos,
-                    17;
-                    getexp 112,
-                    0;
-                }
-                else if (BaseLevel >= 7) {
-                    set nov_2nd_cos,
-                    18;
-                    getexp 153,
-                    0;
-                }
-            }
-            close;
-            break;
-        case 2:
-            mes "[Elmeen]";
-            mes "Por favor, cuide bem dos equipamentos que você recebeu durante os cursos de treinamento.";
-            mes "Uma vez que você os perca, não poderá mais recuperá-los.";
-            close;
-        }
+        mes "Agora que você já sabe o básico, é hora de colocar tudo em prática.";
+        mes "Lembre-se, a jornada é longa, mas com sabedoria e perseverança, você chegará onde deseja.";
+        navigateto "new_1-2", 38,182;
+        close;
     } else {
         mes "[Elmeen]";
-        mes "Qual assunto";
-        mes "eu devo explicar?";
+        mes "Hoje, você vai aprender os fundamentos da batalha real.";
+        mes "Primeiro, coloque o cursor sobre um monstro.";
+        mes "Quando você clicar com o botão esquerdo, vai atacar o monstro uma vez.";
         next;
-        while (1) {
-            switch (select("Monstros:Experiência:Itens:Sair.")) {
-            case 1:
-                mes "[Elmeen]";
-                mes "Existem muitos monstros agressivos que irão atacar você antes mesmo de você se aproximar deles.";
-                next;
-                mes "[Elmeen]";
-                mes "Também existem alguns monstros que cooperam com outros de sua espécie.";
-                mes "Ataque um deles, e todo o grupo virá atrás de você, buscando vingança.";
-                next;
-                mes "[Elmeen]";
-                mes "Cada monstro pode ser classificado por seu tipo, tamanho e propriedades.";
-                mes "Por exemplo, existem monstros com propriedades Demi-humano, Bruto, Sagrado e Demoníaco.";
-                next;
-                mes "[Elmeen]";
-                mes "Quando você souber qual é a propriedade de um monstro, pode usar esse conhecimento para ajudar em batalha.";
-                next;
-                mes "[Elmeen]";
-                mes "Se você conseguir cartas que aumentam seu dano contra certas propriedades de monstros, ou reduzem o dano de propriedades específicas, terá muito mais facilidade em combate.";
-                next;
-                mes "[Elmeen]";
-                mes "Os monstros são divididos por seu tamanho: pequeno, médio e grande.";
-                mes "Existem algumas cartas que permitem que você cause mais dano a um tamanho específico de monstro.";
-                next;
-                mes "[Elmeen]";
-                mes "Além disso, cada arma tem suas forças e fraquezas.";
-                mes "O tamanho da arma afeta o dano que ela causará aos monstros.";
-                next;
-                mes "[Elmeen]";
-                mes "Por exemplo, armas do tipo Adaga causam 100% de dano em monstros pequenos, mas causam apenas 50% de dano em monstros grandes.";
-                next;
-                mes "[Elmeen]";
-                mes "As propriedades comuns dos monstros incluem Água, Vento, Terra, Fogo, Sombra, Fantasma e Sagrado.";
-                mes "Se você atacar um monstro com uma propriedade oposta, pode causar dano adicional";
-                next;
-                mes "[Elmeen]";
-                mes "Mas se você atacar um monstro com";
-                mes "uma habilidade ou arma que cause dano da mesma propriedade do monstro, o dano será significativamente reduzido ou completamente negado. Você pode até curar o monstro!";
-                next;
-                mes "[Elmeen]";
-                mes "No caso de monstros com a propriedade Fantasma, armas normais não causam dano. No entanto, uma arma com qualquer outra propriedade será capaz de causar algum dano.";
-                close;
-                break;
-            case 2:
-                mes "[Elmeen]";
-                mes "Basicamente, o personagem que causar mais dano a um monstro receberá mais pontos de experiência do monstro.";
-                next;
-                mes "[Elmeen]";
-                mes "Portanto, você recebe uma certa porcentagem de pontos de experiência, proporcional ao dano que causou ao monstro, em comparação com o seu HP total.";
-                next;
-                mes "[Elmeen]";
-                mes "Vamos supor que exista um personagem chamado 'Z'. Z causou 65 de dano a um monstro que tem 100 de HP total e dá 1000 pontos de experiência quando morre.";
-                mes "Então, Z receberá 650 pontos de experiência.";
-                next;
-                mes "[Elmeen]";
-                mes "No entanto, essa regra se aplica de maneira diferente em certas situações.";
-                next;
-                mes "[Elmeen]";
-                mes "Se duas pessoas causarem 65 de dano no mesmo monstro, os pontos de experiência que cada um receberá irão variar dependendo do HP restante do monstro.";
-                next;
-                mes "[Elmeen]";
-                mes "Por exemplo, alguém causa dano a um monstro enquanto você já o está atacando, e ele causou a mesma quantidade de dano que você.";
-                next;
-                mes "[Elmeen]";
-                mes "Nesse caso, você receberá 2/3 de todos os pontos de experiência que o monstro pode lhe dar, e o outro receberá 1/3.";
-                next;
-                mes "[Elmeen]";
-                mes "No entanto, atacar um monstro que outra pessoa já começou a atacar não é recomendado em Ragnarok Online.";
-                mes "Esse comportamento é considerado mal-educado.";
-                next;
-                mes "[Elmeen]";
-                mes "Para jogar em grupo, o líder da grupo pode definir a distribuição de experiência para a opção de compartilhamento igual.";
-                next;
-                mes "[Elmeen]";
-                mes "Com esse método, os membros da grupo podem compartilhar a experiência de acordo com seus níveis de personagem e o número de membros na grupo.";
-                next;
-                mes "[Elmeen]";
-                mes "Além disso, existe um benefício de experiência para jogar em grupo, que permite que você ganhe mais pontos de experiência do que jogando sozinho.";
-                mes "Você pode aproveitar esse sistema para um nível mais rápido.";
-                next;
-                break;
-            case 3:
-                mes "[Elmeen]";
-                mes "Quando você mata monstros,";
-                mes "pode obter itens por sorte. Além disso, certos personagens podem usar a habilidade 'Roubo' para roubar itens dos monstros.";
-                next;
-                mes "[Elmeen]";
-                mes "Não se preocupe, a habilidade Roubo não fará com que você não encontre itens após matar os monstros.";
-                mes "Usar a habilidade Roubo não afeta em nada a taxa de queda de itens dos monstros após a morte.";
-                next;
-                mes "[Elmeen]";
-                mes "Quando um grupo de pessoas mata um monstro, a pessoa que causou mais dano tem prioridade na coleta dos itens que caem.";
-                next;
-                break;
-            case 4:
-                mes "[Elmeen]";
-                mes "Sinta-se à vontade para";
-                mes "me perguntar se";
-                mes "tiver alguma dúvida.";
-                close;
-            }
-        }
+        mes "[Elmeen]";
+        mes "Se você não quiser ficar clicando, segure o botão esquerdo enquanto pressiona a tecla '^4D4DFFCtrl^000000'.";
+        mes "Assim, vai atacar continuamente até o monstro ou você caírem.";
+        next;
+        mes "[Elmeen]";
+        mes "Mas, se você é do tipo que não gosta de fazer esforço, digite o comando ^E79E29/nc^000000 na janela de chat.";
+        mes "Aí, é só clicar no monstro e pronto, ataque contínuo!";
+        next;
+        mes "[Elmeen]";
+        mes "Se você for um dos sortudos que tem a habilidade 'Cura', você pode usá-la contra monstros Undead.";
+        next;
+        mes "[Elmeen]";
+        mes "E se você segurar a tecla '^4D4DFFShift^000000', pode mirar a habilidade Cura e causar dano aos monstros.";
+        next;
+        mes "[Elmeen]";
+        mes "Mas, claro, se você é preguiçoso como eu, tem uma solução fácil.";
+        mes "Digite o comando ^E79E29/ns^000000 na janela de chat e, ao clicar, a habilidade Cura vai atacar automaticamente!";
+        next;
+        mes "[Elmeen]";
+        mes "Entendeu esses comandos? Agora vamos falar sobre o comportamento dos monstros, a experiência que você ganha e os itens que pode pegar.";
+        next;
+        mes "[Elmeen]";
+        mes "Alguns monstros são agressivos e vão atacar você antes mesmo de se aproximar.";
+        next;
+        mes "[Elmeen]";
+        mes "Outros podem até formar grupos, então se você atacar um, prepare-se para a vingança do bando!";
+        next;
+        mes "[Elmeen]";
+        mes "Os monstros têm diferentes tipos, tamanhos e propriedades. Por exemplo, há monstros Demi-humano, Bruto, Sagrado e Demoníaco.";
+        next;
+        mes "[Elmeen]";
+        mes "Se você souber as propriedades de um monstro, pode usar isso a seu favor na batalha.";
+        next;
+        mes "[Elmeen]";
+        mes "E se você conseguir cartas que aumentam seu dano contra certos tipos de monstros, isso vai facilitar bastante!";
+        next;
+        mes "[Elmeen]";
+        mes "Além disso, os monstros são classificados por tamanho: pequeno, médio e grande.";
+        mes "Há cartas que ajudam a causar mais dano em um tipo específico de tamanho.";
+        next;
+        mes "[Elmeen]";
+        mes "Ah, e não se esqueça das armas. Elas também têm suas forças e fraquezas.";
+        next;
+        mes "[Elmeen]";
+        mes "Por exemplo, uma Adaga causa 100% de dano em monstros pequenos, mas só 50% em monstros grandes.";
+        next;
+        mes "[Elmeen]";
+        mes "Agora, quanto às propriedades, temos Água, Vento, Terra, Fogo, Sombra, Fantasma e Sagrado.";
+        mes "Se você usar uma habilidade ou arma que tenha a propriedade oposta ao monstro, vai causar dano extra!";
+        next;
+        mes "[Elmeen]";
+        mes "Mas, cuidado: se a propriedade for a mesma, o dano pode ser reduzido ou até mesmo curar o monstro!";
+        next;
+        mes "[Elmeen]";
+        mes "No caso de monstros Fantasmas, você não pode causar dano com armas normais, mas qualquer arma com outra propriedade vai funcionar.";
+        next;
+        mes "[Elmeen]";
+        mes "Agora, quanto à experiência: quem causar mais dano ao monstro vai receber mais experiência.";
+        next;
+        mes "[Elmeen]";
+        mes "Por exemplo, se você causar 65 de dano a um monstro com 100 HP e ele der 1000 de XP, você receberá 650 de XP.";
+        next;
+        mes "[Elmeen]";
+        mes "Mas se outra pessoa causar o mesmo dano, a experiência será dividida conforme o HP restante do monstro.";
+        next;
+        mes "[Elmeen]";
+        mes "Não é educado atacar um monstro que outra pessoa já começou a atacar, então fique atento a isso.";
+        next;
+        mes "[Elmeen]";
+        mes "Em grupos, o líder pode definir a distribuição de experiência, e todo mundo pode ganhar mais XP do que se estivesse sozinho!";
+        next;
+        mes "[Elmeen]";
+        mes "Quando você derrota monstros, pode pegar itens por sorte. E alguns personagens têm a habilidade 'Roubo' para pegar itens dos monstros.";
+        next;
+        mes "[Elmeen]";
+        mes "Mas não se preocupe, o 'Roubo' não afeta a taxa de queda de itens, então todos podem ficar tranquilos.";
+        next;
+        mes "[Elmeen]";
+        mes "Ah, e quem causar mais dano ao monstro tem prioridade na coleta dos itens!";
+        next;
+        mes "[Elmeen]";
+        mes "Agora que você tem o conhecimento necessário, vá em frente e enfrente o mundo!";
+        mes "Lembre-se, a sabedoria é sua maior aliada, e a força virá com a prática.";
+        getexp 91, 78;
+        navigateto "new_1-2", 38,182;
+        set nov_9st_cos, 1;
+        close;
     }
 }
 
-
-new_1-2,38,182,3	script	Guarda da Entrada#nv	92,{
-    if (nov_2nd_cos == 0) {
+new_1-2,38,182,3	script	Muriel#nv	92,{
+    if (!nov_9st_cos == 1) {
         mes "[Muriel]";
-        mes "Desculpe, mas não posso deixar ninguém que não tenha sido instruído em combate entrar.";
+        mes "Desculpe, mas não posso permitir que alguém sem treinamento em combate entre aqui.";
         next;
         mes "[Muriel]";
-        mes "Por que você não fala com o Assistente à esquerda desta sala primeiro, para que possa receber algumas instruções de combate?";
+        mes "Por que não conversa com o Elmeen à esquerda? Ele pode te passar algumas instruções sobre como se defender.";
+        navigateto "new_1-2", 17, 182;
         close;
-    } else if (nov_2nd_cos > 0 && nov_2nd_cos < 21) {
+    } else {
         mes "[Muriel]";
-        mes "O Treinamento de Combate é uma aula de combate real onde você pode ganhar habilidades básicas de combate que pode usar para se defender em Midgard.";
+        mes "Agora que você está pronto, vá e enfrente os monstros.";
+        mes "Eles são fracos, mas não subestime a situação. Cuide-se!";
         next;
         mes "[Muriel]";
-        mes "Por favor, mate o maior número possível de monstros.";
-        mes "Embora os monstros sejam todos fracos e fáceis de matar, espero que tenha cuidado.";
-        next;
-        mes "[Muriel]";
-        mes "Você deseja";
-        mes "fazer o teste";
-        mes "imediatamente?";
+        mes "Vou te dar alguns suprimentos. Use-os bem caso precise de ajuda.";
+        getitem 602, 5; //Asa de Borboleta
+        getitem 601, 20; //Asa de Mosca
+        getitem 1243, 1; //Faca do Aprendiz
+        equip 1243;
+        getitem 2112, 1; //Escudo do Aprendiz
+        equip 2112;
         getitem 2352, 1; //Traje do Aprendiz
         equip 2352;
         getitem 2510, 1; //Novice_Hood
@@ -2495,131 +2010,11 @@ new_1-2,38,182,3	script	Guarda da Entrada#nv	92,{
         equip 2414;
         getitem 5055, 1; //Novice_Egg_Cap
         equip 5055;
-        next;
-        switch (select("Sim:Preciso de mais tempo.")) {
-        case 1:
-            mes "[Muriel]";
-            mes "Vou lhe dar alguns suprimentos úteis, então por favor use-os em caso de emergência.";
-            if (nov_2nd_cos == 12) {
-                set nov_2nd_cos, 22;
-            } else if (nov_2nd_cos == 13) {
-                set nov_2nd_cos, 23;
-            } else if (nov_2nd_cos == 14) {
-                set nov_2nd_cos, 24;
-            } else if (nov_2nd_cos == 15) {
-                set nov_2nd_cos, 25;
-            } else if (nov_2nd_cos == 16) {
-                set nov_2nd_cos, 26;
-            } else if (nov_2nd_cos == 17) {
-                set nov_2nd_cos, 27;
-            } else if (nov_2nd_cos == 18) {
-                set nov_2nd_cos, 28;
-            } else {
-                set nov_2nd_cos, 29;
-            }
-            getitem 602, 1; //Asa de Borboleta
-            getitem 601, 9; //Asa de Mosca
-            getitem 1243, 1; //Faca do Aprendiz
-            equip 1243;
-            getitem 2112, 1; //Escudo do Aprendiz
-            equip 2112;
-            getitem 611, 2; //Lupa
-            getitem 569, 300; //Poção de Aprendiz
-            close2;
-            savepoint "novice00", 99, 48, 1, 1;
-            warp "novice00", 99, 48;
-            end;
-        case 2:
-            mes "[Muriel]";
-            mes "Sem problemas.";
-            mes "Se você não tiver certeza se pode passar no teste ou não, que tal falar novamente com o Assistente à esquerda? Volte quando estiver pronto.";
-            close;
-        }
-        close;
-    } else if ((nov_2nd_cos > 20) && (nov_2nd_cos < 31)) {
-        mes "[Muriel]";
-        mes "Bem, eu te avisei para ter cuidado.";
-        mes "Levante a cabeça! Não é grande coisa.";
-        mes " ";
-        mes "O fracasso ensina o sucesso.";
-        mes "Você tem muitas chances";
-        mes "de refazer o teste.";
-        next;
-        mes "[Muriel]";
-        mes "Você deseja";
-        mes "tentar novamente?";
-        next;
-        switch (select("Sim.:Posso ter mais tempo?")) {
-        case 1:
-            mes "[Muriel]";
-            mes "Vou te dar";
-            mes "alguns suprimentos novamente.";
-            mes "Por favor, tenha cuidado!";
-            if (nov_2nd_cos == 22) {
-                set nov_2nd_cos, 33;
-                getexp 16, 0;
-            } else if (nov_2nd_cos == 23) {
-                set nov_2nd_cos, 34;
-                getexp 25, 0;
-            } else if (nov_2nd_cos == 24) {
-                set nov_2nd_cos, 35;
-                getexp 36, 0;
-            } else if (nov_2nd_cos == 25) {
-                set nov_2nd_cos, 36;
-                getexp 77, 0;
-            } else if (nov_2nd_cos == 26) {
-                set nov_2nd_cos, 37;
-                getexp 112, 0;
-            } else if (nov_2nd_cos == 27) {
-                set nov_2nd_cos, 38;
-                getexp 153, 0;
-            } else if (nov_2nd_cos == 28) {
-                set nov_2nd_cos, 39;
-                getexp 200, 0;
-            } else if (nov_2nd_cos == 29) {
-                set nov_2nd_cos, 40;
-                getexp 200, 0;
-            }
-            percentheal 100, 0;
-            getitem 569, 50; //Poção do Novato
-            close2;
-            savepoint "novice00", 99, 48, 1, 1;
-            warp "novice00", 99, 48;
-            end;
-        case 2:
-            mes "[Muriel]";
-            mes "Sem problemas.";
-            mes "Se você não tiver certeza se pode passar no teste ou não, que tal falar novamente com o Assistente à esquerda? Volte quando estiver pronto.";
-            close;
-        }
-    } else if (nov_2nd_cos > 30) {
-        mes "[Muriel]";
-        mes "Bem, eu te avisei para ter cuidado.";
-        mes "Levante a cabeça! Não é grande coisa.";
-        mes " ";
-        mes "O fracasso ensina o sucesso.";
-        mes "Você tem muitas chances para refazer o teste.";
-        next;
-        mes "[Muriel]";
-        mes "Você deseja tentar novamente?";
-        next;
-        switch (select("Sim:Posso ter mais tempo?")) {
-        case 1:
-            mes "[Muriel]";
-            mes "Vou restaurar";
-            mes "seu HP. Por favor";
-            mes "tenha cuidado!";
-            percentheal 100, 0;
-            close2;
-            savepoint "novice00", 99, 48, 1, 1;
-            warp "novice00", 99, 48;
-            end;
-        case 2:
-            mes "[Muriel]";
-            mes "Sem problemas.";
-            mes "Se você não tiver certeza se pode passar no teste ou não, que tal falar novamente com o Assistente à esquerda? Volte quando estiver pronto.";
-            close;
-        }
+        getitem 611, 5; //Lupa
+        getitem 569, 300; //Poção de Aprendiz
+        close2;
+        savepoint "novice00", 99, 48, 1, 1;
+        warp "novice00", 99, 48;
+        end;
     }
-
 }

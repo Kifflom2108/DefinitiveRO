@@ -692,7 +692,6 @@ izlude_in,124,175,4	script	Jake#swordman	4_M_CRU_OLD,{
             getitem (673,40);
             set Zeny, Zeny + 5500;
             getitem(569, 100);
-            delitem(949, 10);
             delitem(914, 10);
             delitem(909, 10);
             delitem(705, 10);
@@ -720,7 +719,7 @@ OnInit:
 
 }
 
-prt_fild07,376,244,4	script	Jake#swordman2	752,{
+prt_fild07,374,192,4	script	Jake#swordman2	752,{
 
 	if (BaseJob == Job_Swordman){
 		if (checkquest (75102) == 1){
