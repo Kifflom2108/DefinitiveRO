@@ -1,54 +1,71 @@
-mjolnir_07,26,376,3	script	Jake#mjolnir_07	752,{
-	if (checkquest(75118) == 1) {
+mjolnir_07,26,376,3	script	Jake#mjolnir_07	4_M_CRU_OLD,{
+
+    if (checkquest(75118) == 1) {
         completequest 75118;
     }
 
     if (checkquest(75119) == -1) {
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Bem-vindo às planícies de Mjolnir. Estas terras já foram tranquilas, mas agora são dominadas por criaturas selvagens.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Os ^FF0000Savages^000000, conhecidos por sua brutalidade incontrolável, vagam em bando, enquanto os ^FFD700Beetle Kings^000000, insetos colossais que reinaram sobre estas terras por séculos, protegem seu território com fúria.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você deve derrotar 250 Savages e 50 Beetle Kings. Cada inimigo abatido traz paz às planícies e fortalece sua reputação como guerreiro.";
+        mes "Pressione ^00CCFFAlt+U^000000 para acompanhar o progresso da missão.";
         setquest 75119;
         set Savage_Count, 0;
         set BeetleKing_Count, 0;
         announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-        mes "objetivo da quest";
         close;
     }
-	else if (checkquest(75119) == 1 && Savage_Count >= 250 && BeetleKing_Count >= 50) { // Completar
-		completequest 75119;
+    else if (checkquest(75119) == 1 && Savage_Count >= 250 && BeetleKing_Count >= 50) { // Completar
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você conseguiu! As terras de Mjolnir estão mais seguras graças à sua bravura.";
+        mes "Os Savages e Beetle Kings que uma vez dominavam esta área agora não são mais uma ameaça.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Siga para o próximo desafio. Há mais perigos aguardando um guerreiro como você.";
+        completequest 75119;
         setquest 75120;
         navigateto "prt_fild11", 25, 285;
-	}
-	else if (checkquest(75119) == 1 && Savage_Count < 250 || BeetleKing_Count < 50) { // Incompleta
-        mes "[CaÃ§ador de Savage e BeetleKing]";
-        mes "VocÃª ainda nÃ£o completou a <QUEST>MissÃ£o<INFO>75119</INFO></QUEST>.";
-        mes "Savage derrotados: " + Savage_Count + "/250";
-        mes "BeetleKing derrotados: " + BeetleKing_Count + "/50";
         close;
-		emotion ET_GO;
-	}
-	else if (checkquest(75119) == 2) { // JÃ¡ Entregue
-		emotion ET_OK;
-        mes "^8B0000[instrutor Jake]^000000";
-        mes "^377420Que seus passos sejam guiados pelo brilho da sua lÃ¢mina. Boa sorte em suas prÃ³Savageimas jornadas!^000000";
-	}
-	close;
+    }
+    else if (checkquest(75119) == 1 && (Savage_Count < 250 || BeetleKing_Count < 50)) { // Incompleta
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você ainda não completou sua missão. Os Savages e Beetle Kings continuam ameaçando estas terras.";
+        mes "^FF0000Savages derrotados: ^000000" + Savage_Count + "/250";
+        mes "^FFD700Beetle Kings derrotados: ^000000" + BeetleKing_Count + "/50";
+        mes "Não desista! A segurança das planícies de Mjolnir depende de você.";
+        emotion ET_GO;
+        close;
+    }
+    else if (checkquest(75119) == 2) { // Já Entregue
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você já cumpriu esta missão. Prepare-se para desafios ainda maiores!";
+        emotion ET_OK;
+        close;
+    }
 
 OnNPCKillEvent:
-    if (checkquest(75119) == 1 && killedrid == 1166 && Savage_Count < 250) {
+    if (checkquest(75119) == 1 && killedrid == 1166 && Savage_Count < 250) { // Savage
         set Savage_Count, Savage_Count + 1;
-        dispbottom "Savage derrotados: " + Savage_Count + "/250.";
+        dispbottom "Savages derrotados: " + Savage_Count + "/250.";
     }
-    if (checkquest(75119) == 1 && killedrid == 1494 && BeetleKing_Count < 50) {
-            set BeetleKing_Count, BeetleKing_Count + 1;
-            dispbottom "BeetleKing coletados: " + BeetleKing_Count + "/50.";
+    if (checkquest(75119) == 1 && killedrid == 1494 && BeetleKing_Count < 50) { // Beetle King
+        set BeetleKing_Count, BeetleKing_Count + 1;
+        dispbottom "Beetle Kings derrotados: " + BeetleKing_Count + "/50.";
     }
     if (checkquest(75119) == 1 && Savage_Count == 250 && BeetleKing_Count == 50) {
-            dispbottom "VocÃª completou a missÃ£o de matar 250 Savage e 50 BeetleKing!";
-            set BeetleKing_Count, BeetleKing_Count + 1;
+        dispbottom "Você completou a missão de derrotar 250 Savages e 50 Beetle Kings!";
+        set BeetleKing_Count, BeetleKing_Count + 1;
     }
     end;
+
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75119) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75119) == 1";
-	end;
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75119) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75119) == 1";
+    end;
 
 }
-
