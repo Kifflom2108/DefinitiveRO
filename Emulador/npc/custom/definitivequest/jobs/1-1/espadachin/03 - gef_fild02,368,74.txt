@@ -1,0 +1,55 @@
+gef_fild02,368,74,4	script	Jake#swordman3	752,{
+
+    if (checkquest(75104) == 1) {
+        completequest 75105;
+    }
+
+    if (checkquest(75105) == -1) {
+        setquest 75105;
+        set coco_Count, 0;
+        set horn_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75105) == 1 && coco_Count >= 70 && horn_Count >= 30) { // Completar
+		completequest 75105;
+        setquest 75106;
+        navigateto "prt_fild10", 216,290;
+	}
+	else if (checkquest(75105) == 1 && coco_Count < 70 || horn_Count < 30) { // Incompleta
+        mes "[Caçador de Coco e Horn]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75105</INFO></QUEST>.";
+        mes "Coco derrotados: " + coco_Count + "/70";
+        mes "Horn derrotados: " + horn_Count + "/30";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75105) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próximas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75105) == 1 && killedrid == 1104 && coco_Count < 70) {
+        set coco_Count, coco_Count + 1;
+        dispbottom "Coco derrotados: " + coco_Count + "/70.";
+    }
+    if (checkquest(75105) == 1 && killedrid == 1128 && horn_Count < 30) {
+            set horn_Count, horn_Count + 1;
+            dispbottom "Horn coletados: " + horn_Count + "/30.";
+    }
+    if (checkquest(75105) == 1 && coco_Count == 70 && horn_Count == 30) {
+            dispbottom "Você completou a missão de matar 70 Coco e 30 Horn!";
+            set horn_Count, horn_Count + 1;
+    }
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+
+}
+

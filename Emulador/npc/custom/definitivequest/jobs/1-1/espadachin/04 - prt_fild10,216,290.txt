@@ -1,0 +1,57 @@
+prt_fild10,216,290,4	script	Jake#swordman4	752,{
+
+    if (checkquest(75106) == 1) {
+        completequest 75107;
+    }
+
+    if (checkquest(75107) == -1) {
+        setquest 75107;
+        set Elder_Count, 0;
+        set Poporing_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75107) == 1 && Elder_Count >= 100 && Poporing_Count >= 40) { // Completar
+		completequest 75107;
+        setquest 75108;
+        navigateto "prt_fild10", 216,290;
+        navigateto "prt_fild09", 25,144;
+	}
+	else if (checkquest(75107) == 1 && Elder_Count < 100 || Poporing_Count < 40) { // Incompleta
+        mes "[Caçador de Elder e Poporing]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75105</INFO></QUEST>.";
+        mes "Elder derrotados: " + Elder_Count + "/100";
+        mes "Poporing derrotados: " + Poporing_Count + "/40";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75107) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próElderimas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75107) == 1 && killedrid == 1033 && Elder_Count < 100) {
+        set Elder_Count, Elder_Count + 1;
+        dispbottom "Elder derrotados: " + Elder_Count + "/100.";
+    }
+    if (checkquest(75107) == 1 && killedrid == 1031 && Poporing_Count < 40) {
+            set Poporing_Count, Poporing_Count + 1;
+            dispbottom "Poporing coletados: " + Poporing_Count + "/40.";
+    }
+    if (checkquest(75107) == 1 && Elder_Count == 100 && Poporing_Count == 40) {
+            dispbottom "Você completou a missão de matar 100 Elder e 40 Poporing!";
+            set Poporing_Count, Poporing_Count + 1;
+    }
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+
+}
+
+

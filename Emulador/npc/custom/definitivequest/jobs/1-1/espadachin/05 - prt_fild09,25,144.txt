@@ -1,0 +1,54 @@
+prt_fild09,25,144,4	script	Jake#swordman5	752,{
+    if (checkquest(75108) == 1) {
+        completequest 75108;
+    }
+
+    if (checkquest(75109) == -1) {
+        setquest 75109;
+        set Magnolia_Count, 0;
+        set Metaller_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75109) == 1 && Magnolia_Count >= 140 && Metaller_Count >= 60) { // Completar
+		completequest 75109;
+        setquest 75110;
+        navigateto "gef_fild11", 366,297;
+	}
+	else if (checkquest(75109) == 1 && Magnolia_Count < 140 || Metaller_Count < 60) { // Incompleta
+        mes "[Caçador de x e Y]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75109</INFO></QUEST>.";
+        mes "x derrotados: " + Magnolia_Count + "/140";
+        mes "Y derrotados: " + Metaller_Count + "/60";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75109) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próGOBLIN_4imas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75109) == 1 && killedrid == 1138 && Magnolia_Count < 140) {
+        set Magnolia_Count, Magnolia_Count + 1;
+        dispbottom "Magnolia derrotados: " + Magnolia_Count + "/140.";
+    }
+    if (checkquest(75109) == 1 && killedrid == 1058 && Metaller_Count < 60) {
+            set Metaller_Count, Metaller_Count + 1;
+            dispbottom "Metaller coletados: " + Metaller_Count + "/60.";
+    }
+    if (checkquest(75109) == 1 && Magnolia_Count == 140 && Metaller_Count == 60) {
+            dispbottom "Você completou a missão de matar 140 x e 60 Y!";
+            set Metaller_Count, Metaller_Count + 1;
+    }
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+
+}
+

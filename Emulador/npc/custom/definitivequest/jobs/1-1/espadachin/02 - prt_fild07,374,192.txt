@@ -1,0 +1,55 @@
+prt_fild07,374,192,4	script	Jake#swordman2	752,{
+
+    if (checkquest(75102) == 1) {
+        completequest 75102;
+    }
+
+    if (checkquest(75103) == -1) {
+        setquest 75103;
+        set babe_Count, 0;
+        set rocker_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75103) == 1 && babe_Count >= 50 && rocker_Count >= 50) { // Completar
+		completequest 75103;
+        setquest 75104;
+        navigateto "gef_fild02", 368,74;
+	}
+	else if (checkquest(75103) == 1 && babe_Count < 50 || rocker_Count < 50) { // Incompleta
+        mes "[Caçador de Savage Babe e Rocker]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75096</INFO></QUEST>.";
+        mes "Savage Babe derrotados: " + babe_Count + "/50";
+        mes "Rocker derrotados: " + rocker_Count + "/50";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75103) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próximas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75103) == 1 && killedrid == 1167 && babe_Count < 50) {
+        set babe_Count, babe_Count + 1;
+        dispbottom "Savage Babe derrotados: " + babe_Count + "/50.";
+    }
+    if (checkquest(75103) == 1 && killedrid == 1052 && rocker_Count < 50) {
+            set rocker_Count, rocker_Count + 1;
+            dispbottom "Rocker coletados: " + rocker_Count + "/50.";
+    }
+    if (checkquest(75103) == 1 && babe_Count == 50 && rocker_Count == 50) {
+            dispbottom "Você completou a missão de matar 50 Savage Babe e 50 Rocker!";
+            set rocker_Count, rocker_Count + 1;
+    }
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+
+}
+

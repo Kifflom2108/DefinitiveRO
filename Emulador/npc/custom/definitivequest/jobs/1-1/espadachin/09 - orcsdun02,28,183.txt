@@ -1,0 +1,27 @@
+orcsdun02,28,183,3	script	Jake#swordman9	752,{
+			if (BaseJob == Job_Swordman) {
+				if (checkquest(75104) == 1) { // Completar Quest Anterior
+					completequest 75104;
+				}
+				if (checkquest(75105) == -1) { // Iniciar Quest
+					setquest 75105;
+				}
+				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
+					completequest 75105;
+                    setquest 75104;
+                    navigateto "prt_fild07", 376, 243;
+				}
+				else if (checkquest(75105) == 1) { // Incompleta
+					emotion ET_GO;
+				}
+				else if (checkquest(75105) == 2) { // Já Entregue
+					emotion ET_OK;
+				}
+			}
+			close;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+}
+

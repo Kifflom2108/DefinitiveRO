@@ -1,0 +1,54 @@
+in_orcs01,32,167,3	script	Jake#swordman8	752,{
+	if (checkquest(75104) == 1) {
+        completequest 75105;
+    }
+
+    if (checkquest(75105) == -1) {
+        setquest 75105;
+        set 0x0_Count, 0;
+        set 0y0_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75105) == 1 && 0x0_Count >= QQQQ && 0y0_Count >= wwww) { // Completar
+		completequest 75105;
+        setquest 75106;
+        navigateto "prt_fild10", 216,290;
+	}
+	else if (checkquest(75105) == 1 && 0x0_Count < QQQQ || 0y0_Count < wwww) { // Incompleta
+        mes "[Caçador de 0x0 e 0y0]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75105</INFO></QUEST>.";
+        mes "0x0 derrotados: " + 0x0_Count + "/QQQQ";
+        mes "0y0 derrotados: " + 0y0_Count + "/wwww";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75105) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas pró0x0imas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75105) == 1 && killedrid == 1167 && 0x0_Count < QQQQ) {
+        set 0x0_Count, 0x0_Count + 1;
+        dispbottom "0x0 derrotados: " + 0x0_Count + "/QQQQ.";
+    }
+    if (checkquest(75105) == 1 && killedrid == 1052 && 0y0_Count < wwww) {
+            set 0y0_Count, 0y0_Count + 1;
+            dispbottom "0y0 coletados: " + 0y0_Count + "/wwww.";
+    }
+    if (checkquest(75105) == 1 && 0x0_Count == QQQQ && 0y0_Count == wwww) {
+            dispbottom "Você completou a missão de matar QQQQ 0x0 e wwww 0y0!";
+            set 0y0_Count, 0y0_Count + 1;
+    }
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75105) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75105) == 1";
+	end;
+
+}
+

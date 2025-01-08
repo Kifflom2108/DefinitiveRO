@@ -1,0 +1,71 @@
+ 
+novice04,130,49,4	script	Porteiro#4	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+        cutin "", 255;
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+OnInit:
+        questinfo QTYPE_CLICKME;
+		end;
+}

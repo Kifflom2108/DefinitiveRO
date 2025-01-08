@@ -1,0 +1,71 @@
+izlude_in,124,175,4	script	Jake#swordman	4_M_CRU_OLD,{
+    if (BaseJob == Job_Swordman) {
+        if (checkquest(75100) == 1) {
+            completequest 75100;
+        }
+        if (checkquest(75101) == -1) {
+            mes "^8B0000[instrutor Jake]^000000";
+            mes "Ah, vejo que você já é um Espadachim, que honra!";
+            mes "Como parte de seu treinamento contínuo, preciso que você complete uma tarefa de coleta.";
+            mes "Estamos reunindo alguns itens simbólicos para nossos futuros guerreiros e gostaria de contar com sua ajuda.";
+            mes "Os itens que preciso são os seguintes:";
+            mes "<ITEM>10 Trevos<INFO>705</INFO></ITEM>";
+            mes "<ITEM>10 JellopYs<INFO>909</INFO></ITEM>";
+            mes "<ITEM>10 Felpas<INFO>914</INFO></ITEM>";
+            next;
+            mes "^8B0000[instrutor Jake]^000000";
+            mes "Cada um desses itens tem um significado profundo para nós espadachins:";
+            mes "O Trevo simboliza a sorte e a esperança em nossas batalhas.";
+            mes "A JellopY, apesar de ser comum, representa a perseverança e a dedicação no caminho do guerreiro.";
+            mes "A Pluma representa a agilidade e a leveza necessária para dominar a espada com precisão.";
+            mes "E a Felpa simboliza a resistência e a força que um espadachim deve ter diante das adversidades.";
+            next;
+            mes "^8B0000[instrutor Jake]^000000";
+            mes "Quando você conseguir esses itens, traga-os até mim, e em troca, darei uma recompensa que o ajudará em sua jornada.";
+            mes "Boa sorte, espadachim! Vou aguardar sua volta.";
+            setquest 75101;
+            end;
+
+        } else if (checkquest(75101) == 1 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) {
+            mes "^8B0000[instrutor Jake]^000000";
+            mes "Você conseguiu todos os itens! Excelente trabalho, espadachim!";
+            mes "Esses itens simbolizam os valores que todo espadachim deve carregar em sua jornada.";
+            mes "Como prometido, aqui está sua recompensa.";
+            mes "^b98c015500z^000000, ^b98c01150 Poção de Aprendiz^000000 e ^b98c01Poção da alma E^000000";
+            next;
+            mes "Irei te encontrar a a leste de Prontera";
+            mes "Ensinarei o Caminho da espada!";
+            completequest 75101;
+            setquest 75102;
+            navigateto "prt_fild07", 374, 192;
+            getexp (5500, 5000);
+            getitem (673,40);
+            set ZenY, ZenY + 5500;
+            getitem(569, 100);
+            delitem(914, 10);
+            delitem(909, 10);
+            delitem(705, 10);
+            close;
+
+        } else if (checkquest(75101) == 1) {
+            mes "^8B0000[instrutor Jake]^000000";
+            mes "Ainda ^FF0000não^000000 trouxe todos os itens necessários. Volte quando tiver tudo que eu pedi.";
+            emotion ET_GO;
+        } else if (checkquest(75101) == 2) {
+            mes "^8B0000[instrutor Jake]^000000";
+            mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próximas jornadas!^000000";
+            emotion ET_OK;
+        }
+        close;
+    } else {
+        mes "^FF0000Seja lá o que você for, não tenho nada para te ensinar.^000000";
+        close;
+    }
+    
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+
+}
+

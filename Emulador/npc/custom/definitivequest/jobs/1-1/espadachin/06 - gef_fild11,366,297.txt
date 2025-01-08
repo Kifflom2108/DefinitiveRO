@@ -1,0 +1,68 @@
+
+gef_fild11,366,297,6	script	Jake#swordman6	752,{
+    if (checkquest(75110) == 1) {
+        completequest 75110;
+    }
+
+    if (checkquest(75111) == -1) {
+        setquest 75113;
+        setquest 75111;
+        set GOBLIN_4_Count, 0;
+        set GOBLIN_3_Count, 0;
+        set GOBLIN_2_Count, 0;
+        set GOBLIN_1_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75111) == 1 && GOBLIN_4_Count >= 60 && GOBLIN_3_Count >= 60 && GOBLIN_2_Count >= 60 && GOBLIN_1_Count >= 60) { // Completar
+		completequest 75111;
+		completequest 75113;
+        setquest 75114;
+        navigateto "in_orcs01", 32,167;
+	}
+	else if (checkquest(75111) == 1 && GOBLIN_4_Count < 60 || GOBLIN_3_Count < 60 || GOBLIN_2_Count < 60 || GOBLIN_1_Count < 60) { // Incompleta
+        mes "[Caçador de GOBLINs";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75105</INFO></QUEST>.";
+        mes "GOBLINs derrotados: " + GOBLIN_4_Count + "/60";
+        mes "GOBLINs derrotados: " + GOBLIN_3_Count + "/60";
+        mes "GOBLINs derrotados: " + GOBLIN_2_Count + "/60";
+        mes "GOBLINs derrotados: " + GOBLIN_1_Count + "/60";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75111) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próGOBLIN_4imas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75111) == 1 && killedrid == 1125 && GOBLIN_4_Count < 60) {
+        set GOBLIN_4_Count, GOBLIN_4_Count + 1;
+        dispbottom "GOBLINs derrotados: " + GOBLIN_4_Count + "/60.";
+    }
+    if (checkquest(75111) == 1 && killedrid == 1124 && GOBLIN_3_Count < 60) {
+            set GOBLIN_3_Count, GOBLIN_3_Count + 1;
+            dispbottom "GOBLINs coletados: " + GOBLIN_3_Count + "/60.";
+    }
+    if (checkquest(75111) == 1 && killedrid == 1123 && GOBLIN_2_Count < 60) {
+        set GOBLIN_2_Count, GOBLIN_2_Count + 1;
+        dispbottom "GOBLINs derrotados: " + GOBLIN_2_Count + "/60.";
+    }
+    if (checkquest(75111) == 1 && killedrid == 1122 && GOBLIN_1_Count < 60) {
+            set GOBLIN_1_Count, GOBLIN_1_Count + 1;
+            dispbottom "GOBLINs coletados: " + GOBLIN_1_Count + "/60.";
+    }
+    if (checkquest(75111) == 1 && GOBLIN_4_Count == 60 && GOBLIN_3_Count == 60 && GOBLIN_2_Count == 60 && GOBLIN_1_Count == 60) {
+            dispbottom "Você completou a missão de matar Goblins!";
+            set GOBLIN_3_Count, GOBLIN_3_Count + 1;
+    }
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+	end;
+
+}

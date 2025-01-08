@@ -1,0 +1,134 @@
+novice07,130,49,4	script	Porteiro#7	8W_SOLDIER,{
+    cutin "prt_soldier", 2;
+    mes "[Guia de Classe]";
+	mes "Olá, aventureiro! Estou aqui para ajudá-lo no início de sua jornada.";
+	
+	
+	if (JobLevel < 10) {
+		mes "Vejo que você ainda não alcançou o Job Level 10.";
+		mes "Volte quando estiver pronto!";
+        cutin "", 255;
+		close;
+	}
+
+	
+	if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
+		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+        cutin "", 255;
+		close;
+	}
+
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Deseja que eu o leve para o início das quests das classes 1-1?";
+
+	next;
+	
+	switch(select("Sim, por favor!:Não, ainda não.")) {
+		case 1:
+			mes "Certo, preparando o teletransporte...";
+			mes "Boa sorte em sua jornada!";
+			
+			
+			mes "Para qual classe você deseja ir?";
+			next;
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
+				case 1:
+					savepoint   "izlude_in", 74, 166,1,1;
+					warp "izlude_in", 74, 166;
+					break;
+				case 2:
+					savepoint  "payon_in02", 64, 64,1,1; 
+					warp "payon_in02", 64, 64; 
+					break;
+				case 3:
+					savepoint  "geffen_in", 163, 101,1,1; 
+					warp "geffen_in", 163, 101; 
+					break;
+				case 4:
+					savepoint  "moc_prydb1", 46, 125,1,1; 
+					warp "moc_prydb1", 46, 125; 
+					break;
+				case 5:
+					savepoint  "alberta_in", 66, 43,1,1; 
+					warp "alberta_in", 66, 43; 
+					break;
+				case 6:
+					savepoint  "prt_church", 184, 32,1,1; 
+					warp "prt_church", 184, 32; 
+					break;
+			}
+			close;
+
+		case 2:
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			close;
+	}
+OnInit:
+        questinfo QTYPE_CLICKME;
+		end;
+}
+
+
+novice07,107,56,4	script	Caçador de Bugs e Wolfs#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice07 == 1) {
+        mes "[Caçador de Bugs e Wolfs]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice07 == 0) {
+        mes "[Caçador de Bugs e Wolfs]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Bugs e 10 Wolfs.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "<ITEM>Poção do Aprendiz<INFO>569</INFO></ITEM>, Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice07, 2; 
+            set Bug_Count, 0;
+            set Wolf_Count, 0;
+            setquest 75097;
+            announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+            mes "Ótimo! Vá e mate 15 Bug e 10 Wolf.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice07 == 2) {
+        if (Bug_Count < 15 || Wolf_Count < 10) {
+            mes "[Caçador de Bugs e Wolfs]";
+            mes "Você ainda não completou a <QUEST>Missão<INFO>75097</INFO></QUEST>.";
+            mes "Bugs derrotados: " + Bug_Count + "/15";
+            mes "Wolfs derrotados: " + Wolf_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Bugs e Wolfs]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            specialeffect2 EF_INCAGILITY;
+		    sc_start SC_INCREASEAGI,300000,10;
+		    specialeffect2 EF_BLESSING;
+		    sc_start SC_BLESSING,300000,10;
+            getitem 569, 150;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 2500; 
+            set Quest_novice07, 1;
+            completequest 75097;  
+            getexp 900, 500;
+            getitem 673,25;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
