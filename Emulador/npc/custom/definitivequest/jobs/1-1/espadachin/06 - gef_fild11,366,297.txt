@@ -1,68 +1,86 @@
+gef_fild11,366,297,6	script	Jake#gef_fild11	4_M_CRU_OLD,{
 
-gef_fild11,366,297,6	script	Jake#gef_fild11	752,{
     if (checkquest(75110) == 1) {
         completequest 75110;
     }
 
     if (checkquest(75111) == -1) {
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Os Goblins estão mais organizados do que nunca. Relatórios indicam que quatro grupos distintos, armados até os dentes, estão aterrorizando viajantes e comerciantes.";
+        mes "Cada clã é especializado em uma arma: adagas, maças, machados e martelos. Eles uniram forças e agora ameaçam nossas rotas comerciais.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Sua missão é clara: neutralizar os quatro clãs. Você precisará derrotar 60 Goblins de cada grupo.";
+        mes "Mas cuidado, cada arma que eles empunham representa um desafio único. Que sua coragem seja tão afiada quanto suas habilidades.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Lembre-se, herói, esta missão não é apenas uma tarefa. É uma oportunidade de trazer paz e segurança a todos. Boa sorte!";
         setquest 75113;
         setquest 75111;
-        set GOBLIN_4_Count, 0;
-        set GOBLIN_3_Count, 0;
-        set GOBLIN_2_Count, 0;
-        set GOBLIN_1_Count, 0;
+        set GOBLIN_Adaga_Count, 0;
+        set GOBLIN_Maca_Count, 0;
+        set GOBLIN_Machado_Count, 0;
+        set GOBLIN_Martelo_Count, 0;
         announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-        mes "objetivo da quest";
         close;
     }
-	else if (checkquest(75111) == 1 && GOBLIN_4_Count >= 60 && GOBLIN_3_Count >= 60 && GOBLIN_2_Count >= 60 && GOBLIN_1_Count >= 60) { // Completar
-		completequest 75111;
-		completequest 75113;
+    else if (checkquest(75111) == 1 && GOBLIN_Adaga_Count >= 60 && GOBLIN_Maca_Count >= 60 && GOBLIN_Machado_Count >= 60 && GOBLIN_Martelo_Count >= 60) { // Completar
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Impressionante! Você derrotou os quatro clãs Goblins e restaurou a segurança das rotas comerciais.";
+        mes "Graças à sua coragem, a aliança dos Goblins foi quebrada e eles recuaram para as sombras.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Mas não descanse ainda. Há relatos de algo muito mais perigoso nas cavernas orcs. Siga para lá e esteja pronto para um novo desafio.";
+        completequest 75111;
+        completequest 75113;
         setquest 75114;
-        navigateto "in_orcs01", 32,167;
-	}
-	else if (checkquest(75111) == 1 && GOBLIN_4_Count < 60 || GOBLIN_3_Count < 60 || GOBLIN_2_Count < 60 || GOBLIN_1_Count < 60) { // Incompleta
-        mes "[CaÃ§ador de GOBLINs";
-        mes "VocÃª ainda nÃ£o completou a <QUEST>MissÃ£o<INFO>75105</INFO></QUEST>.";
-        mes "GOBLINs derrotados: " + GOBLIN_4_Count + "/60";
-        mes "GOBLINs derrotados: " + GOBLIN_3_Count + "/60";
-        mes "GOBLINs derrotados: " + GOBLIN_2_Count + "/60";
-        mes "GOBLINs derrotados: " + GOBLIN_1_Count + "/60";
+        navigateto "in_orcs01", 32, 167;
         close;
-		emotion ET_GO;
-	}
-	else if (checkquest(75111) == 2) { // JÃ¡ Entregue
-		emotion ET_OK;
-        mes "^8B0000[instrutor Jake]^000000";
-        mes "^377420Que seus passos sejam guiados pelo brilho da sua lÃ¢mina. Boa sorte em suas prÃ³GOBLIN_4imas jornadas!^000000";
-	}
-	close;
+    }
+    else if (checkquest(75111) == 1 && (GOBLIN_Adaga_Count < 60 || GOBLIN_Maca_Count < 60 || GOBLIN_Machado_Count < 60 || GOBLIN_Martelo_Count < 60)) { // Incompleta
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você ainda não completou a missão. Os clãs Goblins continuam sendo uma ameaça.";
+        mes "^FF0000Goblins com Adagas derrotados: ^000000" + GOBLIN_Adaga_Count + "/60";
+        mes "^FF8000Goblins com Maças derrotados: ^000000" + GOBLIN_Maca_Count + "/60";
+        mes "^00FF00Goblins com Machados derrotados: ^000000" + GOBLIN_Machado_Count + "/60";
+        mes "^0000FFGoblins com Martelos derrotados: ^000000" + GOBLIN_Martelo_Count + "/60";
+        mes "Continue lutando, herói!";
+        close;
+        emotion ET_GO;
+    }
+    else if (checkquest(75111) == 2) { // Já Entregue
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Sua missão foi cumprida com maestria. O mundo está mais seguro graças a você. Continue seguindo em frente!";
+        emotion ET_OK;
+        close;
+    }
 
 OnNPCKillEvent:
-    if (checkquest(75111) == 1 && killedrid == 1125 && GOBLIN_4_Count < 60) {
-        set GOBLIN_4_Count, GOBLIN_4_Count + 1;
-        dispbottom "GOBLINs derrotados: " + GOBLIN_4_Count + "/60.";
+    if (checkquest(75111) == 1 && killedrid == 1122 && GOBLIN_Adaga_Count < 60) { // Goblins com Adagas
+        set GOBLIN_Adaga_Count, GOBLIN_Adaga_Count + 1;
+        dispbottom "Goblins com Adagas derrotados: " + GOBLIN_Adaga_Count + "/60.";
     }
-    if (checkquest(75111) == 1 && killedrid == 1124 && GOBLIN_3_Count < 60) {
-            set GOBLIN_3_Count, GOBLIN_3_Count + 1;
-            dispbottom "GOBLINs coletados: " + GOBLIN_3_Count + "/60.";
+    if (checkquest(75111) == 1 && killedrid == 1123 && GOBLIN_Maca_Count < 60) { // Goblins com Maças
+        set GOBLIN_Maca_Count, GOBLIN_Maca_Count + 1;
+        dispbottom "Goblins com Maças derrotados: " + GOBLIN_Maca_Count + "/60.";
     }
-    if (checkquest(75111) == 1 && killedrid == 1123 && GOBLIN_2_Count < 60) {
-        set GOBLIN_2_Count, GOBLIN_2_Count + 1;
-        dispbottom "GOBLINs derrotados: " + GOBLIN_2_Count + "/60.";
+    if (checkquest(75111) == 1 && killedrid == 1124 && GOBLIN_Machado_Count < 60) { // Goblins com Machados
+        set GOBLIN_Machado_Count, GOBLIN_Machado_Count + 1;
+        dispbottom "Goblins com Machados derrotados: " + GOBLIN_Machado_Count + "/60.";
     }
-    if (checkquest(75111) == 1 && killedrid == 1122 && GOBLIN_1_Count < 60) {
-            set GOBLIN_1_Count, GOBLIN_1_Count + 1;
-            dispbottom "GOBLINs coletados: " + GOBLIN_1_Count + "/60.";
+    if (checkquest(75111) == 1 && killedrid == 1125 && GOBLIN_Martelo_Count < 60) { // Goblins com Martelos
+        set GOBLIN_Martelo_Count, GOBLIN_Martelo_Count + 1;
+        dispbottom "Goblins com Martelos derrotados: " + GOBLIN_Martelo_Count + "/60.";
     }
-    if (checkquest(75111) == 1 && GOBLIN_4_Count == 60 && GOBLIN_3_Count == 60 && GOBLIN_2_Count == 60 && GOBLIN_1_Count == 60) {
-            dispbottom "VocÃª completou a missÃ£o de matar Goblins!";
-            set GOBLIN_3_Count, GOBLIN_3_Count + 1;
+    if (checkquest(75111) == 1 && GOBLIN_Adaga_Count == 60 && GOBLIN_Maca_Count == 60 && GOBLIN_Machado_Count == 60 && GOBLIN_Martelo_Count == 60) {
+        dispbottom "Você completou a missão de derrotar os Goblins dos quatro clãs!";
+        set GOBLIN_Martelo_Count, GOBLIN_Martelo_Count + 1;
     }
     end;
+
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
-	end;
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75111) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75111) == 1";
+    end;
 
 }

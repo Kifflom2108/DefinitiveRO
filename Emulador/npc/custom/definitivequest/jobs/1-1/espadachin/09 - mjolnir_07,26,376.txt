@@ -1,0 +1,54 @@
+mjolnir_07,26,376,3	script	Jake#mjolnir_07	752,{
+	if (checkquest(75118) == 1) {
+        completequest 75118;
+    }
+
+    if (checkquest(75119) == -1) {
+        setquest 75119;
+        set Savage_Count, 0;
+        set BeetleKing_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75119) == 1 && Savage_Count >= 250 && BeetleKing_Count >= 50) { // Completar
+		completequest 75119;
+        setquest 75120;
+        navigateto "prt_fild11", 25, 285;
+	}
+	else if (checkquest(75119) == 1 && Savage_Count < 250 || BeetleKing_Count < 50) { // Incompleta
+        mes "[Caçador de Savage e BeetleKing]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75119</INFO></QUEST>.";
+        mes "Savage derrotados: " + Savage_Count + "/250";
+        mes "BeetleKing derrotados: " + BeetleKing_Count + "/50";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75119) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próSavageimas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75119) == 1 && killedrid == 1166 && Savage_Count < 250) {
+        set Savage_Count, Savage_Count + 1;
+        dispbottom "Savage derrotados: " + Savage_Count + "/250.";
+    }
+    if (checkquest(75119) == 1 && killedrid == 1494 && BeetleKing_Count < 50) {
+            set BeetleKing_Count, BeetleKing_Count + 1;
+            dispbottom "BeetleKing coletados: " + BeetleKing_Count + "/50.";
+    }
+    if (checkquest(75119) == 1 && Savage_Count == 250 && BeetleKing_Count == 50) {
+            dispbottom "Você completou a missão de matar 250 Savage e 50 BeetleKing!";
+            set BeetleKing_Count, BeetleKing_Count + 1;
+    }
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75119) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75119) == 1";
+	end;
+
+}
+

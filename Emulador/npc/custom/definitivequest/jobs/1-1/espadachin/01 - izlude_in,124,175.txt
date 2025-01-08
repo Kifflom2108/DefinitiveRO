@@ -4,68 +4,62 @@ izlude_in,124,175,4	script	Jake#izlude_in	4_M_CRU_OLD,{
             completequest 75100;
         }
         if (checkquest(75101) == -1) {
-            mes "^8B0000[instrutor Jake]^000000";
-            mes "Ah, vejo que vocÃª jÃ¡ Ã© um Espadachim, que honra!";
-            mes "Como parte de seu treinamento contÃ­nuo, preciso que vocÃª complete uma tarefa de coleta.";
-            mes "Estamos reunindo alguns itens simbÃ³licos para nossos futuros guerreiros e gostaria de contar com sua ajuda.";
-            mes "Os itens que preciso sÃ£o os seguintes:";
+            mes "^8B0000[Instrutor Jake]^000000";
+            mes "Ah, vejo que você já é um Espadachim, que honra!";
+            mes "Como parte de seu treinamento contínuo, preciso que você complete uma tarefa de coleta.";
+            mes "Estamos reunindo alguns itens simbólicos para nossos futuros guerreiros e gostaria de contar com sua ajuda.";
+            mes "Os itens que preciso são os seguintes:";
             mes "<ITEM>10 Trevos<INFO>705</INFO></ITEM>";
-            mes "<ITEM>10 JellopYs<INFO>909</INFO></ITEM>";
+            mes "<ITEM>10 Jellopies<INFO>909</INFO></ITEM>";
             mes "<ITEM>10 Felpas<INFO>914</INFO></ITEM>";
             next;
-            mes "^8B0000[instrutor Jake]^000000";
-            mes "Cada um desses itens tem um significado profundo para nÃ³s espadachins:";
-            mes "O Trevo simboliza a sorte e a esperanÃ§a em nossas batalhas.";
-            mes "A JellopY, apesar de ser comum, representa a perseveranÃ§a e a dedicaÃ§Ã£o no caminho do guerreiro.";
-            mes "A Pluma representa a agilidade e a leveza necessÃ¡ria para dominar a espada com precisÃ£o.";
-            mes "E a Felpa simboliza a resistÃªncia e a forÃ§a que um espadachim deve ter diante das adversidades.";
+            mes "^8B0000[Instrutor Jake]^000000";
+            mes "Cada um desses itens tem um significado profundo para nós espadachins:";
+            mes "O Trevo simboliza a sorte e a esperança em nossas batalhas.";
+            mes "A Jellopy, apesar de ser comum, representa a perseverança e a dedicação no caminho do guerreiro.";
+            mes "A Felpa simboliza a resistência e a força que um espadachim deve ter diante das adversidades.";
             next;
-            mes "^8B0000[instrutor Jake]^000000";
-            mes "Quando vocÃª conseguir esses itens, traga-os atÃ© mim, e em troca, darei uma recompensa que o ajudarÃ¡ em sua jornada.";
+            mes "^8B0000[Instrutor Jake]^000000";
+            mes "Quando você conseguir esses itens, traga-os até mim, e em troca, darei uma recompensa que o ajudará em sua jornada.";
             mes "Boa sorte, espadachim! Vou aguardar sua volta.";
             setquest 75101;
             end;
-
         } else if (checkquest(75101) == 1 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) {
-            mes "^8B0000[instrutor Jake]^000000";
-            mes "VocÃª conseguiu todos os itens! Excelente trabalho, espadachim!";
+            mes "^8B0000[Instrutor Jake]^000000";
+            mes "Você conseguiu todos os itens! Excelente trabalho, espadachim!";
             mes "Esses itens simbolizam os valores que todo espadachim deve carregar em sua jornada.";
-            mes "Como prometido, aqui estÃ¡ sua recompensa.";
-            mes "^b98c015500z^000000, ^b98c01150 PoÃ§Ã£o de Aprendiz^000000 e ^b98c01PoÃ§Ã£o da alma E^000000";
+            mes "Como prometido, aqui está sua recompensa.";
+            mes "^b98c015500z^000000, ^b98c01150 Poção de Aprendiz^000000 e ^b98c01Poção da Alma E^000000.";
             next;
-            mes "Irei te encontrar a a leste de Prontera";
-            mes "Ensinarei o Caminho da espada!";
+            mes "Agora vá para o leste de Prontera, onde irei te ensinar o Caminho da Espada!";
             completequest 75101;
             setquest 75102;
             navigateto "prt_fild07", 374, 192;
-            getexp (5500, 5000);
-            getitem (673,40);
-            set ZenY, ZenY + 5500;
-            getitem(569, 100);
-            delitem(914, 10);
-            delitem(909, 10);
-            delitem(705, 10);
+            getexp 5500, 5000;
+            getitem 673, 40; // 40 Poções Vermelhas
+            set Zeny, Zeny + 5500;
+            getitem 569, 100; // 100 Poções de Alma
+            delitem 914, 10; // Remove 10 Felpas
+            delitem 909, 10; // Remove 10 Jellopies
+            delitem 705, 10; // Remove 10 Trevos
             close;
-
         } else if (checkquest(75101) == 1) {
-            mes "^8B0000[instrutor Jake]^000000";
-            mes "Ainda ^FF0000nÃ£o^000000 trouxe todos os itens necessÃ¡rios. Volte quando tiver tudo que eu pedi.";
+            mes "^8B0000[Instrutor Jake]^000000";
+            mes "Ainda ^FF0000não^000000 trouxe todos os itens necessários. Volte quando tiver tudo que eu pedi.";
             emotion ET_GO;
         } else if (checkquest(75101) == 2) {
-            mes "^8B0000[instrutor Jake]^000000";
-            mes "^377420Que seus passos sejam guiados pelo brilho da sua lÃ¢mina. Boa sorte em suas prÃ³ximas jornadas!^000000";
+            mes "^8B0000[Instrutor Jake]^000000";
+            mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próximas jornadas!^000000";
             emotion ET_OK;
         }
         close;
     } else {
-        mes "^FF0000Seja lÃ¡ o que vocÃª for, nÃ£o tenho nada para te ensinar.^000000";
+        mes "^FF0000Seja lá o que você for, não tenho nada para te ensinar.^000000";
         close;
     }
     
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
-	end;
-
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75101) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75101) == 1";
+    end;
 }
-

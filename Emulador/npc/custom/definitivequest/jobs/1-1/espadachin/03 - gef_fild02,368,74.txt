@@ -1,55 +1,76 @@
-gef_fild02,368,74,4	script	Jake#gef_fild02	752,{
+gef_fild02,368,74,4	script	Jake#gef_fild02	4_M_CRU_OLD,{
 
     if (checkquest(75104) == 1) {
-        completequest 75105;
+        completequest 75104;
     }
 
     if (checkquest(75105) == -1) {
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Bem-vindo às montanhas de Geffen, jovem espadachim. Aqui começaremos uma etapa ainda mais desafiadora de seu treinamento.";
+        mes "Essas terras são habitadas por criaturas mais fortes, conhecidas como ^005500Coco^000000 e ^8B4513Horn^000000.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Os Coco são criaturas resistentes que testam a força de sua lâmina, enquanto os Horn exigem que você aprimore sua precisão e habilidade de esquiva.";
+        mes "Essas batalhas servirão para desenvolver seu controle e sua capacidade de adaptação em combate.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Seu objetivo será derrotar 70 Coco e 30 Horn.";
+        mes "Essas criaturas não serão fáceis de enfrentar, mas estou confiante de que você está preparado para este desafio.";
+        mes "Volte para mim quando tiver completado a tarefa. Boa sorte, espadachim.";
         setquest 75105;
         set coco_Count, 0;
         set horn_Count, 0;
         announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-        mes "objetivo da quest";
         close;
     }
-	else if (checkquest(75105) == 1 && coco_Count >= 70 && horn_Count >= 30) { // Completar
-		completequest 75105;
+    else if (checkquest(75105) == 1 && coco_Count >= 70 && horn_Count >= 30) { // Completar
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Impressionante! Você derrotou 70 Coco e 30 Horn!";
+        mes "Essas criaturas podem não parecer tão ameaçadoras, mas elas são um marco no treinamento de todo espadachim.";
+        mes "Essa tarefa não apenas testou sua força, mas também sua paciência e dedicação.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Como recompensa, darei a você as coordenadas de um campo avançado onde poderá continuar sua jornada.";
+        mes "Siga para as planícies do sul de Prontera. Um novo desafio espera por você lá.";
+        completequest 75105;
         setquest 75106;
-        navigateto "prt_fild10", 216,290;
-	}
-	else if (checkquest(75105) == 1 && coco_Count < 70 || horn_Count < 30) { // Incompleta
-        mes "[CaÃ§ador de Coco e Horn]";
-        mes "VocÃª ainda nÃ£o completou a <QUEST>MissÃ£o<INFO>75105</INFO></QUEST>.";
-        mes "Coco derrotados: " + coco_Count + "/70";
-        mes "Horn derrotados: " + horn_Count + "/30";
+        navigateto "prt_fild10", 216, 290;
         close;
-		emotion ET_GO;
-	}
-	else if (checkquest(75105) == 2) { // JÃ¡ Entregue
-		emotion ET_OK;
-        mes "^8B0000[instrutor Jake]^000000";
-        mes "^377420Que seus passos sejam guiados pelo brilho da sua lÃ¢mina. Boa sorte em suas prÃ³ximas jornadas!^000000";
-	}
-	close;
+    }
+    else if (checkquest(75105) == 1 && (coco_Count < 70 || horn_Count < 30)) { // Incompleta
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você ainda não completou sua missão. Aqui está seu progresso atual:";
+        mes "^FF0000Coco derrotados: ^000000" + coco_Count + "/70";
+        mes "^FF0000Horn derrotados: ^000000" + horn_Count + "/30";
+        mes "Continue lutando, espadachim. Estou aguardando sua volta.";
+        close;
+        emotion ET_GO;
+    }
+    else if (checkquest(75105) == 2) { // Já Entregue
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho de sua lâmina. Boa sorte em suas próximas jornadas!^000000";
+        emotion ET_OK;
+        close;
+    }
 
 OnNPCKillEvent:
-    if (checkquest(75105) == 1 && killedrid == 1104 && coco_Count < 70) {
+    if (checkquest(75105) == 1 && killedrid == 1104 && coco_Count < 70) { // Coco
         set coco_Count, coco_Count + 1;
-        dispbottom "Coco derrotados: " + coco_Count + "/70.";
+        dispbottom "Coco derrotados:" + coco_Count + "/70.";
     }
-    if (checkquest(75105) == 1 && killedrid == 1128 && horn_Count < 30) {
-            set horn_Count, horn_Count + 1;
-            dispbottom "Horn coletados: " + horn_Count + "/30.";
+    if (checkquest(75105) == 1 && killedrid == 1128 && horn_Count < 30) { // Horn
+        set horn_Count, horn_Count + 1;
+        dispbottom "Horn derrotados:" + horn_Count + "/30.";
     }
     if (checkquest(75105) == 1 && coco_Count == 70 && horn_Count == 30) {
-            dispbottom "VocÃª completou a missÃ£o de matar 70 Coco e 30 Horn!";
-            set horn_Count, horn_Count + 1;
+        dispbottom "Você completou a missão de derrotar 70 Coco e 30 Horn!";
+        set horn_Count, horn_Count + 1;
     }
     end;
+
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
-	end;
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75105) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75105) == 1";
+    end;
 
 }
-

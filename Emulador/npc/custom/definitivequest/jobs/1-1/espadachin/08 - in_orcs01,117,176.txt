@@ -1,0 +1,72 @@
+in_orcs01,117,176,3	script	Jake#in_orcs01_2	4_M_CRU_OLD,{
+
+    if (checkquest(75116) == 1) {
+        completequest 75116;
+    }
+
+    if (checkquest(75117) == -1) {
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Os campos próximos à vila dos orcs estão infestados por dois dos guerreiros mais temidos da região:";
+        mes "^FF0000Orc Warriors^000000, conhecidos por sua força bruta, e as ^FF8000Orc Ladies^000000, ferozes guardiãs das tradições tribais.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Essas criaturas não apenas ameaçam os viajantes, mas também protegem artefatos antigos que podem ser cruciais para entendermos os segredos deste território.";
+        mes "Sua missão é simples, mas árdua: Derrote 150 Orc Warriors e 100 Orc Ladies.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Pressione ^00CCFFAlt+U^000000 para acompanhar seu progresso. Boa sorte, herói. Que sua determinação seja tão feroz quanto a deles!";
+        setquest 75117;
+        set OrcWarrior_Count, 0;
+        set OrcLady_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        close;
+    }
+    else if (checkquest(75117) == 1 && OrcWarrior_Count >= 150 && OrcLady_Count >= 100) { // Completar
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você provou ser um verdadeiro herói ao derrotar 150 Orc Warriors e 100 Orc Ladies.";
+        mes "Graças a seus esforços, a ameaça que pairava sobre os campos foi drasticamente reduzida.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Agora, avance para as próximas terras. Há ainda mais perigos à espera. Boa sorte, guerreiro!";
+        completequest 75117;
+        setquest 75118;
+        navigateto "mjolnir_07", 26, 376;
+        close;
+    }
+    else if (checkquest(75117) == 1 && (OrcWarrior_Count < 150 || OrcLady_Count < 100)) { // Incompleta
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você ainda não completou sua missão. Os Orc Warriors e Orc Ladies ainda ameaçam estas terras.";
+        mes "^FF0000Orc Warriors derrotados: ^000000" + OrcWarrior_Count + "/150";
+        mes "^FF8000Orc Ladies derrotadas: ^000000" + OrcLady_Count + "/100";
+        mes "Continue com coragem. O futuro desta região depende de você.";
+        emotion ET_GO;
+        close;
+    }
+    else if (checkquest(75117) == 2) { // Já Entregue
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você já completou esta tarefa com maestria. Agora, prepare-se para os próximos desafios!";
+        emotion ET_OK;
+        close;
+    }
+
+OnNPCKillEvent:
+    if (checkquest(75117) == 1 && killedrid == 1023 && OrcWarrior_Count < 150) { // Orc Warrior
+        set OrcWarrior_Count, OrcWarrior_Count + 1;
+        dispbottom "Orc Warriors derrotados: " + OrcWarrior_Count + "/150.";
+    }
+    if (checkquest(75117) == 1 && killedrid == 1273 && OrcLady_Count < 100) { // Orc Lady
+        set OrcLady_Count, OrcLady_Count + 1;
+        dispbottom "Orc Ladies derrotadas: " + OrcLady_Count + "/100.";
+    }
+    if (checkquest(75117) == 1 && OrcWarrior_Count == 150 && OrcLady_Count == 100) {
+        dispbottom "Você completou a missão de derrotar 150 Orc Warriors e 100 Orc Ladies!";
+        set OrcLady_Count, OrcLady_Count + 1;
+    }
+    end;
+
+OnInit:
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75117) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75117) == 1";
+    end;
+
+}

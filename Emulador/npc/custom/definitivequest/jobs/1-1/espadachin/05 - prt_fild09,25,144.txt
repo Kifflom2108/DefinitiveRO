@@ -1,54 +1,79 @@
-prt_fild09,25,144,4	script	Jake#prt_fild09	752,{
+prt_fild09,25,144,4	script	Jake#prt_fild09	4_M_CRU_OLD,{
+
     if (checkquest(75108) == 1) {
         completequest 75108;
     }
 
     if (checkquest(75109) == -1) {
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você está avançando, mas as sombras do passado ainda persistem em ameaçar nossa terra.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Nas margens do rio ao norte, as Magnolias, flores vivas criadas por antigas magias, se tornaram agressivas.";
+        mes "Elas guardam a essência do caos, espalhando terror nas caravanas que cruzam a região.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "E ainda mais perigoso são os Metallers. Esses insetos metálicos, outrora pacíficos, agora atacam com um zumbido ameaçador.";
+        mes "Eles são rápidos, resistentes e mortais, protegendo seus ninhos como verdadeiras fortalezas.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Sua missão é clara: derrote 140 Magnolias e 60 Metallers.";
+        mes "Esses desafios testarão sua capacidade de adaptação e controle em combate.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Retorne quando completar sua tarefa, e nós seguiremos em frente.";
         setquest 75109;
         set Magnolia_Count, 0;
         set Metaller_Count, 0;
         announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-        mes "objetivo da quest";
         close;
     }
-	else if (checkquest(75109) == 1 && Magnolia_Count >= 140 && Metaller_Count >= 60) { // Completar
-		completequest 75109;
+    else if (checkquest(75109) == 1 && Magnolia_Count >= 140 && Metaller_Count >= 60) { // Completar
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você conseguiu! As Magnolias e os Metallers não são mais uma ameaça.";
+        mes "Seu progresso é notável, mas ainda há muito trabalho a ser feito.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Siga para o próximo local. Algo ainda mais desafiador o aguarda.";
+        completequest 75109;
         setquest 75110;
-        navigateto "gef_fild11", 366,297;
-	}
-	else if (checkquest(75109) == 1 && Magnolia_Count < 140 || Metaller_Count < 60) { // Incompleta
-        mes "[CaÃ§ador de x e Y]";
-        mes "VocÃª ainda nÃ£o completou a <QUEST>MissÃ£o<INFO>75109</INFO></QUEST>.";
-        mes "x derrotados: " + Magnolia_Count + "/140";
-        mes "Y derrotados: " + Metaller_Count + "/60";
+        navigateto "gef_fild11", 366, 297;
         close;
-		emotion ET_GO;
-	}
-	else if (checkquest(75109) == 2) { // JÃ¡ Entregue
-		emotion ET_OK;
-        mes "^8B0000[instrutor Jake]^000000";
-        mes "^377420Que seus passos sejam guiados pelo brilho da sua lÃ¢mina. Boa sorte em suas prÃ³GOBLIN_4imas jornadas!^000000";
-	}
-	close;
+    }
+    else if (checkquest(75109) == 1 && (Magnolia_Count < 140 || Metaller_Count < 60)) { // Incompleta
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você ainda não completou sua missão. Continue lutando.";
+        mes "^FF0000Magnolias derrotadas: ^000000" + Magnolia_Count + "/140";
+        mes "^00FF00Metallers derrotados: ^000000" + Metaller_Count + "/60";
+        mes "Retorne quando concluir sua tarefa.";
+        close;
+        emotion ET_GO;
+    }
+    else if (checkquest(75109) == 2) { // Já Entregue
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "^377420Você está indo muito bem. Que a luz guie seus próximos passos.^000000";
+        emotion ET_OK;
+        close;
+    }
 
 OnNPCKillEvent:
-    if (checkquest(75109) == 1 && killedrid == 1138 && Magnolia_Count < 140) {
+    if (checkquest(75109) == 1 && killedrid == 1138 && Magnolia_Count < 140) { // Magnolia
         set Magnolia_Count, Magnolia_Count + 1;
-        dispbottom "Magnolia derrotados: " + Magnolia_Count + "/140.";
+        dispbottom "Magnolias derrotadas: " + Magnolia_Count + "/140.";
     }
-    if (checkquest(75109) == 1 && killedrid == 1058 && Metaller_Count < 60) {
-            set Metaller_Count, Metaller_Count + 1;
-            dispbottom "Metaller coletados: " + Metaller_Count + "/60.";
+    if (checkquest(75109) == 1 && killedrid == 1058 && Metaller_Count < 60) { // Metaller
+        set Metaller_Count, Metaller_Count + 1;
+        dispbottom "Metallers derrotados: " + Metaller_Count + "/60.";
     }
     if (checkquest(75109) == 1 && Magnolia_Count == 140 && Metaller_Count == 60) {
-            dispbottom "VocÃª completou a missÃ£o de matar 140 x e 60 Y!";
-            set Metaller_Count, Metaller_Count + 1;
+        dispbottom "Você completou a missão de derrotar 140 Magnolias e 60 Metallers!";
+        set Metaller_Count, Metaller_Count + 1;
     }
     end;
+
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
-	end;
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75109) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75109) == 1";
+    end;
 
 }
-

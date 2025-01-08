@@ -63,14 +63,14 @@ void map_msg_reload(void);
 #endif
 #define LOOTITEM_SIZE 10
 #define MAX_MOBSKILL 50		//Max 128, see mob skill_idx type if need this higher
-#define MAX_MOB_LIST_PER_MAP 400
-#define MAX_EVENTQUEUE 3
+#define MAX_MOB_LIST_PER_MAP 128
+#define MAX_EVENTQUEUE 100
 #define MAX_EVENTTIMER 32
 #define NATURAL_HEAL_INTERVAL 500
 #define MIN_FLOORITEM 2
 #define MAX_FLOORITEM START_ACCOUNT_NUM
 #define MAX_LEVEL 275
-#define MAX_DROP_PER_MAP 70
+#define MAX_DROP_PER_MAP 48
 #define MAX_IGNORE_LIST 20 	// official is 14
 #define MAX_VENDING 12
 #define MAX_MAP_SIZE 512*512 	// Wasn't there something like this already? Can't find it.. [Shinryo]

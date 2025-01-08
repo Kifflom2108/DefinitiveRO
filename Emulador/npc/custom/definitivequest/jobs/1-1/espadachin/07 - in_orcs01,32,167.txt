@@ -1,54 +1,71 @@
-in_orcs01,32,167,3	script	Jake#in_orcs01	752,{
-	if (checkquest(75104) == 1) {
-        completequest 75105;
+in_orcs01,32,167,3	script	Jake#in_orcs01	4_M_CRU_OLD,{
+    if (checkquest(75114) == 1) {
+        completequest 75114;
     }
 
-    if (checkquest(75105) == -1) {
-        setquest 75105;
-        set 0x0_Count, 0;
-        set 0y0_Count, 0;
+    if (checkquest(75115) == -1) {
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "As profundezas da caverna orc estão infestadas de mortos-vivos. Orc Zumbis e Orc Esqueletos vagam, protegendo algum segredo sombrio.";
+        mes "Precisamos de um herói para enfrentar essas criaturas e trazer um pouco de paz a este lugar amaldiçoado.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Sua missão é derrotar 200 Orc Zumbis e 50 Orc Esqueletos. Tome cuidado, pois essas criaturas são implacáveis.";
+        mes "Elas carregam consigo o eco de antigas batalhas e a fúria dos que não puderam descansar em paz.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Lembre-se: pressões no Alt+U para acompanhar seu progresso. Boa sorte, herói. Que sua coragem brilhe na escuridão destas cavernas.";
+        setquest 75115;
+        set OrcZumbi_Count, 0;
+        set OrcEsqueleto_Count, 0;
         announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-        mes "objetivo da quest";
         close;
     }
-	else if (checkquest(75105) == 1 && 0x0_Count >= QQQQ && 0y0_Count >= wwww) { // Completar
-		completequest 75105;
-        setquest 75106;
-        navigateto "prt_fild10", 216,290;
-	}
-	else if (checkquest(75105) == 1 && 0x0_Count < QQQQ || 0y0_Count < wwww) { // Incompleta
-        mes "[CaÃ§ador de 0x0 e 0y0]";
-        mes "VocÃª ainda nÃ£o completou a <QUEST>MissÃ£o<INFO>75105</INFO></QUEST>.";
-        mes "0x0 derrotados: " + 0x0_Count + "/QQQQ";
-        mes "0y0 derrotados: " + 0y0_Count + "/wwww";
+    else if (checkquest(75115) == 1 && OrcZumbi_Count >= 200 && OrcEsqueleto_Count >= 50) { // Completar
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Excelente trabalho! Você conseguiu erradicar 200 Orc Zumbis e 50 Orc Esqueletos.";
+        mes "Graças aos seus esforços, as forças sombrias que habitavam esta caverna enfraqueceram consideravelmente.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Agora, prossiga para a próxima etapa. Há algo de muito mais perigoso nas planícies. Siga para lá e continue sua missão.";
+        completequest 75115;
+        setquest 75116;
+        navigateto "in_orcs01", 117, 176;
         close;
-		emotion ET_GO;
-	}
-	else if (checkquest(75105) == 2) { // JÃ¡ Entregue
-		emotion ET_OK;
-        mes "^8B0000[instrutor Jake]^000000";
-        mes "^377420Que seus passos sejam guiados pelo brilho da sua lÃ¢mina. Boa sorte em suas prÃ³0x0imas jornadas!^000000";
-	}
-	close;
+    }
+    else if (checkquest(75115) == 1 && (OrcZumbi_Count < 200 || OrcEsqueleto_Count < 50)) { // Incompleta
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você ainda não completou a missão. As criaturas ainda assombram a caverna.";
+        mes "^FF0000Orc Zumbis derrotados: ^000000" + OrcZumbi_Count + "/200";
+        mes "^FF8000Orc Esqueletos derrotados: ^000000" + OrcEsqueleto_Count + "/50";
+        mes "Continue com seu esforço, herói. O mundo conta com você!";
+        emotion ET_GO;
+        close;
+    }
+    else if (checkquest(75115) == 2) { // Já Entregue
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você completou essa missão com maestria. Continue enfrentando os perigos que o aguardam!";
+        emotion ET_OK;
+        close;
+    }
 
 OnNPCKillEvent:
-    if (checkquest(75105) == 1 && killedrid == 1167 && 0x0_Count < QQQQ) {
-        set 0x0_Count, 0x0_Count + 1;
-        dispbottom "0x0 derrotados: " + 0x0_Count + "/QQQQ.";
+    if (checkquest(75115) == 1 && killedrid == 1153 && OrcZumbi_Count < 200) { // Orc Zumbi
+        set OrcZumbi_Count, OrcZumbi_Count + 1;
+        dispbottom "Orc Zumbis derrotados: " + OrcZumbi_Count + "/200.";
     }
-    if (checkquest(75105) == 1 && killedrid == 1052 && 0y0_Count < wwww) {
-            set 0y0_Count, 0y0_Count + 1;
-            dispbottom "0y0 coletados: " + 0y0_Count + "/wwww.";
+    if (checkquest(75115) == 1 && killedrid == 1152 && OrcEsqueleto_Count < 50) { // Orc Esqueleto
+        set OrcEsqueleto_Count, OrcEsqueleto_Count + 1;
+        dispbottom "Orc Esqueletos derrotados: " + OrcEsqueleto_Count + "/50.";
     }
-    if (checkquest(75105) == 1 && 0x0_Count == QQQQ && 0y0_Count == wwww) {
-            dispbottom "VocÃª completou a missÃ£o de matar QQQQ 0x0 e wwww 0y0!";
-            set 0y0_Count, 0y0_Count + 1;
+    if (checkquest(75115) == 1 && OrcZumbi_Count == 200 && OrcEsqueleto_Count == 50) {
+        dispbottom "Você completou a missão de derrotar 200 Orc Zumbis e 50 Orc Esqueletos!";
+        set OrcEsqueleto_Count, OrcEsqueleto_Count + 1;
     }
     end;
+
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75105) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75105) == 1";
-	end;
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75115) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75115) == 1";
+    end;
 
 }
-

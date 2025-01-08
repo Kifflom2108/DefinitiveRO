@@ -1,55 +1,77 @@
-prt_fild07,374,192,4	script	Jake#prt_fild07	752,{
+prt_fild07,374,192,4	script	Jake#prt_fild07	4_M_CRU_OLD,{
 
     if (checkquest(75102) == 1) {
         completequest 75102;
     }
 
     if (checkquest(75103) == -1) {
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Ah, você chegou! Temos uma nova missão que vai desafiar suas habilidades como espadachim.";
+        mes "Recentemente, os campos ao redor têm sido invadidos por Savage Babe e Rockers. Eles estão destruindo plantações e atrapalhando viajantes.";
+        mes "O Conselho de Espadachins decidiu que isso será um bom teste para jovens guerreiros como você.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "O objetivo é derrotar 50 Savage Babe e 50 Rockers.";
+        mes "Essas criaturas podem parecer insignificantes, mas são um bom treinamento para desenvolver sua resistência e precisão.";
+        mes "Lembre-se: não subestime nenhum inimigo. Até mesmo os mais fracos podem ensinar algo valioso.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Confio em você para lidar com essa tarefa. Volte para mim quando tiver completado o objetivo.";
         setquest 75103;
         set babe_Count, 0;
         set rocker_Count, 0;
         announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-        mes "objetivo da quest";
+        mes "^377420Missão iniciada: Derrote 50 Savage Babe e 50 Rockers!^000000";
         close;
     }
-	else if (checkquest(75103) == 1 && babe_Count >= 50 && rocker_Count >= 50) { // Completar
-		completequest 75103;
+    else if (checkquest(75103) == 1 && babe_Count >= 50 && rocker_Count >= 50) { // Completar
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você conseguiu! Completou a missão de derrotar 50 Savage Babe e 50 Rockers!";
+        mes "Essas criaturas podem parecer insignificantes, mas até os desafios mais simples têm valor no treinamento.";
+        mes "Como recompensa, darei a você um mapa para um local especial onde poderá continuar seu treinamento.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Siga para o nordeste e procure por mim nas montanhas de Geffen.";
+        mes "Lá, ensinarei a próxima etapa de seu treinamento.";
+        completequest 75103;
         setquest 75104;
-        navigateto "gef_fild02", 368,74;
-	}
-	else if (checkquest(75103) == 1 && babe_Count < 50 || rocker_Count < 50) { // Incompleta
-        mes "[CaÃ§ador de Savage Babe e Rocker]";
-        mes "VocÃª ainda nÃ£o completou a <QUEST>MissÃ£o<INFO>75096</INFO></QUEST>.";
-        mes "Savage Babe derrotados: " + babe_Count + "/50";
-        mes "Rocker derrotados: " + rocker_Count + "/50";
+        navigateto "gef_fild02", 368, 74;
         close;
-		emotion ET_GO;
-	}
-	else if (checkquest(75103) == 2) { // JÃ¡ Entregue
-		emotion ET_OK;
-        mes "^8B0000[instrutor Jake]^000000";
-        mes "^377420Que seus passos sejam guiados pelo brilho da sua lÃ¢mina. Boa sorte em suas prÃ³ximas jornadas!^000000";
-	}
-	close;
+    }
+    else if (checkquest(75103) == 1 && (babe_Count < 50 || rocker_Count < 50)) { // Incompleta
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você ainda não completou sua missão. Aqui está seu progresso atual:";
+        mes "^FF0000Savage Babe derrotados: ^000000" + babe_Count + "/50";
+        mes "^FF0000Rockers derrotados: ^000000" + rocker_Count + "/50";
+        mes "Continue seu esforço, espadachim. Estou aguardando sua volta!";
+        close;
+        emotion ET_GO;
+    }
+    else if (checkquest(75103) == 2) { // Já Entregue
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho de sua lâmina. Boa sorte em suas próximas jornadas!^000000";
+        emotion ET_OK;
+        close;
+    }
 
 OnNPCKillEvent:
-    if (checkquest(75103) == 1 && killedrid == 1167 && babe_Count < 50) {
+    if (checkquest(75103) == 1 && killedrid == 1167 && babe_Count < 50) { // Savage Babe
         set babe_Count, babe_Count + 1;
-        dispbottom "Savage Babe derrotados: " + babe_Count + "/50.";
+        dispbottom "Savage Babe derrotados: " + babe_Count + "/50";
     }
-    if (checkquest(75103) == 1 && killedrid == 1052 && rocker_Count < 50) {
-            set rocker_Count, rocker_Count + 1;
-            dispbottom "Rocker coletados: " + rocker_Count + "/50.";
+    if (checkquest(75103) == 1 && killedrid == 1052 && rocker_Count < 50) { // Rocker
+        set rocker_Count, rocker_Count + 1;
+        dispbottom "Rockers derrotados: " + rocker_Count + "/50";
     }
     if (checkquest(75103) == 1 && babe_Count == 50 && rocker_Count == 50) {
-            dispbottom "VocÃª completou a missÃ£o de matar 50 Savage Babe e 50 Rocker!";
-            set rocker_Count, rocker_Count + 1;
+        dispbottom "Você completou a missão de derrotar 50 Savage Babe e 50 Rockers!";
+        set rocker_Count, rocker_Count + 1;
     }
     end;
+
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
-	end;
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75103) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75103) == 1";
+    end;
 
 }
-
