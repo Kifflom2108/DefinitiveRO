@@ -70,3 +70,87 @@ OnInit:
 		end;
 }
    
+
+novice05,107,56,4	script	Caçador de Tarous e Rodas#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice05 == 1) {
+        mes "[Caçador de Tarous e Rodas]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice05 == 0) {
+        mes "[Caçador de Tarous e Rodas]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Tarous e 10 Rodas.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "<ITEM>Poção do Aprendiz<INFO>569</INFO></ITEM> , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice05, 2; 
+            set Tarou_Count, 0;
+            set Roda_Count, 0;
+            announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+            setquest 75095;
+            mes "Ótimo! Vá e mate 15 Tarou e 10 Roda.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice05 == 2) {
+        if (Tarou_Count < 15 || Roda_Count < 10) {
+            mes "[Caçador de Tarous e Rodas]";
+            mes "Você ainda não completou a <QUEST>Missão<INFO>75095</INFO></QUEST>.";
+            mes "Tarous derrotados: " + Tarou_Count + "/15";
+            mes "Rodas derrotados: " + Roda_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Tarous e Rodas]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            specialeffect2 EF_INCAGILITY;
+		    sc_start SC_INCREASEAGI,300000,10;
+		    specialeffect2 EF_BLESSING;
+		    sc_start SC_BLESSING,300000,10;
+            getitem 569, 50;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 2500; 
+            set Quest_novice05, 1;  
+            completequest 75095;
+            getexp 900, 500;
+            getitem 673,25;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice05 == 2 && killedrid == 1175 && Tarou_Count < 15) {
+        set Tarou_Count, Tarou_Count + 1;
+        dispbottom "Tarous derrotados: " + Tarou_Count + "/15.";
+    }
+    if (Quest_novice05 == 2 && killedrid == 1012 && Roda_Count < 10) {
+            set Roda_Count, Roda_Count + 1;
+            dispbottom "Rodas coletados: " + Roda_Count + "/10.";
+        }
+    if (Quest_novice05 == 2 &&Tarou_Count == 15 && Roda_Count == 10) {
+            dispbottom "Você completou a missão de matar 10 Tarous e 15 Rodas!";
+        }
+    
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75095) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75095) == 1";
+	end;
+}
+

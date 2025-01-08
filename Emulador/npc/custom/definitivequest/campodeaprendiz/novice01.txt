@@ -69,3 +69,88 @@ OnInit:
 		end;
 
 }
+
+novice01,107,56,4	script	Caçador de Fabres e Pupas#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice01 == 1) {
+        mes "[Caçador de Fabres e Pupas]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice01 == 0) {
+        mes "[Caçador de Fabres e Pupas]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Fabres e 10 Pupas.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "<ITEM>Poção do Aprendiz<INFO>569</INFO></ITEM> , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice01, 2; 
+            set Fabre_Count, 0;
+            set Pupa_Count, 0;
+            setquest 75091;
+            announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+            mes "Ótimo! Vá e mate 15 Fabre e 10 Pupa.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice01 == 2) {
+        if (Fabre_Count < 15 || Pupa_Count < 10) {
+            mes "[Caçador de Fabres e Pupas]";
+            mes "Você ainda não completou a <QUEST>Missão<INFO>75091</INFO></QUEST>.";
+            mes "Fabres derrotados: " + Fabre_Count + "/15";
+            mes "Pupas derrotados: " + Pupa_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Fabres e Pupas]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            specialeffect2 EF_INCAGILITY;
+		    sc_start SC_INCREASEAGI,300000,10;
+		    specialeffect2 EF_BLESSING;
+		    sc_start SC_BLESSING,300000,10;
+            getitem 569, 40;    
+            getitem 22777, 5;     
+            completequest 75091;
+            set Zeny, Zeny + 1500; 
+            set Quest_novice01, 1;  
+            getexp 900, 500;
+            getitem 673,25;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice01 == 2 && killedrid == 1184 && Fabre_Count < 15) {
+        set Fabre_Count, Fabre_Count + 1;
+        dispbottom "Fabres derrotados: " + Fabre_Count + "/15.";
+    }
+    if (Quest_novice01 == 2 && killedrid == 1008 && Pupa_Count < 10) {
+            set Pupa_Count, Pupa_Count + 1;
+            dispbottom "Pupas coletados: " + Pupa_Count + "/10.";
+        }
+    if (Quest_novice01 == 2 && Fabre_Count == 15 && Pupa_Count == 10) {
+            set Pupa_Count, Pupa_Count + 1;
+            announce "Você completou a missão de matar 15 Fabres e 10 Pupas!", bc_self;
+        }
+    
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75091) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75091) == 1";
+	end;
+}
+

@@ -153,21 +153,3 @@ OnInit:
 	end;
 
 }
-
-OnNPCKillEvent:
-    if (Quest_novice07 == 2 && killedrid == 1053 && Bug_Count < 15) {
-        set Bug_Count, Bug_Count + 1;
-        dispbottom "Bugs derrotados: " + Bug_Count + "/15.";
-    }
-    if (Quest_novice07 == 2 && killedrid == 1107 && Wolf_Count < 10) {
-            set Wolf_Count, Wolf_Count + 1;
-            dispbottom "Wolfs coletados: " + Wolf_Count + "/10.";
-        }
-    if (Quest_novice07 == 2 && Bug_Count == 15 && Wolf_Count == 10) {
-            dispbottom "Você completou a missão de matar 15 Bugs e 10 Wolfs!";
-        }
-OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75097) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75097) == 1";
-	end;
-}

@@ -1,4 +1,4 @@
-prt_fild11,25,285,3	script	Jake#swordman11	752,{
+prt_fild11,25,285,3	script	Jake#prt_fild11	752,{
 			if (BaseJob == Job_Swordman) {
 				if (checkquest(75104) == 1) { // Completar Quest Anterior
 					completequest 75104;

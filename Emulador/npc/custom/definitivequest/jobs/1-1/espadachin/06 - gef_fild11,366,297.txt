@@ -1,5 +1,5 @@
 
-gef_fild11,366,297,6	script	Jake#swordman6	752,{
+gef_fild11,366,297,6	script	Jake#gef_fild11	752,{
     if (checkquest(75110) == 1) {
         completequest 75110;
     }

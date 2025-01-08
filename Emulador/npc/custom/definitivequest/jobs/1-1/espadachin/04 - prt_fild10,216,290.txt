@@ -1,4 +1,4 @@
-prt_fild10,216,290,4	script	Jake#swordman4	752,{
+prt_fild10,216,290,4	script	Jake#prt_fild10	752,{
 
     if (checkquest(75106) == 1) {
         completequest 75107;

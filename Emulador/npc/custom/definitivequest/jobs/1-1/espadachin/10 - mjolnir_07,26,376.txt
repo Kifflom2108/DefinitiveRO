@@ -1,4 +1,4 @@
-mjolnir_07,26,376,3	script	Jake#swordman10	752,{
+mjolnir_07,26,376,3	script	Jake#mjolnir_07	752,{
 			if (BaseJob == Job_Swordman) {
 				if (checkquest(75104) == 1) { // Completar Quest Anterior
 					completequest 75104;

@@ -1,4 +1,4 @@
-orcsdun02,28,183,3	script	Jake#swordman9	752,{
+orcsdun02,28,183,3	script	Jake#orcsdun02	752,{
 			if (BaseJob == Job_Swordman) {
 				if (checkquest(75104) == 1) { // Completar Quest Anterior
 					completequest 75104;

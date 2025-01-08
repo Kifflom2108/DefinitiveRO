@@ -1,4 +1,4 @@
-in_orcs01,32,167,3	script	Jake#swordman8	752,{
+in_orcs01,32,165,3	script	Jake#in_orcs011	752,{
 	if (checkquest(75104) == 1) {
         completequest 75105;
     }

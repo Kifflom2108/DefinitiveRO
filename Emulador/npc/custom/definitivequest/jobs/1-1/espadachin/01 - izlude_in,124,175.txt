@@ -1,4 +1,4 @@
-izlude_in,124,175,4	script	Jake#swordman	4_M_CRU_OLD,{
+izlude_in,124,175,4	script	Jake#izlude_in	4_M_CRU_OLD,{
     if (BaseJob == Job_Swordman) {
         if (checkquest(75100) == 1) {
             completequest 75100;

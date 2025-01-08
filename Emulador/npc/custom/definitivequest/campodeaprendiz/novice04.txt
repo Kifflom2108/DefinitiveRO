@@ -69,3 +69,88 @@ OnInit:
         questinfo QTYPE_CLICKME;
 		end;
 }
+
+
+novice04,107,56,4	script	Caçador de Willows e Savages#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice04 == 1) {
+        mes "[Caçador de Willows e Savages]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice04 == 0) {
+        mes "[Caçador de Willows e Savages]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Willows e 10 Savages.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "<ITEM>Poção do Aprendiz<INFO>569</INFO></ITEM> , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice04, 2; 
+            set Willow_Count, 0;
+            set Savage_Count, 0;
+            setquest 75094;
+            announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+            mes "Ótimo! Vá e mate 15 Willow e 10 Savage.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice04 == 2) {
+        if (Willow_Count < 15 || Savage_Count < 10) {
+            mes "[Caçador de Willows e Savages]";
+            mes "Você ainda não completou a <QUEST>Missão<INFO>75094</INFO></QUEST>.";
+            mes "Willows derrotados: " + Willow_Count + "/15";
+            mes "Savages derrotados: " + Savage_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Willows e Savages]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            specialeffect2 EF_INCAGILITY;
+		    sc_start SC_INCREASEAGI,300000,10;
+		    specialeffect2 EF_BLESSING;
+		    sc_start SC_BLESSING,300000,10;
+            getitem 569, 50;    
+            getitem 22777, 5;     
+            completequest 75094;
+            set Zeny, Zeny + 2500; 
+            set Quest_novice04, 1;  
+            getexp 900, 500;
+            getitem 673,25;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice04 == 2 && killedrid == 1010 && Willow_Count < 15) {
+        set Willow_Count, Willow_Count + 1;
+        dispbottom "Willows derrotados: " + Willow_Count + "/15.";
+    }
+    if (Quest_novice04 == 2 && killedrid == 1167 && Savage_Count < 10) {
+            set Savage_Count, Savage_Count + 1;
+            dispbottom "Savages coletados: " + Savage_Count + "/10.";
+        }
+    if (Quest_novice04 == 2 && Willow_Count == 15 && Savage_Count == 10) {
+            set Willow_Count, Willow_Count + 1;
+            announce "Você completou a missão de matar 15 Willows e 10 Savages!", bc_self;
+        }
+    
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75094) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75094) == 1";
+	end;
+}

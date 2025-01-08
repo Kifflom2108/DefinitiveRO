@@ -68,4 +68,88 @@ OnInit:
         questinfo QTYPE_CLICKME;
 		end;
 }
-   
+
+novice03,107,56,4	script	Caçador de Pickys e Condors#1	4_M_KNIGHT_SILVER,{
+    cutin "3rd_rune_knight", 2;
+    if (Quest_novice03 == 1) {
+        mes "[Caçador de Pickys e Condors]";
+        mes "Você já completou esta missão.";
+        cutin "", 255;
+        close;
+    }
+
+    if (Quest_novice03 == 0) {
+        mes "[Caçador de Pickys e Condors]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
+        mes "Mate 15 Pickys e 10 Condors.";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "<ITEM>Poção do Aprendiz<INFO>569</INFO></ITEM> , Exp e 10 Moedas da guilda";
+        next;
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
+            set Quest_novice03, 2; 
+            set Picky_Count, 0;
+            set Condor_Count, 0;
+            setquest 75093;
+            announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+            mes "Ótimo! Vá e mate 15 Picky e 10 Condor.";
+            cutin "", 255;
+            close;
+        } else {
+            mes "Tudo bem, volte quando estiver pronto.";
+            cutin "", 255;
+            close;
+        }
+    }
+
+    if (Quest_novice03 == 2) {
+        if (Picky_Count < 15 || Condor_Count < 10) {
+            mes "[Caçador de Pickys e Condors]";
+            mes "Você ainda não completou a <QUEST>Missão<INFO>75093</INFO></QUEST>.";
+            mes "Pickys derrotados: " + Picky_Count + "/15";
+            mes "Condors derrotados: " + Condor_Count + "/10";
+            cutin "", 255;
+            close;
+        } else {
+            mes "[Caçador de Pickys e Condors]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            specialeffect2 EF_INCAGILITY;
+		    sc_start SC_INCREASEAGI,300000,10;
+		    specialeffect2 EF_BLESSING;
+		    sc_start SC_BLESSING,300000,10;
+            completequest 75093;
+            getitem 569, 50;    
+            getitem 22777, 5;     
+            set Zeny, Zeny + 2500; 
+            set Quest_novice03, 1;  
+            getexp 900, 500;
+            getitem 673,25;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
+            cutin "", 255;
+            close;
+        }
+    }
+    close;
+
+OnNPCKillEvent:
+    if (Quest_novice03 == 2 && killedrid == 1240 && Picky_Count < 15) {
+        set Picky_Count, Picky_Count + 1;
+        dispbottom "Pickys derrotados: " + Picky_Count + "/15.";
+    }
+    if (Quest_novice03 == 2 && killedrid == 1009 && Condor_Count < 10) {
+            set Condor_Count, Condor_Count + 1;
+            dispbottom "Condors coletados: " + Condor_Count + "/10.";
+        }
+    if (Quest_novice03 == 2 && Picky_Count == 15 && Condor_Count == 10) {
+            set Picky_Count, Picky_Count + 1;
+            announce "Você completou a missão de matar 15 Pickys e 10 Condors!", bc_self;
+        }
+    
+    end;
+OnInit:
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75093) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75093) == 1";
+	end;
+}
+  
