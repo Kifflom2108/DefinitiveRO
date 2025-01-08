@@ -1,6 +1,6 @@
 //===== rAthena Script ======================================= 
 //= Swordsman Job Quest
-//===== By: ================================================== 
+//===== BY: ================================================== 
 //= kobra_k88; L0ne_W0lf
 //===== Current Version: ===================================== 
 //= 2.3
@@ -10,17 +10,17 @@
 //= [Official Conversion]
 //= Job quest for Swordman classes
 //= Uses Job_sword1 as opposed to sword_1-1 -> sword_3-1.
-//= EXPLOITABLE in a sense because while the sword_x-1 maps
-//= are marked as "inside" by the client, job_sword1 is not.
-//= giving players FREE camera rotation while doing the job quest.
+//= ExPLOITABLE in a sense because while the sword_x-1 maps
+//= are marked as "inside" bY the client, job_sword1 is not.
+//= giving plaYers FREE camera rotation while doing the job quest.
 //===== Additional Comments: ================================= 
-//= 1.0 Fully working.
+//= 1.0 FullY working.
 //= 1.1 Added instant job change for High Novice [Lupus]
-//= 1.3 Added Baby Class support [Lupus]
-//= 1.4 Changed the timing system to initnpctimer, now you do get warnings about time
+//= 1.3 Added BabY Class support [Lupus]
+//= 1.4 Changed the timing sYstem to initnpctimer, now You do get warnings about time
 //=     and are limited to 7min to complete the quest [Fredzilla]
 //= 1.5 Optimised and moved first checker to Jfunc1-1 [massdriller]
-//= 1.5.1 Fixed possible EXP abuse [Lupus]
+//= 1.5.1 Fixed possible ExP abuse [Lupus]
 //= 1.5.2 Now saves/restores all quest skills [Lupus]
 //= 1.5.3 Removed Duplicates [Silent]
 //= 1.6 Merged back JFunc, CHANGED NUMBERS TO CONSTANTS [Lupus]
@@ -30,10 +30,10 @@
 //=     Removed "green" traps, quest is no longer timed.
 //=     No longer uses function "F_ToHigh"
 //= 1.9 Dialog is official, but the Script is now custom as far as maps go. [L0ne_W0lf]
-//= 1.9b Fixed usage of wrong jobchange func messing up baby classes [ultramage]
+//= 1.9b Fixed usage of wrong jobchange func messing up babY classes [ultramage]
 //= 2.0 Corrected NPC names to fall within proper resctrictions. [L0ne_W0lf]
 //= 2.1 Fixed mistake in condition check. [L0ne_W0lf]
-//= 2.2 Warp portals dont end with ; [Yommy]
+//= 2.2 Warp portals dont end with ; [YommY]
 //= 2.3 Added Quest Log commands. [L0ne_W0lf]
 //============================================================ 
 
@@ -660,13 +660,13 @@ izlude_in,124,175,4	script	Jake#swordman	4_M_CRU_OLD,{
             mes "Estamos reunindo alguns itens simbólicos para nossos futuros guerreiros e gostaria de contar com sua ajuda.";
             mes "Os itens que preciso são os seguintes:";
             mes "<ITEM>10 Trevos<INFO>705</INFO></ITEM>";
-            mes "<ITEM>10 Jellopys<INFO>909</INFO></ITEM>";
+            mes "<ITEM>10 JellopYs<INFO>909</INFO></ITEM>";
             mes "<ITEM>10 Felpas<INFO>914</INFO></ITEM>";
             next;
             mes "^8B0000[instrutor Jake]^000000";
             mes "Cada um desses itens tem um significado profundo para nós espadachins:";
             mes "O Trevo simboliza a sorte e a esperança em nossas batalhas.";
-            mes "A Jellopy, apesar de ser comum, representa a perseverança e a dedicação no caminho do guerreiro.";
+            mes "A JellopY, apesar de ser comum, representa a perseverança e a dedicação no caminho do guerreiro.";
             mes "A Pluma representa a agilidade e a leveza necessária para dominar a espada com precisão.";
             mes "E a Felpa simboliza a resistência e a força que um espadachim deve ter diante das adversidades.";
             next;
@@ -687,10 +687,10 @@ izlude_in,124,175,4	script	Jake#swordman	4_M_CRU_OLD,{
             mes "Ensinarei o Caminho da espada!";
             completequest 75101;
             setquest 75102;
-            navigateto "prt_fild07", 376, 243;
+            navigateto "prt_fild07", 374, 192;
             getexp (5500, 5000);
             getitem (673,40);
-            set Zeny, Zeny + 5500;
+            set ZenY, ZenY + 5500;
             getitem(569, 100);
             delitem(914, 10);
             delitem(909, 10);
@@ -713,209 +713,353 @@ izlude_in,124,175,4	script	Jake#swordman	4_M_CRU_OLD,{
     }
     
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75101) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75101) == 1";
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
 	end;
 
 }
 
 prt_fild07,374,192,4	script	Jake#swordman2	752,{
 
-	if (BaseJob == Job_Swordman){
-		if (checkquest (75102) == 1){
-		completequest 75102;
-		}
-		if (checkquest(75103) == -1) {
-			setquest 75103;
-		}
-		else if (checkquest(75103) == 1 && countitem(949) >= 1) {
-            completequest 75103;
-            setquest 75104;
-            navigateto "prt_fild07", 376, 243;
-            getexp (5500, 5000);
-            getitem (673,40);
-            set Zeny, Zeny + 5500;
-            close;
-		}
-		else if (checkquest(75103) == 1) {
-            mes "^8B0000[instrutor Jake]^000000";  
-			mes "Ainda ^FF0000não^000000 trouxe todos os itens necessários. Volte quando tiver tudo que eu pedi."; 
-			emotion ET_GO;
-        }else if (checkquest(75103) == 2) {
-            mes "^8B0000[instrutor Jake]^000000";  
-			mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próximas jornadas!^000000"; 
-			emotion ET_OK;
-        } 
-		close;
+    if (checkquest(75102) == 1) {
+        completequest 75102;
+    }
+
+    if (checkquest(75103) == -1) {
+        setquest 75103;
+        set babe_Count, 0;
+        set rocker_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75103) == 1 && babe_Count >= 50 && rocker_Count >= 50) { // Completar
+		completequest 75103;
+        setquest 75104;
+        navigateto "gef_fild02", 368,74;
 	}
+	else if (checkquest(75103) == 1 && babe_Count < 50 || rocker_Count < 50) { // Incompleta
+        mes "[Caçador de Savage Babe e Rocker]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75096</INFO></QUEST>.";
+        mes "Savage Babe derrotados: " + babe_Count + "/50";
+        mes "Rocker derrotados: " + rocker_Count + "/50";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75103) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próximas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75103) == 1 && killedrid == 1167 && babe_Count < 50) {
+        set babe_Count, babe_Count + 1;
+        dispbottom "Savage Babe derrotados: " + babe_Count + "/50.";
+    }
+    if (checkquest(75103) == 1 && killedrid == 1052 && rocker_Count < 50) {
+            set rocker_Count, rocker_Count + 1;
+            dispbottom "Rocker coletados: " + rocker_Count + "/50.";
+    }
+    if (checkquest(75103) == 1 && babe_Count == 50 && rocker_Count == 50) {
+            dispbottom "Você completou a missão de matar 50 Savage Babe e 50 Rocker!";
+            set rocker_Count, rocker_Count + 1;
+    }
+    end;
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75103) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75103) == 1";
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
 	end;
+
 }
 
 gef_fild02,368,74,4	script	Jake#swordman3	752,{
-			if (BaseJob == Job_Swordman) {
-				if (checkquest(75104) == 1) { // Completar Quest Anterior
-					completequest 75104;
-				}
-				if (checkquest(75105) == -1) { // Iniciar Quest
-					setquest 75105;
-				}
-				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
-					completequest 75105;
-                    setquest 75104;
-                    navigateto "prt_fild07", 376, 243;
-				}
-				else if (checkquest(75105) == 1) { // Incompleta
-					emotion ET_GO;
-				}
-				else if (checkquest(75105) == 2) { // Já Entregue
-					emotion ET_OK;
-				}
-			}
-			close;
+
+    if (checkquest(75104) == 1) {
+        completequest 75105;
+    }
+
+    if (checkquest(75105) == -1) {
+        setquest 75105;
+        set coco_Count, 0;
+        set horn_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75105) == 1 && coco_Count >= 70 && horn_Count >= 30) { // Completar
+		completequest 75105;
+        setquest 75106;
+        navigateto "prt_fild10", 216,290;
+	}
+	else if (checkquest(75105) == 1 && coco_Count < 70 || horn_Count < 30) { // Incompleta
+        mes "[Caçador de Coco e Horn]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75105</INFO></QUEST>.";
+        mes "Coco derrotados: " + coco_Count + "/70";
+        mes "Horn derrotados: " + horn_Count + "/30";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75105) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próximas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75105) == 1 && killedrid == 1104 && coco_Count < 70) {
+        set coco_Count, coco_Count + 1;
+        dispbottom "Coco derrotados: " + coco_Count + "/70.";
+    }
+    if (checkquest(75105) == 1 && killedrid == 1128 && horn_Count < 30) {
+            set horn_Count, horn_Count + 1;
+            dispbottom "Horn coletados: " + horn_Count + "/30.";
+    }
+    if (checkquest(75105) == 1 && coco_Count == 70 && horn_Count == 30) {
+            dispbottom "Você completou a missão de matar 70 Coco e 30 Horn!";
+            set horn_Count, horn_Count + 1;
+    }
+    end;
 OnInit:
     questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
     questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
 	end;
+
 }
 
 prt_fild10,216,290,4	script	Jake#swordman4	752,{
-			if (BaseJob == Job_Swordman) {
-				if (checkquest(75104) == 1) { // Completar Quest Anterior
-					completequest 75104;
-				}
-				if (checkquest(75105) == -1) { // Iniciar Quest
-					setquest 75105;
-				}
-				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
-					completequest 75105;
-                    setquest 75104;
-                    navigateto "prt_fild07", 376, 243;
-				}
-				else if (checkquest(75105) == 1) { // Incompleta
-					emotion ET_GO;
-				}
-				else if (checkquest(75105) == 2) { // Já Entregue
-					emotion ET_OK;
-				}
-			}
-			close;
+
+    if (checkquest(75106) == 1) {
+        completequest 75107;
+    }
+
+    if (checkquest(75107) == -1) {
+        setquest 75107;
+        set Elder_Count, 0;
+        set Poporing_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75107) == 1 && Elder_Count >= 100 && Poporing_Count >= 40) { // Completar
+		completequest 75107;
+        setquest 75108;
+        navigateto "prt_fild10", 216,290;
+        navigateto "prt_fild09", 25,144;
+	}
+	else if (checkquest(75107) == 1 && Elder_Count < 100 || Poporing_Count < 40) { // Incompleta
+        mes "[Caçador de Elder e Poporing]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75105</INFO></QUEST>.";
+        mes "Elder derrotados: " + Elder_Count + "/100";
+        mes "Poporing derrotados: " + Poporing_Count + "/40";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75107) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próElderimas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75107) == 1 && killedrid == 1033 && Elder_Count < 100) {
+        set Elder_Count, Elder_Count + 1;
+        dispbottom "Elder derrotados: " + Elder_Count + "/100.";
+    }
+    if (checkquest(75107) == 1 && killedrid == 1031 && Poporing_Count < 40) {
+            set Poporing_Count, Poporing_Count + 1;
+            dispbottom "Poporing coletados: " + Poporing_Count + "/40.";
+    }
+    if (checkquest(75107) == 1 && Elder_Count == 100 && Poporing_Count == 40) {
+            dispbottom "Você completou a missão de matar 100 Elder e 40 Poporing!";
+            set Poporing_Count, Poporing_Count + 1;
+    }
+    end;
 OnInit:
     questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
     questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
 	end;
+
 }
 
 
 prt_fild09,25,144,4	script	Jake#swordman5	752,{
-			if (BaseJob == Job_Swordman) {
-				if (checkquest(75104) == 1) { // Completar Quest Anterior
-					completequest 75104;
-				}
-				if (checkquest(75105) == -1) { // Iniciar Quest
-					setquest 75105;
-				}
-				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
-					completequest 75105;
-                    setquest 75104;
-                    navigateto "prt_fild07", 376, 243;
-				}
-				else if (checkquest(75105) == 1) { // Incompleta
-					emotion ET_GO;
-				}
-				else if (checkquest(75105) == 2) { // Já Entregue
-					emotion ET_OK;
-				}
-			}
-			close;
+    if (checkquest(75108) == 1) {
+        completequest 75108;
+    }
+
+    if (checkquest(75109) == -1) {
+        setquest 75109;
+        set Magnolia_Count, 0;
+        set Metaller_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75109) == 1 && Magnolia_Count >= 140 && Metaller_Count >= 60) { // Completar
+		completequest 75109;
+        setquest 75110;
+        navigateto "gef_fild11", 366,297;
+	}
+	else if (checkquest(75109) == 1 && Magnolia_Count < 140 || Metaller_Count < 60) { // Incompleta
+        mes "[Caçador de x e Y]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75109</INFO></QUEST>.";
+        mes "x derrotados: " + Magnolia_Count + "/140";
+        mes "Y derrotados: " + Metaller_Count + "/60";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75109) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próGOBLIN_4imas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75109) == 1 && killedrid == 1138 && Magnolia_Count < 140) {
+        set Magnolia_Count, Magnolia_Count + 1;
+        dispbottom "Magnolia derrotados: " + Magnolia_Count + "/140.";
+    }
+    if (checkquest(75109) == 1 && killedrid == 1058 && Metaller_Count < 60) {
+            set Metaller_Count, Metaller_Count + 1;
+            dispbottom "Metaller coletados: " + Metaller_Count + "/60.";
+    }
+    if (checkquest(75109) == 1 && Magnolia_Count == 140 && Metaller_Count == 60) {
+            dispbottom "Você completou a missão de matar 140 x e 60 Y!";
+            set Metaller_Count, Metaller_Count + 1;
+    }
+    end;
 OnInit:
     questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
     questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
 	end;
+
 }
 
 
 gef_fild11,366,297,6	script	Jake#swordman6	752,{
-			if (BaseJob == Job_Swordman) {
-				if (checkquest(75104) == 1) { // Completar Quest Anterior
-					completequest 75104;
-				}
-				if (checkquest(75105) == -1) { // Iniciar Quest
-					setquest 75105;
-				}
-				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
-					completequest 75105;
-                    setquest 75104;
-                    navigateto "prt_fild07", 376, 243;
-				}
-				else if (checkquest(75105) == 1) { // Incompleta
-					emotion ET_GO;
-				}
-				else if (checkquest(75105) == 2) { // Já Entregue
-					emotion ET_OK;
-				}
-			}
-			close;
+    if (checkquest(75110) == 1) {
+        completequest 75110;
+    }
+
+    if (checkquest(75111) == -1) {
+        setquest 75113;
+        setquest 75111;
+        set GOBLIN_4_Count, 0;
+        set GOBLIN_3_Count, 0;
+        set GOBLIN_2_Count, 0;
+        set GOBLIN_1_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75111) == 1 && GOBLIN_4_Count >= 60 && GOBLIN_3_Count >= 60 && GOBLIN_2_Count >= 60 && GOBLIN_1_Count >= 60) { // Completar
+		completequest 75111;
+		completequest 75113;
+        setquest 75114;
+        navigateto "in_orcs01", 32,167;
+	}
+	else if (checkquest(75111) == 1 && GOBLIN_4_Count < 60 || GOBLIN_3_Count < 60 || GOBLIN_2_Count < 60 || GOBLIN_1_Count < 60) { // Incompleta
+        mes "[Caçador de GOBLINs";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75105</INFO></QUEST>.";
+        mes "GOBLINs derrotados: " + GOBLIN_4_Count + "/60";
+        mes "GOBLINs derrotados: " + GOBLIN_3_Count + "/60";
+        mes "GOBLINs derrotados: " + GOBLIN_2_Count + "/60";
+        mes "GOBLINs derrotados: " + GOBLIN_1_Count + "/60";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75111) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas próGOBLIN_4imas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75111) == 1 && killedrid == 1125 && GOBLIN_4_Count < 60) {
+        set GOBLIN_4_Count, GOBLIN_4_Count + 1;
+        dispbottom "GOBLINs derrotados: " + GOBLIN_4_Count + "/60.";
+    }
+    if (checkquest(75111) == 1 && killedrid == 1124 && GOBLIN_3_Count < 60) {
+            set GOBLIN_3_Count, GOBLIN_3_Count + 1;
+            dispbottom "GOBLINs coletados: " + GOBLIN_3_Count + "/60.";
+    }
+    if (checkquest(75111) == 1 && killedrid == 1123 && GOBLIN_2_Count < 60) {
+        set GOBLIN_2_Count, GOBLIN_2_Count + 1;
+        dispbottom "GOBLINs derrotados: " + GOBLIN_2_Count + "/60.";
+    }
+    if (checkquest(75111) == 1 && killedrid == 1122 && GOBLIN_1_Count < 60) {
+            set GOBLIN_1_Count, GOBLIN_1_Count + 1;
+            dispbottom "GOBLINs coletados: " + GOBLIN_1_Count + "/60.";
+    }
+    if (checkquest(75111) == 1 && GOBLIN_4_Count == 60 && GOBLIN_3_Count == 60 && GOBLIN_2_Count == 60 && GOBLIN_1_Count == 60) {
+            dispbottom "Você completou a missão de matar Goblins!";
+            set GOBLIN_3_Count, GOBLIN_3_Count + 1;
+    }
+    end;
 OnInit:
     questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
     questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
 	end;
-}
 
-gef_fild03,316,25,4	script	Jake#swordman7	752,{
-			if (BaseJob == Job_Swordman) {
-				if (checkquest(75104) == 1) { // Completar Quest Anterior
-					completequest 75104;
-				}
-				if (checkquest(75105) == -1) { // Iniciar Quest
-					setquest 75105;
-				}
-				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
-					completequest 75105;
-                    setquest 75104;
-                    navigateto "prt_fild07", 376, 243;
-				}
-				else if (checkquest(75105) == 1) { // Incompleta
-					emotion ET_GO;
-				}
-				else if (checkquest(75105) == 2) { // Já Entregue
-					emotion ET_OK;
-				}
-			}
-			close;
-OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
-	end;
 }
-
 in_orcs01,32,167,3	script	Jake#swordman8	752,{
-			if (BaseJob == Job_Swordman) {
-				if (checkquest(75104) == 1) { // Completar Quest Anterior
-					completequest 75104;
-				}
-				if (checkquest(75105) == -1) { // Iniciar Quest
-					setquest 75105;
-				}
-				else if (checkquest(75105) == 1 && countitem(949) >= 10 && countitem(914) >= 10 && countitem(909) >= 10 && countitem(705) >= 10) { // Completar
-					completequest 75105;
-                    setquest 75104;
-                    navigateto "prt_fild07", 376, 243;
-				}
-				else if (checkquest(75105) == 1) { // Incompleta
-					emotion ET_GO;
-				}
-				else if (checkquest(75105) == 2) { // Já Entregue
-					emotion ET_OK;
-				}
-			}
-			close;
+	if (checkquest(75104) == 1) {
+        completequest 75105;
+    }
+
+    if (checkquest(75105) == -1) {
+        setquest 75105;
+        set 0x0_Count, 0;
+        set 0y0_Count, 0;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        mes "objetivo da quest";
+        close;
+    }
+	else if (checkquest(75105) == 1 && 0x0_Count >= QQQQ && 0y0_Count >= wwww) { // Completar
+		completequest 75105;
+        setquest 75106;
+        navigateto "prt_fild10", 216,290;
+	}
+	else if (checkquest(75105) == 1 && 0x0_Count < QQQQ || 0y0_Count < wwww) { // Incompleta
+        mes "[Caçador de 0x0 e 0y0]";
+        mes "Você ainda não completou a <QUEST>Missão<INFO>75105</INFO></QUEST>.";
+        mes "0x0 derrotados: " + 0x0_Count + "/QQQQ";
+        mes "0y0 derrotados: " + 0y0_Count + "/wwww";
+        close;
+		emotion ET_GO;
+	}
+	else if (checkquest(75105) == 2) { // Já Entregue
+		emotion ET_OK;
+        mes "^8B0000[instrutor Jake]^000000";
+        mes "^377420Que seus passos sejam guiados pelo brilho da sua lâmina. Boa sorte em suas pró0x0imas jornadas!^000000";
+	}
+	close;
+
+OnNPCKillEvent:
+    if (checkquest(75105) == 1 && killedrid == 1167 && 0x0_Count < QQQQ) {
+        set 0x0_Count, 0x0_Count + 1;
+        dispbottom "0x0 derrotados: " + 0x0_Count + "/QQQQ.";
+    }
+    if (checkquest(75105) == 1 && killedrid == 1052 && 0y0_Count < wwww) {
+            set 0y0_Count, 0y0_Count + 1;
+            dispbottom "0y0 coletados: " + 0y0_Count + "/wwww.";
+    }
+    if (checkquest(75105) == 1 && 0x0_Count == QQQQ && 0y0_Count == wwww) {
+            dispbottom "Você completou a missão de matar QQQQ 0x0 e wwww 0y0!";
+            set 0y0_Count, 0y0_Count + 1;
+    }
+    end;
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
+    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75105) == -1";
+    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75105) == 1";
 	end;
+
 }
 
 orcsdun02,28,183,3	script	Jake#swordman9	752,{
