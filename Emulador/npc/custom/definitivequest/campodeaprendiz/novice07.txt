@@ -1,60 +1,87 @@
 novice07,130,49,4	script	Porteiro#7	8W_SOLDIER,{
     cutin "prt_soldier", 2;
     mes "[Duran]";
-	mes "Olá, aventureiro!.";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000!";
+    next;
 
 	if (JobLevel < 10) {
-		mes "Vejo que você ainda não alcançou o Nível de Classe 10.";
-		mes "Volte quando estiver pronto!";
+        mes "[Duran]";
+		mes "Parece que você ainda não atingiu o Nível de Classe 10.";
+		mes "Volte quando estiver mais experiente e pronto para avançar!";
         cutin "", 255;
 		close;
-	}else if (SkillPoint > 0) {
-		mes "Você ainda tem pontos de habilidade não distribuídos.";
-		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+	} else if (SkillPoint > 0) {
+        mes "[Duran]";
+		mes "Notei que você ainda tem pontos de habilidade para distribuir.";
+		mes "Por favor, use todos os seus pontos antes de falar comigo novamente.";
         cutin "", 255;
 		close;
 	}
-
-	mes "Ótimo! Vejo que você está preparado.";
-	mes "Você gostaria que eu o levasse até os mestres da guilda?";
+    mes "[Duran]";
+	mes "Ótimo! Você está pronto para seguir em frente.";
+	mes "Gostaria que eu o levasse até os mestres da guilda para continuar sua jornada?";
 	next;
 	
 	switch(select("Sim, por favor!:Não, ainda não.")) {
 		case 1:
-			mes "Certo, preparando o teletransporte...";
-			mes "Boa sorte em sua jornada!";
-			
-			mes "A qual mestre você deseja ir?";
+            mes "[Duran]";
+			mes "Qual mestre você gostaria de conhecer?";
 			next;
 			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
 				case 1:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint   "izlude_in", 74, 166,1,1;
 					warp "izlude_in", 74, 166;
 					break;
 				case 2:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "payon_in02", 64, 64,1,1; 
 					warp "payon_in02", 64, 64; 
 					break;
 				case 3:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "geffen_in", 163, 101,1,1; 
 					warp "geffen_in", 163, 101; 
 					break;
 				case 4:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "moc_prydb1", 46, 125,1,1; 
 					warp "moc_prydb1", 46, 125; 
 					break;
 				case 5:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "alberta_in", 66, 43,1,1; 
 					warp "alberta_in", 66, 43; 
 					break;
 				case 6:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "prt_church", 184, 32,1,1; 
 					warp "prt_church", 184, 32; 
 					break;
 			}
+            completequest 75097;
 			close;
 		case 2:
-			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+            mes "[Duran]";
+			mes "Sem problemas! Estarei aqui quando você estiver pronto.";
             cutin "", 255;
 			close;
 	}
@@ -67,59 +94,49 @@ novice07,107,56,4	script	Thorne#7	4_M_KNIGHT_SILVER,{
     cutin "3rd_rune_knight", 2;
     if (Quest_novice07 == 1) {
         mes "[Thorne]";
-        mes "Você já completou esta missão.";
+        mes "Você já completou esta missão. Excelente trabalho!";
+        mes "Sua determinação é admirável. Continue assim!";
         cutin "", 255;
         close;
-    }
-
-    if (Quest_novice07 == 0) {
+    } else if (Quest_novice07 == 0) {
         mes "[Thorne]";
-        mes "Olá, aventureiro! Preciso de sua ajuda.";
-        mes "Mate 15 Bugs e 10 Wolfs.";
-        mes "Você aceita a missão?";
-        mes "Sua Recompensa Será: ";
-        mes "<ITEM>Poção do Aprendiz<INFO>569</INFO></ITEM>, Exp e 10 Moedas da guilda";
-        next;
-        if (select("Sim, aceito!:Não, obrigado.") == 1) {
-            set Quest_novice07, 2; 
-            set Bug_Count, 0;
-            set Wolf_Count, 0;
-            setquest 75097;
-            announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-            mes "Ótimo! Vá e mate 15 Bugs e 10 Wolfs.";
-            cutin "", 255;
-            close;
-        } else {
-            mes "Tudo bem, volte quando estiver pronto.";
-            cutin "", 255;
-            close;
-        }
-    }
-
-    if (Quest_novice07 == 2) {
+        mes "Saudações, ^3355FF" + strcharinfo(0) + "^000000!";
+        mes "Tenho mais um desafio para você.";
+        mes "Sua missão é derrotar 15 Bugs e 10 Wolfs.";
+        mes "Essa tarefa exigirá foco e coragem. Estou confiante no seu sucesso!";
+        set Quest_novice07, 2; 
+        set Bug_Count, 0;
+        set Wolf_Count, 0;
+        setquest 75097;
+        announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
+        cutin "", 255;
+        close;
+    } else if (Quest_novice07 == 2) {
         if (Bug_Count < 15 || Wolf_Count < 10) {
             mes "[Thorne]";
-            mes "Você ainda não completou a <QUEST>Missão<INFO>75097</INFO></QUEST>.";
+            mes "Você ainda não completou sua <QUEST>Missão<INFO>75097</INFO></QUEST>.";
+            next;
+            mes "[Thorne]";
+            mes "Progresso atual:";
             mes "Bugs derrotados: " + Bug_Count + "/15";
             mes "Wolfs derrotados: " + Wolf_Count + "/10";
+            mes "Continue lutando, você está no caminho certo!";
             cutin "", 255;
             close;
         } else {
             mes "[Thorne]";
-            mes "Parabéns! Você completou a missão.";
-            mes "Aqui está sua recompensa.";
+            mes "Fantástico! Você concluiu a missão com sucesso.";
+            mes "Sua dedicação e habilidade são inspiradoras.";
+            mes "Aqui está sua recompensa como prova do seu esforço.";
             specialeffect2 EF_BLESSING;
             sc_start SC_BLESSING,300000,10;
             specialeffect2 EF_INCAGILITY;
             sc_start SC_INCREASEAGI,300000,10;
-            getitem 569, 150;    
-            getitem 22777, 5;     
-            set Zeny, Zeny + 2500; 
+            getitem 569, 150;       
+            set Zeny, Zeny + 3000; 
             set Quest_novice07, 1;
             completequest 75097;  
             getexp 900, 500;
-            getitem 673,25;
-            mes "Obrigado pela ajuda! Espero contar com você novamente.";
             cutin "", 255;
             close;
         }
@@ -129,15 +146,17 @@ novice07,107,56,4	script	Thorne#7	4_M_KNIGHT_SILVER,{
 OnNPCKillEvent:
     if (Quest_novice07 == 2 && killedrid == 1053 && Bug_Count < 15) {
         set Bug_Count, Bug_Count + 1;
-        dispbottom "Bugs derrotados: " + Bug_Count + "/15.";
+        //dispbottom "Bugs derrotados: " + Bug_Count + "/15.";
     }
     if (Quest_novice07 == 2 && killedrid == 1107 && Wolf_Count < 10) {
         set Wolf_Count, Wolf_Count + 1;
-        dispbottom "Wolfs derrotados: " + Wolf_Count + "/10.";
+        //dispbottom "Wolfs derrotados: " + Wolf_Count + "/10.";
     }
     if (Quest_novice07 == 2 && Bug_Count == 15 && Wolf_Count == 10) {
-        dispbottom "Você completou a missão de matar 15 Bugs e 10 Wolfs!";
+        announce "Parabéns! Você completou a missão de caçar 15 Bugs e 10 Wolfs!", bc_self;
     }
+    end;
+
 OnInit:
     questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75097) == -1";
     questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75097) == 1";

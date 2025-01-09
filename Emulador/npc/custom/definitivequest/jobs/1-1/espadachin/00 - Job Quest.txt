@@ -37,43 +37,26 @@
 //= 2.3 Added Quest Log commands. [L0ne_W0lf]
 //===========================================================
 
-izlude_in,118,175,3	script	ComercianteGuilda#Izlude	752,{
-	// Abertura do sistema de loja
-	mes "[Comerciante da Guilda]";
-	mes "Bem-vindo à loja da guilda! Você pode comprar Poções Brancas com Jellopy.";
-	close;
-	OnInit:
-	// Definir os itens que serão vendidos e suas quantidades
-    setarray .Itens[0], 501, 1, 402, 1; // Poção Branca (ID: 501), Jellopy (ID: 402)
-    setarray .Precos[0], 1; // Preço da Poção Branca (1 Jellopy)
-    end;
-	
-	OnPCTalkEvent:
-	// Chama o sistema de loja
-	shop "ComercianteGuilda#Izlude";
-}
-
-
 izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
     if (Upper == 1) {
         if (Class == Job_Novice_High && (ADVJOB == Job_Lord_Knight || ADVJOB == Job_Paladin)) {
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Isso...";
             mes "Não pode ser...";
             mes "Você renasceu, não foi?";
             next;
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Vejo que você está trilhando novamente o caminho do Espadachim! Uma vez acostumado a brandir uma espada, nunca mais poderá voltar!!";
             next;
             if (!callfunc("F_CanChangeJob")) {
-                mes "[Espadachim]";
+                mes "[Mestre Da Guilda]";
                 mes "Hmm? Ah, você deve primeiro dominar as Habilidades Básicas antes de estar pronto para se tornar um Espadachim.";
                 next;
-                mes "[Espadachim]";
+                mes "[Mestre Da Guilda]";
                 mes "Volte para mim quando tiver terminado de aprender as Habilidades Básicas de Aprendiz.";
                 close;
             }
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Excelente! Deixe-me promovê-lo a Espadachim imediatamente!";
             next;
 
@@ -82,16 +65,16 @@ izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
             skill "SM_MOVINGRECOVERY", 1, SKILL_PERM;
             skill "SM_FATALBLOW", 1, SKILL_PERM;
             skill "SM_AUTOBERSERK", 1, SKILL_PERM;
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Hmm... Você parece um Espadachim bem experiente. Ainda assim, tenho certeza de que deve treinar para melhorar suas habilidades e ganhar força!";
             close;
         } else {
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Hm...? ";
             mes "Você é um guerreiro";
             mes "renascido, não é?";
             next;
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Hmmm...";
             mes "Parece que ser";
             mes "um Espadachim não faz parte";
@@ -101,11 +84,11 @@ izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
             close;
         }
     }
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "Bem-vindo à";
     mes "Associação dos Espadachins!";
     next;
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "Então...";
     mes "Qual é o motivo";
     mes "da sua visita?";
@@ -113,55 +96,55 @@ izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
     switch (select("Mudança de Classe:Sobre Espadachim.:Sobre os requisitos da profissão.:Cancelar.")) {
     case 1:
         if (BaseJob == Job_Swordman) {
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Mudança de classe? Muhahaha! Mas você já é um Espadachim! Seja orgulhoso e forte!";
             close;
         } else if (BaseJob != Job_Novice) {
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Haha! Ah, meu jovem. Estou lisonjeado, mas você já tem outra profissão! Ainda assim, não posso culpá-lo...";
             close;
         }
         if (job_sword_q == 0) {
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Então você deseja se tornar um orgulhoso Espadachim? Por todos os meios, inscreva-se!";
             next;
             if (select("Inscrever-se.:Cancelar.") == 1) {
                 savepoint "izlude_in", 65, 165, 1, 1;
                 set job_sword_q, 1;
                 setquest 1016;
-                mes "[Espadachim]";
+                mes "[Mestre Da Guilda]";
                 mes "Ah, sim. Sua inscrição será analisada o mais rápido possível.";
                 next;
-                mes "[Espadachim]";
+                mes "[Mestre Da Guilda]";
                 mes "Se você já cumpriu os requisitos, pode fazer uma entrevista agora mesmo. Gostaria de fazer isso?";
                 next;
                 if (select("Sim.:Não.") == 1) {
-                    mes "[Espadachim]";
+                    mes "[Mestre Da Guilda]";
                     mes "Bom, bom.";
                     mes "Agora, vejamos...";
                     next;
                 } else {
-                    mes "[Espadachim]";
+                    mes "[Mestre Da Guilda]";
                     mes "Tudo bem então. Sinta-se à vontade para voltar quando estiver pronto. Tudo o que precisa fazer agora é cumprir nossos requisitos. Boa sorte para você.";
                     close;
                 }
             } else {
-                mes "[Espadachim]";
+                mes "[Mestre Da Guilda]";
                 mes "Hm? Tudo bem, volte quando mudar de ideia. O mundo sempre pode usar mais um Espadachim!";
                 close;
             }
         }
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         if (!callfunc("F_CanChangeJob")) {
             mes "Hm, você ainda não aprendeu todas as Habilidades Básicas. Você precisa fazer isso antes de poder se tornar um Espadachim.";
             next;
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Verifique novamente os requisitos para mudança de classe e volte quando estiver pronto.";
             close;
         } else if (job_sword_q <= 3) {
             mes "Hm, você aprendeu todas as Habilidades Básicas, mas ainda não fez o teste. Você deve primeiro passar no exame antes de mudar sua classe para Espadachim.";
             next;
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Entre na sala à minha direita para fazer o teste. Fale com meu colega na direita para entrar na área de exame.";
             close;
         } else if (job_sword_q == 4) {
@@ -173,25 +156,25 @@ izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
             getitem 99037, 1;
             setquest 75100;
             navigateto "izlude_in", 124, 175;
-            mes "[Espadachim]";
+            mes "[Mestre Da Guilda]";
             mes "Mais uma vez, parabéns. Espero que você seja um bom representante da Associação dos Espadachins.";
             close;
         }
     case 2:
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "Então você quer saber mais sobre a poderosa classe de Espadachim? Bem, então...";
         next;
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "Entre as classes de primeira linha, o Espadachim é o melhor lutador corpo a corpo por três razões.";
         next;
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "Primeiro, o Espadachim tem o benefício de HP adicional. Segundo, geralmente tem acesso a uma ampla seleção de armas em comparação com as outras classes de primeira linha.";
         next;
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "E terceiro, a maioria das habilidades de Espadachim são ataques físicos devastadores! Na minha opinião, ser Espadachim é a melhor profissão de todas!";
         close;
     case 3:
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "Hmmm...";
         if (BaseJob != Job_Novice) {
             if (BaseJob == Job_Swordman)
@@ -200,17 +183,17 @@ izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
                 mes "É tarde demais para você se tornar um Espadachim. Você já tem outra profissão. Ainda assim, não custa nada lhe contar...";
         }
         next;
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "Primeiro, você deve aprender todas as 9 Habilidades Básicas. Se não cumprir este requisito, não poderá mudar para nenhuma profissão.";
         next;
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "Segundo, você deve passar no Teste de Espadachim. Pergunte ao Gerente de Testes localizado na sala de espera do Teste de Espadachim.";
         next;
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "Se você cumprir esses dois requisitos, poderá mudar para Espadachim a qualquer momento.";
         close;
     case 4:
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "Ha ha ha!";
         mes "Ah, juventude!";
         close;
@@ -221,7 +204,7 @@ OnInit:
 }
 
 izlude_in,62,170,6	script	Espadachim#swd_2	85,{
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     if (BaseJob == Job_Swordman) {
         mes "Desculpe, amigo, mas só posso permitir que Aprendizes entrem no Salão de Testes.";
         close;
@@ -237,7 +220,7 @@ izlude_in,62,170,6	script	Espadachim#swd_2	85,{
     } else if (job_sword_q == 0) {
         mes "Pare! Se você quiser fazer o Teste de Espadachim, precisará preencher um formulário primeiro.";
         next;
-        mes "[Espadachim]";
+        mes "[Mestre Da Guilda]";
         mes "O Espadachim no centro da sala pode ajudá-lo com isso, entendeu?";
         close;
     } else {
@@ -252,28 +235,28 @@ OnInit:
 }
 
 izlude_in,30,175,4	script	Espadachim#swd_3	92,{
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "Vou lhe contar sobre o Teste! Ouça com atenção, não vou repetir.";
     next;
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "O propósito deste teste é confirmar se você está qualificado para ser um Espadachim. Como você sabe, um Espadachim precisa de força física e espírito!";
     next;
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "Sem isso, você não poderá se tornar um Espadachim. Agora, as condições para completar este teste são muito simples.";
     next;
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "Você passará por três cursos e deve alcançar o ponto final em até ^FF000010 minutos^000000.";
     next;
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "Se você escolher 'Desistir' ou se ficar sem tempo, não passará no teste.";
     next;
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "Se você achar que não está forte o suficiente para passar no teste, vá até a entrada do curso e fale com o gerente do ponto de verificação.";
     next;
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "Ao atravessar os três cursos, você pode cair em uma área subterrânea aleatória. O curso foi projetado para que você ainda possa encontrar o caminho de volta.";
     next;
-    mes "[Espadachim]";
+    mes "[Mestre Da Guilda]";
     mes "No entanto, tome cuidado, pois isso desperdiçará seu tempo! Boa sorte para você.";
     close;
 }

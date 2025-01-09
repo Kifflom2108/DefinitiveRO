@@ -1,7 +1,7 @@
 novice00,130,49,4	script	Porteiro#0	8W_SOLDIER,{
     cutin "prt_soldier", 2;
     mes "[Duran]";
-	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000!";
     next;
 
 	if (JobLevel < 10) {
@@ -25,33 +25,54 @@ novice00,130,49,4	script	Porteiro#0	8W_SOLDIER,{
 	switch(select("Sim, por favor!:Não, ainda não.")) {
 		case 1:
             mes "[Duran]";
-			mes "Entendido. Preparando o teletransporte...";
-			mes "Boa sorte em sua jornada e que você tenha sucesso!";
-			
-			mes "Para qual mestre você deseja ser levado?";
+			mes "Qual mestre você gostaria de conhecer?";
 			next;
 			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
 				case 1:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint   "izlude_in", 74, 166,1,1;
 					warp "izlude_in", 74, 166;
 					break;
 				case 2:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "payon_in02", 64, 64,1,1; 
 					warp "payon_in02", 64, 64; 
 					break;
 				case 3:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "geffen_in", 163, 101,1,1; 
 					warp "geffen_in", 163, 101; 
 					break;
 				case 4:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "moc_prydb1", 46, 125,1,1; 
 					warp "moc_prydb1", 46, 125; 
 					break;
 				case 5:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "alberta_in", 66, 43,1,1; 
 					warp "alberta_in", 66, 43; 
 					break;
 				case 6:
+                    mes "[Duran]";
+                    mes "Entendido. Preparando o teletransporte...";
+			        mes "Boa sorte em sua jornada e que você tenha sucesso!";
+                    next;
 					savepoint  "prt_church", 184, 32,1,1; 
 					warp "prt_church", 184, 32; 
 					break;
@@ -59,6 +80,7 @@ novice00,130,49,4	script	Porteiro#0	8W_SOLDIER,{
             completequest 75090;
 			close;
 		case 2:
+            mes "[Duran]";
 			mes "Sem problemas! Estarei aqui quando você estiver pronto.";
             cutin "", 255;
 			close;
@@ -72,13 +94,14 @@ novice00,107,56,4	script	Thorne#0	4_M_KNIGHT_SILVER,{
     cutin "3rd_rune_knight", 2;
     if (Quest_novice00 == 1) {
         mes "[Thorne]";
-        mes "Você já completou esta missão.";
+        mes "Você já completou esta missão. Bom trabalho!";
         cutin "", 255;
         close;
-    }else if (Quest_novice00 == 0) {
+    } else if (Quest_novice00 == 0) {
         mes "[Thorne]";
-        mes "Olá, ^3355FF" + strcharinfo(0) + "^000000 Vamos iniciar seu treinamento de combate.";
-        mes "Vá e caçe 15 Porings e 15 Drops.";
+        mes "Saudações, ^3355FF" + strcharinfo(0) + "^000000! Está pronto para começar seu treinamento de combate?";
+        mes "Sua tarefa é simples: derrote 15 Porings e 15 Drops.";
+        mes "Essa missão irá prepará-lo para desafios futuros.";
         set Quest_novice00, 2;
         set Poring_Count, 0;
         set Drop_Count, 0;
@@ -86,18 +109,22 @@ novice00,107,56,4	script	Thorne#0	4_M_KNIGHT_SILVER,{
         setquest 75090;
         cutin "", 255;
         close;
-    }else if (Quest_novice00 == 2) {
+    } else if (Quest_novice00 == 2) {
         if (Poring_Count < 15 || Drop_Count < 15) {
             mes "[Thorne]";
-            mes "Você ainda não completou a <QUEST>Missão<INFO>75090</INFO></QUEST>.";
+            mes "Ainda não terminou sua <QUEST>Missão<INFO>75090</INFO></QUEST>.";
+            mes "Continue lutando! Você está quase lá.";
+            next;
+            mes "[Thorne]";
+            mes "Progresso:";
             mes "Porings derrotados: " + Poring_Count + "/15";
             mes "Drops derrotados: " + Drop_Count + "/15";
             cutin "", 255;
             close;
         } else {
             mes "[Thorne]";
-            mes "Parabéns! Você completou a missão.";
-            mes "Aqui está sua recompensa.";
+            mes "Incrível! Você completou a missão com sucesso.";
+            mes "Aqui está sua recompensa!";
             specialeffect2 EF_BLESSING;
             sc_start SC_BLESSING,300000,10;
             specialeffect2 EF_INCAGILITY;
@@ -118,16 +145,18 @@ OnNPCKillEvent:
         set Poring_Count, Poring_Count + 1;
         //dispbottom "Porings derrotados: " + Poring_Count + "/15.";
     }
-    if (Quest_novice00 == 2 && killedrid == 1113 && Drops_Count < 15) {
+    if (Quest_novice00 == 2 && killedrid == 1113 && Drop_Count < 15) {
         set Drop_Count, Drop_Count + 1; 
         //dispbottom "Drops derrotados: " + Drop_Count + "/15.";
     }
     if (Quest_novice00 == 2 && Poring_Count == 15 && Drop_Count == 15) {
-        announce "Você completou a missão de caça 15 Porings e 15 Drops!", bc_self;
+        announce "Parabéns! Você completou a missão de caça a 15 Porings e 15 Drops!", bc_self;
     }
     end;
+
 OnInit:
     questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75090) == -1";
     questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75090) == 1";
-	end;
+    end;
 }
+

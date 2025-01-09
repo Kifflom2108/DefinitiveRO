@@ -1,0 +1,42 @@
+pay_dun00,129,138,5	script	Entregador de Maçãs	123,{
+		// Obtém o dia atual no formato AAAAMMDD
+	set .@today, gettime(7) * 10000 + gettime(6) * 100 + gettime(5);
+
+	// Verifica se o jogador já recebeu maçãs hoje
+	if (#last_apple_day != .@today) {
+		// Reseta o contador diário
+		set #last_apple_day, .@today;
+		set #daily_apples, 0;
+	}
+
+	// Verifica se o jogador atingiu o limite diário
+	if (#daily_apples >= 3) {
+		mes "[Entregador de Maçãs]";
+		mes "Você já recebeu sua cota de 3 maçãs hoje.";
+		
+		// Calcula o tempo restante até o próximo reset (meia-noite)
+		set .@hours_left, 23 - gettime(3); // Horas restantes
+		set .@minutes_left, 59 - gettime(2); // Minutos restantes
+		set .@seconds_left, 59 - gettime(1); // Segundos restantes
+
+		mes "Volte em " + .@hours_left + "h " + .@minutes_left + "m " + .@seconds_left + "s para pegar mais maçãs.";
+		close;
+	}
+
+	// Entrega a maçã e incrementa o contador
+	getitem 501, 1;
+	set #daily_apples, #daily_apples + 1;
+
+	mes "[Entregador de Maçãs]";
+	mes "Aqui está sua maçã! Você ainda pode pegar " + (3 - #daily_apples) + " hoje.";
+
+	// Se o jogador alcançou o limite, exibe a mensagem de tempo restante
+	if (#daily_apples >= 3) {
+		set .@hours_left, 23 - gettime(3); // Horas restantes
+		set .@minutes_left, 59 - gettime(2); // Minutos restantes
+		set .@seconds_left, 59 - gettime(1); // Segundos restantes
+		mes "Você atingiu sua cota diária. Volte em " + .@hours_left + "h " + .@minutes_left + "m " + .@seconds_left + "s.";
+	}
+	
+	close;
+}

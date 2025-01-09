@@ -1,0 +1,36 @@
+//===== rAthena Script =======================================
+//= Dynamic Shop 
+//===== By ===================================================
+//= llchrisll
+//===== Version ==============================================
+//= 1.0 - Initial Version
+//		- Nearly forgot the "OnBuyItem" part (Q.Q)
+//		- Added the possibility to edit the price limit.
+//= 1.1 - Added more Currency options
+//      - Added possiblity to use pre-defined items + prices,
+//        which are always in the shop, see 'OnInit:' > $cash_pre_it and $cash_pre_p
+//      - Fixed an bug about the price limit
+//      - Changed all $cash variables to .cash
+//      - Added extra config for maximum items in the shop
+//      - Changed function ShopStuff
+//===== Tested With =========================================
+//= rAthena SQL 07/16-2017 Revision
+//===== Description ==========================================
+//= This Shop can be changed dynamically ingame and has four
+//  payment methods, to choose from: Zeny, Cash Points, Custom Variable and Item.
+//===== Comments =============================================
+//= Thanks to Elysium:
+//  > Bug about the price limit
+//  > Modification request about more currency options
+//===========================================================
+
+moc_para01,44,97,3	script	Coletadora de Zeny#1	2_SLOT_MACHINE,{
+
+}
+moc_para01,44,76,3	script	Warp#1	4_ED_ORB,{ 
+
+}
+moc_para01,44,81,3	script	Dinheiro#1	4_M_MANAGER,{
+
+} 
+

@@ -1,7 +1,7 @@
 novice00,112,56,3	script	Funcionária Kafra#novice	4_F_KAFRA1,{
 	cutin "kafra_01", 0;
 	mes "[Pavianne]";
-	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo?";
 	next;
 	if (Quest_novice00 == 1) {
 		mes "[Pavianne]";
@@ -29,7 +29,7 @@ novice00,112,56,3	script	Funcionária Kafra#novice	4_F_KAFRA1,{
 novice01,112,56,3	script	Funcionária Kafra#novice01	4_F_KAFRA2,{
 	cutin "kafra_02", 0;
 	mes "[Blossom]";
-	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo?";
 	next;
 	if (Quest_novice01 == 1) {
 		mes "[Blossom]";
@@ -57,7 +57,7 @@ novice01,112,56,3	script	Funcionária Kafra#novice01	4_F_KAFRA2,{
 novice02,112,56,3	script	Funcionária Kafra#novice02	4_F_KAFRA3,{
 	cutin "kafra_03", 0;
 	mes "[Jasmine]";
-	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo?";
 	next;
 	if (Quest_novice02 == 1) {
 		mes "[Jasmine]";
@@ -85,7 +85,7 @@ novice02,112,56,3	script	Funcionária Kafra#novice02	4_F_KAFRA3,{
 novice03,112,56,3	script	Funcionária Kafra#novice03	4_F_KAFRA4,{
 	cutin "kafra_04", 0;
 	mes "[Roxie]";
-	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo?";
 	next;
 	if (Quest_novice03 == 1) {
 		mes "[Roxie]";
@@ -113,7 +113,7 @@ novice03,112,56,3	script	Funcionária Kafra#novice03	4_F_KAFRA4,{
 novice04,112,56,3	script	Funcionária Kafra#novice04	4_F_KAFRA6,{
 	cutin "kafra_06", 0;
 	mes "[Curly Sue]";
-	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo?";
 	next;
 	if (Quest_novice04 == 1) {
 		mes "[Curly Sue]";
@@ -141,7 +141,7 @@ novice04,112,56,3	script	Funcionária Kafra#novice04	4_F_KAFRA6,{
 novice05,112,56,3	script	Funcionária Kafra#novice05	4_F_KAFRA8,{
 	cutin "kafra_08", 0;
 	mes "[Alty]";
-	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo?";
 	next;
 	if (Quest_novice05 == 1) {
 		mes "[Alty]";
@@ -169,7 +169,7 @@ novice05,112,56,3	script	Funcionária Kafra#novice05	4_F_KAFRA8,{
 novice06,112,56,3	script	Funcionária Kafra#novice06	4_F_KAFRA9,{
 	cutin "kafra_09", 0;
 	mes "[Lyrith]";
-	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo?";
 	next;
 	if (Quest_novice06 == 1) {
 		mes "[Lyrith]";
@@ -206,7 +206,7 @@ novice07,112,56,3	script	Mestre Da Guilda#novice07	4_M_NOV_RUMIN,{
 //novice07,112,56,3	script	Funcionária Kafra#novice07	4_F_KAFRA7,{
 //	cutin "kafra_07", 0;
 //	mes "[Sampaguita]";
-//	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+//	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo?";
 //	next;
 //	if (Quest_novice07 == 1) {
 //		mes "[Sampaguita]";

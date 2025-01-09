@@ -44,3 +44,677 @@
 Header:
   Type: BARTER_DB
   Version: 1
+
+
+Body:
+  - Name: Comerciante das Lâminas
+    Map: izlude_in
+    X: 118
+    Y: 175
+    Direction: South
+    Sprite: 4_M_SWORDMAN
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+
+  - Name: Comerciante das Lâminas#2
+    Map: moc_para01 
+    X: 39
+    Y: 95
+    Direction: South
+    Sprite: 4_M_SWORDMAN
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+
+  - Name: Comerciante Gatuno#2
+    Map: moc_para01 
+    X: 36
+    Y: 95
+    Direction: South
+    Sprite: 4_M_THIEF_RUMIN
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+
+  - Name: Comerciante Mercador#2
+    Map: moc_para01 
+    X: 33
+    Y: 95
+    Direction: South
+    Sprite: 1_M_SIGNMCNT
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+
+  - Name: Comerciante Mago#2
+    Map: moc_para01 
+    X: 30
+    Y: 95
+    Direction: South
+    Sprite: 2_F_MAGICMASTER
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+
+  - Name: Comerciante Noviço#2
+    Map: moc_para01 
+    X: 27
+    Y: 95
+    Direction: South
+    Sprite: 4_F_ACOLYTE
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+
+  - Name: Comerciante Arqueiro#2
+    Map: moc_para01 
+    X: 24
+    Y: 95
+    Direction: South
+    Sprite: 4_M_ARCHER
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+
+  - Name: Comerciante Aprendiz#2
+    Map: moc_para01 
+    X: 21
+    Y: 95
+    Direction: South
+    Sprite: 4_M_SIT_NOVICE
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+
+  - Name: Consumíveis#2
+    Map: moc_para01 
+    X: 44
+    Y: 94
+    Direction: North
+    Sprite: 2_VENDING_MACHINE1
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+
+  - Name: Pot#6
+    Map: moc_para01 
+    X: 21
+    Y: 98
+    Direction: East
+    Sprite: 2_VENDING_MACHINE1
+    Items:
+      - Index: 0
+        Item: AGS
+        Zeny: 50000 
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 64
+      - Index: 1
+        Item: AGA
+        Zeny: 40000 
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 32
+      - Index: 2
+        Item: AGB
+        Zeny: 35000 
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 16
+      - Index: 3
+        Item: AGC
+        Zeny: 30000        
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 8
+      - Index: 4
+        Item: AGD
+        Zeny: 25000
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 4
+      - Index: 5
+        Item: AGF            
+        Zeny: 20000
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 2
+
+  - Name: Pot#5
+    Map: moc_para01 
+    X: 24
+    Y: 98
+    Direction: East
+    Sprite: 2_VENDING_MACHINE1
+    Items:
+      - Index: 0
+        Item: VGS
+        Zeny: 10000
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 32
+      - Index: 1
+        Item: VGA
+        Zeny: 9000
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 16
+      - Index: 2
+        Item: VGB
+        Zeny: 8000
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 8
+      - Index: 3
+        Item: VGC
+        Zeny: 7000        
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 4
+      - Index: 4
+        Item: VGD
+        Zeny: 6000
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 2
+      - Index: 5
+        Item: VGF
+        Zeny: 5000
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Coin
+            Amount: 1
+
+  - Name: Pot#4
+    Map: moc_para01 
+    X: 27
+    Y: 98
+    Direction: East
+    Sprite: 2_VENDING_MACHINE1
+    Items:
+      - Index: 0
+        Item: AMS
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 64
+      - Index: 1
+        Item: AMA
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 32
+      - Index: 2
+        Item: AMB
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 16
+      - Index: 3
+        Item: AMC        
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 8
+      - Index: 4
+        Item: AMD
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 4
+      - Index: 5
+        Item: AMF
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 2
+
+  - Name: Pot#3
+    Map: moc_para01 
+    X: 30
+    Y: 98
+    Direction: East
+    Sprite: 2_VENDING_MACHINE1
+    Items:
+      - Index: 0
+        Item: VMS
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 32
+      - Index: 1
+        Item: VMA
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 16
+      - Index: 2
+        Item: VMB
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 8
+      - Index: 3
+        Item: VMC        
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 4
+      - Index: 4
+        Item: VMD
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 2
+      - Index: 5
+        Item: VMF
+        RequiredItems:
+          - Index: 0
+            Item: Silver_Coin
+            Amount: 1
+
+  - Name: Pot#2
+    Map: moc_para01 
+    X: 33
+    Y: 98
+    Direction: East
+    Sprite: 2_VENDING_MACHINE1
+    Items:
+      - Index: 0
+        Item: APS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 64
+      - Index: 1
+        Item: APA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 2
+        Item: APB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 3
+        Item: APC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 4
+        Item: APD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 5
+        Item: APF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+
+  - Name: Pot#1
+    Map: moc_para01 
+    X: 36
+    Y: 98
+    Direction: East
+    Sprite: 2_VENDING_MACHINE1
+    Items:
+      - Index: 0
+        Item: VPS
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 32
+      - Index: 1
+        Item: VPA
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 16
+      - Index: 2
+        Item: VPB
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 8
+      - Index: 3
+        Item: VPC        
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 4
+      - Index: 4
+        Item: VPD
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 2
+      - Index: 5
+        Item: VPF
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
