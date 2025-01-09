@@ -1,38 +1,32 @@
 novice01,130,49,4	script	Porteiro#1	8W_SOLDIER,{
     cutin "prt_soldier", 2;
-    mes "[Guia de Classe]";
-	mes "Ol√°, aventureiro! Estou aqui para ajud√°-lo no in√≠cio de sua jornada.";
-	
-	
+    mes "[Duran]";
+	mes "Ol·, aventureiro!.";
+
 	if (JobLevel < 10) {
-		mes "Vejo que voc√™ ainda n√£o alcan√ßou o Job Level 10.";
+		mes "Vejo que vocÍ ainda n„o alcanÁou o NÌvel de Classe 10.";
 		mes "Volte quando estiver pronto!";
         cutin "", 255;
 		close;
-	}
-
-	
-	if (SkillPoint > 0) {
-		mes "Voc√™ ainda tem pontos de habilidade n√£o distribu√≠dos.";
+	}else if (SkillPoint > 0) {
+		mes "VocÍ ainda tem pontos de habilidade n„o distribuÌdos.";
 		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
         cutin "", 255;
 		close;
 	}
 
-	mes "√ìtimo! Vejo que voc√™ est√° preparado.";
-	mes "Deseja que eu o leve para o in√≠cio das quests das classes 1-1?";
-
+	mes "”timo! Vejo que vocÍ est· preparado.";
+	mes "VocÍ gostaria que eu o levasse atÈ os mestres da guilda?";
 	next;
 	
-	switch(select("Sim, por favor!:N√£o, ainda n√£o.")) {
+	switch(select("Sim, por favor!:N„o, ainda n„o.")) {
 		case 1:
 			mes "Certo, preparando o teletransporte...";
 			mes "Boa sorte em sua jornada!";
 			
-			
-			mes "Para qual classe voc√™ deseja ir?";
+			mes "A qual mestre vocÍ deseja ir?";
 			next;
-			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Novi√ßo")) {
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:NoviÁo")) {
 				case 1:
 					savepoint   "izlude_in", 74, 166,1,1;
 					warp "izlude_in", 74, 166;
@@ -59,41 +53,40 @@ novice01,130,49,4	script	Porteiro#1	8W_SOLDIER,{
 					break;
 			}
 			close;
-
 		case 2:
-			mes "Tudo bem! Estarei aqui quando voc√™ estiver pronto.";
+			mes "Tudo bem! Estarei aqui quando vocÍ estiver pronto.";
+            cutin "", 255;
 			close;
 	}
 OnInit:
-        questinfo QTYPE_CLICKME;
-		end;
-
+    questinfo QTYPE_CLICKME;
+	end;
 }
 
-novice01,107,56,4	script	Ca√ßador de Fabres e Pupas#1	4_M_KNIGHT_SILVER,{
+novice01,107,56,4	script	Thorne#1	4_M_KNIGHT_SILVER,{
     cutin "3rd_rune_knight", 2;
     if (Quest_novice01 == 1) {
-        mes "[Ca√ßador de Fabres e Pupas]";
-        mes "Voc√™ j√° completou esta miss√£o.";
+        mes "[Thorne]";
+        mes "VocÍ j· completou esta miss„o.";
         cutin "", 255;
         close;
     }
 
     if (Quest_novice01 == 0) {
-        mes "[Ca√ßador de Fabres e Pupas]";
-        mes "Ol√°, aventureiro! Preciso de sua ajuda.";
+        mes "[Thorne]";
+        mes "Ol·, aventureiro! Preciso de sua ajuda.";
         mes "Mate 15 Fabres e 10 Pupas.";
-        mes "Voc√™ aceita a miss√£o?";
-        mes "Sua Recompensa Ser√°: ";
-        mes "<ITEM>Po√ß√£o do Aprendiz<INFO>569</INFO></ITEM> , Exp e 10 Moedas da guilda";
+        mes "VocÍ aceita a miss„o?";
+        mes "Sua Recompensa Ser·: ";
+        mes "<ITEM>PoÁ„o do Aprendiz<INFO>569</INFO></ITEM> , Exp e 10 Moedas da guilda";
         next;
-        if (select("Sim, aceito!:N√£o, obrigado.") == 1) {
+        if (select("Sim, aceito!:N„o, obrigado.") == 1) {
             set Quest_novice01, 2; 
             set Fabre_Count, 0;
             set Pupa_Count, 0;
             setquest 75091;
             announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-            mes "√ìtimo! V√° e mate 15 Fabre e 10 Pupa.";
+            mes "”timo! V· e mate 15 Fabres e 10 Pupas.";
             cutin "", 255;
             close;
         } else {
@@ -105,20 +98,20 @@ novice01,107,56,4	script	Ca√ßador de Fabres e Pupas#1	4_M_KNIGHT_SILVER,{
 
     if (Quest_novice01 == 2) {
         if (Fabre_Count < 15 || Pupa_Count < 10) {
-            mes "[Ca√ßador de Fabres e Pupas]";
-            mes "Voc√™ ainda n√£o completou a <QUEST>Miss√£o<INFO>75091</INFO></QUEST>.";
+            mes "[Thorne]";
+            mes "VocÍ ainda n„o completou a <QUEST>Miss„o<INFO>75091</INFO></QUEST>.";
             mes "Fabres derrotados: " + Fabre_Count + "/15";
             mes "Pupas derrotados: " + Pupa_Count + "/10";
             cutin "", 255;
             close;
         } else {
-            mes "[Ca√ßador de Fabres e Pupas]";
-            mes "Parab√©ns! Voc√™ completou a miss√£o.";
-            mes "Aqui est√° sua recompensa.";
+            mes "[Thorne]";
+            mes "ParabÈns! VocÍ completou a miss„o.";
+            mes "Aqui est· sua recompensa.";
+            specialeffect2 EF_BLESSING;
+            sc_start SC_BLESSING,300000,10;
             specialeffect2 EF_INCAGILITY;
-		    sc_start SC_INCREASEAGI,300000,10;
-		    specialeffect2 EF_BLESSING;
-		    sc_start SC_BLESSING,300000,10;
+            sc_start SC_INCREASEAGI,300000,10;
             getitem 569, 40;    
             getitem 22777, 5;     
             completequest 75091;
@@ -126,7 +119,7 @@ novice01,107,56,4	script	Ca√ßador de Fabres e Pupas#1	4_M_KNIGHT_SILVER,{
             set Quest_novice01, 1;  
             getexp 900, 500;
             getitem 673,25;
-            mes "Obrigado pela ajuda! Espero contar com voc√™ novamente.";
+            mes "Obrigado pela ajuda! Espero contar com vocÍ novamente.";
             cutin "", 255;
             close;
         }
@@ -139,18 +132,15 @@ OnNPCKillEvent:
         dispbottom "Fabres derrotados: " + Fabre_Count + "/15.";
     }
     if (Quest_novice01 == 2 && killedrid == 1008 && Pupa_Count < 10) {
-            set Pupa_Count, Pupa_Count + 1;
-            dispbottom "Pupas coletados: " + Pupa_Count + "/10.";
-        }
+        set Pupa_Count, Pupa_Count + 1;
+        dispbottom "Pupas coletados: " + Pupa_Count + "/10.";
+    }
     if (Quest_novice01 == 2 && Fabre_Count == 15 && Pupa_Count == 10) {
-            set Pupa_Count, Pupa_Count + 1;
-            announce "Voc√™ completou a miss√£o de matar 15 Fabres e 10 Pupas!", bc_self;
-        }
-    
+        announce "VocÍ completou a miss„o de matar 15 Fabres e 10 Pupas!", bc_self;
+    }
     end;
 OnInit:
     questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75091) == -1";
     questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75091) == 1";
-	end;
+    end;
 }
-

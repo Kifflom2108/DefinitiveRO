@@ -1,54 +1,79 @@
-prt_fild11,25,285,3	script	Jake#prt_fild11	752,{
-	if (checkquest(75104) == 1) {
-        completequest 75105;
+prt_fild11,25,285,3	script	Jake#prt_fild11	4_M_CRU_OLD,{
+
+    if (checkquest(75120) == 1) {
+        completequest 75120;
     }
 
-    if (checkquest(75105) == -1) {
-        setquest 75105;
-        set 0x0_Count, 0;
-        set 0y0_Count, 0;
+    if (checkquest(75121) == -1) {
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Bem-vindo às colinas de Pronterra. Estas terras estão infestadas por criaturas goblinoides e um novo inimigo misterioso: o ^FF4500Rotar Zairo^000000.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Os ^FF6347Steam Goblins^000000 continuam a causar caos com suas máquinas enferrujadas, enquanto os ^ADD8E6Goblin Archers^000000 se escondem nas colinas, atacando viajantes desprevenidos com flechas certeiras.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Como se não bastasse, surgiram relatos de ^FF4500Rotar Zairos^000000, autômatos violentos que parecem ter sido ativados pelas mesmas máquinas dos Goblins.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Sua missão é clara: Derrote ^FF6347125 Steam Goblins^000000, ^ADD8E6125 Goblin Archers^000000 e ^FF450050 Rotar Zairos^000000. Traga equilíbrio de volta a esta região.";
+        mes "Pressione ^00CCFFAlt+U^000000 para acompanhar o progresso da missão.";
+        setquest 75121;
+        set SteamGoblin_Count, 0;
+        set GoblinArcher_Count, 0;
+        set RotarZairo_Count, 0;
         announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-        mes "objetivo da quest";
         close;
     }
-	else if (checkquest(75105) == 1 && 0x0_Count >= QQQQ && 0y0_Count >= wwww) { // Completar
-		completequest 75105;
-        setquest 75106;
-        navigateto "prt_fild10", 216,290;
-	}
-	else if (checkquest(75105) == 1 && 0x0_Count < QQQQ || 0y0_Count < wwww) { // Incompleta
-        mes "[CaÃ§ador de 0x0 e 0y0]";
-        mes "VocÃª ainda nÃ£o completou a <QUEST>MissÃ£o<INFO>75105</INFO></QUEST>.";
-        mes "0x0 derrotados: " + 0x0_Count + "/QQQQ";
-        mes "0y0 derrotados: " + 0y0_Count + "/wwww";
+    else if (checkquest(75121) == 1 && SteamGoblin_Count >= 125 && GoblinArcher_Count >= 125 && RotarZairo_Count >= 50) { // Completar
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Impressionante! Você conseguiu restaurar a paz nesta área. As criaturas goblinoides e os Rotar Zairos não são mais uma ameaça.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Continue com essa coragem e determinação. O próximo desafio o aguarda!";
+        completequest 75121;
+        setquest 75122;
+        navigateto "orcsdun02", 179, 24;
         close;
-		emotion ET_GO;
-	}
-	else if (checkquest(75105) == 2) { // JÃ¡ Entregue
-		emotion ET_OK;
-        mes "^8B0000[instrutor Jake]^000000";
-        mes "^377420Que seus passos sejam guiados pelo brilho da sua lÃ¢mina. Boa sorte em suas prÃ³0x0imas jornadas!^000000";
-	}
-	close;
+    }
+    else if (checkquest(75121) == 1 && (SteamGoblin_Count < 125 || GoblinArcher_Count < 125 || RotarZairo_Count < 50)) { // Incompleta
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você ainda não completou sua missão. Continue enfrentando as ameaças!";
+        mes "^FF6347Steam Goblins derrotados: ^000000" + SteamGoblin_Count + "/125";
+        mes "^ADD8E6Goblin Archers derrotados: ^000000" + GoblinArcher_Count + "/125";
+        mes "^FF4500Rotar Zairos derrotados: ^000000" + RotarZairo_Count + "/50";
+        mes "Lembre-se, sua determinação trará paz a esta região!";
+        emotion ET_GO;
+        close;
+    }
+    else if (checkquest(75121) == 2) { // Já Entregue
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você já completou esta missão. Prepare-se para novos desafios!";
+        emotion ET_OK;
+        close;
+    }
 
 OnNPCKillEvent:
-    if (checkquest(75105) == 1 && killedrid == 1167 && 0x0_Count < QQQQ) {
-        set 0x0_Count, 0x0_Count + 1;
-        dispbottom "0x0 derrotados: " + 0x0_Count + "/QQQQ.";
+    if (checkquest(75121) == 1 && killedrid == 1280 && SteamGoblin_Count < 125) { // Steam Goblin
+        set SteamGoblin_Count, SteamGoblin_Count + 1;
+        dispbottom "Steam Goblins derrotados: " + SteamGoblin_Count + "/125.";
     }
-    if (checkquest(75105) == 1 && killedrid == 1052 && 0y0_Count < wwww) {
-            set 0y0_Count, 0y0_Count + 1;
-            dispbottom "0y0 coletados: " + 0y0_Count + "/wwww.";
+    if (checkquest(75121) == 1 && killedrid == 1258 && GoblinArcher_Count < 125) { // Goblin Archer
+        set GoblinArcher_Count, GoblinArcher_Count + 1;
+        dispbottom "Goblin Archers derrotados: " + GoblinArcher_Count + "/125.";
     }
-    if (checkquest(75105) == 1 && 0x0_Count == QQQQ && 0y0_Count == wwww) {
-            dispbottom "VocÃª completou a missÃ£o de matar QQQQ 0x0 e wwww 0y0!";
-            set 0y0_Count, 0y0_Count + 1;
+    if (checkquest(75121) == 1 && killedrid == 1392 && RotarZairo_Count < 50) { // Rotar Zairo
+        set RotarZairo_Count, RotarZairo_Count + 1;
+        dispbottom "Rotar Zairos derrotados: " + RotarZairo_Count + "/50.";
+    }
+    if (checkquest(75121) == 1 && SteamGoblin_Count == 125 && GoblinArcher_Count == 125 && RotarZairo_Count == 50) {
+        dispbottom "Você completou a missão de derrotar 125 Steam Goblins, 125 Goblin Archers e 50 Rotar Zairos!";
+        set RotarZairo_Count, RotarZairo_Count + 1;
     }
     end;
+
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75105) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75105) == 1";
-	end;
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75121) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75121) == 1";
+    end;
 
 }
-

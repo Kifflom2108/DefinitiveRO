@@ -1,6 +1,3 @@
-//////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////// npc até o custom ////////////////////////////////////////////
-
 new_1-1,53,114,4	script	Shion#nv1	727,{
     if (nov_1st_cos == 1) {
         mes "[Shion]";
@@ -84,8 +81,7 @@ new_1-1,144,107,2	script	Guarda#nv2	105,{
 		mes "[Guarda do Campo de Treinamento]";
 		mes "Aqui, você aprenderá habilidades importantes e ganhará confiança para explorar o vasto mundo de Ragnarok.";
 		mes "Aproveite ao máximo sua experiência aqui!";
-	}
-	else {
+	}else {
 		mes "Avante, jovem aprendiz!";
 		mes "Enfrente seus desafios, torne-se mais forte e construa um futuro brilhante!";
 		mes "Lembre-se, cada passo no treinamento é um passo em direção ao sucesso!";
@@ -129,7 +125,8 @@ new_1-2,99,105,3	script	Instrutor de Interfaces#nv1	751,{
         mes "Agora, deixe-me apresentar as janelas de interface mais importantes e suas posições padrão.";
         next;
         mes "[Kris]";
-        mes "No canto superior esquerdo, você verá a ^3355FFJanela de Informações Básicas^000000, onde estão seu nome, nível e barras de experiência.";
+        mes "No canto superior esquerdo, você verá a ^3355FFJanela de Informações Básicas^000000, você pode pressionar '^3355FFAlt^000000' e '^3355FFV^000000' ao mesmo tempo,";
+        mes "onde estão seu nome, nível e barras de experiência.";
         next;
         mes "[Kris]";
         mes "Deixe-me te dar um pouco de experiência. Observe como a barra de experiência muda.";
@@ -194,7 +191,7 @@ new_1-2,83,111,3	script	Instrutor de Habilidades#nv	753,{
         next;
         mes "[Cecil]";
         mes "Dentro da Janela de Habilidades, você verá um ícone chamado '^3355FFHabilidade Básica^000000'.";
-        mes "Essa habilidade será essencial para o seu progresso no jogo.";
+        mes "Essa habilidade será essencial para o seu progresso.";
         next;
         mes "[Cecil]";
         mes "Na parte inferior da Janela de Habilidades, você verá o número de Pontos de Habilidade disponíveis.";

@@ -1,39 +1,32 @@
-    
 novice05,130,49,4	script	Porteiro#5	8W_SOLDIER,{
     cutin "prt_soldier", 2;
-    mes "[Guia de Classe]";
-	mes "OlÃ¡, aventureiro! Estou aqui para ajudÃ¡-lo no inÃ­cio de sua jornada.";
-	
-	
+    mes "[Duran]";
+	mes "Olá, aventureiro!.";
+
 	if (JobLevel < 10) {
-		mes "Vejo que vocÃª ainda nÃ£o alcanÃ§ou o Job Level 10.";
+		mes "Vejo que você ainda não alcançou o Nível de Classe 10.";
 		mes "Volte quando estiver pronto!";
         cutin "", 255;
 		close;
-	}
-
-	
-	if (SkillPoint > 0) {
-		mes "VocÃª ainda tem pontos de habilidade nÃ£o distribuÃ­dos.";
+	}else if (SkillPoint > 0) {
+		mes "Você ainda tem pontos de habilidade não distribuídos.";
 		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
         cutin "", 255;
 		close;
 	}
 
-	mes "Ã“timo! Vejo que vocÃª estÃ¡ preparado.";
-	mes "Deseja que eu o leve para o inÃ­cio das quests das classes 1-1?";
-
+	mes "Ótimo! Vejo que você está preparado.";
+	mes "Você gostaria que eu o levasse até os mestres da guilda?";
 	next;
 	
-	switch(select("Sim, por favor!:NÃ£o, ainda nÃ£o.")) {
+	switch(select("Sim, por favor!:Não, ainda não.")) {
 		case 1:
 			mes "Certo, preparando o teletransporte...";
 			mes "Boa sorte em sua jornada!";
 			
-			
-			mes "Para qual classe vocÃª deseja ir?";
+			mes "A qual mestre você deseja ir?";
 			next;
-			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:NoviÃ§o")) {
+			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
 				case 1:
 					savepoint   "izlude_in", 74, 166,1,1;
 					warp "izlude_in", 74, 166;
@@ -60,41 +53,40 @@ novice05,130,49,4	script	Porteiro#5	8W_SOLDIER,{
 					break;
 			}
 			close;
-
 		case 2:
-			mes "Tudo bem! Estarei aqui quando vocÃª estiver pronto.";
+			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+            cutin "", 255;
 			close;
 	}
 OnInit:
-        questinfo QTYPE_CLICKME;
-		end;
+    questinfo QTYPE_CLICKME;
+	end;
 }
-   
 
-novice05,107,56,4	script	CaÃ§ador de Tarous e Rodas#1	4_M_KNIGHT_SILVER,{
+novice05,107,56,4	script	Thorne#1	4_M_KNIGHT_SILVER,{
     cutin "3rd_rune_knight", 2;
     if (Quest_novice05 == 1) {
-        mes "[CaÃ§ador de Tarous e Rodas]";
-        mes "VocÃª jÃ¡ completou esta missÃ£o.";
+        mes "[Thorne]";
+        mes "Você já completou esta missão.";
         cutin "", 255;
         close;
     }
 
     if (Quest_novice05 == 0) {
-        mes "[CaÃ§ador de Tarous e Rodas]";
-        mes "OlÃ¡, aventureiro! Preciso de sua ajuda.";
+        mes "[Thorne]";
+        mes "Olá, aventureiro! Preciso de sua ajuda.";
         mes "Mate 15 Tarous e 10 Rodas.";
-        mes "VocÃª aceita a missÃ£o?";
-        mes "Sua Recompensa SerÃ¡: ";
-        mes "<ITEM>PoÃ§Ã£o do Aprendiz<INFO>569</INFO></ITEM> , Exp e 10 Moedas da guilda";
+        mes "Você aceita a missão?";
+        mes "Sua Recompensa Será: ";
+        mes "<ITEM>Poção do Aprendiz<INFO>569</INFO></ITEM>, Exp e 10 Moedas da guilda";
         next;
-        if (select("Sim, aceito!:NÃ£o, obrigado.") == 1) {
+        if (select("Sim, aceito!:Não, obrigado.") == 1) {
             set Quest_novice05, 2; 
             set Tarou_Count, 0;
             set Roda_Count, 0;
             announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
             setquest 75095;
-            mes "Ã“timo! VÃ¡ e mate 15 Tarou e 10 Roda.";
+            mes "Ótimo! Vá e mate 15 Tarou e 10 Roda.";
             cutin "", 255;
             close;
         } else {
@@ -106,28 +98,28 @@ novice05,107,56,4	script	CaÃ§ador de Tarous e Rodas#1	4_M_KNIGHT_SILVER,{
 
     if (Quest_novice05 == 2) {
         if (Tarou_Count < 15 || Roda_Count < 10) {
-            mes "[CaÃ§ador de Tarous e Rodas]";
-            mes "VocÃª ainda nÃ£o completou a <QUEST>MissÃ£o<INFO>75095</INFO></QUEST>.";
+            mes "[Thorne]";
+            mes "Você ainda não completou a <QUEST>Missão<INFO>75095</INFO></QUEST>.";
             mes "Tarous derrotados: " + Tarou_Count + "/15";
             mes "Rodas derrotados: " + Roda_Count + "/10";
             cutin "", 255;
             close;
         } else {
-            mes "[CaÃ§ador de Tarous e Rodas]";
-            mes "ParabÃ©ns! VocÃª completou a missÃ£o.";
-            mes "Aqui estÃ¡ sua recompensa.";
+            mes "[Thorne]";
+            mes "Parabéns! Você completou a missão.";
+            mes "Aqui está sua recompensa.";
+            specialeffect2 EF_BLESSING;
+            sc_start SC_BLESSING,300000,10;
             specialeffect2 EF_INCAGILITY;
-		    sc_start SC_INCREASEAGI,300000,10;
-		    specialeffect2 EF_BLESSING;
-		    sc_start SC_BLESSING,300000,10;
+            sc_start SC_INCREASEAGI,300000,10;
             getitem 569, 50;    
             getitem 22777, 5;     
             set Zeny, Zeny + 2500; 
             set Quest_novice05, 1;  
             completequest 75095;
             getexp 900, 500;
-            getitem 673,25;
-            mes "Obrigado pela ajuda! Espero contar com vocÃª novamente.";
+            getitem 673, 25;
+            mes "Obrigado pela ajuda! Espero contar com você novamente.";
             cutin "", 255;
             close;
         }
@@ -140,17 +132,16 @@ OnNPCKillEvent:
         dispbottom "Tarous derrotados: " + Tarou_Count + "/15.";
     }
     if (Quest_novice05 == 2 && killedrid == 1012 && Roda_Count < 10) {
-            set Roda_Count, Roda_Count + 1;
-            dispbottom "Rodas coletados: " + Roda_Count + "/10.";
-        }
-    if (Quest_novice05 == 2 &&Tarou_Count == 15 && Roda_Count == 10) {
-            dispbottom "VocÃª completou a missÃ£o de matar 10 Tarous e 15 Rodas!";
-        }
-    
+        set Roda_Count, Roda_Count + 1;
+        dispbottom "Rodas derrotados: " + Roda_Count + "/10.";
+    }
+    if (Quest_novice05 == 2 && Tarou_Count == 15 && Roda_Count == 10) {
+        dispbottom "Você completou a missão de matar 15 Tarous e 10 Rodas!";
+    }
     end;
+
 OnInit:
     questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75095) == -1";
     questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75095) == 1";
-	end;
+    end;
 }
-

@@ -1,54 +1,73 @@
-orcsdun02,28,183,3	script	Jake#orcsdun02	752,{
-	if (checkquest(75104) == 1) {
-        completequest 75105;
+orcsdun02,179,24,3	script	Jake#orcsdun02	4_M_CRU_OLD,{
+
+    if (checkquest(75122) == 1) {
+        completequest 75122;
     }
 
-    if (checkquest(75105) == -1) {
-        setquest 75105;
-        set 0x0_Count, 0;
-        set 0y0_Count, 0;
+    if (checkquest(75123) == -1) {
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você chegou ao Covil dos Orcs, um lugar onde até mesmo os mais destemidos aventureiros hesitam em entrar.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Os ^FF4500Zenorcs^000000, guerreiros incansáveis dos Orcs, continuam a fortalecer seu exército, enquanto os misteriosos ^6A5ACDDrainliars^000000 drenam as energias vitais de todos que encontram.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Sua missão é clara: ^FF4500eliminar 250 Zenorcs^000000 para enfraquecer suas forças e ^6A5ACDdestruir 125 Drainliars^000000 para recuperar a energia roubada. Isso é essencial para garantir a sobrevivência das terras vizinhas.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você é nossa última esperança. Mostre sua força e retorne apenas quando o trabalho estiver completo!";
+        mes "Pressione ^00CCFFAlt+U^000000 para acompanhar o progresso da missão.";
+        setquest 75123;
+        set Zenorc_Count, 0;
+        set Drainliar_Count, 0;
         announce "Pressione Alt+U para abrir sua janela de quests!", bc_self;
-        mes "objetivo da quest";
         close;
     }
-	else if (checkquest(75105) == 1 && 0x0_Count >= QQQQ && 0y0_Count >= wwww) { // Completar
-		completequest 75105;
-        setquest 75106;
-        navigateto "prt_fild10", 216,290;
-	}
-	else if (checkquest(75105) == 1 && 0x0_Count < QQQQ || 0y0_Count < wwww) { // Incompleta
-        mes "[CaÃ§ador de 0x0 e 0y0]";
-        mes "VocÃª ainda nÃ£o completou a <QUEST>MissÃ£o<INFO>75105</INFO></QUEST>.";
-        mes "0x0 derrotados: " + 0x0_Count + "/QQQQ";
-        mes "0y0 derrotados: " + 0y0_Count + "/wwww";
+    else if (checkquest(75123) == 1 && Zenorc_Count >= 250 && Drainliar_Count >= 125) { // Completar
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você conseguiu! Os Zenorcs recuaram, e o poder dos Drainliars foi neutralizado.";
+        next;
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Graças à sua bravura, as terras estão seguras mais uma vez. Continue sua jornada; você está destinado a feitos ainda maiores.";
+        completequest 75123;
+        setquest 75124;
+        navigateto "prt_fild10", 216, 290;
         close;
-		emotion ET_GO;
-	}
-	else if (checkquest(75105) == 2) { // JÃ¡ Entregue
-		emotion ET_OK;
-        mes "^8B0000[instrutor Jake]^000000";
-        mes "^377420Que seus passos sejam guiados pelo brilho da sua lÃ¢mina. Boa sorte em suas prÃ³0x0imas jornadas!^000000";
-	}
-	close;
+    }
+    else if (checkquest(75123) == 1 && (Zenorc_Count < 250 || Drainliar_Count < 125)) { // Incompleta
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Sua missão ainda não foi concluída. Continue eliminando as ameaças no Covil dos Orcs!";
+        mes "^FF4500Zenorcs derrotados: ^000000" + Zenorc_Count + "/250";
+        mes "^6A5ACDDrainliars derrotados: ^000000" + Drainliar_Count + "/125";
+        mes "Não desista, a segurança das terras depende de você!";
+        emotion ET_GO;
+        close;
+    }
+    else if (checkquest(75123) == 2) { // Já Entregue
+        mes "^8B0000[Instrutor Jake]^000000";
+        mes "Você já completou esta missão. As terras agradecem sua coragem!";
+        emotion ET_OK;
+        close;
+    }
 
 OnNPCKillEvent:
-    if (checkquest(75105) == 1 && killedrid == 1167 && 0x0_Count < QQQQ) {
-        set 0x0_Count, 0x0_Count + 1;
-        dispbottom "0x0 derrotados: " + 0x0_Count + "/QQQQ.";
+    if (checkquest(75123) == 1 && killedrid == 1177 && Zenorc_Count < 250) { // Zenorc
+        set Zenorc_Count, Zenorc_Count + 1;
+        dispbottom "Zenorcs derrotados: " + Zenorc_Count + "/250.";
     }
-    if (checkquest(75105) == 1 && killedrid == 1052 && 0y0_Count < wwww) {
-            set 0y0_Count, 0y0_Count + 1;
-            dispbottom "0y0 coletados: " + 0y0_Count + "/wwww.";
+    if (checkquest(75123) == 1 && killedrid == 1111 && Drainliar_Count < 125) { // Drainliar
+        set Drainliar_Count, Drainliar_Count + 1;
+        dispbottom "Drainliars derrotados: " + Drainliar_Count + "/125.";
     }
-    if (checkquest(75105) == 1 && 0x0_Count == QQQQ && 0y0_Count == wwww) {
-            dispbottom "VocÃª completou a missÃ£o de matar QQQQ 0x0 e wwww 0y0!";
-            set 0y0_Count, 0y0_Count + 1;
+    if (checkquest(75123) == 1 && Zenorc_Count == 250 && Drainliar_Count == 125) {
+        dispbottom "Você completou a missão de derrotar 250 Zenorcs e 125 Drainliars!";
+        set Drainliar_Count, Drainliar_Count + 1;
     }
     end;
+
 OnInit:
-    questinfo QTYPE_QUEST2,QMARK_YELLOW,"checkquest(75105) == -1";
-    questinfo QTYPE_QUEST,QMARK_YELLOW,"checkquest(75105) == 1";
-	end;
+    questinfo QTYPE_QUEST2, QMARK_YELLOW, "checkquest(75123) == -1";
+    questinfo QTYPE_QUEST, QMARK_YELLOW, "checkquest(75123) == 1";
+    end;
 
 }
-

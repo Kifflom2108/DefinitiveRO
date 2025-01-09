@@ -1,10 +1,10 @@
-novice00,112,56,3	script	Kafra Map Changer#novice	4_F_KAFRA1,{
+novice00,112,56,3	script	Funcionária Kafra#novice	4_F_KAFRA1,{
 	cutin "kafra_01", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
-	mes "[Kafra Employee]";
+	mes "[Pavianne]";
 	mes "Olá, aventureiro!";
 	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
 	next;
-	mes "[Kafra Employee]";
+	mes "[Pavianne]";
 	mes "Para qual mapa você gostaria de ir?";
 	next;
 
@@ -47,13 +47,13 @@ novice00,112,56,3	script	Kafra Map Changer#novice	4_F_KAFRA1,{
 	close;
 }
 
-novice01,112,56,3	script	Kafra Map Changer#novice01	4_F_KAFRA2,{
+novice01,112,56,3	script	Funcionária Kafra#novice01	4_F_KAFRA2,{
 	cutin "kafra_02", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
-	mes "[Kafra Employee]";
+	mes "[Blossom]";
 	mes "Olá, aventureiro!";
 	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
 	next;
-	mes "[Kafra Employee]";
+	mes "[Blossom]";
 	mes "Para qual mapa você gostaria de ir?";
 	next;
 
@@ -96,13 +96,13 @@ novice01,112,56,3	script	Kafra Map Changer#novice01	4_F_KAFRA2,{
 	close;
 }
 
-novice02,112,56,3	script	Kafra Map Changer#novice02	4_F_KAFRA3,{
+novice02,112,56,3	script	Funcionária Kafra#novice02	4_F_KAFRA3,{
 	cutin "kafra_03", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
-	mes "[Kafra Employee]";
+	mes "[Jasmine]";
 	mes "Olá, aventureiro!";
 	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
 	next;
-	mes "[Kafra Employee]";
+	mes "[Jasmine]";
 	mes "Para qual mapa você gostaria de ir?";
 	next;
 
@@ -145,13 +145,13 @@ novice02,112,56,3	script	Kafra Map Changer#novice02	4_F_KAFRA3,{
 	close;
 }
 
-novice03,112,56,3	script	Kafra Map Changer#novice03	4_F_KAFRA4,{
+novice03,112,56,3	script	Funcionária Kafra#novice03	4_F_KAFRA4,{
 	cutin "kafra_04", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
-	mes "[Kafra Employee]";
+	mes "[Roxie]";
 	mes "Olá, aventureiro!";
 	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
 	next;
-	mes "[Kafra Employee]";
+	mes "[Roxie]";
 	mes "Para qual mapa você gostaria de ir?";
 	next;
 
@@ -194,13 +194,13 @@ novice03,112,56,3	script	Kafra Map Changer#novice03	4_F_KAFRA4,{
 	close;
 }
 
-novice04,112,56,3	script	Kafra Map Changer#novice04	4_F_KAFRA6,{
+novice04,112,56,3	script	Funcionária Kafra#novice04	4_F_KAFRA6,{
 	cutin "kafra_06", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
-	mes "[Kafra Employee]";
+	mes "[Curly Sue]";
 	mes "Olá, aventureiro!";
 	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
 	next;
-	mes "[Kafra Employee]";
+	mes "[Curly Sue]";
 	mes "Para qual mapa você gostaria de ir?";
 	next;
 
@@ -243,13 +243,13 @@ novice04,112,56,3	script	Kafra Map Changer#novice04	4_F_KAFRA6,{
 	close;
 }
 
-novice05,112,56,3	script	Kafra Map Changer#novice05	4_F_KAFRA8,{
+novice05,112,56,3	script	Funcionária Kafra#novice05	4_F_KAFRA8,{
 	cutin "kafra_08", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
-	mes "[Kafra Employee]";
+	mes "[Alty]";
 	mes "Olá, aventureiro!";
 	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
 	next;
-	mes "[Kafra Employee]";
+	mes "[Alty]";
 	mes "Para qual mapa você gostaria de ir?";
 	next;
 
@@ -292,13 +292,13 @@ novice05,112,56,3	script	Kafra Map Changer#novice05	4_F_KAFRA8,{
 	close;
 }
 
-novice06,112,56,3	script	Kafra Map Changer#novice06	4_F_KAFRA9,{
+novice06,112,56,3	script	Funcionária Kafra#novice06	4_F_KAFRA9,{
 	cutin "kafra_09", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
-	mes "[Kafra Employee]";
+	mes "[Lyrith]";
 	mes "Olá, aventureiro!";
 	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
 	next;
-	mes "[Kafra Employee]";
+	mes "[Lyrith]";
 	mes "Para qual mapa você gostaria de ir?";
 	next;
 
@@ -341,13 +341,13 @@ novice06,112,56,3	script	Kafra Map Changer#novice06	4_F_KAFRA9,{
 	close;
 }
 
-novice07,112,56,3	script	Kafra Map Changer#novice07	4_F_KAFRA7,{
+novice07,112,56,3	script	Funcionária Kafra#novice07	4_F_KAFRA7,{
 	cutin "kafra_07", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
-	mes "[Kafra Employee]";
+	mes "[Sampaguita]";
 	mes "Olá, aventureiro!";
 	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
 	next;
-	mes "[Kafra Employee]";
+	mes "[Sampaguita]";
 	mes "Para qual mapa você gostaria de ir?";
 	next;
 
