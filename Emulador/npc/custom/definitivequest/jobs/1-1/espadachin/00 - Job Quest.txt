@@ -35,7 +35,24 @@
 //= 2.1 Fixed mistake in condition check. [L0ne_W0lf]
 //= 2.2 Warp portals dont end with ; [YommY]
 //= 2.3 Added Quest Log commands. [L0ne_W0lf]
-//============================================================ 
+//===========================================================
+
+izlude_in,118,175,3	script	ComercianteGuilda#Izlude	752,{
+	// Abertura do sistema de loja
+	mes "[Comerciante da Guilda]";
+	mes "Bem-vindo à loja da guilda! Você pode comprar Poções Brancas com Jellopy.";
+	close;
+	OnInit:
+	// Definir os itens que serão vendidos e suas quantidades
+    setarray .Itens[0], 501, 1, 402, 1; // Poção Branca (ID: 501), Jellopy (ID: 402)
+    setarray .Precos[0], 1; // Preço da Poção Branca (1 Jellopy)
+    end;
+	
+	OnPCTalkEvent:
+	// Chama o sistema de loja
+	shop "ComercianteGuilda#Izlude";
+}
+
 
 izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
     if (Upper == 1) {
@@ -153,6 +170,7 @@ izlude_in,74,172,4	script	Mestre Da Guilda#swordman	119,{
             callfunc "Job_Change", Job_Swordman;
             set job_sword_q, 0;
             completequest 1016;
+            getitem 99037, 1;
             setquest 75100;
             navigateto "izlude_in", 124, 175;
             mes "[Espadachim]";

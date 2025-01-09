@@ -1,30 +1,34 @@
 novice00,130,49,4	script	Porteiro#0	8W_SOLDIER,{
     cutin "prt_soldier", 2;
     mes "[Duran]";
-	mes "Olá, aventureiro!.";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+    next;
 
 	if (JobLevel < 10) {
-		mes "Vejo que você ainda não alcançou o Nível de Classe 10.";
-		mes "Volte quando estiver pronto!";
+        mes "[Duran]";
+		mes "Parece que você ainda não atingiu o Nível de Classe 10.";
+		mes "Volte quando estiver mais experiente e pronto para avançar!";
         cutin "", 255;
 		close;
-	}else if (SkillPoint > 0) {
-		mes "Você ainda tem pontos de habilidade não distribuídos.";
-		mes "Por favor, distribua todos os seus pontos antes de falar comigo novamente.";
+	} else if (SkillPoint > 0) {
+        mes "[Duran]";
+		mes "Notei que você ainda tem pontos de habilidade para distribuir.";
+		mes "Por favor, use todos os seus pontos antes de falar comigo novamente.";
         cutin "", 255;
 		close;
 	}
-
-	mes "Ótimo! Vejo que você está preparado.";
-	mes "Você gostaria que eu o levasse até os mestres da guilda?";
+    mes "[Duran]";
+	mes "Ótimo! Você está pronto para seguir em frente.";
+	mes "Gostaria que eu o levasse até os mestres da guilda para continuar sua jornada?";
 	next;
 	
 	switch(select("Sim, por favor!:Não, ainda não.")) {
 		case 1:
-			mes "Certo, preparando o teletransporte...";
-			mes "Boa sorte em sua jornada!";
+            mes "[Duran]";
+			mes "Entendido. Preparando o teletransporte...";
+			mes "Boa sorte em sua jornada e que você tenha sucesso!";
 			
-			mes "A qual mestre você deseja ir?";
+			mes "Para qual mestre você deseja ser levado?";
 			next;
 			switch(select("Espadachim:Arqueiro:Mago:Gatuno:Mercador:Noviço")) {
 				case 1:
@@ -52,9 +56,10 @@ novice00,130,49,4	script	Porteiro#0	8W_SOLDIER,{
 					warp "prt_church", 184, 32; 
 					break;
 			}
+            completequest 75090;
 			close;
 		case 2:
-			mes "Tudo bem! Estarei aqui quando você estiver pronto.";
+			mes "Sem problemas! Estarei aqui quando você estiver pronto.";
             cutin "", 255;
 			close;
 	}
@@ -87,18 +92,8 @@ novice00,107,56,4	script	Thorne#0	4_M_KNIGHT_SILVER,{
             mes "Você ainda não completou a <QUEST>Missão<INFO>75090</INFO></QUEST>.";
             mes "Porings derrotados: " + Poring_Count + "/15";
             mes "Drops derrotados: " + Drop_Count + "/15";
-            mes "Deseja abandonar sua missão ?";
-            if (select("Não, obrigado.:Sim") == 1) {
-                mes "Ótimo! Vá e caçe 15 Porings e 15 Drops.";
-                cutin "", 255;
-                close;
-            } else {
-                mes "Tudo bem, volte quando estiver pronto.";
-                set Quest_novice00, 0;
-                erasequest(75090);
-                cutin "", 255;
-                close;
-            }
+            cutin "", 255;
+            close;
         } else {
             mes "[Thorne]";
             mes "Parabéns! Você completou a missão.";
@@ -107,14 +102,11 @@ novice00,107,56,4	script	Thorne#0	4_M_KNIGHT_SILVER,{
             sc_start SC_BLESSING,300000,10;
             specialeffect2 EF_INCAGILITY;
             sc_start SC_INCREASEAGI,300000,10;
-            getitem 569, 40;       
-            getitem 22777, 5;      
-            set Zeny, Zeny + 500; 
+            getitem 569, 40;         
+            set Zeny, Zeny + 1000; 
             set Quest_novice00, 1;
             completequest 75090;
             getexp 500, 300;
-            getitem 673,30;
-            mes "Obrigado pela ajuda! Espero contar com você novamente.";
             cutin "", 255;
             close;
         }
@@ -124,14 +116,14 @@ novice00,107,56,4	script	Thorne#0	4_M_KNIGHT_SILVER,{
 OnNPCKillEvent:
     if (Quest_novice00 == 2 && killedrid == 1002 && Poring_Count < 15) {
         set Poring_Count, Poring_Count + 1;
-        dispbottom "Porings derrotados: " + Poring_Count + "/15.";
+        //dispbottom "Porings derrotados: " + Poring_Count + "/15.";
     }
     if (Quest_novice00 == 2 && killedrid == 1113 && Drops_Count < 15) {
         set Drop_Count, Drop_Count + 1; 
-        dispbottom "Drops derrotados: " + Drop_Count + "/15.";
+        //dispbottom "Drops derrotados: " + Drop_Count + "/15.";
     }
     if (Quest_novice00 == 2 && Poring_Count == 15 && Drop_Count == 15) {
-        announce "Você completou a missão de matar 15 Porings e 15 Drops!", bc_self;
+        announce "Você completou a missão de caça 15 Porings e 15 Drops!", bc_self;
     }
     end;
 OnInit:

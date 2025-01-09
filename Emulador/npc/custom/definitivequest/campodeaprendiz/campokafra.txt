@@ -1,392 +1,232 @@
 novice00,112,56,3	script	Funcionária Kafra#novice	4_F_KAFRA1,{
-	cutin "kafra_01", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	cutin "kafra_01", 0;
 	mes "[Pavianne]";
-	mes "Olá, aventureiro!";
-	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
 	next;
-	mes "[Pavianne]";
-	mes "Para qual mapa você gostaria de ir?";
-	next;
-
-	switch(select(
-		"Poring e Drops",
-		"Fabre e Pupa",
-		"Lunatic e Chonchon",
-		"Pickys",
-		"Willow e Savage Babe",
-		"Tarou e Roda Frog",
-		"Thief Bug e Spore",
-		"Thief Bug Famale e Baby Desert Wolf"
-	)) {
-		case 1:
-			warp("novice00",96,48);
-			break;
-		case 2:
-			warp("novice01",96,48);
-			break;
-		case 3:
-			warp("novice02",96,48);
-			break;
-		case 4:
-			warp("novice03",96,48);
-			break;
-		case 5:
-			warp("novice04",96,48);
-			break;
-		case 6:
-			warp("novice05",96,48);
-			break;
-		case 7:
-			warp("novice06",96,48);
-			break;
-		case 8:
-			warp("novice07",96,48);
-			break;
+	if (Quest_novice00 == 1) {
+		mes "[Pavianne]";
+		mes "Você gostaria de continuar com o treinamento?";
+		next;
+		switch(select("Sim, por favor.", "Não, obrigado.")) {
+			case 1:
+				warp("novice01",96,48);
+				break;
+			case 2:
+				mes "[Pavianne]";
+				mes "Tudo bem. Volte quando estiver pronto!";
+				break;
+		}
+		cutin "", 255;
+		close;
+    } else {
+		mes "[Pavianne]";
+		mes "Parece que você ainda não concluiu o treinamento. Por favor, finalize-o antes de continuar.";
+		cutin "", 255;
+		close;
 	}
-	cutin "", 255; // Remove a imagem ao final do diálogo
-	close;
 }
 
 novice01,112,56,3	script	Funcionária Kafra#novice01	4_F_KAFRA2,{
-	cutin "kafra_02", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	cutin "kafra_02", 0;
 	mes "[Blossom]";
-	mes "Olá, aventureiro!";
-	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
 	next;
-	mes "[Blossom]";
-	mes "Para qual mapa você gostaria de ir?";
-	next;
-
-	switch(select(
-		"Poring e Drops",
-		"Fabre e Pupa",
-		"Lunatic e Chonchon",
-		"Pickys",
-		"Willow e Savage Babe",
-		"Tarou e Roda Frog",
-		"Thief Bug e Spore",
-		"Thief Bug Famale e Baby Desert Wolf"
-	)) {
-		case 1:
-			warp("novice00",96,48);
-			break;
-		case 2:
-			warp("novice01",96,48);
-			break;
-		case 3:
-			warp("novice02",96,48);
-			break;
-		case 4:
-			warp("novice03",96,48);
-			break;
-		case 5:
-			warp("novice04",96,48);
-			break;
-		case 6:
-			warp("novice05",96,48);
-			break;
-		case 7:
-			warp("novice06",96,48);
-			break;
-		case 8:
-			warp("novice07",96,48);
-			break;
+	if (Quest_novice01 == 1) {
+		mes "[Blossom]";
+		mes "Você gostaria de continuar com o treinamento?";
+		next;
+		switch(select("Sim, por favor.", "Não, obrigado.")) {
+			case 1:
+				warp("novice02",96,48);
+				break;
+			case 2:
+				mes "[Blossom]";
+				mes "Tudo bem. Volte quando estiver pronto!";
+				break;
+		}
+		cutin "", 255;
+		close;
+    } else {
+		mes "[Blossom]";
+		mes "Parece que você ainda não concluiu o treinamento. Por favor, finalize-o antes de continuar.";
+		cutin "", 255;
+		close;
 	}
-	cutin "", 255; // Remove a imagem ao final do diálogo
-	close;
 }
 
 novice02,112,56,3	script	Funcionária Kafra#novice02	4_F_KAFRA3,{
-	cutin "kafra_03", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	cutin "kafra_03", 0;
 	mes "[Jasmine]";
-	mes "Olá, aventureiro!";
-	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
 	next;
-	mes "[Jasmine]";
-	mes "Para qual mapa você gostaria de ir?";
-	next;
-
-	switch(select(
-		"Poring e Drops",
-		"Fabre e Pupa",
-		"Lunatic e Chonchon",
-		"Pickys",
-		"Willow e Savage Babe",
-		"Tarou e Roda Frog",
-		"Thief Bug e Spore",
-		"Thief Bug Famale e Baby Desert Wolf"
-	)) {
-		case 1:
-			warp("novice00",96,48);
-			break;
-		case 2:
-			warp("novice01",96,48);
-			break;
-		case 3:
-			warp("novice02",96,48);
-			break;
-		case 4:
-			warp("novice03",96,48);
-			break;
-		case 5:
-			warp("novice04",96,48);
-			break;
-		case 6:
-			warp("novice05",96,48);
-			break;
-		case 7:
-			warp("novice06",96,48);
-			break;
-		case 8:
-			warp("novice07",96,48);
-			break;
+	if (Quest_novice02 == 1) {
+		mes "[Jasmine]";
+		mes "Você gostaria de continuar com o treinamento?";
+		next;
+		switch(select("Sim, por favor.", "Não, obrigado.")) {
+			case 1:
+				warp("novice03",96,48);
+				break;
+			case 2:
+				mes "[Jasmine]";
+				mes "Tudo bem. Volte quando estiver pronto!";
+				break;
+		}
+		cutin "", 255;
+		close;
+    } else {
+		mes "[Jasmine]";
+		mes "Parece que você ainda não concluiu o treinamento. Por favor, finalize-o antes de continuar.";
+		cutin "", 255;
+		close;
 	}
-	cutin "", 255; // Remove a imagem ao final do diálogo
-	close;
 }
 
 novice03,112,56,3	script	Funcionária Kafra#novice03	4_F_KAFRA4,{
-	cutin "kafra_04", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	cutin "kafra_04", 0;
 	mes "[Roxie]";
-	mes "Olá, aventureiro!";
-	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
 	next;
-	mes "[Roxie]";
-	mes "Para qual mapa você gostaria de ir?";
-	next;
-
-	switch(select(
-		"Poring e Drops",
-		"Fabre e Pupa",
-		"Lunatic e Chonchon",
-		"Pickys",
-		"Willow e Savage Babe",
-		"Tarou e Roda Frog",
-		"Thief Bug e Spore",
-		"Thief Bug Famale e Baby Desert Wolf"
-	)) {
-		case 1:
-			warp("novice00",96,48);
-			break;
-		case 2:
-			warp("novice01",96,48);
-			break;
-		case 3:
-			warp("novice02",96,48);
-			break;
-		case 4:
-			warp("novice03",96,48);
-			break;
-		case 5:
-			warp("novice04",96,48);
-			break;
-		case 6:
-			warp("novice05",96,48);
-			break;
-		case 7:
-			warp("novice06",96,48);
-			break;
-		case 8:
-			warp("novice07",96,48);
-			break;
+	if (Quest_novice03 == 1) {
+		mes "[Roxie]";
+		mes "Você gostaria de continuar com o treinamento?";
+		next;
+		switch(select("Sim, por favor.", "Não, obrigado.")) {
+			case 1:
+				warp("novice04",96,48);
+				break;
+			case 2:
+				mes "[Roxie]";
+				mes "Tudo bem. Volte quando estiver pronto!";
+				break;
+		}
+		cutin "", 255;
+		close;
+    } else {
+		mes "[Roxie]";
+		mes "Parece que você ainda não concluiu o treinamento. Por favor, finalize-o antes de continuar.";
+		cutin "", 255;
+		close;
 	}
-	cutin "", 255; // Remove a imagem ao final do diálogo
-	close;
 }
 
 novice04,112,56,3	script	Funcionária Kafra#novice04	4_F_KAFRA6,{
-	cutin "kafra_06", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	cutin "kafra_06", 0;
 	mes "[Curly Sue]";
-	mes "Olá, aventureiro!";
-	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
 	next;
-	mes "[Curly Sue]";
-	mes "Para qual mapa você gostaria de ir?";
-	next;
-
-	switch(select(
-		"Poring e Drops",
-		"Fabre e Pupa",
-		"Lunatic e Chonchon",
-		"Pickys",
-		"Willow e Savage Babe",
-		"Tarou e Roda Frog",
-		"Thief Bug e Spore",
-		"Thief Bug Famale e Baby Desert Wolf"
-	)) {
-		case 1:
-			warp("novice00",96,48);
-			break;
-		case 2:
-			warp("novice01",96,48);
-			break;
-		case 3:
-			warp("novice02",96,48);
-			break;
-		case 4:
-			warp("novice03",96,48);
-			break;
-		case 5:
-			warp("novice04",96,48);
-			break;
-		case 6:
-			warp("novice05",96,48);
-			break;
-		case 7:
-			warp("novice06",96,48);
-			break;
-		case 8:
-			warp("novice07",96,48);
-			break;
+	if (Quest_novice04 == 1) {
+		mes "[Curly Sue]";
+		mes "Você gostaria de continuar com o treinamento?";
+		next;
+		switch(select("Sim, por favor.", "Não, obrigado.")) {
+			case 1:
+				warp("novice05",96,48);
+				break;
+			case 2:
+				mes "[Curly Sue]";
+				mes "Tudo bem. Volte quando estiver pronto!";
+				break;
+		}
+		cutin "", 255;
+		close;
+    } else {
+		mes "[Curly Sue]";
+		mes "Parece que você ainda não concluiu o treinamento. Por favor, finalize-o antes de continuar.";
+		cutin "", 255;
+		close;
 	}
-	cutin "", 255; // Remove a imagem ao final do diálogo
-	close;
 }
 
 novice05,112,56,3	script	Funcionária Kafra#novice05	4_F_KAFRA8,{
-	cutin "kafra_08", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	cutin "kafra_08", 0;
 	mes "[Alty]";
-	mes "Olá, aventureiro!";
-	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
 	next;
-	mes "[Alty]";
-	mes "Para qual mapa você gostaria de ir?";
-	next;
-
-	switch(select(
-		"Poring e Drops",
-		"Fabre e Pupa",
-		"Lunatic e Chonchon",
-		"Pickys",
-		"Willow e Savage Babe",
-		"Tarou e Roda Frog",
-		"Thief Bug e Spore",
-		"Thief Bug Famale e Baby Desert Wolf"
-	)) {
-		case 1:
-			warp("novice00",96,48);
-			break;
-		case 2:
-			warp("novice01",96,48);
-			break;
-		case 3:
-			warp("novice02",96,48);
-			break;
-		case 4:
-			warp("novice03",96,48);
-			break;
-		case 5:
-			warp("novice04",96,48);
-			break;
-		case 6:
-			warp("novice05",96,48);
-			break;
-		case 7:
-			warp("novice06",96,48);
-			break;
-		case 8:
-			warp("novice07",96,48);
-			break;
+	if (Quest_novice05 == 1) {
+		mes "[Alty]";
+		mes "Você gostaria de continuar com o treinamento?";
+		next;
+		switch(select("Sim, por favor.", "Não, obrigado.")) {
+			case 1:
+				warp("novice06",96,48);
+				break;
+			case 2:
+				mes "[Alty]";
+				mes "Tudo bem. Volte quando estiver pronto!";
+				break;
+		}
+		cutin "", 255;
+		close;
+    } else {
+		mes "[Alty]";
+		mes "Parece que você ainda não concluiu o treinamento. Por favor, finalize-o antes de continuar.";
+		cutin "", 255;
+		close;
 	}
-	cutin "", 255; // Remove a imagem ao final do diálogo
-	close;
 }
 
 novice06,112,56,3	script	Funcionária Kafra#novice06	4_F_KAFRA9,{
-	cutin "kafra_09", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+	cutin "kafra_09", 0;
 	mes "[Lyrith]";
-	mes "Olá, aventureiro!";
-	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
 	next;
-	mes "[Lyrith]";
-	mes "Para qual mapa você gostaria de ir?";
-	next;
-
-	switch(select(
-		"Poring e Drops",
-		"Fabre e Pupa",
-		"Lunatic e Chonchon",
-		"Pickys",
-		"Willow e Savage Babe",
-		"Tarou e Roda Frog",
-		"Thief Bug e Spore",
-		"Thief Bug Famale e Baby Desert Wolf"
-	)) {
-		case 1:
-			warp("novice00",96,48);
-			break;
-		case 2:
-			warp("novice01",96,48);
-			break;
-		case 3:
-			warp("novice02",96,48);
-			break;
-		case 4:
-			warp("novice03",96,48);
-			break;
-		case 5:
-			warp("novice04",96,48);
-			break;
-		case 6:
-			warp("novice05",96,48);
-			break;
-		case 7:
-			warp("novice06",96,48);
-			break;
-		case 8:
-			warp("novice07",96,48);
-			break;
+	if (Quest_novice06 == 1) {
+		mes "[Lyrith]";
+		mes "Você gostaria de continuar com o treinamento?";
+		next;
+		switch(select("Sim, por favor.", "Não, obrigado.")) {
+			case 1:
+				warp("novice07",96,48);
+				break;
+			case 2:
+				mes "[Lyrith]";
+				mes "Tudo bem. Volte quando estiver pronto!";
+				break;
+		}
+		cutin "", 255;
+		close;
+    } else {
+		mes "[Lyrith]";
+		mes "Parece que você ainda não concluiu o treinamento. Por favor, finalize-o antes de continuar.";
+		cutin "", 255;
+		close;
 	}
-	cutin "", 255; // Remove a imagem ao final do diálogo
-	close;
 }
 
-novice07,112,56,3	script	Funcionária Kafra#novice07	4_F_KAFRA7,{
-	cutin "kafra_07", 0; // Mostra a imagem "kafra_illus" no lado esquerdo
+novice07,112,56,3	script	Mestre Da Guilda#novice07	4_M_NOV_RUMIN,{
 	mes "[Sampaguita]";
-	mes "Olá, aventureiro!";
-	mes "Eu posso te ajudar a mudar entre os mapas iniciais.";
+	cutin "nov_lumin01", 2;
 	next;
-	mes "[Sampaguita]";
-	mes "Para qual mapa você gostaria de ir?";
-	next;
-
-	switch(select(
-		"Poring e Drops",
-		"Fabre e Pupa",
-		"Lunatic e Chonchon",
-		"Pickys",
-		"Willow e Savage Babe",
-		"Tarou e Roda Frog",
-		"Thief Bug e Spore",
-		"Thief Bug Famale e Baby Desert Wolf"
-	)) {
-		case 1:
-			warp("novice00",96,48);
-			break;
-		case 2:
-			warp("novice01",96,48);
-			break;
-		case 3:
-			warp("novice02",96,48);
-			break;
-		case 4:
-			warp("novice03",96,48);
-			break;
-		case 5:
-			warp("novice04",96,48);
-			break;
-		case 6:
-			warp("novice05",96,48);
-			break;
-		case 7:
-			warp("novice06",96,48);
-			break;
-		case 8:
-			warp("novice07",96,48);
-			break;
-	}
-	cutin "", 255; // Remove a imagem ao final do diálogo
+	cutin "", 255;
 	close;
+
 }
 
+//novice07,112,56,3	script	Funcionária Kafra#novice07	4_F_KAFRA7,{
+//	cutin "kafra_07", 0;
+//	mes "[Sampaguita]";
+//	mes "Olá, ^3355FF" + strcharinfo(0) + "^000000! Como posso ajudá-lo hoje?";
+//	next;
+//	if (Quest_novice07 == 1) {
+//		mes "[Sampaguita]";
+//		mes "Você gostaria de continuar com o treinamento?";
+//		next;
+//		switch(select("Sim, por favor.", "Não, obrigado.")) {
+//			case 1:
+//				warp("novice07",96,48);
+//				break;
+//			case 2:
+//				mes "[Sampaguita]";
+//				mes "Tudo bem. Volte quando estiver pronto!";
+//				break;
+//		}
+//		cutin "", 255;
+//		close;
+//    } else {
+//		mes "[Sampaguita]";
+//		mes "Parece que você ainda não concluiu o treinamento. Por favor, finalize-o antes de continuar.";
+//		cutin "", 255;
+//		close;
+//	}
+//}

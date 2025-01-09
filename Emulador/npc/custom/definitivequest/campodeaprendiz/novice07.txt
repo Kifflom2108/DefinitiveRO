@@ -63,7 +63,7 @@ OnInit:
 	end;
 }
 
-novice07,107,56,4	script	Thorne#1	4_M_KNIGHT_SILVER,{
+novice07,107,56,4	script	Thorne#7	4_M_KNIGHT_SILVER,{
     cutin "3rd_rune_knight", 2;
     if (Quest_novice07 == 1) {
         mes "[Thorne]";
