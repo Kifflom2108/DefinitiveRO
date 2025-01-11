@@ -63,4 +63,9 @@
 	- [ ] Veins
 	- [ ] Yuno
 - [ ] Instrutores para up até level 80
-- [ ] 
+- [ ] Criar o sistema de guilda
+	- [ ] Quest Diarias
+	- [ ] Instancias
+- [ ] Uso de moedas da Guilda
+- [ ] Criar instancias com recompensa com moedas 
+- [ ] Criar Vendas de item partir de moedas
