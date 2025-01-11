@@ -1,0 +1,66 @@
+- [ ]  Campo de Aprendiz : 
+	- [x] Recriar o campo de aprendiz.
+	- [ ] Balancear Recompensa.
+- [ ] JobQuest classes 1-1.
+	- [x] Arqueiro
+	- [x] Espadachim
+	- [ ] Gatuno
+	- [ ] Noviço
+	- [ ] Mago
+	- [ ] Mercador
+- [ ] Instrutores para up até level 50 de job.
+	- [ ] Arqueiro
+	- [x] Espadachim
+	- [ ] Gatuno
+	- [ ] Noviço
+	- [ ] Mago
+	- [ ] Mercador
+- [ ] JobQuest Classes 2-2.
+	- [ ] Caçador
+	- [ ] Odalisca
+	- [ ] Bardo
+	- [ ] Cavaleiro
+	- [ ] Templário
+	- [ ] Arruaceiro
+	- [ ] Mercenário
+	- [ ] Monge
+	- [ ] Sacerdote
+	- [ ] Bruxo
+	- [ ] Sábio
+	- [ ] Alquimista
+	- [ ] Ferreiro
+- [ ] Quest Diárias em cada mapa
+	- [ ] Abyss Lake Dungeon
+		- [ ] hu_fild05 - Entrada da Dungeon
+		- [ ] abyss_01
+		- [ ] abyss_02
+		- [ ] abyss_03
+	- [ ] Al De Baran
+	- [ ] Alberta
+	- [ ] Comodo
+	- [ ] Einbroch
+	- [ ] Geffen
+	- [ ] Geffenia
+	- [ ] Glast Heim
+	- [ ] Hugel
+	- [ ] Ice Cave
+	- [ ] Izlude
+	- [ ] Juperos Ruins
+	- [ ] Kiel Robot Factory
+	- [ ] Lighthalzen
+	- [ ] Mt.Mjolnir
+	- [ ] Nameless island & Abbey Dungeon
+	- [ ] Nifflheim
+	- [ ] Odin Temple
+	- [ ] Orc Dungeon
+	- [ ] Payon
+	- [ ] Prontera
+	- [ ] Rachel
+	- [ ] Rachel Sanctuary
+	- [ ] Thanatos Tower
+	- [ ] Thor Volcano Dungeon
+	- [ ] Umbala
+	- [ ] Veins
+	- [ ] Yuno
+- [ ] Instrutores para up até level 80
+- [ ] 
