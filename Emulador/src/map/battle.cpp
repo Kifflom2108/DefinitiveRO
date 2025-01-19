@@ -9190,7 +9190,7 @@ struct Damage battle_calc_misc_attack(struct block_list *src,struct block_list *
 			break;
 #ifndef RENEWAL
 		case BA_DISSONANCE:
-			md.damage = 30 + skill_lv * 10;
+			md.damage = (sstatus->dex  + sstatus->int_ * 2.5 + skill_lv * 5) * 3;
 			if (sd)
 				md.damage += 3 * pc_checkskill(sd,BA_MUSICALLESSON);
 			break;

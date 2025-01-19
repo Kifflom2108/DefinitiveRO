@@ -19091,7 +19091,11 @@ struct s_skill_condition skill_get_requirement(map_session_data* sd, uint16 skil
 #ifdef RENEWAL
 		case WS_CARTTERMINATION:
 #endif
-			if(pc_checkskill(sd,BS_UNFAIRLYTRICK)>0)
+			if (sd->class_ == JOB_MERCHANT && 
+            (pc_isequipped(sd, 110116) || pc_isequipped(sd, 110117) || 
+             pc_isequipped(sd, 110118) || pc_isequipped(sd, 110119))) 
+            req.zeny = 0; // Zera o custo de Zeny
+        	else if (pc_checkskill(sd, BS_UNFAIRLYTRICK) > 0)
 #ifdef RENEWAL
 				req.zeny -= req.zeny*20/100;
 #else
