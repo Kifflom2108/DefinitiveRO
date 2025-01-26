@@ -1,0 +1,7394 @@
+# This file is a part of rAthena.
+#   Copyright(C) 2021 rAthena Development Team
+#   https://rathena.org - https://github.com/rathena
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###########################################################################
+# Item Database
+###########################################################################
+#
+# Item Settings
+#
+###########################################################################
+# - Id                      Item ID.
+#   AegisName               Server name to reference the item in scripts and lookups, should use no spaces.
+#   Name                    Name in English for displaying as output.
+#   Type                    Item type. (Default: Etc)
+#   SubType                 Weapon, Ammo or Card type. (Default: 0)
+#   Buy                     Buying price. When not specified, becomes double the sell price. (Default: 0)
+#   Sell                    Selling price. When not specified, becomes half the buy price. (Default: 0)
+#   Weight                  Item weight. Each 10 is 1 weight. (Default: 0)
+#   Attack                  Weapon's attack. (Default: 0)
+#   MagicAttack             Weapon's magic attack. (Default: 0)
+#   Defense                 Armor's defense. (Default: 0)
+#   Range                   Weapon's attack range. (Default: 0)
+#   Slots                   Available slots in item. (Default: 0)
+#   Jobs                    Jobs that can equip the item. (Map default is 'All: true')
+#   Classes                 Upper class types that can equip the item. (Map default is 'All: true')
+#   Gender                  Gender that can equip the item. (Default: Both)
+#   Locations               Equipment's placement. (Default: None)
+#   WeaponLevel             Weapon level. (Default: 1 for Weapons)
+#   ArmorLevel              Armor level. (Default: 1 for Armors)
+#   EquipLevelMin           Minimum required level to equip. (Default: 0)
+#   EquipLevelMax           Maximum level that can equip. (Default: 0)
+#   Refineable              If the item can be refined. (Default: false)
+#   Gradable                If the item can be graded. (Default: false)
+#   View                    View sprite of an item. (Default: 0)
+#   AliasName               Another item's AegisName that will be sent to the client instead of this item's AegisName. (Default: null)
+#   Flags:                  Item flags. (Default: null)
+#     BuyingStore           If the item is available for Buyingstores. (Default: false)
+#     DeadBranch            If the item is a Dead Branch. (Default: false)
+#     Container             If the item is part of a container. (Default: false)
+#     UniqueId              If the item is a unique stack. (Default: false)
+#     BindOnEquip           If the item is bound to the character upon equipping. (Default: false)
+#     DropAnnounce          If the item has a special announcement to self on drop. (Default: false)
+#     NoConsume             If the item is consumed on use. (Default: false)
+#     DropEffect            If the item has a special effect on the ground when dropped by a monster. (Default: None)
+#   Delay:                  Item use delay. (Default: null)
+#     Duration              Duration of delay in seconds.
+#     Status                Status Change used to track delay. (Default: None)
+#   Stack:                  Item stack amount. (Default: null)
+#     Amount                Maximum amount that can be stacked.
+#     Inventory             If the stack is applied to player's inventory. (Default: true)
+#     Cart                  If the stack is applied to the player's cart. (Default: false)
+#     Storage               If the stack is applied to the player's storage. (Default: false)
+#     GuildStorage          If the stack is applied to the player's guild storage. (Default: false)
+#   NoUse:                  Conditions when the item is unusable. (Default: null)
+#     Override              Group level to override these conditions. (Default: 100)
+#     Sitting               If the item can not be used while sitting. (Default: false)
+#   Trade:                  Trade restrictions. (Default: null)
+#     Override              Group level to override these conditions. (Default: 100)
+#     NoDrop                If the item can not be dropped. (Default: false)
+#     NoTrade               If the item can not be traded. (Default: false)
+#     TradePartner          If the item can not be traded to the player's partner. (Default: false)
+#     NoSell                If the item can not be sold. (Default: false)
+#     NoCart                If the item can not be put in a cart. (Default: false)
+#     NoStorage             If the item can not be put in a storage. (Default: false)
+#     NoGuildStorage        If the item can not be put in a guild storage. (Default: false)
+#     NoMail                If the item can not be put in a mail. (Default: false)
+#     NoAuction             If the item can not be put in an auction. (Default: false)
+#   Script                  Script to execute when the item is used/equipped. (Default: null)
+#   EquipScript             Script to execute when the item is equipped. (Default: null)
+#   UnEquipScript           Script to execute when the item is unequipped or when a rental item expires. (Default: null)
+###########################################################################
+
+Header:
+  Type: ITEM_DB
+  Version: 3
+
+Body:
+# THQ Quest Items
+#=============================================================
+#  - Id: 1998
+#    AegisName: Jeramiah's_Jur
+#    Name: Jeramiah's Jur
+#    Type: Etc
+#    Sell: 10
+#    Weight: 10
+#    AliasName: Jur
+#  - Id: 1999
+#    AegisName: Zed's_Staff
+#    Name: Zed's Staff
+#    Type: Etc
+#    Sell: 10
+#    Weight: 10
+#    AliasName: Staff_Of_Soul
+#  - Id: 7950
+#    AegisName: THG_Membership
+#    Name: THG Membership
+#    Type: Etc
+#    Sell: 10
+#    Weight: 10
+#    AliasName: Foolishness_Of_Blind
+#  - Id: 7951
+#    AegisName: Gold_Tulip
+#    Name: Token Bag
+#    Type: Etc
+#    Sell: 10
+#    Weight: 10
+#    AliasName: Leather_Bag_Of_Infinity
+
+  - Id: 99000
+    AegisName: APS
+    Name: Ânima da Guilda S
+    Type: Healing
+    Buy: 1
+    Weight: 40
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(30,40);
+      sc_start SC_ANGELUS,180000,6;
+      specialeffect2 211;
+  - Id: 99001
+    AegisName: APA
+    Name: Ânima da Guilda A
+    Type: Healing
+    Buy: 1
+    Weight: 70
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(15,30);
+      sc_start SC_ANGELUS,180000,5;
+      specialeffect2 211;
+  - Id: 99002
+    AegisName: APB
+    Name: Ânima da Guilda B
+    Type: Healing
+    Buy: 1
+    Weight: 70
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(15,30);
+      sc_start SC_ANGELUS,180000,4;
+      specialeffect2 211;
+  - Id: 99003
+    AegisName: APC
+    Name: Ânima da Guilda C
+    Type: Healing
+    Buy: 1
+    Weight: 70
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(15,30);
+      sc_start SC_ANGELUS,180000,3;
+      specialeffect2 211;
+  - Id: 99004
+    AegisName: APD
+    Name: Ânima da Guilda D
+    Type: Healing
+    Buy: 1
+    Weight: 70
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(15,30);
+      sc_start SC_ANGELUS,180000,2;
+      specialeffect2 211;
+  - Id: 99005
+    AegisName: APF
+    Name: Ânima da Guilda F
+    Type: Healing
+    Buy: 1
+    Weight: 70
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(15,30);
+      sc_start SC_ANGELUS,180000,1;
+      specialeffect2 211;
+  - Id: 99006
+    AegisName: AMS
+    Name: Coração Arcano da Guilda S
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 80
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(60,70);
+      sc_start SC_DEF_RATE,180000,6;
+      sc_start SC_MDEF_RATE,180000,6;
+      sc_start SC_ANGELUS,180000,6;
+      specialeffect2 211;
+  - Id: 99007
+    AegisName: AMA
+    Name: Coração Arcano da Guilda A
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 110
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(40,60);
+      sc_start SC_DEF_RATE,150000,5;
+      sc_start SC_MDEF_RATE,150000,5;
+      sc_start SC_ANGELUS,150000,5;
+      specialeffect2 211;
+  - Id: 99008
+    AegisName: AMB
+    Name: Coração Arcano da Guilda B
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 110
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(40,60);
+      sc_start SC_DEF_RATE,120000,4;
+      sc_start SC_MDEF_RATE,120000,4;
+      sc_start SC_ANGELUS,120000,4;
+      specialeffect2 211;
+  - Id: 99009
+    AegisName: AMC
+    Name: Coração Arcano da Guilda C
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 110
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(40,60);
+      sc_start SC_DEF_RATE,60000,3;
+      sc_start SC_MDEF_RATE,60000,3;
+      sc_start SC_ANGELUS,60000,3;
+      specialeffect2 211;
+  - Id: 99010
+    AegisName: AMD
+    Name: Coração Arcano da Guilda D
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 110
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(40,60);
+      sc_start SC_DEF_RATE,40000,2;
+      sc_start SC_MDEF_RATE,40000,2;
+      sc_start SC_ANGELUS,40000,2;
+      specialeffect2 211;
+  - Id: 99011
+    AegisName: AMF
+    Name: Coração Arcano da Guilda F
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 110
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(40,60);
+      sc_start SC_DEF_RATE,20000,1;
+      sc_start SC_MDEF_RATE,20000,1;
+      sc_start SC_ANGELUS,20000,1;
+      specialeffect2 211;
+  - Id: 99012
+    AegisName: AGS
+    Name: Mantra da Guilda S
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 100
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(100,130);
+      sc_start SC_DEF_RATE,180000,10;
+      sc_start SC_MDEF_RATE,180000,10;
+      sc_start SC_ASSUMPTIO,180000,1;
+      sc_start SC_ENERGYCOAT,180000,1;
+      sc_start SC_ANGELUS,180000,10;
+      specialeffect2 211;
+  - Id: 99013
+    AegisName: AGA
+    Name: Mantra da Guilda A
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(70,100);
+      sc_start SC_DEF_RATE,150000,9;
+      sc_start SC_MDEF_RATE,150000,9;
+      sc_start SC_ASSUMPTIO,150000,1;
+      sc_start SC_ENERGYCOAT,150000,1;
+      sc_start SC_ANGELUS,150000,9;
+      specialeffect2 211;
+  - Id: 99014
+    AegisName: AGB
+    Name: Ânima da Guilda B
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(70,100);
+      sc_start SC_DEF_RATE,120000,8;
+      sc_start SC_MDEF_RATE,120000,8;
+      sc_start SC_ASSUMPTIO,120000,1;
+      sc_start SC_ENERGYCOAT,120000,1;
+      sc_start SC_ANGELUS,120000,8;
+      specialeffect2 211;
+  - Id: 99015
+    AegisName: AGC
+    Name: Mantra da Guilda C
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(70,100);
+      sc_start SC_DEF_RATE,60000,7;
+      sc_start SC_MDEF_RATE,60000,7;
+      sc_start SC_ASSUMPTIO,60000,1;
+      sc_start SC_ENERGYCOAT,60000,1;
+      sc_start SC_ANGELUS,60000,7;
+      specialeffect2 211;
+  - Id: 99016
+    AegisName: AGD
+    Name: Mantra da Guilda D
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(70,100);
+      sc_start SC_DEF_RATE,40000,6;
+      sc_start SC_MDEF_RATE,40000,6;
+      sc_start SC_ASSUMPTIO,40000,1;
+      sc_start SC_ENERGYCOAT,40000,1;
+      sc_start SC_ANGELUS,40000,6;
+      specialeffect2 211;
+  - Id: 99017
+    AegisName: AGF
+    Name: Mantra da Guilda F
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal 0,rand(70,100);
+      sc_start SC_DEF_RATE,20000,5;
+      sc_start SC_MDEF_RATE,20000,5;
+      sc_start SC_ASSUMPTIO,20000,1;
+      sc_start SC_ENERGYCOAT,20000,1;
+      sc_start SC_ANGELUS,20000,5;
+      specialeffect2 211;
+  - Id: 99018
+    AegisName: VPS
+    Name: Alvorecer da Guilda S
+    Type: Healing
+    Buy: 1
+    Weight: 30
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(145,175),0;
+      sc_start SC_bBaseAtkFOOD,180000,10;
+      sc_start SC_MATKFOOD,180000,10;
+      specialeffect2 210;
+  - Id: 99019
+    AegisName: VPA
+    Name: Alvorecer da Guilda A
+    Type: Healing
+    Buy: 1
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(85,145),0;
+      sc_start SC_bBaseAtkFOOD,150000,7;
+      sc_start SC_MATKFOOD,150000,7;
+      specialeffect2 210;
+  - Id: 99020
+    AegisName: VPB
+    Name: Alvorecer da Guilda B
+    Type: Healing
+    Buy: 1
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(85,145),0;
+      sc_start SC_bBaseAtkFOOD,120000,5;
+      sc_start SC_MATKFOOD,120000,5;
+      specialeffect2 210;
+  - Id: 99021
+    AegisName: VPC
+    Name: Alvorecer da Guilda C
+    Type: Healing
+    Buy: 1
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(85,145),0;
+      sc_start SC_bBaseAtkFOOD,60000,4;
+      sc_start SC_MATKFOOD,60000,4;
+      specialeffect2 210;
+  - Id: 99022
+    AegisName: VPD
+    Name: Alvorecer da Guilda D
+    Type: Healing
+    Buy: 1
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(85,145),0;
+      sc_start SC_bBaseAtkFOOD,40000,2;
+      sc_start SC_MATKFOOD,40000,2;
+      specialeffect2 210;
+  - Id: 99023
+    AegisName: VPF
+    Name: Alvorecer da Guilda F
+    Type: Healing
+    Buy: 1
+    Weight: 50
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(85,145),0;
+      sc_start SC_bBaseAtkFOOD,20000,1;
+      sc_start SC_MATKFOOD,20000,1;
+      specialeffect2 210;
+  - Id: 99024
+    AegisName: VMS
+    Name: Coração da Guilda S
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 70
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(255,305),0;
+      sc_start SC_bBaseAtkFOOD,180000,10;
+      sc_start SC_MATKFOOD,180000,10;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,180000,15;
+      sc_start SC_FLEEFOOD,180000,15;
+      sc_start SC_INCCRI,180000,10;
+  - Id: 99025
+    AegisName: VMA
+    Name: Coração da Guilda A
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 100
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(175,255),0;
+      sc_start SC_bBaseAtkFOOD,150000,7;
+      sc_start SC_MATKFOOD,150000,7;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,150000,10;
+      sc_start SC_FLEEFOOD,150000,10;
+      sc_start SC_INCCRI,150000,7;
+  - Id: 99026
+    AegisName: VMB
+    Name: Coração da Guilda B
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 100
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(175,255),0;
+      sc_start SC_bBaseAtkFOOD,120000,5;
+      sc_start SC_MATKFOOD,120000,5;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,120000,7;
+      sc_start SC_FLEEFOOD,120000,7;
+      sc_start SC_INCCRI,120000,5;
+  - Id: 99027
+    AegisName: VMC
+    Name: Coração da Guilda C
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 100
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(175,255),0;
+      sc_start SC_bBaseAtkFOOD,60000,4;
+      sc_start SC_MATKFOOD,60000,4;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,60000,5;
+      sc_start SC_FLEEFOOD,60000,5;
+      sc_start SC_INCCRI,60000,4;
+  - Id: 99028
+    AegisName: VMD
+    Name: Coração da Guilda D
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 100
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(175,255),0;
+      sc_start SC_bBaseAtkFOOD,40000,2;
+      sc_start SC_MATKFOOD,40000,2;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,40000,2;
+      sc_start SC_FLEEFOOD,40000,2;
+      sc_start SC_INCCRI,40000,2;
+  - Id: 99029
+    AegisName: VMF
+    Name: Coração da Guilda F
+    Type: Healing
+    EquipLevelMin: 40
+    Buy: 1
+    Weight: 100
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(175,255),0;
+      sc_start SC_bBaseAtkFOOD,20000,1;
+      sc_start SC_MATKFOOD,20000,1;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,20000,1;
+      sc_start SC_FLEEFOOD,20000,1;
+      sc_start SC_INCCRI,20000,1;
+
+  - Id: 99030
+    AegisName: VGS
+    Name: Chama da Guilda S
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 110
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(505,700),0;
+      sc_start SC_STRFOOD,180000,8;
+      sc_start SC_AGIFOOD,180000,8;
+      sc_start SC_VITFOOD,180000,8;
+      sc_start SC_INTFOOD,180000,8;
+      sc_start SC_DEXFOOD,180000,8;
+      sc_start SC_LUKFOOD,180000,8;
+      sc_start SC_bBaseAtkFOOD,180000,15;
+      sc_start SC_MATKFOOD,180000,15;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,180000,30;
+      sc_start SC_FLEEFOOD,180000,30;
+      sc_start SC_INCCRI,180000,15;
+      sc_start SC_SPEEDUP1,180000,30;
+  - Id: 99031
+    AegisName: VGA
+    Name: Chama da Guilda A
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(405,505),0;
+      sc_start SC_STRFOOD,150000,6;
+      sc_start SC_AGIFOOD,150000,6;
+      sc_start SC_VITFOOD,150000,6;
+      sc_start SC_INTFOOD,150000,6;
+      sc_start SC_DEXFOOD,150000,6;
+      sc_start SC_LUKFOOD,150000,6;
+      sc_start SC_bBaseAtkFOOD,150000,12;
+      sc_start SC_MATKFOOD,150000,12;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,150000,25;
+      sc_start SC_FLEEFOOD,150000,25;
+      sc_start SC_INCCRI,150000,12;
+      sc_start SC_SPEEDUP1,150000,30;
+  - Id: 99032
+    AegisName: VGB
+    Name: Chama da Guilda B
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(405,505),0;
+      sc_start SC_STRFOOD,120000,4;
+      sc_start SC_AGIFOOD,120000,4;
+      sc_start SC_VITFOOD,120000,4;
+      sc_start SC_INTFOOD,120000,4;
+      sc_start SC_DEXFOOD,120000,4;
+      sc_start SC_LUKFOOD,120000,4;
+      sc_start SC_bBaseAtkFOOD,120000,10;
+      sc_start SC_MATKFOOD,120000,10;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,120000,20;
+      sc_start SC_FLEEFOOD,120000,20;
+      sc_start SC_INCCRI,120000,10;
+      sc_start SC_SPEEDUP1,120000,30;
+  - Id: 99033
+    AegisName: VGC
+    Name: Chama da Guilda C
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(405,505),0;
+      sc_start SC_STRFOOD,60000,3;
+      sc_start SC_AGIFOOD,60000,3;
+      sc_start SC_VITFOOD,60000,3;
+      sc_start SC_INTFOOD,60000,3;
+      sc_start SC_DEXFOOD,60000,3;
+      sc_start SC_LUKFOOD,60000,3;
+      sc_start SC_bBaseAtkFOOD,60000,7;
+      sc_start SC_MATKFOOD,60000,7;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,60000,15;
+      sc_start SC_FLEEFOOD,60000,15;
+      sc_start SC_INCCRI,60000,7;
+      sc_start SC_SPEEDUP1,60000,30;
+  - Id: 99034
+    AegisName: VGD
+    Name: Chama da Guilda D
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(405,505),0;
+      sc_start SC_STRFOOD,40000,2;
+      sc_start SC_AGIFOOD,40000,2;
+      sc_start SC_VITFOOD,40000,2;
+      sc_start SC_INTFOOD,40000,2;
+      sc_start SC_DEXFOOD,40000,2;
+      sc_start SC_LUKFOOD,40000,2;
+      sc_start SC_bBaseAtkFOOD,40000,5;
+      sc_start SC_MATKFOOD,40000,5;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,40000,10;
+      sc_start SC_FLEEFOOD,40000,10;
+      sc_start SC_INCCRI,40000,5;
+      sc_start SC_SPEEDUP1,40000,30;
+  - Id: 99035
+    AegisName: VGF
+    Name: Chama da Guilda F
+    Type: Healing
+    EquipLevelMin: 85
+    Buy: 1
+    Weight: 150
+    Flags:
+      BuyingStore: true
+    Script: |
+      itemheal rand(405,505),0;
+      sc_start SC_STRFOOD,20000,1;
+      sc_start SC_AGIFOOD,20000,1;
+      sc_start SC_VITFOOD,20000,1;
+      sc_start SC_INTFOOD,20000,1;
+      sc_start SC_DEXFOOD,20000,1;
+      sc_start SC_LUKFOOD,20000,1;
+      sc_start SC_bBaseAtkFOOD,20000,3;
+      sc_start SC_MATKFOOD,20000,3;
+      specialeffect2 210;
+      sc_start SC_HITFOOD,20000,5;
+      sc_start SC_FLEEFOOD,20000,5;
+      sc_start SC_INCCRI,20000,3;
+      sc_start SC_SPEEDUP1,20000,30;
+  - Id: 20287
+    AegisName: ºñÇà±â¸ðÀÚ°ñµå
+    Name: Poo Poo Hat
+    Type: Armor
+    Buy: 1
+    Weight: 700
+    Locations:
+      Costume_Head_Top: true
+    ArmorLevel: 1
+    View: 1333
+    Script: |
+      bonus2 bSubRace,RC_DemiHuman,10;
+      bonus2 bSubRace,RC_Player_Human,10;
+  - Id: 99036
+    AegisName: warp
+    Name: Emblema das Alianças Eternas
+    Type: Delayconsume
+    EquipLevelMin: 1
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Buy: 1
+    Weight: 200
+    Flags:
+      BuyingStore: true
+    Script: |
+      if (@UsoRetorno == 1) {
+          mes "Você já possui um Amuleto de Retorno.";
+          mes "Use o item de retorno antes de usar este item novamente.";
+          close;
+      } else if (gettimetick(2) < getd("retorno_cooldown_" + getcharid(3))) {
+          mes "Você deve esperar mais alguns momentos antes de usar este item novamente.";
+          mes "Tempo restante: " + (getd("retorno_cooldown_" + getcharid(3)) - gettimetick(2)) + " Segundos.";
+          close;
+      } else {
+          specialeffect2 EF_LIGHTSPHERE2; // Adiciona um efeito visual ao teleportar
+          specialeffect2 EF_READYPORTAL2; // Adiciona um efeito visual ao teleportar
+          progressbar "ff0000", 4; // Exibe uma barra de carregamento vermelha (5 segundos)
+          sc_start SC_CASTCANCEL, 5000, 0; // Evita movimentos ou cancelamento durante o tempo
+          specialeffect2 EF_BIG_PORTAL;
+          sleep2 5000; // Aguarda 5 segundos
+          getmapxy(@original_map$, @original_x, @original_y, BL_PC);
+          setd("retorno_cooldown_" + getcharid(3), gettimetick(2) + 300);
+          set @UsoRetorno, 1;
+          getitem 99037, 1;
+          warp "moc_para01", 29, 86;
+
+      }
+  - Id: 99037
+    AegisName: warp2
+    Name: Amuleto de Retorno
+    Type: Usable
+    EquipLevelMin: 1
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
+    Buy: 1
+    Weight: 0
+    Flags:
+      BuyingStore: true
+    Script: |
+      warp @original_map$, @original_x, @original_y;
+      set @original_map$, "";
+      set @original_x, 0;
+      set @original_y, 0;
+      set @UsoRetorno, 0;
+##---------------------------------------- ESPADACHIM --------------------------------------##
+########################################## ARMADURAS #########################################
+
+  - Id: 110000
+    AegisName: Armadura_do_Discípulo
+    Name: Armadura do Discípulo
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,40;
+
+  - Id: 110001
+    AegisName: Armadura_do_Discípulo_
+    Name: Armadura do Discípulo
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,40;
+    
+  - Id: 110002
+    AegisName: Armadura_do_Aspirante
+    Name: Armadura do Aspirante
+    Type: Armor
+    Buy: 1
+    Weight: 2800
+    Defense: 4
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,60;
+
+  - Id: 110003
+    AegisName: Armadura_do_Aspirante_
+    Name: Armadura do Aspirante
+    Type: Armor
+    Buy: 1
+    Weight: 2800
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,60;
+
+########################################### CAPA ###############################################
+
+  - Id: 110004
+    AegisName: Capa_do_Discípulo
+    Name: Capa do Discípulo
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMdef,2;
+      
+  - Id: 110005
+    AegisName: Capa_do_Discípulo_
+    Name: Capa do Discípulo
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMdef,2;
+
+  - Id: 110006
+    AegisName: Capa_do_Aspirante
+    Name: Capa do Aspirante
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMdef,3;
+      
+  - Id: 110007
+    AegisName: Capa_do_Aspirante_
+    Name: Capa do Aspirante
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMdef,3;
+
+########################################### SAPATO #############################################
+
+  - Id: 110008
+    AegisName: Sapatos_do_Discípulo
+    Name: Sapatos do Discípulo
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      
+  - Id: 110009
+    AegisName: Sapatos_do_Discípulo_
+    Name: Sapatos do Discípulo
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+    
+########################################################
+
+  - Id: 110010
+    AegisName: Botas_do_Aspirante
+    Name: Botas do Aspirante
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+     
+  - Id: 110011
+    AegisName: Botas_do_Aspirante_
+    Name: Botas do Aspirante
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+
+
+
+
+#################-------------------------- CAVALEIRO ----------------------####################
+########################################### ARMADURA ###########################################
+
+  - Id: 110012
+    AegisName: Armadura_da_Ordem
+    Name: Armadura da Ordem
+    Type: Armor
+    Buy: 1
+    Weight: 3300
+    Defense: 5
+    Jobs:
+      Knight: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,85;
+      bonus bMaxHP,150;
+
+  - Id: 110013
+    AegisName: Armadura_da_Ordem_
+    Name: Armadura da Ordem
+    Type: Armor
+    Buy: 1
+    Weight: 3300
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,85;
+      bonus bMaxHP,150;
+    
+  - Id: 110014
+    AegisName: Armadura_do_Cruzado
+    Name: Armadura do Cruzado
+    Type: Armor
+    Buy: 1
+    Weight: 4000
+    Defense: 5
+    Jobs:
+      Knight: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bMaxHP,400;
+
+  - Id: 110015
+    AegisName: Armadura_do_Cruzado_
+    Name: Armadura do Cruzado
+    Type: Armor
+    Buy: 1
+    Weight: 4000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bMaxHP,400;
+
+########################################### CAPA ###############################################
+
+  - Id: 110016
+    AegisName: Capa_da_Ordem
+    Name: Capa da Ordem
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Jobs:
+      Knight: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMdef,4;
+      
+  - Id: 110017
+    AegisName: Capa_da_Ordem_
+    Name: Capa da Ordem
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMdef,4;
+
+  - Id: 110018
+    AegisName: Capa_do_Cruzado
+    Name: Capa do Cruzado
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 5
+    Jobs:
+      Knight: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMdef,5;
+      
+  - Id: 110019
+    AegisName: Capa_do_Cruzado_
+    Name: Capa do Cruzado
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMdef,5;
+########################################### SAPATO #############################################
+
+  - Id: 110020
+    AegisName: Grevas_da_Ordem
+    Name: Grevas da Ordem
+    Type: Armor
+    Buy: 1
+    Weight: 800
+    Defense: 4
+    Jobs:
+      Knight: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      
+  - Id: 110021
+    AegisName: Grevas_da_Ordem_
+    Name: Grevas da Ordem
+    Type: Armor
+    Buy: 1
+    Weight: 800
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+
+########################################################
+
+  - Id: 110022
+    AegisName: Grevas_do_Cruzado
+    Name: Grevas do Cruzado
+    Type: Armor
+    Buy: 1
+    Weight: 650
+    Defense: 5
+    Jobs:
+      Knight: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+
+##########################################################
+      
+  - Id: 110023
+    AegisName: Grevas_do_Cruzado_
+    Name: Grevas do Cruzado
+    Type: Armor
+    Buy: 1
+    Weight: 650
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+
+
+#################-------------------------- TEMPLARIO ----------------------####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110024
+    AegisName: Armadura_do_Protetor
+    Name: Armadura do Protetor
+    Type: Armor
+    Buy: 1
+    Weight: 4500
+    Defense: 6
+    Jobs:
+      Crusader: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,85;
+
+  - Id: 110025
+    AegisName: Armadura_do_Protetor_
+    Name: Armadura do Protetor
+    Type: Armor
+    Buy: 1
+    Weight: 4500
+    Defense: 6
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,85;
+    
+  - Id: 110026
+    AegisName: Armadura_do_Guardião
+    Name: Armadura do Guardião
+    Type: Armor
+    Buy: 1
+    Weight: 5500
+    Defense: 7
+    Jobs:
+      Crusader: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+
+  - Id: 110027
+    AegisName: Armadura_do_Guardião_
+    Name: Armadura do Guardião
+    Type: Armor
+    Buy: 1
+    Weight: 5500
+    Defense: 7
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+
+########################################### CAPA ###############################################
+
+  - Id: 110028
+    AegisName: Capa_do_Protetor
+    Name: Capa do Protetor
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 5
+    Jobs:
+      Crusader: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMdef,5;
+      
+  - Id: 110029
+    AegisName: Capa_do_Protetor_
+    Name: Capa do Protetor
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMdef,5;
+
+  - Id: 110030
+    AegisName: Capa_do_Guardião
+    Name: Capa do Guardião
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 6
+    Jobs:
+      Crusader: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMdef,6;
+      
+  - Id: 110031
+    AegisName: Capa_do_Guardião_
+    Name: Capa do Guardião
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 6
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMdef,6;
+
+########################################### SAPATO #############################################
+
+  - Id: 110032
+    AegisName: Grevas_do_Protetor
+    Name: Grevas do Protetor
+    Type: Armor
+    Buy: 1
+    Weight: 650
+    Defense: 5
+    Jobs:
+      Crusader: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      
+  - Id: 110033
+    AegisName: Grevas_do_Protetor_
+    Name: Grevas do Protetor
+    Type: Armor
+    Buy: 1
+    Weight: 650
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+    
+###################
+
+  - Id: 110034
+    AegisName: Grevas_do_Guardião
+    Name: Grevas do Guardião
+    Type: Armor
+    Buy: 1
+    Weight: 800
+    Defense: 6
+    Jobs:
+      Crusader: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      
+  - Id: 110035
+    AegisName: Grevas_do_Guardião_
+    Name: Grevas do Guardião
+    Type: Armor
+    Buy: 1
+    Weight: 800
+    Defense: 6
+    Slots: 1
+    Jobs:
+      Crusader: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+    
+
+##----------------------------------------- MAGO ---------------------------------------------##
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110036
+    AegisName: Robe_da_Conjuração
+    Name: Robe da Conjuração
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,60;
+      bonus bMaxHP,25;
+
+  - Id: 110037
+    AegisName: Robe_da_Conjuração_ 
+    Name: Robe da Conjuração
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,60;
+      bonus bMaxHP,25;
+    
+  - Id: 110038
+    AegisName: Robe_do_Foco_Arcano
+    Name: Robe do Foco Arcano
+    Type: Armor
+    Buy: 1
+    Weight: 500
+    Defense: 3
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,80;
+      bonus bMaxHP,50;
+
+  - Id: 110039
+    AegisName: Robe_do_Foco_Arcano_
+    Name: Robe do Foco Arcano
+    Type: Armor
+    Buy: 1
+    Weight: 500
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,80;
+      bonus bMaxHP,50;
+
+########################################### CAPA ###############################################
+
+  - Id: 110040
+    AegisName: Capuz_da_Conjuração
+    Name: Capuz da Conjuração
+    Type: Armor
+    Buy: 1
+    Weight: 200
+    Defense: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      
+  - Id: 110041
+    AegisName: Capuz_da_Conjuração_
+    Name: Capuz da Conjuração
+    Type: Armor
+    Buy: 1
+    Weight: 200
+    Defense: 1
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+
+##################################################
+
+  - Id: 110042
+    AegisName: Capuz_do_Foco_Arcano
+    Name: Capuz do Foco Arcano
+    Type: Armor
+    Buy: 1
+    Weight: 300
+    Defense: 2
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      
+  - Id: 110043
+    AegisName: Capuz_do_Foco_Arcano_
+    Name: Capuz do Foco Arcano
+    Type: Armor
+    Buy: 1
+    Weight: 300
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+
+########################################### SAPATO #############################################
+
+  - Id: 110044
+    AegisName: Sapatos_da_Conjuração
+    Name: Sapatos da Conjuração
+    Type: Armor
+    Buy: 1
+    Weight: 300
+    Defense: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      if (Class!= Job_Sage && Class!= Job_Wizard) {
+         bonus bNoCastCancel;
+         bonus bCastrate, -10;
+      }
+      
+  - Id: 110045
+    AegisName: Sapatos_da_Conjuração_
+    Name: Sapatos da Conjuração
+    Type: Armor
+    Buy: 1
+    Weight: 300
+    Defense: 1
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      if (Class!= Job_Sage && Class!= Job_Wizard) {
+         bonus bNoCastCancel;
+         bonus bCastrate, -10;
+      }
+
+  - Id: 110046
+    AegisName: Sapatos_do_Foco_Arcano
+    Name: Sapatos do Foco Arcano
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      if (Class!= Job_Sage && Class!= Job_Wizard) {
+         bonus bNoCastCancel;
+         bonus bCastrate, -15;
+      }
+      
+  - Id: 110047
+    AegisName: Sapatos_do_Foco_Arcano_
+    Name: Sapatos do Foco Arcano
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Mage: true
+      Sage: true
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      if (Class!= Job_Sage && Class!= Job_Wizard) {
+         bonus bNoCastCancel;
+         bonus bCastrate, -15;
+      }
+
+
+#################-------------------------- BRUXO --------------------------####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110048
+    AegisName: Robe_do_Fluxo_de_Mana
+    Name: Robe do Fluxo de Mana
+    Type: Armor
+    Buy: 1
+    Weight: 550
+    Defense: 2
+    Jobs:
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bMatkRate,10;
+
+  - Id: 110049
+    AegisName: Robe_do_Fluxo_de_Mana_
+    Name: Robe do Fluxo de Mana
+    Type: Armor
+    Buy: 1
+    Weight: 550
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bMatkRate,10;
+    
+  - Id: 110050
+    AegisName: Robe_da_Explosão_Arcana
+    Name: Robe da Explosão Arcana
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bMatkRate,15;
+
+  - Id: 110051
+    AegisName: Robe_da_Explosão_Arcana_
+    Name: Robe da Explosão Arcana
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Wizard: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bMatkRate,15;
+
+########################################### CAPA ###############################################
+
+  - Id: 110052
+    AegisName: Capuz_do_Fluxo_de_Mana
+    Name: Capuz do Fluxo de Mana
+    Type: Armor
+    Buy: 1
+    Weight: 300
+    Defense: 3
+    Jobs:
+      Wizard: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bDex,2;
+      
+  - Id: 110053
+    AegisName: Capuz_do_Fluxo_de_Mana_
+    Name: Capuz do Fluxo de Mana
+    Type: Armor
+    Buy: 1
+    Weight: 300
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Wizard: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bDex,2;
+
+  - Id: 110054
+    AegisName: Capa_da_Explosão_Arcana
+    Name: Capa da Explosão Arcana
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 4
+    Jobs:
+      Wizard: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bDex,3;
+      
+  - Id: 110055
+    AegisName: Capa_da_Explosão_Arcana_
+    Name: Capa da Explosão Arcana
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Wizard: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bDex,3;
+
+########################################### SAPATO #############################################
+
+  - Id: 110056
+    AegisName: Sapatos_do_Fluxo_de_Mana
+    Name: Sapatos do Fluxo de Mana
+    Type: Armor
+    Buy: 1
+    Weight: 500
+    Defense: 3
+    Jobs:
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bInt,1;
+      
+  - Id: 110057
+    AegisName: Sapatos_do_Fluxo_de_Mana_
+    Name: Sapatos do Fluxo de Mana
+    Type: Armor
+    Buy: 1
+    Weight: 500
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bInt,1;
+
+  - Id: 110058
+    AegisName: Sapatos_da_Explosão_Arcana
+    Name: Sapatos da Explosão Arcana
+    Type: Armor
+    Buy: 1
+    Weight: 700
+    Defense: 4
+    Jobs:
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bInt,2;
+      
+  - Id: 110059
+    AegisName: Sapatos_da_Explosão_Arcana_
+    Name: Sapatos da Explosão Arcana
+    Type: Armor
+    Buy: 1
+    Weight: 700
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Wizard: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bInt,2;
+
+
+#################-------------------------- SABIO -------------------------#####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110060
+    AegisName: Robe_do_Fluxo_Temporal
+    Name: Robe do Fluxo Temporal
+    Type: Armor
+    Buy: 1
+    Weight: 650
+    Defense: 4
+    Jobs:
+      Sage: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bAspd,3;
+
+  - Id: 110061
+    AegisName: Robe_do_Fluxo_Temporal_
+    Name: Robe do Fluxo Temporal
+    Type: Armor
+    Buy: 1
+    Weight: 650
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Sage: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bAspd,3;
+    
+  - Id: 110062
+    AegisName: Robe_do_Observador_das_Eras
+    Name: Robe do Observador das Eras
+    Type: Armor
+    Buy: 1
+    Weight: 800
+    Defense: 5
+    Jobs:
+      Sage: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bAspd,4;
+
+  - Id: 110063
+    AegisName: Robe_do_Observador_das_Eras_
+    Name: Robe do Observador das Eras
+    Type: Armor
+    Buy: 1
+    Weight: 800
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Sage: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bAspd,4;
+
+########################################### CAPA ###############################################
+
+  - Id: 110064
+    AegisName: Capa_do_Fluxo_Temporal
+    Name: Capa do Fluxo Temporal
+    Type: Armor
+    Buy: 1
+    Weight: 300
+    Defense: 3
+    Jobs:
+      Sage: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+      
+  - Id: 110065
+    AegisName: Capa_do_Fluxo_Temporal_
+    Name: Capa do Fluxo Temporal
+    Type: Armor
+    Buy: 1
+    Weight: 300
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Sage: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+
+  - Id: 110066
+    AegisName: Capa_do_Observador_das_Eras
+    Name: Capa do Observador das Eras
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 4
+    Jobs:
+      Sage: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,20;
+      
+  - Id: 110067
+    AegisName: Capa_do_Observador_das_Eras_
+    Name: Capa do Observador das Eras
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Sage: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,20;
+
+########################################### SAPATO #############################################
+
+  - Id: 110068
+    AegisName: Botas_do_Fluxo_Temporal
+    Name: Botas do Fluxo Temporal
+    Type: Armor
+    Buy: 1
+    Weight: 500
+    Defense: 3
+    Jobs:
+      Sage: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bAgi,1;
+      
+  - Id: 110069
+    AegisName: Botas_do_Fluxo_Temporal_
+    Name: Botas do Fluxo Temporal
+    Type: Armor
+    Buy: 1
+    Weight: 500
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Sage: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bAgi,1;
+
+  - Id: 110070
+    AegisName: Botas_do_Observador_das_Eras
+    Name: Botas do Observador das Eras
+    Type: Armor
+    Buy: 1
+    Weight: 700
+    Defense: 4
+    Jobs:
+      Sage: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+      
+  - Id: 110071
+    AegisName: Botas_do_Observador_das_Eras_
+    Name: Botas do Observador das Eras
+    Type: Armor
+    Buy: 1
+    Weight: 700
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Sage: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+
+
+
+##----------------------------------------- GATUNO -------------------------------------------##
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110072
+    AegisName: Traje_do_Caminhante_Noturno
+    Name: Traje do Caminhante Noturno
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,80;
+      bonus bHit,15;
+
+  - Id: 110073
+    AegisName: Traje_do_Caminhante_Noturno_
+    Name: Traje do Caminhante Noturno
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,80;
+      bonus bHit,15;
+    
+  - Id: 110074
+    AegisName: Traje_do_Caos
+    Name: Traje do Caos
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 3
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bHit,30;
+
+  - Id: 110075
+    AegisName: Traje_do_Caos_ 
+    Name: Traje do Caos
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bHit,30;
+
+########################################### CAPA ###############################################
+
+  - Id: 110076
+    AegisName: Sobrepeliz_do_Caminhante_Noturno
+    Name: Sobrepeliz do Caminhante Noturno
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 1
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMdef,3;
+      
+  - Id: 110077
+    AegisName: Sobrepeliz_do_Caminhante_Noturno_
+    Name: Sobrepeliz do Caminhante Noturno
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMdef,2;
+
+###############################
+
+  - Id: 110078
+    AegisName: Sobrepeliz_do_Caos 
+    Name: Sobrepeliz do Caos
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Slots: 0
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMdef,3;
+      
+  - Id: 110079
+    AegisName: Sobrepeliz_do_Caos_ 
+    Name: Sobrepeliz do Caos
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMdef,3;
+
+########################################### SAPATO #############################################
+
+  - Id: 110080
+    AegisName: Sapatos_do_Caminhante_Noturno
+    Name: Sapatos do Caminhante Noturno
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 1
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      
+  - Id: 110081
+    AegisName: Sapatos_do_Caminhante_Noturno_
+    Name: Sapatos do Caminhante Noturno
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+
+##############
+
+  - Id: 110082
+    AegisName: Sapatos_do_Caos
+    Name: Sapatos do Caos
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      
+  - Id: 110083
+    AegisName: Sapatos_do_Caos_
+    Name: Sapatos do Caos
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+
+
+
+#################-------------------------- ARRUACEIRO ---------------------####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110084
+    AegisName: Gibão_do_Andarilho
+    Name: Gibão do Andarilho
+    Type: Armor
+    Buy: 1
+    Weight: 1400
+    Defense: 4
+    Jobs:
+      Rogue: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bAspd,3;
+      bonus bMaxSP,100;
+
+  - Id: 110085
+    AegisName: Gibão_do_Andarilho_
+    Name: Gibão do Andarilho
+    Type: Armor
+    Buy: 1
+    Weight: 1400
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bAspd,3;
+      bonus bMaxSP,100;
+    
+  - Id: 110086
+    AegisName: Casaco_do_Saqueador
+    Name: Casaco do Saqueador
+    Type: Armor
+    Buy: 1
+    Weight: 1800
+    Defense: 5
+    Jobs:
+      Rogue: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAspd,4;
+      bonus bMaxSP,100;
+
+  - Id: 110087
+    AegisName: Casaco_do_Saqueador_
+    Name: Casaco do Saqueador
+    Type: Armor
+    Buy: 1
+    Weight: 1800
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAspd,4;
+      bonus bMaxSP,100;
+
+########################################### CAPA ###############################################
+
+  - Id: 110088
+    AegisName: Capa_do_Andarilho
+    Name: capa do Andarilho
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      Rogue: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+      
+  - Id: 110089
+    AegisName: Capa_do_Andarilho_
+    Name: Capa do Andarilho
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+
+  - Id: 110090
+    AegisName: Capa_do_Saqueador
+    Name: Capa do Saqueador
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Jobs:
+      Rogue: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,20;
+      
+  - Id: 110091
+    AegisName: Capa_do_Saqueador_
+    Name: Capa do Saqueador
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,20;
+
+########################################### SAPATO #############################################
+
+  - Id: 110092
+    AegisName: Sapatos_do_Andarilho
+    Name: Sapatos do Andarilho
+    Type: Armor
+    Buy: 1
+    Weight: 800
+    Defense: 3
+    Jobs:
+      Rogue: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bAgi,1;
+      
+  - Id: 110093
+    AegisName: Sapatos_do_Andarilho_
+    Name: Sapatos do Andarilho
+    Type: Armor
+    Buy: 1
+    Weight: 800
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bAgi,1;
+
+  - Id: 110094
+    AegisName: Sapatos_do_Saqueador
+    Name: Sapatos do Saqueador
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      Rogue: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+      
+  - Id: 110095
+    AegisName: Sapatos_do_Saqueador_
+    Name: Sapatos do Saqueador
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+
+
+
+#################-------------------------- MERCENARIO --------------------#####################
+########################################### ARMADURA ###########################################
+
+  - Id: 110096
+    AegisName: Traje_do_Espreitador
+    Name: Traje do Espreitador
+    Type: Armor
+    Buy: 1
+    Weight: 1700
+    Defense: 4
+    Jobs:
+      Assassin: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,10;
+      bonus bMaxSP,100;
+
+  - Id: 110097
+    AegisName: Traje_do_Espreitador_
+    Name: Traje do Espreitador
+    Type: Armor
+    Buy: 1
+    Weight: 1700
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,10;
+      bonus bMaxSP,100;
+    
+  - Id: 110098
+    AegisName: Traje_do_Executor
+    Name: Traje do Executor
+    Type: Armor
+    Buy: 1
+    Weight: 2000
+    Defense: 5
+    Jobs:
+      Assassin: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,15;
+      bonus bMaxSP,100;
+
+  - Id: 110099
+    AegisName: Traje_Executor_
+    Name: Traje do Executor
+    Type: Armor
+    Buy: 1
+    Weight: 2000
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,15;
+      bonus bMaxSP,100;
+
+########################################### CAPA ###############################################
+
+  - Id: 110100
+    AegisName: Capuz_do_Espreitador
+    Name: Capuz do Espreitador
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      Assassin: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bCritical,5;
+      
+  - Id: 110101
+    AegisName: Capuz_do_Espreitador_
+    Name: Capuz do Espreitador
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bCritical,5;
+
+  - Id: 110102
+    AegisName: Capuz_do_Executor
+    Name: Capuz do Executor
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Jobs:
+      Assassin: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bCritical,10;
+      
+  - Id: 110103
+    AegisName: Capuz_do_Executor_
+    Name: Capuz do Executor
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bCritical,10;
+
+########################################### SAPATO #############################################
+
+  - Id: 110104
+    AegisName: Botas_do_Espreitador
+    Name: Botas do Espreitador
+    Type: Armor
+    Buy: 1
+    Weight: 650
+    Defense: 3
+    Jobs:
+      Assassin: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bHit,10;
+      
+  - Id: 110105
+    AegisName: Botas_do_Espreitador_
+    Name: Botas do Espreitador
+    Type: Armor
+    Buy: 1
+    Weight: 650
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bHit,10;
+
+  - Id: 110106
+    AegisName: Botas_do_Executor
+    Name: Botas do Executor
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      Assassin: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bHit,15;
+      
+  - Id: 110107
+    AegisName: Botas_do_Executor_
+    Name: Botas do Executor
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bHit,15;
+
+##----------------------------------------- MERCADOR -----------------------------------------##
+########################################### ARMADURA ###########################################
+
+  - Id: 110108
+    AegisName: Traje_do_Acumulador
+    Name: Traje do Acumulador
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,80;
+      bonus bBaseAtk,7;
+
+  - Id: 110109
+    AegisName: Traje_do_Acumulador_
+    Name: Traje do Acumulador
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,80;
+      bonus bBaseAtk,7;
+
+  - Id: 110110
+    AegisName: Peitoral_da_Barganha 
+    Name: Peitoral da Barganha 
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bBaseAtk,10;
+
+  - Id: 110111
+    AegisName: Peitoral_da_Barganha_ 
+    Name: Peitoral da Barganha
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bBaseAtk,10;
+
+########################################### CAPA ###############################################
+
+  - Id: 110112
+    AegisName: Sobrepeliz_do_Acumulador
+    Name: Sobrepeliz do Acumulador
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+    
+  - Id: 110113
+    AegisName: Sobrepeliz_do_Acumulador_
+    Name: Sobrepeliz do Acumulador
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+
+###############################
+
+  - Id: 110114
+    AegisName: Capa_da_Barganha 
+    Name: Capa da Barganha
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+    
+  - Id: 110115
+    AegisName: Capa_da_Barganha_ 
+    Name: Capa da Barganha
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+
+########################################### SAPATO #############################################
+
+  - Id: 110116
+    AegisName: Sapato_do_Acumulador
+    Name: Sapato do Acumulador
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+    
+  - Id: 110117
+    AegisName: Sapato_do_Acumulador_
+    Name: Sapato do Acumulador
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 1
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+
+##############
+
+  - Id: 110118
+    AegisName: Grevas_da_Barganha
+    Name: Grevas da Barganha
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+    
+  - Id: 110119
+    AegisName: Grevas_da_Barganha_
+    Name: Grevas da Barganha
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Alchemist: true
+      Blacksmith: true
+      Merchant: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+
+
+
+#################-------------------------- FERREIRO -----------------------####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110120
+    AegisName: Traje_do_Engenho_Metálico
+    Name: Traje do Engenho Metálico
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 5
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bBaseAtk,10;
+
+  - Id: 110121
+    AegisName: Traje_do_Engenho_Metálico_
+    Name: Traje do Engenho Metálico
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bBaseAtk,10;
+
+  - Id: 110122
+    AegisName: Peitoral_do_Mestre_dos_Metais
+    Name: Peitoral do Mestre dos Metais
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 6
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bBaseAtk,15;
+
+  - Id: 110123
+    AegisName: Peitoral_do_Mestre_dos_Metais_ 
+    Name: Peitoral do Mestre dos Metais
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 6
+    Slots: 1
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bBaseAtk,15;
+
+########################################### CAPA ###############################################
+
+  - Id: 110124
+    AegisName: Sobrepeliz_do_Engenho_Metálico
+    Name: Sobrepeliz do Engenho Metálico
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bStr,2;
+
+  - Id: 110125
+    AegisName: Sobrepeliz_do_Engenho_Metálico_
+    Name: Sobrepeliz do Engenho Metálico
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bStr,2;
+
+###############################
+
+  - Id: 110126
+    AegisName: Capa_do_Mestre_dos_Metais
+    Name: Capa do Mestre dos Metais
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 5
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bStr,3;
+    
+  - Id: 110127
+    AegisName: Capa_do_Mestre_dos_Metais_ 
+    Name: Capa do Mestre dos Metais
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bStr,3;
+
+########################################### SAPATO #############################################
+
+  - Id: 110128
+    AegisName: Sapato_do_Engenho_Metálico
+    Name: Sapato do Engenho Metálico
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 3
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bStr,1;
+    
+  - Id: 110129
+    AegisName: Sapato_do_Engenho_Metálico_
+    Name: Sapato do Engenho Metálico
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bStr,1;
+
+##############
+
+  - Id: 110130
+    AegisName: Grevas_do_Mestre_dos_Metais
+    Name: Grevas do Mestre dos Metais
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bStr,2;
+    
+  - Id: 110131
+    AegisName: Grevas_do_Mestre_dos_Metais_
+    Name: Grevas do Mestre dos Metais
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Blacksmith: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bStr,2;
+
+#################-------------------------- ALQUIMISTA --------------------#####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110132
+    AegisName: Traje_do_Mestre_dos_Elixires
+    Name: Traje do Mestre dos Elixires
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 5
+    Jobs:
+      Alchemist: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bAspd,3;
+
+  - Id: 110133
+    AegisName: Traje_do_Mestre_dos_Elixires_
+    Name: Traje do Mestre dos Elixires
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Alchemist: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bAspd,3;
+
+  - Id: 110134
+    AegisName: Peitoral_da_Transmutação
+    Name: Peitoral da Transmutação
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 6
+    Jobs:
+      Alchemist: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bAspd,4;
+
+  - Id: 110135
+    AegisName: Peitoral_da_Transmutação_ 
+    Name: Peitoral da Transmutação
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 6
+    Slots: 1
+    Jobs:
+      Alchemist: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bAspd,4;
+
+########################################### CAPA ###############################################
+
+  - Id: 110136
+    AegisName: Sobrepeliz_do_Mestre_dos_Elixires
+    Name: Sobrepeliz do Mestre dos Elixires
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Jobs:
+      Alchemist: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,10;
+    
+  - Id: 110137
+    AegisName: Sobrepeliz_do_Mestre_dos_Elixires_
+    Name: Sobrepeliz do Mestre dos Elixires
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Alchemist: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,10;
+
+###############################
+
+  - Id: 110138
+    AegisName: Capa_da_Transmutação
+    Name: Capa da Transmutação
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 5
+    Jobs:
+      Alchemist: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,15;
+    
+  - Id: 110139
+    AegisName: Capa_da_Transmutação_ 
+    Name: Capa da Transmutação
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Alchemist: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,15;
+
+########################################### SAPATO #############################################
+
+  - Id: 110140
+    AegisName: Sapato_do_Mestre_dos_Elixires
+    Name: Sapato do Mestre dos Elixires
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 3
+    Jobs:
+      Alchemist: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,5;
+    
+  - Id: 110141
+    AegisName: Sapato_do_Mestre_dos_Elixires_
+    Name: Sapato do Mestre dos Elixires
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Alchemist: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,5;
+
+##############
+
+  - Id: 110142
+    AegisName: Grevas_da_Transmutação
+    Name: Grevas da Transmutação
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      Alchemist: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,10;
+      bonus bStr,3;
+    
+  - Id: 110143
+    AegisName: Grevas_da_Transmutação_
+    Name: Grevas da Transmutação
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Alchemist: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,10;
+      bonus bStr,3;
+
+
+##----------------------------------------- NOVIÇO -------------------------------------------##
+
+  - Id: 110144
+    AegisName: Armadura_do_Discípulo_Divino
+    Name: Armadura do Discípulo Divino
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bMatkRate,5;
+      bonus bBaseAtk,5;
+
+  - Id: 110145
+    AegisName: Armadura_do_Discípulo_Divino_
+    Name: Armadura do Discípulo Divino
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bMatkRate,5;
+      bonus bBaseAtk,5;
+
+    
+  - Id: 110146
+    AegisName: Armadura_do_Protegido_Celestial
+    Name: Armadura do Protegido Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 2800
+    Defense: 4
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,200;
+      bonus bMatkRate,10;
+      bonus bBaseAtk,10;
+
+
+  - Id: 110147
+    AegisName: Armadura_do_Protegido_Celestial_
+    Name: Armadura do Protegido Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 2800
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,200;
+      bonus bMatkRate,10;
+      bonus bBaseAtk,10;
+
+
+########################################### CAPA ###############################################
+
+  - Id: 110148
+    AegisName: Capa_do_Discípulo_Divino
+    Name: Capa do Discípulo Divino
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      
+  - Id: 110149
+    AegisName: Capa_do_Discípulo_Divino_
+    Name: Capa do Discípulo Divino
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+
+############################
+
+    - Id: 110150
+    AegisName: Capa_do_Protegido_Celestial
+    Name: Capa do Protegido Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      
+  - Id: 110151
+    AegisName: Capa_do_Protegido_Celestial_
+    Name: Capa do Protegido Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+
+########################################### SAPATO #############################################
+
+  - Id: 110152
+    AegisName: Sapatos_do_Discípulo_Divino
+    Name: Sapatos do Discípulo Divino
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      
+  - Id: 110153
+    AegisName: Sapatos_do_Discípulo_Divino_
+    Name: Sapatos do Discípulo Divino
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 1
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+    
+########################################################
+
+  - Id: 110154
+    AegisName: Botas_do_Protegido_Celestial
+    Name: Botas do Protegido Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+     
+  - Id: 110155
+    AegisName: Botas_do_Protegido_Celestial_
+    Name: Botas do Protegido Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Acolyte: true
+      Monk: true
+      Priest: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+
+
+#################-------------------------- MONGE --------------------------####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110156
+    AegisName: Traje_do_Discípulo_Combatente
+    Name: Traje do Discípulo Combatente
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      Monk: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,200;
+      bonus bAspd,2;
+
+  - Id: 110157
+    AegisName: Traje_do_Discípulo_Combatente_
+    Name: Traje do Discípulo Combatente
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Monk: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,200;
+      bonus bAspd,2;
+
+  - Id: 110158
+    AegisName: Peitoral_do_Mestre_da_Luz
+    Name: Peitoral do Mestre da Luz
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 5
+    Jobs:
+      Monk: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,300;
+      bonus bAspd,3;
+
+  - Id: 110159
+    AegisName: Peitoral_do_Mestre_da_Luz_ 
+    Name: Peitoral do Mestre da Luz
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 5
+    Slots: 1
+    Jobs:
+      Monk: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,300;
+      bonus bAspd,3;
+
+########################################### CAPA ###############################################
+
+  - Id: 110160
+    AegisName: Sobrepeliz_do_Discípulo_Combatente
+    Name: Sobrepeliz do Discípulo Combatente
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      Monk: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+    
+  - Id: 110161
+    AegisName: Sobrepeliz_do_Discípulo_Combatente_
+    Name: Sobrepeliz do Discípulo Combatente
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Monk: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+
+###############################
+
+  - Id: 110162
+    AegisName: Capa_do_Mestre_da_Luz
+    Name: Capa do Mestre da Luz
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Jobs:
+      Monk: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,20;
+    
+  - Id: 110163
+    AegisName: Capa_do_Mestre_da_Luz_ 
+    Name: Capa do Mestre da Luz
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Monk: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,20;
+
+########################################### SAPATO #############################################
+
+  - Id: 110164
+    AegisName: Sapato_do_Discípulo_Combatente
+    Name: Sapato do Discípulo Combatente
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Jobs:
+      Monk: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bHit,10;
+    
+  - Id: 110165
+    AegisName: Sapato_do_Discípulo_Combatente_
+    Name: Sapato do Discípulo Combatente
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Monk: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bHit,10;
+
+##############
+
+  - Id: 110166
+    AegisName: Grevas_do_Mestre_da_Luz
+    Name: Grevas do Mestre da Luz
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Jobs:
+      Monk: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bHit,20;
+    
+  - Id: 110167
+    AegisName: Grevas_do_Mestre_da_Luz_
+    Name: Grevas do Mestre da Luz
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Monk: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bHit,20;
+
+
+#################-------------------------- SACERDOTE ---------------------#####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110168
+    AegisName: Traje_do_Redentor_de_Almas
+    Name: Traje do Redentor de Almas
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Jobs:
+      Priest: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxHP,200;
+      bonus bAspd,3;
+      bonus bHealPower,10;
+
+  - Id: 110169
+    AegisName: Traje_do_Redentor_de_Almas_
+    Name: Traje do Redentor de Almas
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Priest: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxHP,200;
+      bonus bAspd,3;
+      bonus bHealPower,10;
+
+  - Id: 110170
+    AegisName: Peitoral_do_Apóstolo_Celestial
+    Name: Peitoral do Apóstolo Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Jobs:
+      Priest: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxHP,300;
+      bonus bAspd,4;
+      bonus bHealPower,15;
+
+  - Id: 110171
+    AegisName: Peitoral_do_Apóstolo_Celestial_ 
+    Name: Peitoral do Apóstolo Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Priest: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxHP,300;
+      bonus bAspd,4;
+      bonus bHealPower,15;
+
+
+########################################### CAPA ###############################################
+
+  - Id: 110172
+    AegisName: Sobrepeliz_do_Redentor_de_Almas
+    Name: Sobrepeliz do Redentor de Almas
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      Priest: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+      bonus bMdef,3;
+    
+  - Id: 110173
+    AegisName: Sobrepeliz_do_Redentor_de_Almas_
+    Name: Sobrepeliz do Redentor de Almas
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Priest: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+      bonus bMdef,3;
+
+###############################
+
+  - Id: 110174
+    AegisName: Capa_do_Apóstolo_Celestial
+    Name: Capa do Apóstolo Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Jobs:
+      Priest: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,15;
+      bonus bMdef,4;
+    
+  - Id: 110175
+    AegisName: Capa_do_Apóstolo_Celestial_
+    Name: Capa do Apóstolo Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Priest: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,15;
+      bonus bMdef,4;
+
+########################################### SAPATO #############################################
+
+  - Id: 110176
+    AegisName: Sapato_do_Redentor_de_Almas
+    Name: Sapato do Redentor de Almas
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Jobs:
+      Priest: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bHit,10;
+    
+  - Id: 110177
+    AegisName: Sapato_do_Redentor_de_Almas_
+    Name: Sapato do Redentor de Almas
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Priest: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bHit,10;
+
+##############
+
+  - Id: 110178
+    AegisName: Grevas_do_Apóstolo_Celestial
+    Name: Grevas do Apóstolo Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Jobs:
+      Priest: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bHit,15;
+    
+  - Id: 110179
+    AegisName: Grevas_do_Apóstolo_Celestial_
+    Name: Grevas do Apóstolo Celestial
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Priest: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bHit,15;
+
+
+##----------------------------------------- ARQUEIRO -----------------------------------------##
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110180
+    AegisName: Armadura_do_Atirador_Preciso
+    Name: Armadura do Atirador Preciso
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,40;
+
+  - Id: 110181
+    AegisName: Armadura_do_Atirador_Preciso_
+    Name: Armadura do Atirador Preciso
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      bonus bMaxSP,40;
+
+    
+  - Id: 110182
+    AegisName: Armadura_do_Guardião_das_Florestas
+    Name: Armadura do Guardião das Florestas
+    Type: Armor
+    Buy: 1
+    Weight: 2800
+    Defense: 3
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,80;
+
+
+  - Id: 110183
+    AegisName: Armadura_do_Guardião_das_Florestas_
+    Name: Armadura do Guardião das Florestas
+    Type: Armor
+    Buy: 1
+    Weight: 2800
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      bonus bMaxSP,80;
+
+
+########################################### CAPA ###############################################
+
+  - Id: 110184
+    AegisName: Capa_do_Atirador_Preciso
+    Name: Capa do Atirador Preciso
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 1
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      
+  - Id: 110185
+    AegisName: Capa_do_Atirador_Preciso_
+    Name: Capa do Atirador Preciso
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 1
+    Slots: 1
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+
+############################
+
+    - Id: 110186
+    AegisName: Capa_do_Guardião_das_Florestas
+    Name: Capa do Guardião das Florestas
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+      
+  - Id: 110187
+    AegisName: Capa_do_Guardião_das_Florestas_
+    Name: Capa do Guardião das Florestas
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+
+########################################### SAPATO #############################################
+
+  - Id: 110188
+    AegisName: Sapatos_do_Atirador_Preciso
+    Name: Sapatos do Atirador Preciso
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 1
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+      
+  - Id: 110189
+    AegisName: Sapatos_do_Atirador_Preciso_
+    Name: Sapatos do Atirador Preciso
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 1
+    Slots: 1
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 20
+    Refineable: true
+    Script: |
+    
+########################################################
+
+  - Id: 110190
+    AegisName: Botas_do_Guardião_das_Florestas
+    Name: Botas do Guardião das Florestas
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+     
+  - Id: 110191
+    AegisName: Botas_do_Guardião_das_Florestas_
+    Name: Botas do Guardião das Florestas
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Archer: true
+      Hunter: true
+      BardDancer: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+    Script: |
+
+
+
+#################-------------------------- CAÇADOR ------------------------####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110192
+    AegisName: Traje_do_Falcão_da_Noite
+    Name: Traje do Falcão da Noite
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      Hunter: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,85;
+      bonus bBaseAtk,5;
+
+  - Id: 110193
+    AegisName: Traje_do_Falcão_da_Noite_
+    Name: Traje do Falcão da Noite
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,85;
+      bonus bBaseAtk,5;
+
+  - Id: 110194
+    AegisName: Peitoral_do_Mestre_da_Selva
+    Name: Peitoral do Mestre da Selva
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Jobs:
+      Hunter: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bBaseAtk,10;
+
+  - Id: 110195
+    AegisName: Peitoral_do_Mestre_da_Selva_ 
+    Name: Peitoral do Mestre da Selva
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,100;
+      bonus bBaseAtk,10;
+
+
+########################################### CAPA ###############################################
+
+  - Id: 110196
+    AegisName: Sobrepeliz_do_Falcão_da_Noite
+    Name: Sobrepeliz do Falcão da Noite
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Jobs:
+      Hunter: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bLuk,1;
+    
+  - Id: 110197
+    AegisName: Sobrepeliz_do_Falcão_da_Noite_
+    Name: Sobrepeliz do Falcão da Noite
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bLuk,1;
+
+###############################
+
+  - Id: 110198
+    AegisName: Capa_do_Mestre_da_Selva
+    Name: Capa do Mestre da Selva
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      Hunter: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bLuk,3;
+    
+  - Id: 110199
+    AegisName: Capa_do_Mestre_da_Selva_
+    Name: Capa do Mestre da Selva
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bLuk,3;
+
+########################################### SAPATO #############################################
+
+  - Id: 110200
+    AegisName: Sapato_do_Falcão_da_Noite
+    Name: Sapato do Falcão da Noite
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Jobs:
+      Hunter: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bLuk,1;
+    
+  - Id: 110201
+    AegisName: Sapato_do_Falcão_da_Noite_
+    Name: Sapato do Falcão da Noite
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 2
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bLuk,1;
+
+##############
+
+  - Id: 110202
+    AegisName: Grevas_do_Mestre_da_Selva
+    Name: Grevas do Mestre da Selva
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Jobs:
+      Hunter: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bLuk,2;
+    
+  - Id: 110203
+    AegisName: Grevas_do_Mestre_da_Selva_
+    Name: Grevas do Mestre da Selva
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 3
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bLuk,2;
+
+
+
+#################-------------------------- BARDO -------------------------#####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110204
+    AegisName: Traje_do_Poeta_Errante
+    Name: Traje do Poeta Errante
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bBaseAtk,10;
+
+  - Id: 110205
+    AegisName: Traje_do_Poeta_Errante_
+    Name: Traje do Poeta Errante
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bBaseAtk,10;
+
+  - Id: 110206
+    AegisName: Peitoral_da_Balada_Eterna
+    Name: Peitoral da Balada Eterna
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,250;
+      bonus bBaseAtk,15;
+
+
+  - Id: 110207
+    AegisName: Peitoral_da_Balada_Eterna_ 
+    Name: Peitoral da Balada Eterna
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,250;
+      bonus bBaseAtk,15;
+
+
+########################################### CAPA ###############################################
+
+  - Id: 110208
+    AegisName: Sobrepeliz_do_Poeta_Errante
+    Name: Sobrepeliz do Poeta Errante
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bVit,2;
+    
+  - Id: 110209
+    AegisName: Sobrepeliz_do_Poeta_Errante_
+    Name: Sobrepeliz do Poeta Errante
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bVit,2;
+
+###############################
+
+  - Id: 110210
+    AegisName: Capa_da_Balada_Eterna
+    Name: Capa da Balada Eterna
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bVit,3;
+    
+  - Id: 110211
+    AegisName: Capa_da_Balada_Eterna_
+    Name: Capa da Balada Eterna
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bVit,3;
+
+########################################### SAPATO #############################################
+
+  - Id: 110212
+    AegisName: Sapato_do_Poeta_Errante
+    Name: Sapato do Poeta Errante
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 3
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bVit,1;
+    
+  - Id: 110213
+    AegisName: Sapato_do_Poeta_Errante_
+    Name: Sapato do Poeta Errante
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 3
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bVit,1;
+
+##############
+
+  - Id: 110214
+    AegisName: Grevas_da_Balada_Eterna
+    Name: Grevas da Balada Eterna
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bVit,3;
+    
+  - Id: 110215
+    AegisName: Grevas_da_Balada_Eterna_
+    Name: Grevas da Balada Eterna
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bVit,3;
+
+
+#################-------------------------- ODALISCA ----------------------#####################
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110216
+    AegisName: Traje_da_Musa_dos_Ventos
+    Name: Traje da Musa dos Ventos
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bBaseAtk,10;
+
+  - Id: 110217
+    AegisName: Traje_da_Musa_dos_Ventos_
+    Name: Traje da Musa dos Ventos
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bMaxSP,150;
+      bonus bBaseAtk,10;
+
+  - Id: 110218
+    AegisName: Peitoral_da_Beleza_Mortal
+    Name: Peitoral da Beleza Mortal
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,250;
+      bonus bBaseAtk,15;
+
+
+  - Id: 110219
+    AegisName: Peitoral_da_Beleza_Mortal_ 
+    Name: Peitoral da Beleza Mortal
+    Type: Armor
+    Buy: 1
+    Weight: 1100
+    Defense: 4
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxSP,250;
+      bonus bBaseAtk,15;
+
+
+########################################### CAPA ###############################################
+
+  - Id: 110220
+    AegisName: Sobrepeliz_da_Musa_dos_Ventos
+    Name: Sobrepeliz da Musa dos Ventos
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bVit,2;
+    
+  - Id: 110221
+    AegisName: Sobrepeliz_da_Musa_dos_Ventos_
+    Name: Sobrepeliz da Musa dos Ventos
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 3
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bVit,2;
+
+###############################
+
+  - Id: 110222
+    AegisName: Capa_da_Beleza_Mortal
+    Name: Capa da Beleza Mortal
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bVit,3;
+    
+  - Id: 110223
+    AegisName: Capa_da_Beleza_Mortal_
+    Name: Capa da Beleza Mortal
+    Type: Armor
+    Buy: 1
+    Weight: 600
+    Defense: 4
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bVit,3;
+
+########################################### SAPATO #############################################
+
+  - Id: 110224
+    AegisName: Sapato_da_Musa_dos_Ventos
+    Name: Sapato da Musa dos Ventos
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 3
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bVit,1;
+    
+  - Id: 110225
+    AegisName: Sapato_da_Musa_dos_Ventos_
+    Name: Sapato da Musa dos Ventos
+    Type: Armor
+    Buy: 1
+    Weight: 400
+    Defense: 3
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bVit,1;
+
+##############
+
+  - Id: 110226
+    AegisName: Grevas_da_Beleza_Mortal
+    Name: Grevas da Beleza Mortal
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bVit,3;
+    
+  - Id: 110227
+    AegisName: Grevas_da_Beleza_Mortal_
+    Name: Grevas da Beleza Mortal
+    Type: Armor
+    Buy: 1
+    Weight: 1000
+    Defense: 4
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bVit,3;
+
+
+
+##----------------------------------------- APRENDIZ -----------------------------------------##
+
+########################################### ARMADURA ###########################################
+
+  - Id: 110228
+    AegisName: Traje_do_Aspirante_Aventureiro
+    Name: Traje do Aspirante Aventureiro
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bMaxHP,300;
+
+  - Id: 110229
+    AegisName: Traje_do_Aspirante_Aventureiro_
+    Name: Traje do Aspirante Aventureiro
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bMaxHP,300;
+
+  - Id: 110230
+    AegisName: Peitoral_do_Iniciante_Persistente
+    Name: Peitoral do Iniciante Persistente
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 15
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bMaxHP,400;
+      bonus bMaxSP,100;
+      
+  
+
+  - Id: 110231
+    AegisName: Peitoral_do_Iniciante_Persistente_
+    Name: Peitoral do Iniciante Persistente
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 15
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bMaxHP,400;
+      bonus bMaxSP,100;
+
+  - Id: 110232
+    AegisName: Peitoral_do_Curioso_Veterano
+    Name: Peitoral do Curioso Veterano
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 15
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxHP,600;
+      bonus bMaxSP,200;
+      bonus bAspd,3;
+
+
+  - Id: 110233
+    AegisName: Peitoral_do_Curioso_Veterano_
+    Name: Peitoral do Curioso Veterano
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 15
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Armor: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMaxHP,600;
+      bonus bMaxSP,200;
+      bonus bAspd,3;
+
+
+
+########################################### CAPA ###############################################
+
+  - Id: 110234
+    AegisName: Sobrepeliz_do_Aspirante_Aventureiro
+    Name: Sobrepeliz do Aspirante Aventureiro
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,10;
+    
+  - Id: 110235
+    AegisName: Sobrepeliz_do_Aspirante_Aventureiro_
+    Name: Sobrepeliz do Aspirante Aventureiro
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,10;
+
+###############################
+
+  - Id: 110236
+    AegisName: Capa_do_Iniciante_Persistente
+    Name: Capa do Iniciante Persistente
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,15;
+    
+  - Id: 110237
+    AegisName: Capa_do_Iniciante_Persistente_
+    Name: Capa do Iniciante Persistente
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,15;
+
+###############################
+
+  - Id: 110238
+    AegisName: Capa_do_Curioso_Veterano
+    Name: Capa do Curioso Veterano
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,20;
+    
+  - Id: 110239
+    AegisName: Capa_do_Curioso_Veterano_
+    Name: Capa do Curioso Veterano
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Garment: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bBaseAtk,20;
+
+########################################### SAPATO #############################################
+
+  - Id: 110240
+    AegisName: Sapato_do_Aspirante_Aventureiro
+    Name: Sapato do Aspirante Aventureiro
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+    
+  - Id: 110241
+    AegisName: Sapato_do_Aspirante_Aventureiro_
+    Name: Sapato do Aspirante Aventureiro
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+
+##############
+
+  - Id: 110242
+    AegisName: Grevas_do_Iniciante_Persistente
+    Name: Grevas do Iniciante Persistente
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bNoCastCancel;
+      bonus bMatkRate,7;
+    
+  - Id: 110243
+    AegisName: Grevas_do_Iniciante_Persistente_
+    Name: Grevas do Iniciante Persistente
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 45
+    Refineable: true
+    Script: |
+      bonus bNoCastCancel;
+      bonus bMatkRate,7;
+
+##############
+
+  - Id: 110244
+    AegisName: Grevas_do_Curioso_Veterano
+    Name: Grevas do Curioso Veterano
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bNoCastCancel;
+      bonus bMatkRate,15;
+    
+  - Id: 110245
+    AegisName: Grevas_do_Curioso_Veterano_
+    Name: Grevas do Curioso Veterano
+    Type: Armor
+    Buy: 1
+    Weight: 0
+    Defense: 10
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Shoes: true
+    ArmorLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bNoCastCancel;
+      bonus bMatkRate,15;
+
+
+############################################## ARMAS #########################################################
+############################################## ESPADACHIM ####################################################
+############################################## LV 01 - 40 ####################################################
+
+  - Id: 210000
+    AegisName: Espada_de_Treinamento
+    Name: Espada de Treinamento
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 120
+    Range: 1
+    Slots: 4
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+  - Id: 210001
+    AegisName: Espada_de_Treinamento_
+    Name: Espada de Treinamento
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 1
+    Slots: 4
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+  - Id: 210002
+    AegisName: Lança_de_Treinamento
+    Name: Lança de Treinamento
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 120
+    Range: 4
+    Slots: 4
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+  - Id: 210003
+    AegisName: Lança_de_Treinamento_
+    Name: Lança de Treinamento
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 4
+    Slots: 4
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+############################################## LV 40 - 60 ####################################################
+
+  - Id: 210004
+    AegisName: Espada_de_Treinamento_II
+    Name: Espada de Treinamento II
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 140
+    Range: 1
+    Slots: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 2
+    EquipLevelMin: 40
+    Refineable: true
+
+  - Id: 210005
+    AegisName: Espada_de_Treinamento_II_
+    Name: Espada de Treinamento II
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 160
+    Range: 1
+    Slots: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+
+  - Id: 210006
+    AegisName: Lança_de_Treinamento_II
+    Name: Lança de Treinamento II
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 140
+    Range: 4
+    Slots: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+
+  - Id: 210007
+    AegisName: Lança_de_Treinamento_II_
+    Name: Lança de Treinamento II
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 160
+    Range: 4
+    Slots: 3
+    Jobs:
+      Crusader: true
+      Knight: true
+      Swordman: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 40
+    Refineable: true
+
+############################################## LV 60 - 80 ####################################################
+
+  - Id: 210008
+    AegisName: Espada_da_Lua_Crescente
+    Name: Espada da Lua Crescente
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 1
+    Slots: 2
+    Jobs:
+      Knight: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"SM_BASH",10;
+
+  - Id: 210009
+    AegisName: Guardiã_dos_Reinos
+    Name: Guardiã dos Reinos
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 170
+    Range: 1
+    Slots: 2
+    Jobs:
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_BOWLINGBASH",10;
+
+  - Id: 210010
+    AegisName: Lança_da_Fortaleza
+    Name: Lança da Fortaleza
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 4
+    Slots: 2
+    Jobs:
+      Knight: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_PIERCE",10;
+
+  - Id: 210011
+    AegisName: Lança_do_Inquisidor
+    Name: Lança do Inquisidor
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 170
+    Range: 4
+    Slots: 2
+    Jobs:
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_BRANDISHSPEAR",10;
+
+  - Id: 210012
+    AegisName: Espada_da_Lua_Crescente_
+    Name: Espada da Lua Crescente
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 1
+    Slots: 3
+    Jobs:
+      Knight: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"SM_BASH",10;
+
+  - Id: 210013
+    AegisName: Guardiã_dos_Reinos_
+    Name: Guardiã dos Reinos
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 170
+    Range: 1
+    Slots: 3
+    Jobs:
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_BOWLINGBASH",10;
+
+  - Id: 210014
+    AegisName: Lança_da_Fortaleza_
+    Name: Lança da Fortaleza
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 4
+    Slots: 3
+    Jobs:
+      Knight: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_PIERCE",10;
+
+  - Id: 210015
+    AegisName: Lança_do_Inquisidor_
+    Name: Lança do Inquisidor
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 170
+    Range: 4
+    Slots: 3
+    Jobs:
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_BRANDISHSPEAR",10;
+
+  - Id: 210016
+    AegisName: Chama_do_Arcanjo
+    Name: Chama do Arcanjo
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 140
+    Range: 1
+    Slots: 2
+    Jobs:
+      Crusader: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"CR_GRANDCROSS",10;
+      bonus bInt,3;
+
+  - Id: 210017
+    AegisName: Lança_do_Fulgor_Divino
+    Name: Lança do Fulgor Divino
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 4
+    Slots: 2
+    Jobs:
+      Crusader: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"CR_SHIELDCHARGE",10;
+      bonus2 bSkillAtk,"CR_SHIELDBOOMERANG",10;
+
+  - Id: 210018
+    AegisName: Lança_do_Rei_Guerreiro_Sagrado
+    Name: Lança do Rei Guerreiro Sagrado
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 4
+    Slots: 2
+    Jobs:
+      Crusader: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"CR_HOLYCROSS",10;
+
+  - Id: 210019
+    AegisName: Chama_do_Arcanjo_
+    Name: Chama do Arcanjo
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 140
+    Range: 1
+    Slots: 3
+    Jobs:
+      Crusader: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"CR_GRANDCROSS",10;
+      bonus bInt,3;
+
+  - Id: 210020
+    AegisName: Lança_do_Fulgor_Divino_
+    Name: Lança do Fulgor Divino
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 4
+    Slots: 3
+    Jobs:
+      Crusader: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"CR_SHIELDCHARGE",10;
+      bonus2 bSkillAtk,"CR_SHIELDBOOMERANG",10;
+
+  - Id: 210021
+    AegisName: Lança_do_Rei_Guerreiro_Sagrado_
+    Name: Lança do Rei Guerreiro Sagrado
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 4
+    Slots: 3
+    Jobs:
+      Crusader: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"CR_HOLYCROSS",10;
+
+############################################## LV 80 - 99 ####################################################
+
+  - Id: 210022
+    AegisName: Gume_Reluzente
+    Name: Gume Reluzente
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 170
+    Range: 1
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"SM_BASH",15;
+
+  - Id: 210023
+    AegisName: Juramento_de_Aço
+    Name: Juramento de Aço
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 195
+    Range: 1
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_BOWLINGBASH",15;
+
+  - Id: 210024
+    AegisName: Ponta_da_Glória
+    Name: Ponta da Glória
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 170
+    Range: 4
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_PIERCE",15;
+
+  - Id: 210025
+    AegisName: Lança_do_Rei_Guerreiro
+    Name: Lança do Rei Guerreiro
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 195
+    Range: 4
+    Slots: 1
+    Jobs:
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_BRANDISHSPEAR",15;
+
+  - Id: 210026
+    AegisName: Gume_Reluzente_
+    Name: Gume Reluzente
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 170
+    Range: 1
+    Slots: 2
+    Jobs:
+      Knight: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"SM_BASH",15;
+
+  - Id: 210027
+    AegisName: Juramento_de_Aço_
+    Name: Juramento de Aço
+    Type: Weapon
+    SubType: 2hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 195
+    Range: 1
+    Slots: 2
+    Jobs:
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_BOWLINGBASH",15;
+
+  - Id: 210028
+    AegisName: Ponta_da_Glória_
+    Name: Ponta da Glória
+    Type: Weapon
+    SubType: 1hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 170
+    Range: 4
+    Slots: 2
+    Jobs:
+      Knight: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_PIERCE",15;
+
+  - Id: 210029
+    AegisName: Lança_do_Rei_Guerreiro_
+    Name: Lança do Rei Guerreiro
+    Type: Weapon
+    SubType: 2hSpear
+    Buy: 1
+    Weight: 1200
+    Attack: 195
+    Range: 4
+    Slots: 2
+    Jobs:
+      Knight: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"KN_BRANDISHSPEAR",15;
+
+############################################## MERCADOR ######################################################
+############################################## LV 01 - 40 ####################################################
+
+- Id: 210030
+AegisName: Maça_de_Treinamento
+Name: Maça de Treinamento
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 110
+Range: 1
+Slots: 4
+Jobs:
+  Alchemist: true
+  Blacksmith: true
+  Merchant: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 1
+EquipLevelMin: 1
+Refineable: true
+
+- Id: 210031
+AegisName: Machado_de_Treinamento
+Name: Machado de Treinamento
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 140
+Range: 1
+Slots: 4
+Jobs:
+  Alchemist: true
+  Blacksmith: true
+  Merchant: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 1
+EquipLevelMin: 1
+Refineable: true
+
+- Id: 210032
+AegisName: Machado_de_Treinamento_
+Name: Machado de Treinamento
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 160
+Range: 1
+Slots: 4
+Jobs:
+  Alchemist: true
+  Blacksmith: true
+  Merchant: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 1
+EquipLevelMin: 1
+Refineable: true
+
+############################################## LV 40 - 60 ####################################################
+
+- Id: 210033
+AegisName: Maça_de_Treinamento_II
+Name: Maça de Treinamento II
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 120
+Range: 1
+Slots: 3
+Jobs:
+  Alchemist: true
+  Blacksmith: true
+  Merchant: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 2
+EquipLevelMin: 1
+Refineable: true
+
+- Id: 210034
+AegisName: Machado_de_Treinamento_II
+Name: Machado de Treinamento II
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 160
+Range: 1
+Slots: 3
+Jobs:
+  Alchemist: true
+  Blacksmith: true
+  Merchant: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 2
+EquipLevelMin: 1
+Refineable: true
+
+- Id: 210035
+AegisName: Machado_de_Treinamento_II_
+Name: Machado de Treinamento II
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 180
+Range: 1
+Slots: 3
+Jobs:
+  Alchemist: true
+  Blacksmith: true
+  Merchant: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 2
+EquipLevelMin: 1
+Refineable: true
+
+
+############################################## LV 60 - 80 ####################################################
+
+- Id: 210036
+AegisName: Maça_de_Ferro Fundido
+Name: Maça de Ferro Fundido
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 130
+Range: 1
+Slots: 2
+Jobs:
+  Blacksmith: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bAspd,1;
+
+- Id: 210037
+AegisName: Machado_do_Criador_de_Armas
+Name: Machado do Criador de Armas
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 170
+Range: 1
+Slots: 2
+Jobs:
+  Blacksmith: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bHit,15;
+
+- Id: 210038
+AegisName: Machado_da_Balança_Justa
+Name: Machado da Balança Justa
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 195
+Range: 1
+Slots: 2
+Jobs:
+  Blacksmith: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bCritical,3;
+
+- Id: 210039
+AegisName: Espada_do_Condutor_Elemental
+Name: Espada do Condutor Elemental
+Type: Weapon
+SubType: 1hSword
+Buy: 1
+Weight: 1200
+Attack: 140
+Range: 1
+Slots: 2
+Jobs:
+  Alchemist: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bAspd,2;
+
+- Id: 210040
+AegisName: Machado_do_Sopro_Etéreo
+Name: Machado do Sopro Etéreo
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 170
+Range: 1
+Slots: 2
+Jobs:
+  Alchemist: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bInt,3;
+
+- Id: 210041
+AegisName: Machado_de_Cristal_Líquido
+Name: Machado de Cristal Líquido
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 195
+Range: 1
+Slots: 2
+Jobs:
+  Alchemist: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bHit,15;
+
+- Id: 210042
+AegisName: Maça_de_Ferro Fundido_
+Name: Maça de Ferro Fundido
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 130
+Range: 1
+Slots: 4
+Jobs:
+  Blacksmith: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bAspd,1;
+
+- Id: 210043
+AegisName: Machado_do_Criador_de_Armas_
+Name: Machado do Criador de Armas
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 170
+Range: 1
+Slots: 3
+Jobs:
+  Blacksmith: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bHit,3;
+
+- Id: 210044
+AegisName: Machado_da_Balança_Justa_
+Name: Machado da Balança Justa
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 195
+Range: 1
+Slots: 3
+Jobs:
+  Blacksmith: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bCritical,3;
+
+- Id: 210045
+AegisName: Espada_do_Condutor_Elemental_
+Name: Espada do Condutor Elemental
+Type: Weapon
+SubType: 1hSword
+Buy: 1
+Weight: 1200
+Attack: 140
+Range: 1
+Slots: 3
+Jobs:
+  Alchemist: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bAspd,2;
+
+- Id: 210046
+AegisName: Machado_do_Sopro_Etéreo_
+Name: Machado do Sopro Etéreo
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 170
+Range: 1
+Slots: 3
+Jobs:
+  Alchemist: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bInt,3;
+
+- Id: 210047
+AegisName: Machado_de_Cristal_Líquido_
+Name: Machado de Cristal Líquido
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 195
+Range: 1
+Slots: 3
+Jobs:
+  Alchemist: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bHit,15;
+
+############################################## LV 80 - 99 ####################################################
+
+- Id: 210048
+AegisName: Maça_do_Senhor_das_Forjas
+Name: Maça do Senhor das Forjas
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 140
+Range: 1
+Slots: 1
+Jobs:
+  Blacksmith: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bAspd,3;
+
+- Id: 210049
+AegisName: Machado_Moldador_de_Chamas
+Name: Machado Moldador de Chamas
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 185
+Range: 1
+Slots: 1
+Jobs:
+  Blacksmith: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bHit,25;
+
+- Id: 210050
+AegisName: Machado_da_Fornalha
+Name: Machado da Fornalha
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 205
+Range: 1
+Slots: 1
+Jobs:
+  Blacksmith: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bCritical,10;
+
+- Id: 210051
+AegisName: Espada_da_Transmutação
+Name: Espada da Transmutação
+Type: Weapon
+SubType: 1hSword
+Buy: 1
+Weight: 1200
+Attack: 150
+Range: 1
+Slots: 1
+Jobs:
+  Alchemist: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bAspd,4;
+
+- Id: 210052
+AegisName: Machado_de_Ouro_Vivo
+Name: Machado de Ouro Vivo
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 185
+Range: 1
+Slots: 1
+Jobs:
+  Alchemist: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bInt,5;
+
+- Id: 210053
+AegisName: Machado_do_Elixir_Perdido
+Name: Machado do Elixir Perdido
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 205
+Range: 1
+Slots: 1
+Jobs:
+  Alchemist: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bHit,25;
+
+- Id: 210054
+AegisName: Maça_do_Senhor_das_Forjas_
+Name: Maça do Senhor das Forjas
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 140
+Range: 1
+Slots: 2
+Jobs:
+  Blacksmith: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bAspd,3;
+
+- Id: 210055
+AegisName: Machado_Moldador_de_Chamas_
+Name: Machado Moldador de Chamas
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 185
+Range: 1
+Slots: 2
+Jobs:
+  Blacksmith: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bHit,25;
+
+- Id: 210056
+AegisName: Machado_da_Fornalha_
+Name: Machado da Fornalha
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 205
+Range: 1
+Slots: 2
+Jobs:
+  Blacksmith: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bCritical,10;
+
+- Id: 210057
+AegisName: Espada_da_Transmutação_
+Name: Espada da Transmutação
+Type: Weapon
+SubType: 1hSword
+Buy: 1
+Weight: 1200
+Attack: 150
+Range: 1
+Slots: 2
+Jobs:
+  Alchemist: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bAspd,4;
+
+- Id: 210058
+AegisName: Machado_de_Ouro_Vivo_
+Name: Machado de Ouro Vivo
+Type: Weapon
+SubType: 1hAxe
+Buy: 1
+Weight: 1200
+Attack: 185
+Range: 1
+Slots: 2
+Jobs:
+  Alchemist: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bInt,5;
+
+- Id: 210059
+AegisName: Machado_do_Elixir_Perdido_
+Name: Machado do Elixir Perdido
+Type: Weapon
+SubType: 2hAxe
+Buy: 1
+Weight: 1200
+Attack: 205
+Range: 1
+Slots: 2
+Jobs:
+  Alchemist: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bHit,25;
+
+############################################## NOVIÇO ########################################################
+############################################## LV 01 - 40 ####################################################
+
+- Id: 210060
+AegisName: Maça_do_Treinamento
+Name: Maça do Treinamento
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 150
+Range: 1
+Slots: 4
+Jobs:
+  Acolyte: true
+  Monk: true
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 1
+EquipLevelMin: 1
+Refineable: true
+Script: |
+  bonus bHit,10;
+
+- Id: 210061
+AegisName: Cajado_do_Treinamento
+Name: Cajado do Treinamento
+Type: Weapon
+SubType: Staff
+Buy: 1
+Weight: 1200
+Attack: 100
+Range: 1
+Slots: 4
+Jobs:
+  Acolyte: true
+  Monk: true
+  Priest: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 1
+EquipLevelMin: 1
+Refineable: true
+Script: |
+  bonus bMatkRate,15;
+
+############################################## LV 40 - 60 ####################################################
+
+- Id: 210062
+AegisName: Maça_do_Treinamento_II
+Name: Maça do Treinamento
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 170
+Range: 1
+Slots: 3
+Jobs:
+  Acolyte: true
+  Monk: true
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 2
+EquipLevelMin: 40
+Refineable: true
+Script: |
+  bonus bHit,15;
+
+- Id: 210063
+AegisName: Cajado_do_Treinamento_II
+Name: Cajado do Treinamento
+Type: Weapon
+SubType: Staff
+Buy: 1
+Weight: 1200
+Attack: 150
+Range: 1
+Slots: 3
+Jobs:
+  Acolyte: true
+  Monk: true
+  Priest: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 2
+EquipLevelMin: 40
+Refineable: true
+Script: |
+  bonus bMatkRate,15;
+  bonus bInt,3;
+
+############################################## LV 60 - 80 ####################################################
+
+- Id: 210064
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 190
+Range: 1
+Slots: 2
+Jobs:
+  Monk: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bHit,20;
+
+- Id: 210065
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Knuckle
+Buy: 1
+Weight: 1200
+Attack: 150
+Range: 1
+Slots: 2
+Jobs:
+  Monk: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bCritical,5;
+
+- Id: 210066
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 190
+Range: 1
+Slots: 2
+Jobs:
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bAspd,2;
+
+- Id: 210067
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Staff
+Buy: 1
+Weight: 1200
+Attack: 100
+Range: 1
+Slots: 2
+Jobs:
+  Priest: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bMatkRate,20;
+
+- Id: 210068
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Book
+Buy: 1
+Weight: 1200
+Attack: 150
+Range: 1
+Slots: 2
+Jobs:
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bAspd,3;
+  bonus bMatkRate,15;
+
+- Id: 210069
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 190
+Range: 1
+Slots: 3
+Jobs:
+  Monk: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bHit,20;
+
+- Id: 210070
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Knuckle
+Buy: 1
+Weight: 1200
+Attack: 150
+Range: 1
+Slots: 3
+Jobs:
+  Monk: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bCritical,5;
+
+- Id: 210071
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 190
+Range: 1
+Slots: 3
+Jobs:
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bAspd,2;
+
+- Id: 210072
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Staff
+Buy: 1
+Weight: 1200
+Attack: 100
+Range: 1
+Slots: 3
+Jobs:
+  Priest: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bMatkRate,20;
+
+- Id: 210073
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Book
+Buy: 1
+Weight: 1200
+Attack: 150
+Range: 1
+Slots: 3
+Jobs:
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 3
+EquipLevelMin: 60
+Refineable: true
+Script: |
+  bonus bAspd,3;
+  bonus bMatkRate,15;
+
+############################################## LV 80 - 99 ####################################################
+
+- Id: 210074
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 215
+Range: 1
+Slots: 1
+Jobs:
+  Monk: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bHit,20;
+  bonus bFlee,10;
+
+- Id: 210075
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Knuckle
+Buy: 1
+Weight: 1200
+Attack: 180
+Range: 1
+Slots: 1
+Jobs:
+  Monk: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bCritical,10;
+  bonus bAspd,3;
+
+- Id: 210076
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 215
+Range: 1
+Slots: 1
+Jobs:
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bAspd,3;
+
+- Id: 210077
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Staff
+Buy: 1
+Weight: 1200
+Attack: 100
+Range: 1
+Slots: 1
+Jobs:
+  Priest: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bMatkRate,20;
+  bonus bInt,3;
+
+- Id: 210078
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Book
+Buy: 1
+Weight: 1200
+Attack: 170
+Range: 1
+Slots: 1
+Jobs:
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bAspd,4;
+  bonus bMatkRate,15;
+
+- Id: 210079
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 215
+Range: 1
+Slots: 2
+Jobs:
+  Monk: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bHit,20;
+  bonus bFlee,10;
+
+- Id: 210080
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Knuckle
+Buy: 1
+Weight: 1200
+Attack: 180
+Range: 1
+Slots: 2
+Jobs:
+  Monk: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bCritical,10;
+  bonus bAspd,3;
+
+- Id: 210081
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Mace
+Buy: 1
+Weight: 1200
+Attack: 215
+Range: 1
+Slots: 2
+Jobs:
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bAspd,3;
+
+- Id: 210082
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Staff
+Buy: 1
+Weight: 1200
+Attack: 100
+Range: 1
+Slots: 2
+Jobs:
+  Priest: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bMatkRate,20;
+  bonus bInt,3;
+
+- Id: 210083
+AegisName: 
+Name: 
+Type: Weapon
+SubType: Book
+Buy: 1
+Weight: 1200
+Attack: 170
+Range: 1
+Slots: 2
+Jobs:
+  Priest: true
+Locations:
+  Right_Hand: true
+WeaponLevel: 4
+EquipLevelMin: 80
+Refineable: true
+Script: |
+  bonus bAspd,4;
+  bonus bMatkRate,15;
+
+############################################## MAGO ##########################################################
+############################################## LV 01 - 40 ####################################################
+
+- Id: 210084
+AegisName: Cetro_de_Treinamento
+Name: Cetro de Treinamento
+Type: Weapon
+SubType: Staff
+Buy: 1
+Weight: 1200
+Attack: 80
+Range: 1
+Slots: 4
+Jobs:
+  Mage: true
+  Sage: true
+  Wizard: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 1
+EquipLevelMin: 1
+Refineable: true
+Script: |
+  bonus bMatkRate,15;
+
+############################################## LV 40 - 60 ####################################################
+
+- Id: 210085
+AegisName: Cetro_de_Treinamento_II
+Name: Cetro de Treinamento
+Type: Weapon
+SubType: Staff
+Buy: 1
+Weight: 1200
+Attack: 100
+Range: 1
+Slots: 4
+Jobs:
+  Mage: true
+  Sage: true
+  Wizard: true
+Locations:
+  Both_Hand: true
+WeaponLevel: 1
+EquipLevelMin: 40
+Refineable: true
+Script: |
+  bonus bMatkRate,15;
+  bonus bDex,3;
+
+############################################## LV 60 - 80 ####################################################
+############################################## LV 80 - 99 ####################################################
+############################################## MERCADOR ######################################################
+############################################## LV 01 - 40 ####################################################
+############################################## LV 40 - 60 ####################################################
+############################################## LV 60 - 80 ####################################################
+############################################## LV 80 - 99 ####################################################
+############################################## ARQUEIRO ######################################################
+############################################## LV 01 - 40 ####################################################
+############################################## LV 40 - 60 ####################################################
+############################################## LV 60 - 80 ####################################################
+############################################## LV 80 - 99 ####################################################
+############################################## APRENDIZ ######################################################
+############################################## LV 01 - 40 ####################################################
+############################################## LV 40 - 60 ####################################################
+############################################## LV 60 - 80 ####################################################
+############################################## LV 80 - 99 ####################################################

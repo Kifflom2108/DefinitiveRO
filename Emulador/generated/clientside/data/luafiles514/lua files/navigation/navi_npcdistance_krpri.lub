@@ -1,0 +1,2925 @@
+Navi_NpcDistance = {
+	"alb2trea", 1,
+	{
+		{ 11984, -- (Kafra Employee alb2trea, 59, 69)
+			{ "treasure01", 14460, 45}, -- (alb2trea, 69, 22)
+			{"", 0, 0}
+		},
+	},
+	"alberta", 7,
+	{
+		{ 11985, -- (Kafra Employee alberta, 28, 229)
+			{ "alb_ship", 13350, 245}, -- (alberta, 26, 166)
+			{ "alb_ship", 13351, 220}, -- (alberta, 41, 163)
+			{ "alb_ship", 13352, 222}, -- (alberta, 160, 171)
+			{ "alberta_in", 13368, 115}, -- (alberta, 189, 89)
+			{ "alberta_in", 13369, 134}, -- (alberta, 114, 130)
+			{ "alberta_in", 13370, 33}, -- (alberta, 14, 141)
+			{ "alberta_in", 13371, 230}, -- (alberta, 180, 34)
+			{ "alberta_in", 13372, 205}, -- (alberta, 78, 44)
+			{ "alberta_in", 13373, 155}, -- (alberta, 125, 161)
+			{ "alberta_in", 13392, 241}, -- (alberta, 73, 141)
+			{ "morocc", 13937, 216}, -- (alberta, 156, 97)
+			{ "pay_fild03", 14124, 9}, -- (alberta, 392, 63)
+			{"", 0, 0}
+		},
+		{ 11986, -- (Guide#alb alberta, 23, 238)
+			{ "alb_ship", 13350, 250}, -- (alberta, 26, 166)
+			{ "alb_ship", 13351, 225}, -- (alberta, 41, 163)
+			{ "alb_ship", 13352, 227}, -- (alberta, 160, 171)
+			{ "alberta_in", 13368, 120}, -- (alberta, 189, 89)
+			{ "alberta_in", 13369, 139}, -- (alberta, 114, 130)
+			{ "alberta_in", 13370, 38}, -- (alberta, 14, 141)
+			{ "alberta_in", 13371, 235}, -- (alberta, 180, 34)
+			{ "alberta_in", 13372, 210}, -- (alberta, 78, 44)
+			{ "alberta_in", 13373, 160}, -- (alberta, 125, 161)
+			{ "alberta_in", 13392, 246}, -- (alberta, 73, 141)
+			{ "morocc", 13937, 221}, -- (alberta, 156, 97)
+			{ "pay_fild03", 14124, 5}, -- (alberta, 392, 63)
+			{"", 0, 0}
+		},
+		{ 11987, -- (Guide#2alb alberta, 120, 60)
+			{ "alb_ship", 13350, 189}, -- (alberta, 26, 166)
+			{ "alb_ship", 13351, 164}, -- (alberta, 41, 163)
+			{ "alb_ship", 13352, 166}, -- (alberta, 160, 171)
+			{ "alberta_in", 13368, 97}, -- (alberta, 189, 89)
+			{ "alberta_in", 13369, 145}, -- (alberta, 114, 130)
+			{ "alberta_in", 13370, 199}, -- (alberta, 14, 141)
+			{ "alberta_in", 13371, 18}, -- (alberta, 180, 34)
+			{ "alberta_in", 13372, 87}, -- (alberta, 78, 44)
+			{ "alberta_in", 13373, 166}, -- (alberta, 125, 161)
+			{ "alberta_in", 13392, 29}, -- (alberta, 73, 141)
+			{ "morocc", 13937, 4}, -- (alberta, 156, 97)
+			{ "pay_fild03", 14124, 221}, -- (alberta, 392, 63)
+			{"", 0, 0}
+		},
+		{ 11988, -- (Bullet Dealer Tony#alb alberta, 118, 160)
+			{ "alb_ship", 13350, 123}, -- (alberta, 26, 166)
+			{ "alb_ship", 13351, 98}, -- (alberta, 41, 163)
+			{ "alb_ship", 13352, 100}, -- (alberta, 160, 171)
+			{ "alberta_in", 13368, 16}, -- (alberta, 189, 89)
+			{ "alberta_in", 13369, 41}, -- (alberta, 114, 130)
+			{ "alberta_in", 13370, 113}, -- (alberta, 14, 141)
+			{ "alberta_in", 13371, 122}, -- (alberta, 180, 34)
+			{ "alberta_in", 13372, 141}, -- (alberta, 78, 44)
+			{ "alberta_in", 13373, 62}, -- (alberta, 125, 161)
+			{ "alberta_in", 13392, 133}, -- (alberta, 73, 141)
+			{ "morocc", 13937, 108}, -- (alberta, 156, 97)
+			{ "pay_fild03", 14124, 135}, -- (alberta, 392, 63)
+			{"", 0, 0}
+		},
+		{ 11989, -- (Chef Assistant#alb alberta, 167, 135)
+			{ "alb_ship", 13350, 70}, -- (alberta, 26, 166)
+			{ "alb_ship", 13351, 45}, -- (alberta, 41, 163)
+			{ "alb_ship", 13352, 47}, -- (alberta, 160, 171)
+			{ "alberta_in", 13368, 65}, -- (alberta, 189, 89)
+			{ "alberta_in", 13369, 94}, -- (alberta, 114, 130)
+			{ "alberta_in", 13370, 166}, -- (alberta, 14, 141)
+			{ "alberta_in", 13371, 137}, -- (alberta, 180, 34)
+			{ "alberta_in", 13372, 156}, -- (alberta, 78, 44)
+			{ "alberta_in", 13373, 115}, -- (alberta, 125, 161)
+			{ "alberta_in", 13392, 148}, -- (alberta, 73, 141)
+			{ "morocc", 13937, 123}, -- (alberta, 156, 97)
+			{ "pay_fild03", 14124, 188}, -- (alberta, 392, 63)
+			{"", 0, 0}
+		},
+		{ 11990, -- (Kafra Employee alberta, 113, 60)
+			{ "alb_ship", 13350, 189}, -- (alberta, 26, 166)
+			{ "alb_ship", 13351, 164}, -- (alberta, 41, 163)
+			{ "alb_ship", 13352, 166}, -- (alberta, 160, 171)
+			{ "alberta_in", 13368, 102}, -- (alberta, 189, 89)
+			{ "alberta_in", 13369, 150}, -- (alberta, 114, 130)
+			{ "alberta_in", 13370, 212}, -- (alberta, 14, 141)
+			{ "alberta_in", 13371, 18}, -- (alberta, 180, 34)
+			{ "alberta_in", 13372, 80}, -- (alberta, 78, 44)
+			{ "alberta_in", 13373, 171}, -- (alberta, 125, 161)
+			{ "alberta_in", 13392, 36}, -- (alberta, 73, 141)
+			{ "morocc", 13937, 4}, -- (alberta, 156, 97)
+			{ "pay_fild03", 14124, 234}, -- (alberta, 392, 63)
+			{"", 0, 0}
+		},
+		{ 11991, -- (Healer#alb alberta, 25, 240)
+			{ "alb_ship", 13350, 248}, -- (alberta, 26, 166)
+			{ "alb_ship", 13351, 223}, -- (alberta, 41, 163)
+			{ "alb_ship", 13352, 225}, -- (alberta, 160, 171)
+			{ "alberta_in", 13368, 118}, -- (alberta, 189, 89)
+			{ "alberta_in", 13369, 137}, -- (alberta, 114, 130)
+			{ "alberta_in", 13370, 36}, -- (alberta, 14, 141)
+			{ "alberta_in", 13371, 233}, -- (alberta, 180, 34)
+			{ "alberta_in", 13372, 208}, -- (alberta, 78, 44)
+			{ "alberta_in", 13373, 158}, -- (alberta, 125, 161)
+			{ "alberta_in", 13392, 244}, -- (alberta, 73, 141)
+			{ "morocc", 13937, 219}, -- (alberta, 156, 97)
+			{ "pay_fild03", 14124, 7}, -- (alberta, 392, 63)
+			{"", 0, 0}
+		},
+	},
+	"alberta_in", 2,
+	{
+		{ 11992, -- (Trading Merchant#alb alberta_in, 176, 81)
+			{ "alberta", 13364, 18}, -- (alberta_in, 98, 153)
+			{"", 0, 0}
+		},
+		{ 11993, -- (Hair Dresser alberta_in, 55, 142)
+			{"", 0, 0}
+		},
+	},
+	"alde_dun02", 1,
+	{
+		{ 11994, -- (ald008r alde_dun02, 267, 41)
+			{ "alde_dun01", 13393, 100}, -- (alde_dun02, 292, 306)
+			{ "alde_dun03", 13400, 231}, -- (alde_dun02, 12, 267)
+			{ "alde_dun04", 13407, 252}, -- (alde_dun02, 32, 74)
+			{ "c_tower3", 13473, 213}, -- (alde_dun02, 42, 41)
+			{"", 0, 0}
+		},
+	},
+	"alde_dun03", 2,
+	{
+		{ 11995, -- (ald014r alde_dun03, 130, 125)
+			{ "alde_dun02", 13397, 190}, -- (alde_dun03, 279, 250)
+			{ "alde_dun04", 13404, 88}, -- (alde_dun03, 80, 273)
+			{ "c_tower2", 13468, 108}, -- (alde_dun03, 24, 24)
+			{ "c_tower3", 13471, 206}, -- (alde_dun03, 212, 159)
+			{ "c_tower4", 13475, 205}, -- (alde_dun03, 37, 70)
+			{ "c_tower4", 13482, 206}, -- (alde_dun03, 171, 179)
+			{"", 0, 0}
+		},
+		{ 11996, -- (ald015r alde_dun03, 171, 127)
+			{ "alde_dun02", 13397, 192}, -- (alde_dun03, 279, 250)
+			{ "alde_dun04", 13404, 76}, -- (alde_dun03, 80, 273)
+			{ "c_tower2", 13468, 138}, -- (alde_dun03, 24, 24)
+			{ "c_tower3", 13471, 186}, -- (alde_dun03, 212, 159)
+			{ "c_tower4", 13475, 185}, -- (alde_dun03, 37, 70)
+			{ "c_tower4", 13482, 186}, -- (alde_dun03, 171, 179)
+			{"", 0, 0}
+		},
+	},
+	"alde_dun04", 1,
+	{
+		{ 11997, -- (ald022r alde_dun04, 80, 34)
+			{ "alde_dun04", 13408, 69}, -- (alde_dun04, 208, 58)
+			{ "alde_dun04", 13409, 135}, -- (alde_dun04, 272, 74)
+			{"", 0, 0}
+		},
+	},
+	"aldeba_in", 1,
+	{
+		{ 11998, -- (Kafra Service aldeba_in, 96, 181)
+			{ "aldeba_in", 13412, 24}, -- (aldeba_in, 134, 237)
+			{ "aldeba_in", 13427, 41}, -- (aldeba_in, 37, 238)
+			{ "aldeba_in", 13430, 13}, -- (aldeba_in, 83, 224)
+			{"", 0, 0}
+		},
+	},
+	"aldebaran", 5,
+	{
+		{ 11999, -- (Soldier#alde aldebaran, 139, 63)
+			{ "aldeba_in", 13414, 219}, -- (aldebaran, 148, 224)
+			{ "aldeba_in", 13416, 111}, -- (aldebaran, 157, 193)
+			{ "aldeba_in", 13417, 36}, -- (aldebaran, 208, 117)
+			{ "aldeba_in", 13422, 208}, -- (aldebaran, 24, 224)
+			{ "aldeba_in", 13423, 207}, -- (aldebaran, 245, 237)
+			{ "aldeba_in", 13425, 195}, -- (aldebaran, 27, 34)
+			{ "aldeba_in", 13431, 63}, -- (aldebaran, 94, 38)
+			{ "aldeba_in", 13433, 90}, -- (aldebaran, 149, 123)
+			{ "c_tower1", 13464, 68}, -- (aldebaran, 200, 157)
+			{ "mjolnir_12", 13815, 26}, -- (aldebaran, 199, 378)
+			{ "xmas_fild01", 14490, 186}, -- (aldebaran, 84, 48)
+			{ "alde_gld", 14590, 164}, -- (aldebaran, 284, 160)
+			{ "alde_alche", 14934, 78}, -- (aldebaran, 19, 171)
+			{ "alde_alche", 14935, 90}, -- (aldebaran, 42, 171)
+			{ "yuno_fild01", 14992, 192}, -- (aldebaran, 208, 17)
+			{"", 0, 0}
+		},
+		{ 12000, -- (Soldier#2alde aldebaran, 133, 108)
+			{ "aldeba_in", 13414, 184}, -- (aldebaran, 148, 224)
+			{ "aldeba_in", 13416, 146}, -- (aldebaran, 157, 193)
+			{ "aldeba_in", 13417, 81}, -- (aldebaran, 208, 117)
+			{ "aldeba_in", 13422, 173}, -- (aldebaran, 24, 224)
+			{ "aldeba_in", 13423, 160}, -- (aldebaran, 245, 237)
+			{ "aldeba_in", 13425, 160}, -- (aldebaran, 27, 34)
+			{ "aldeba_in", 13431, 106}, -- (aldebaran, 94, 38)
+			{ "aldeba_in", 13433, 133}, -- (aldebaran, 149, 123)
+			{ "c_tower1", 13464, 23}, -- (aldebaran, 200, 157)
+			{ "mjolnir_12", 13815, 71}, -- (aldebaran, 199, 378)
+			{ "xmas_fild01", 14490, 141}, -- (aldebaran, 84, 48)
+			{ "alde_gld", 14590, 129}, -- (aldebaran, 284, 160)
+			{ "alde_alche", 14934, 123}, -- (aldebaran, 19, 171)
+			{ "alde_alche", 14935, 135}, -- (aldebaran, 42, 171)
+			{ "yuno_fild01", 14992, 147}, -- (aldebaran, 208, 17)
+			{"", 0, 0}
+		},
+		{ 12001, -- (Bulletin Board#19 aldebaran, 136, 133)
+			{ "aldeba_in", 13414, 164}, -- (aldebaran, 148, 224)
+			{ "aldeba_in", 13416, 135}, -- (aldebaran, 157, 193)
+			{ "aldeba_in", 13417, 106}, -- (aldebaran, 208, 117)
+			{ "aldeba_in", 13422, 157}, -- (aldebaran, 24, 224)
+			{ "aldeba_in", 13423, 137}, -- (aldebaran, 245, 237)
+			{ "aldeba_in", 13425, 144}, -- (aldebaran, 27, 34)
+			{ "aldeba_in", 13431, 131}, -- (aldebaran, 94, 38)
+			{ "aldeba_in", 13433, 158}, -- (aldebaran, 149, 123)
+			{ "c_tower1", 13464, 3}, -- (aldebaran, 200, 157)
+			{ "mjolnir_12", 13815, 96}, -- (aldebaran, 199, 378)
+			{ "xmas_fild01", 14490, 116}, -- (aldebaran, 84, 48)
+			{ "alde_gld", 14590, 113}, -- (aldebaran, 284, 160)
+			{ "alde_alche", 14934, 148}, -- (aldebaran, 19, 171)
+			{ "alde_alche", 14935, 160}, -- (aldebaran, 42, 171)
+			{ "yuno_fild01", 14992, 122}, -- (aldebaran, 208, 17)
+			{"", 0, 0}
+		},
+		{ 12002, -- (Kafra Employee aldebaran, 143, 119)
+			{ "aldeba_in", 13414, 178}, -- (aldebaran, 148, 224)
+			{ "aldeba_in", 13416, 136}, -- (aldebaran, 157, 193)
+			{ "aldeba_in", 13417, 92}, -- (aldebaran, 208, 117)
+			{ "aldeba_in", 13422, 168}, -- (aldebaran, 24, 224)
+			{ "aldeba_in", 13423, 151}, -- (aldebaran, 245, 237)
+			{ "aldeba_in", 13425, 155}, -- (aldebaran, 27, 34)
+			{ "aldeba_in", 13431, 117}, -- (aldebaran, 94, 38)
+			{ "aldeba_in", 13433, 144}, -- (aldebaran, 149, 123)
+			{ "c_tower1", 13464, 12}, -- (aldebaran, 200, 157)
+			{ "mjolnir_12", 13815, 82}, -- (aldebaran, 199, 378)
+			{ "xmas_fild01", 14490, 128}, -- (aldebaran, 84, 48)
+			{ "alde_gld", 14590, 124}, -- (aldebaran, 284, 160)
+			{ "alde_alche", 14934, 134}, -- (aldebaran, 19, 171)
+			{ "alde_alche", 14935, 146}, -- (aldebaran, 42, 171)
+			{ "yuno_fild01", 14992, 134}, -- (aldebaran, 208, 17)
+			{"", 0, 0}
+		},
+		{ 12003, -- (Healer#alde aldebaran, 135, 118)
+			{ "aldeba_in", 13414, 174}, -- (aldebaran, 148, 224)
+			{ "aldeba_in", 13416, 144}, -- (aldebaran, 157, 193)
+			{ "aldeba_in", 13417, 91}, -- (aldebaran, 208, 117)
+			{ "aldeba_in", 13422, 163}, -- (aldebaran, 24, 224)
+			{ "aldeba_in", 13423, 152}, -- (aldebaran, 245, 237)
+			{ "aldeba_in", 13425, 150}, -- (aldebaran, 27, 34)
+			{ "aldeba_in", 13431, 116}, -- (aldebaran, 94, 38)
+			{ "aldeba_in", 13433, 143}, -- (aldebaran, 149, 123)
+			{ "c_tower1", 13464, 13}, -- (aldebaran, 200, 157)
+			{ "mjolnir_12", 13815, 81}, -- (aldebaran, 199, 378)
+			{ "xmas_fild01", 14490, 131}, -- (aldebaran, 84, 48)
+			{ "alde_gld", 14590, 119}, -- (aldebaran, 284, 160)
+			{ "alde_alche", 14934, 133}, -- (aldebaran, 19, 171)
+			{ "alde_alche", 14935, 145}, -- (aldebaran, 42, 171)
+			{ "yuno_fild01", 14992, 137}, -- (aldebaran, 208, 17)
+			{"", 0, 0}
+		},
+	},
+	"c_tower2", 2,
+	{
+		{ 12004, -- (clt006r c_tower2, 13, 288)
+			{ "alde_dun01", 13394, 31}, -- (c_tower2, 167, 158)
+			{ "alde_dun03", 13401, 81}, -- (c_tower2, 277, 183)
+			{ "alde_dun04", 13406, 31}, -- (c_tower2, 215, 192)
+			{ "c_tower1", 13465, 245}, -- (c_tower2, 235, 226)
+			{ "c_tower3", 13470, 31}, -- (c_tower2, 60, 147)
+			{ "c_tower4", 13481, 248}, -- (c_tower2, 153, 107)
+			{"", 0, 0}
+		},
+		{ 12005, -- (clt007r c_tower2, 223, 267)
+			{ "alde_dun01", 13394, 92}, -- (c_tower2, 167, 158)
+			{ "alde_dun03", 13401, 97}, -- (c_tower2, 277, 183)
+			{ "alde_dun04", 13406, 92}, -- (c_tower2, 215, 192)
+			{ "c_tower1", 13465, 57}, -- (c_tower2, 235, 226)
+			{ "c_tower3", 13470, 92}, -- (c_tower2, 60, 147)
+			{ "c_tower4", 13481, 5}, -- (c_tower2, 153, 107)
+			{"", 0, 0}
+		},
+	},
+	"c_tower3", 3,
+	{
+		{ 12006, -- (clt014r c_tower3, 163, 252)
+			{ "alde_dun02", 13398, 158}, -- (c_tower3, 122, 169)
+			{ "alde_dun02", 13399, 108}, -- (c_tower3, 187, 234)
+			{ "alde_dun03", 13402, 181}, -- (c_tower3, 191, 31)
+			{ "alde_dun04", 13405, 230}, -- (c_tower3, 207, 225)
+			{ "c_tower2", 13467, 108}, -- (c_tower3, 142, 283)
+			{"", 0, 0}
+		},
+		{ 12007, -- (clt015r c_tower3, 240, 7)
+			{ "c_tower4", 13478, 89}, -- (c_tower3, 70, 19)
+			{"", 0, 0}
+		},
+		{ 12008, -- (clt016r c_tower3, 252, 24)
+			{ "alde_dun02", 13398, 60}, -- (c_tower3, 122, 169)
+			{ "alde_dun02", 13399, 120}, -- (c_tower3, 187, 234)
+			{ "alde_dun03", 13402, 151}, -- (c_tower3, 191, 31)
+			{ "alde_dun04", 13405, 117}, -- (c_tower3, 207, 225)
+			{ "c_tower2", 13467, 120}, -- (c_tower3, 142, 283)
+			{"", 0, 0}
+		},
+	},
+	"c_tower4", 5,
+	{
+		{ 12009, -- (clt027r c_tower4, 75, 156)
+			{ "c_tower4", 13477, 2}, -- (c_tower4, 68, 46)
+			{"", 0, 0}
+		},
+		{ 12010, -- (clt028r c_tower4, 68, 79)
+			{ "c_tower4", 13484, 3}, -- (c_tower4, 204, 57)
+			{"", 0, 0}
+		},
+		{ 12011, -- (clt029r c_tower4, 142, 151)
+			{ "c_tower4", 13480, 2}, -- (c_tower4, 133, 202)
+			{"", 0, 0}
+		},
+		{ 12012, -- (clt030r c_tower4, 151, 96)
+			{ "c_tower4", 13483, 2}, -- (c_tower4, 198, 59)
+			{"", 0, 0}
+		},
+		{ 12013, -- (clt031r c_tower4, 189, 40)
+			{"", 0, 0}
+		},
+	},
+	"gef_fild10", 2,
+	{
+		{ 12014, -- (Bulletin Board#3 gef_fild10, 69, 340)
+			{ "gef_fild03", 13531, 215}, -- (gef_fild10, 18, 52)
+			{ "gef_fild09", 13550, 199}, -- (gef_fild10, 225, 25)
+			{ "gef_fild11", 13562, 60}, -- (gef_fild10, 111, 364)
+			{ "gef_fild14", 13582, 149}, -- (gef_fild10, 371, 219)
+			{ "in_orcs01", 13704, 232}, -- (gef_fild10, 108, 86)
+			{ "in_orcs01", 13705, 69}, -- (gef_fild10, 124, 171)
+			{ "in_orcs01", 13706, 31}, -- (gef_fild10, 162, 55)
+			{ "in_orcs01", 13707, 70}, -- (gef_fild10, 29, 116)
+			{ "in_orcs01", 13708, 5}, -- (gef_fild10, 30, 154)
+			{"", 0, 0}
+		},
+		{ 12015, -- (Kafra Employee gef_fild10, 73, 340)
+			{ "gef_fild03", 13531, 201}, -- (gef_fild10, 18, 52)
+			{ "gef_fild09", 13550, 195}, -- (gef_fild10, 225, 25)
+			{ "gef_fild11", 13562, 60}, -- (gef_fild10, 111, 364)
+			{ "gef_fild14", 13582, 149}, -- (gef_fild10, 371, 219)
+			{ "in_orcs01", 13704, 226}, -- (gef_fild10, 108, 86)
+			{ "in_orcs01", 13705, 65}, -- (gef_fild10, 124, 171)
+			{ "in_orcs01", 13706, 31}, -- (gef_fild10, 162, 55)
+			{ "in_orcs01", 13707, 64}, -- (gef_fild10, 29, 116)
+			{ "in_orcs01", 13708, 8}, -- (gef_fild10, 30, 154)
+			{"", 0, 0}
+		},
+	},
+	"gef_tower", 1,
+	{
+		{ 12016, -- (Bulletin Board#21 gef_tower, 55, 142)
+			{ "gef_tower", 13595, 5}, -- (gef_tower, 158, 174)
+			{ "gef_tower", 13598, 42}, -- (gef_tower, 42, 86)
+			{ "geffen", 13605, 35}, -- (gef_tower, 120, 114)
+			{"", 0, 0}
+		},
+	},
+	"geffen", 6,
+	{
+		{ 12017, -- (Kafra Employee geffen, 203, 123)
+			{ "gef_fild00", 13517, 11}, -- (geffen, 40, 199)
+			{ "gef_fild04", 13532, 93}, -- (geffen, 187, 39)
+			{ "gef_fild07", 13542, 174}, -- (geffen, 339, 187)
+			{ "gef_tower", 13601, 83}, -- (geffen, 52, 181)
+			{ "geffen_in", 13615, 102}, -- (geffen, 28, 156)
+			{ "geffen_in", 13634, 140}, -- (geffen, 163, 94)
+			{ "geffen_in", 13635, 168}, -- (geffen, 70, 132)
+			{ "geffen_in", 13636, 64}, -- (geffen, 106, 181)
+			{ "geffen_in", 13637, 68}, -- (geffen, 28, 106)
+			{ "geffen_in", 13638, 48}, -- (geffen, 70, 48)
+			{ "geffen_in", 13639, 67}, -- (geffen, 165, 54)
+			{"", 0, 0}
+		},
+		{ 12018, -- (Guide#gef geffen, 203, 116)
+			{ "gef_fild00", 13517, 11}, -- (geffen, 40, 199)
+			{ "gef_fild04", 13532, 102}, -- (geffen, 187, 39)
+			{ "gef_fild07", 13542, 174}, -- (geffen, 339, 187)
+			{ "gef_tower", 13601, 83}, -- (geffen, 52, 181)
+			{ "geffen_in", 13615, 102}, -- (geffen, 28, 156)
+			{ "geffen_in", 13634, 149}, -- (geffen, 163, 94)
+			{ "geffen_in", 13635, 168}, -- (geffen, 70, 132)
+			{ "geffen_in", 13636, 63}, -- (geffen, 106, 181)
+			{ "geffen_in", 13637, 68}, -- (geffen, 28, 106)
+			{ "geffen_in", 13638, 57}, -- (geffen, 70, 48)
+			{ "geffen_in", 13639, 67}, -- (geffen, 165, 54)
+			{"", 0, 0}
+		},
+		{ 12019, -- (Guide#2gef geffen, 118, 62)
+			{ "gef_fild00", 13517, 100}, -- (geffen, 40, 199)
+			{ "gef_fild04", 13532, 148}, -- (geffen, 187, 39)
+			{ "gef_fild07", 13542, 92}, -- (geffen, 339, 187)
+			{ "gef_tower", 13601, 48}, -- (geffen, 52, 181)
+			{ "geffen_in", 13615, 76}, -- (geffen, 28, 156)
+			{ "geffen_in", 13634, 138}, -- (geffen, 163, 94)
+			{ "geffen_in", 13635, 74}, -- (geffen, 70, 132)
+			{ "geffen_in", 13636, 61}, -- (geffen, 106, 181)
+			{ "geffen_in", 13637, 74}, -- (geffen, 28, 106)
+			{ "geffen_in", 13638, 123}, -- (geffen, 70, 48)
+			{ "geffen_in", 13639, 44}, -- (geffen, 165, 54)
+			{"", 0, 0}
+		},
+		{ 12020, -- (Chef Assistant#gef geffen, 196, 111)
+			{ "gef_fild00", 13517, 21}, -- (geffen, 40, 199)
+			{ "gef_fild04", 13532, 130}, -- (geffen, 187, 39)
+			{ "gef_fild07", 13542, 167}, -- (geffen, 339, 187)
+			{ "gef_tower", 13601, 76}, -- (geffen, 52, 181)
+			{ "geffen_in", 13615, 95}, -- (geffen, 28, 156)
+			{ "geffen_in", 13634, 151}, -- (geffen, 163, 94)
+			{ "geffen_in", 13635, 151}, -- (geffen, 70, 132)
+			{ "geffen_in", 13636, 52}, -- (geffen, 106, 181)
+			{ "geffen_in", 13637, 61}, -- (geffen, 28, 106)
+			{ "geffen_in", 13638, 59}, -- (geffen, 70, 48)
+			{ "geffen_in", 13639, 60}, -- (geffen, 165, 54)
+			{"", 0, 0}
+		},
+		{ 12021, -- (Kafra Employee geffen, 120, 62)
+			{ "gef_fild00", 13517, 99}, -- (geffen, 40, 199)
+			{ "gef_fild04", 13532, 148}, -- (geffen, 187, 39)
+			{ "gef_fild07", 13542, 92}, -- (geffen, 339, 187)
+			{ "gef_tower", 13601, 48}, -- (geffen, 52, 181)
+			{ "geffen_in", 13615, 76}, -- (geffen, 28, 156)
+			{ "geffen_in", 13634, 138}, -- (geffen, 163, 94)
+			{ "geffen_in", 13635, 74}, -- (geffen, 70, 132)
+			{ "geffen_in", 13636, 59}, -- (geffen, 106, 181)
+			{ "geffen_in", 13637, 74}, -- (geffen, 28, 106)
+			{ "geffen_in", 13638, 136}, -- (geffen, 70, 48)
+			{ "geffen_in", 13639, 44}, -- (geffen, 165, 54)
+			{"", 0, 0}
+		},
+		{ 12022, -- (Healer#gef geffen, 115, 72)
+			{ "gef_fild00", 13517, 109}, -- (geffen, 40, 199)
+			{ "gef_fild04", 13532, 138}, -- (geffen, 187, 39)
+			{ "gef_fild07", 13542, 106}, -- (geffen, 339, 187)
+			{ "gef_tower", 13601, 38}, -- (geffen, 52, 181)
+			{ "geffen_in", 13615, 66}, -- (geffen, 28, 156)
+			{ "geffen_in", 13634, 115}, -- (geffen, 163, 94)
+			{ "geffen_in", 13635, 69}, -- (geffen, 70, 132)
+			{ "geffen_in", 13636, 64}, -- (geffen, 106, 181)
+			{ "geffen_in", 13637, 64}, -- (geffen, 28, 106)
+			{ "geffen_in", 13638, 113}, -- (geffen, 70, 48)
+			{ "geffen_in", 13639, 34}, -- (geffen, 165, 54)
+			{"", 0, 0}
+		},
+	},
+	"gl_prison", 1,
+	{
+		{ 12023, -- (gl18-2 gl_prison, 11, 70)
+			{ "gl_cas01", 13641, 3}, -- (gl_prison, 149, 314)
+			{ "gl_cas01", 13642, 3}, -- (gl_prison, 167, 191)
+			{ "gl_cas01", 13647, 3}, -- (gl_prison, 234, 192)
+			{ "gl_cas01", 13648, 3}, -- (gl_prison, 371, 301)
+			{ "gl_prison1", 13676, 199}, -- (gl_prison, 150, 10)
+			{"", 0, 0}
+		},
+	},
+	"izlu2dun", 1,
+	{
+		{ 12024, -- (Kafra Employee izlu2dun, 106, 58)
+			{ "iz_dun00", 13732, 166}, -- (izlu2dun, 168, 173)
+			{"", 0, 0}
+		},
+	},
+	"izlude", 10,
+	{
+		{ 12025, -- (Bulletin Board#5 izlude, 131, 116)
+			{ "arena_room", 13463, 107}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 89}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 32}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 81}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 37}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 79}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 132}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+		{ 12026, -- (Kafra Employee izlude, 136, 93)
+			{ "arena_room", 13463, 128}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 66}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 52}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 86}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 54}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 84}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 109}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+		{ 12027, -- (Guide#iz izlude, 121, 87)
+			{ "arena_room", 13463, 134}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 60}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 58}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 92}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 60}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 81}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 103}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+		{ 12028, -- (Magazine Dealer Kenny#iz izlude, 171, 127)
+			{ "arena_room", 13463, 103}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 111}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 28}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 41}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 60}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 119}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 154}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+		{ 12029, -- (Bullet Dealer Tony#iz izlude, 171, 133)
+			{ "arena_room", 13463, 101}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 111}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 26}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 41}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 58}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 119}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 154}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+		{ 12030, -- (Butcher#iz izlude, 105, 99)
+			{ "arena_room", 13463, 126}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 90}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 56}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 110}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 51}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 63}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 133}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+		{ 12031, -- (Fruit Gardener#iz izlude, 94, 98)
+			{ "arena_room", 13463, 124}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 98}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 70}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 122}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 51}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 62}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 141}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+		{ 12032, -- (Vendor from Milk Ranch#i izlude, 105, 92)
+			{ "arena_room", 13463, 133}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 97}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 63}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 117}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 58}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 71}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 140}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+		{ 12033, -- (Pet Groomer#iz izlude, 164, 138)
+			{ "arena_room", 13463, 94}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 111}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 19}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 49}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 51}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 112}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 154}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+		{ 12034, -- (Healer#izl izlude, 121, 150)
+			{ "arena_room", 13463, 70}, -- (izlude, 99, 24)
+			{ "izlude", 13751, 128}, -- (izlude, 176, 56)
+			{ "izlude_in", 13754, 24}, -- (izlude, 116, 46)
+			{ "izlude_in", 13755, 92}, -- (izlude, 148, 127)
+			{ "izlude_in", 13761, 8}, -- (izlude, 65, 84)
+			{ "izlude_in", 13762, 69}, -- (izlude, 74, 158)
+			{ "prt_fild08", 14248, 167}, -- (izlude, 371, 212)
+			{"", 0, 0}
+		},
+	},
+	"izlude_in", 7,
+	{
+		{ 12035, -- (Trading Merchant#iz izlude_in, 121, 64)
+			{ "izlude", 13746, 15}, -- (izlude_in, 148, 148)
+			{"", 0, 0}
+		},
+		{ 12036, -- (Tool Dealer#iz izlude_in, 115, 61)
+			{ "izlude", 13746, 12}, -- (izlude_in, 148, 148)
+			{"", 0, 0}
+		},
+		{ 12037, -- (Mestre Da Guilda#swordman izlude_in, 74, 172)
+			{ "izlude", 13749, 20}, -- (izlude_in, 52, 140)
+			{ "izlude_in", 13753, 13}, -- (izlude_in, 108, 169)
+			{ "izlude_in", 13760, 12}, -- (izlude_in, 43, 169)
+			{"", 0, 0}
+		},
+		{ 12038, -- (Espadachim#swd_2 izlude_in, 62, 170)
+			{ "izlude", 13749, 12}, -- (izlude_in, 52, 140)
+			{ "izlude_in", 13753, 22}, -- (izlude_in, 108, 169)
+			{ "izlude_in", 13760, 2}, -- (izlude_in, 43, 169)
+			{"", 0, 0}
+		},
+		{ 12039, -- (Espadachim#swd_3 izlude_in, 30, 175)
+			{"", 0, 0}
+		},
+		{ 12040, -- (Equipe do Salão de Testes#swd_1 izlude_in, 30, 163)
+			{"", 0, 0}
+		},
+		{ 12041, -- (Jake#swordman izlude_in, 124, 175)
+			{ "izlude_in", 13763, 21}, -- (izlude_in, 87, 169)
+			{"", 0, 0}
+		},
+	},
+	"mjolnir_02", 2,
+	{
+		{ 12042, -- (Kafra Employee mjolnir_02, 83, 362)
+			{ "mjo_dun01", 13766, 4}, -- (mjolnir_02, 52, 14)
+			{ "mjolnir_01", 13773, 112}, -- (mjolnir_02, 378, 256)
+			{ "mjolnir_03", 13778, 0}, -- (mjolnir_02, 21, 258)
+			{ "mjolnir_06", 13789, 80}, -- (mjolnir_02, 366, 383)
+			{"", 0, 0}
+		},
+		{ 12043, -- (Bulletin Board#10 mjolnir_02, 76, 362)
+			{ "mjo_dun01", 13766, 3}, -- (mjolnir_02, 52, 14)
+			{ "mjolnir_01", 13773, 118}, -- (mjolnir_02, 378, 256)
+			{ "mjolnir_03", 13778, 6}, -- (mjolnir_02, 21, 258)
+			{ "mjolnir_06", 13789, 86}, -- (mjolnir_02, 366, 383)
+			{"", 0, 0}
+		},
+	},
+	"moc_fild19", 1,
+	{
+		{ 12044, -- (Bulletin Board#20 moc_fild19, 107, 101)
+			{ "in_sphinx1", 13711, 7}, -- (moc_fild19, 288, 6)
+			{ "moc_ruins", 13922, 116}, -- (moc_fild19, 71, 16)
+			{ "morocc", 13944, 57}, -- (moc_fild19, 24, 164)
+			{"", 0, 0}
+		},
+	},
+	"moc_ruins", 9,
+	{
+		{ 12045, -- (Kafra Employee moc_ruins, 59, 157)
+			{ "job_thief1", 13764, 96}, -- (moc_ruins, 180, 15)
+			{ "moc_fild19", 13893, 138}, -- (moc_ruins, 71, 170)
+			{ "moc_pryd01", 13896, 4}, -- (moc_ruins, 195, 9)
+			{ "morocc", 13943, 120}, -- (moc_ruins, 27, 294)
+			{"", 0, 0}
+		},
+		{ 12046, -- (Pet Groomer#moc moc_ruins, 118, 170)
+			{ "job_thief1", 13764, 53}, -- (moc_ruins, 180, 15)
+			{ "moc_fild19", 13893, 158}, -- (moc_ruins, 71, 170)
+			{ "moc_pryd01", 13896, 58}, -- (moc_ruins, 195, 9)
+			{ "morocc", 13943, 128}, -- (moc_ruins, 27, 294)
+			{"", 0, 0}
+		},
+		{ 12047, -- (Tool Dealer#moc1 moc_ruins, 91, 128)
+			{ "job_thief1", 13764, 55}, -- (moc_ruins, 180, 15)
+			{ "moc_fild19", 13893, 112}, -- (moc_ruins, 71, 170)
+			{ "moc_pryd01", 13896, 41}, -- (moc_ruins, 195, 9)
+			{ "morocc", 13943, 87}, -- (moc_ruins, 27, 294)
+			{"", 0, 0}
+		},
+		{ 12048, -- (Tool Dealer#moc2 moc_ruins, 114, 63)
+			{ "job_thief1", 13764, 54}, -- (moc_ruins, 180, 15)
+			{ "moc_fild19", 13893, 50}, -- (moc_ruins, 71, 170)
+			{ "moc_pryd01", 13896, 99}, -- (moc_ruins, 195, 9)
+			{ "morocc", 13943, 43}, -- (moc_ruins, 27, 294)
+			{"", 0, 0}
+		},
+		{ 12049, -- (Jeweler#moc1 moc_ruins, 110, 105)
+			{ "job_thief1", 13764, 42}, -- (moc_ruins, 180, 15)
+			{ "moc_fild19", 13893, 88}, -- (moc_ruins, 71, 170)
+			{ "moc_pryd01", 13896, 65}, -- (moc_ruins, 195, 9)
+			{ "morocc", 13943, 63}, -- (moc_ruins, 27, 294)
+			{"", 0, 0}
+		},
+		{ 12050, -- (Jeweler#moc2 moc_ruins, 52, 85)
+			{ "job_thief1", 13764, 96}, -- (moc_ruins, 180, 15)
+			{ "moc_fild19", 13893, 66}, -- (moc_ruins, 71, 170)
+			{ "moc_pryd01", 13896, 76}, -- (moc_ruins, 195, 9)
+			{ "morocc", 13943, 104}, -- (moc_ruins, 27, 294)
+			{"", 0, 0}
+		},
+		{ 12051, -- (Chef Assistant#moc moc_ruins, 115, 123)
+			{ "job_thief1", 13764, 33}, -- (moc_ruins, 180, 15)
+			{ "moc_fild19", 13893, 105}, -- (moc_ruins, 71, 170)
+			{ "moc_pryd01", 13896, 61}, -- (moc_ruins, 195, 9)
+			{ "morocc", 13943, 81}, -- (moc_ruins, 27, 294)
+			{"", 0, 0}
+		},
+		{ 12052, -- (Bulletin Board#27 moc_ruins, 61, 164)
+			{ "job_thief1", 13764, 93}, -- (moc_ruins, 180, 15)
+			{ "moc_fild19", 13893, 145}, -- (moc_ruins, 71, 170)
+			{ "moc_pryd01", 13896, 3}, -- (moc_ruins, 195, 9)
+			{ "morocc", 13943, 127}, -- (moc_ruins, 27, 294)
+			{"", 0, 0}
+		},
+		{ 12053, -- (Healer#moc moc_ruins, 72, 164)
+			{ "job_thief1", 13764, 81}, -- (moc_ruins, 180, 15)
+			{ "moc_fild19", 13893, 145}, -- (moc_ruins, 71, 170)
+			{ "moc_pryd01", 13896, 12}, -- (moc_ruins, 195, 9)
+			{ "morocc", 13943, 137}, -- (moc_ruins, 27, 294)
+			{"", 0, 0}
+		},
+	},
+	"morocc", 5,
+	{
+		{ 12054, -- (Kafra Employee morocc, 156, 97)
+			{ "alberta", 13366, 51}, -- (morocc, 113, 60)
+			{ "izlude", 13744, 51}, -- (morocc, 136, 93)
+			{ "moc_castle", 13818, 95}, -- (morocc, 94, 183)
+			{ "moc_fild07", 13869, 197}, -- (morocc, 198, 21)
+			{ "moc_fild12", 13876, 77}, -- (morocc, 159, 381)
+			{ "moc_fild19", 13892, 142}, -- (morocc, 169, 107)
+			{ "moc_ruins", 13920, 236}, -- (morocc, 159, 39)
+			{ "morocc_in", 13955, 141}, -- (morocc, 108, 179)
+			{ "morocc_in", 13956, 103}, -- (morocc, 134, 77)
+			{ "morocc_in", 13957, 225}, -- (morocc, 136, 136)
+			{ "morocc_in", 13970, 205}, -- (morocc, 183, 65)
+			{ "morocc_in", 13973, 79}, -- (morocc, 44, 146)
+			{ "morocc_in", 13974, 58}, -- (morocc, 44, 178)
+			{ "morocc_in", 13981, 112}, -- (morocc, 68, 75)
+			{ "morocc_in", 13984, 52}, -- (morocc, 83, 90)
+			{ "prontera", 14145, 51}, -- (morocc, 146, 89)
+			{ "payon", 15343, 51}, -- (morocc, 181, 104)
+			{"", 0, 0}
+		},
+		{ 12055, -- (Kafra morocc, 160, 258)
+			{ "alberta", 13366, 212}, -- (morocc, 113, 60)
+			{ "izlude", 13744, 212}, -- (morocc, 136, 93)
+			{ "moc_castle", 13818, 73}, -- (morocc, 94, 183)
+			{ "moc_fild07", 13869, 36}, -- (morocc, 198, 21)
+			{ "moc_fild12", 13876, 238}, -- (morocc, 159, 381)
+			{ "moc_fild19", 13892, 143}, -- (morocc, 169, 107)
+			{ "moc_ruins", 13920, 130}, -- (morocc, 159, 39)
+			{ "morocc_in", 13955, 132}, -- (morocc, 108, 179)
+			{ "morocc_in", 13956, 236}, -- (morocc, 134, 77)
+			{ "morocc_in", 13957, 111}, -- (morocc, 136, 136)
+			{ "morocc_in", 13970, 105}, -- (morocc, 183, 65)
+			{ "morocc_in", 13973, 233}, -- (morocc, 44, 146)
+			{ "morocc_in", 13974, 213}, -- (morocc, 44, 178)
+			{ "morocc_in", 13981, 236}, -- (morocc, 68, 75)
+			{ "morocc_in", 13984, 206}, -- (morocc, 83, 90)
+			{ "prontera", 14145, 212}, -- (morocc, 146, 89)
+			{ "payon", 15343, 212}, -- (morocc, 181, 104)
+			{"", 0, 0}
+		},
+		{ 12056, -- (Guide#moc morocc, 153, 286)
+			{ "alberta", 13366, 240}, -- (morocc, 113, 60)
+			{ "izlude", 13744, 240}, -- (morocc, 136, 93)
+			{ "moc_castle", 13818, 101}, -- (morocc, 94, 183)
+			{ "moc_fild07", 13869, 8}, -- (morocc, 198, 21)
+			{ "moc_fild12", 13876, 10}, -- (morocc, 159, 381)
+			{ "moc_fild19", 13892, 135}, -- (morocc, 169, 107)
+			{ "moc_ruins", 13920, 123}, -- (morocc, 159, 39)
+			{ "morocc_in", 13955, 145}, -- (morocc, 108, 179)
+			{ "morocc_in", 13956, 249}, -- (morocc, 134, 77)
+			{ "morocc_in", 13957, 118}, -- (morocc, 136, 136)
+			{ "morocc_in", 13970, 101}, -- (morocc, 183, 65)
+			{ "morocc_in", 13973, 244}, -- (morocc, 44, 146)
+			{ "morocc_in", 13974, 226}, -- (morocc, 44, 178)
+			{ "morocc_in", 13981, 249}, -- (morocc, 68, 75)
+			{ "morocc_in", 13984, 234}, -- (morocc, 83, 90)
+			{ "prontera", 14145, 240}, -- (morocc, 146, 89)
+			{ "payon", 15343, 240}, -- (morocc, 181, 104)
+			{"", 0, 0}
+		},
+		{ 12057, -- (Guide#2moc morocc, 54, 97)
+			{ "alberta", 13366, 118}, -- (morocc, 113, 60)
+			{ "izlude", 13744, 118}, -- (morocc, 136, 93)
+			{ "moc_castle", 13818, 180}, -- (morocc, 94, 183)
+			{ "moc_fild07", 13869, 213}, -- (morocc, 198, 21)
+			{ "moc_fild12", 13876, 122}, -- (morocc, 159, 381)
+			{ "moc_fild19", 13892, 71}, -- (morocc, 169, 107)
+			{ "moc_ruins", 13920, 197}, -- (morocc, 159, 39)
+			{ "morocc_in", 13955, 242}, -- (morocc, 108, 179)
+			{ "morocc_in", 13956, 197}, -- (morocc, 134, 77)
+			{ "morocc_in", 13957, 52}, -- (morocc, 136, 136)
+			{ "morocc_in", 13970, 162}, -- (morocc, 183, 65)
+			{ "morocc_in", 13973, 45}, -- (morocc, 44, 146)
+			{ "morocc_in", 13974, 46}, -- (morocc, 44, 178)
+			{ "morocc_in", 13981, 48}, -- (morocc, 68, 75)
+			{ "morocc_in", 13984, 146}, -- (morocc, 83, 90)
+			{ "prontera", 14145, 118}, -- (morocc, 146, 89)
+			{ "payon", 15343, 118}, -- (morocc, 181, 104)
+			{"", 0, 0}
+		},
+		{ 12058, -- (Healer#mor morocc, 153, 97)
+			{ "alberta", 13366, 51}, -- (morocc, 113, 60)
+			{ "izlude", 13744, 51}, -- (morocc, 136, 93)
+			{ "moc_castle", 13818, 95}, -- (morocc, 94, 183)
+			{ "moc_fild07", 13869, 197}, -- (morocc, 198, 21)
+			{ "moc_fild12", 13876, 77}, -- (morocc, 159, 381)
+			{ "moc_fild19", 13892, 142}, -- (morocc, 169, 107)
+			{ "moc_ruins", 13920, 236}, -- (morocc, 159, 39)
+			{ "morocc_in", 13955, 142}, -- (morocc, 108, 179)
+			{ "morocc_in", 13956, 103}, -- (morocc, 134, 77)
+			{ "morocc_in", 13957, 226}, -- (morocc, 136, 136)
+			{ "morocc_in", 13970, 205}, -- (morocc, 183, 65)
+			{ "morocc_in", 13973, 78}, -- (morocc, 44, 146)
+			{ "morocc_in", 13974, 57}, -- (morocc, 44, 178)
+			{ "morocc_in", 13981, 111}, -- (morocc, 68, 75)
+			{ "morocc_in", 13984, 52}, -- (morocc, 83, 90)
+			{ "prontera", 14145, 51}, -- (morocc, 146, 89)
+			{ "payon", 15343, 51}, -- (morocc, 181, 104)
+			{"", 0, 0}
+		},
+	},
+	"new_1-1", 3,
+	{
+		{ 12059, -- (Shion#nv1 new_1-1, 53, 114)
+			{ "new_1-2", 13990, 91}, -- (new_1-1, 100, 6)
+			{"", 0, 0}
+		},
+		{ 12060, -- (Guarda#nv1 new_1-1, 144, 116)
+			{ "new_1-2", 13990, 4}, -- (new_1-1, 100, 6)
+			{"", 0, 0}
+		},
+		{ 12061, -- (Guarda#nv2 new_1-1, 144, 107)
+			{ "new_1-2", 13990, 5}, -- (new_1-1, 100, 6)
+			{"", 0, 0}
+		},
+	},
+	"new_1-2", 11,
+	{
+		{ 12062, -- (Recepcionista#nv1 new_1-2, 100, 29)
+			{ "new_1-1", 13989, 20}, -- (new_1-2, 148, 112)
+			{"", 0, 0}
+		},
+		{ 12063, -- (Instrutor de Interfaces#nv1 new_1-2, 99, 105)
+			{ "new_1-2", 13992, 24}, -- (new_1-2, 156, 171)
+			{ "new_1-2", 13994, 21}, -- (new_1-2, 46, 172)
+			{"", 0, 0}
+		},
+		{ 12064, -- (Instrutor de Habilidades#nv new_1-2, 83, 111)
+			{ "new_1-2", 13992, 40}, -- (new_1-2, 156, 171)
+			{ "new_1-2", 13994, 6}, -- (new_1-2, 46, 172)
+			{"", 0, 0}
+		},
+		{ 12065, -- (Instrutora de Itens#nv new_1-2, 115, 111)
+			{ "new_1-2", 13992, 8}, -- (new_1-2, 156, 171)
+			{ "new_1-2", 13994, 37}, -- (new_1-2, 46, 172)
+			{"", 0, 0}
+		},
+		{ 12066, -- (Funcionária Kafra#nv1 new_1-2, 118, 108)
+			{ "new_1-2", 13992, 5}, -- (new_1-2, 156, 171)
+			{ "new_1-2", 13994, 40}, -- (new_1-2, 46, 172)
+			{"", 0, 0}
+		},
+		{ 12067, -- (Instrutor#nv new_1-2, 161, 182)
+			{ "new_1-2", 13991, 14}, -- (new_1-2, 126, 106)
+			{"", 0, 0}
+		},
+		{ 12068, -- (Instrutor Somatologia new_1-2, 182, 182)
+			{ "new_1-2", 13991, 25}, -- (new_1-2, 126, 106)
+			{"", 0, 0}
+		},
+		{ 12069, -- (Noções de Habilidades  new_1-2, 184, 172)
+			{ "new_1-2", 13991, 29}, -- (new_1-2, 126, 106)
+			{"", 0, 0}
+		},
+		{ 12070, -- (Soldado Guia#nv1 new_1-2, 121, 101)
+			{ "new_1-2", 13992, 13}, -- (new_1-2, 156, 171)
+			{ "new_1-2", 13994, 44}, -- (new_1-2, 46, 172)
+			{"", 0, 0}
+		},
+		{ 12071, -- (Assistente#nv new_1-2, 17, 182)
+			{ "new_1-2", 13993, 33}, -- (new_1-2, 73, 106)
+			{"", 0, 0}
+		},
+		{ 12072, -- (Guarda da Entrada#nv new_1-2, 38, 182)
+			{ "new_1-2", 13993, 13}, -- (new_1-2, 73, 106)
+			{"", 0, 0}
+		},
+	},
+	"pay_arche", 3,
+	{
+		{ 12073, -- (Kafra Employee pay_arche, 55, 123)
+			{ "pay_dun00", 14101, 16}, -- (pay_arche, 21, 186)
+			{ "payon", 15346, 101}, -- (pay_arche, 228, 330)
+			{ "payon_in02", 15381, 126}, -- (pay_arche, 50, 4)
+			{ "payon_in02", 15384, 117}, -- (pay_arche, 64, 56)
+			{ "payon_in02", 15387, 30}, -- (pay_arche, 82, 45)
+			{"", 0, 0}
+		},
+		{ 12074, -- (Guide#2pay pay_arche, 85, 30)
+			{ "pay_dun00", 14101, 101}, -- (pay_arche, 21, 186)
+			{ "payon", 15346, 8}, -- (pay_arche, 228, 330)
+			{ "payon_in02", 15381, 140}, -- (pay_arche, 50, 4)
+			{ "payon_in02", 15384, 131}, -- (pay_arche, 64, 56)
+			{ "payon_in02", 15387, 123}, -- (pay_arche, 82, 45)
+			{"", 0, 0}
+		},
+		{ 12075, -- (Bulletin Board#08 pay_arche, 39, 134)
+			{ "pay_dun00", 14101, 3}, -- (pay_arche, 21, 186)
+			{ "payon", 15346, 112}, -- (pay_arche, 228, 330)
+			{ "payon_in02", 15381, 137}, -- (pay_arche, 50, 4)
+			{ "payon_in02", 15384, 128}, -- (pay_arche, 64, 56)
+			{ "payon_in02", 15387, 35}, -- (pay_arche, 82, 45)
+			{"", 0, 0}
+		},
+	},
+	"pay_dun03", 1,
+	{
+		{ 12076, -- (payd04r pay_dun03, 127, 62)
+			{ "pay_dun02", 14104, 214}, -- (pay_dun03, 137, 128)
+			{ "pay_dun04", 14107, 3}, -- (pay_dun03, 191, 41)
+			{ "pay_dun04", 14108, 3}, -- (pay_dun03, 202, 206)
+			{ "pay_dun04", 14109, 3}, -- (pay_dun03, 32, 204)
+			{ "pay_dun04", 14110, 3}, -- (pay_dun03, 40, 37)
+			{"", 0, 0}
+		},
+	},
+	"prontera", 14,
+	{
+		{ 12077, -- (Kafra Employee prontera, 151, 29)
+			{ "morocc", 13935, 52}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 71}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 51}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 195}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 205}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 5}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 190}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 189}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 159}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 235}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 235}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 106}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 204}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 99}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 89}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 121}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 159}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 159}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 173}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 69}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 16}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12078, -- (Kafra Employee prontera, 29, 207)
+			{ "morocc", 13935, 138}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 159}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 212}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 4}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 0}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 196}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 107}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 145}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 177}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 171}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 116}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 113}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 78}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 122}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 119}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 140}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 109}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 146}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 175}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 136}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 240}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12079, -- (Kafra Employee prontera, 282, 200)
+			{ "morocc", 13935, 180}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 166}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 118}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 0}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 3}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 195}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 146}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 108}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 102}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 116}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 162}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 212}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 175}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 219}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 209}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 250}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 146}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 107}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 78}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 249}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 75}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12080, -- (Kafra Employee prontera, 146, 89)
+			{ "morocc", 13935, 40}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 11}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 251}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 145}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 145}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 63}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 130}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 129}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 99}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 175}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 175}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 70}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 144}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 69}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 59}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 110}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 99}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 99}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 113}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 19}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 212}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12081, -- (Guide#prt prontera, 154, 187)
+			{ "morocc", 13935, 119}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 169}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 189}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 128}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 131}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 161}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 32}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 34}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 51}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 80}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 77}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 138}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 47}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 140}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 136}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 185}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 18}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 21}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 50}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 223}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 150}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12082, -- (East Gate-Guide prontera, 282, 208)
+			{ "morocc", 13935, 183}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 164}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 116}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 0}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 5}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 198}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 146}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 108}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 102}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 116}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 162}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 215}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 175}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 222}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 212}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 253}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 146}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 107}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 78}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 247}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 73}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12083, -- (West Gate-Guide prontera, 29, 200)
+			{ "morocc", 13935, 134}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 165}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 218}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 3}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 0}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 192}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 107}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 145}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 177}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 171}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 116}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 104}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 78}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 113}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 115}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 134}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 109}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 146}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 175}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 143}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 19}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12084, -- (South Gate-Guide prontera, 160, 29)
+			{ "morocc", 13935, 52}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 71}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 52}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 195}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 204}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 4}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 190}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 189}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 159}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 235}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 235}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 106}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 204}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 99}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 89}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 121}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 159}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 159}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 173}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 69}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 15}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12085, -- (North Gate-Guide prontera, 151, 330)
+			{ "morocc", 13935, 6}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 28}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 84}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 137}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 146}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 48}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 113}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 114}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 182}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 98}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 97}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 239}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 123}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 248}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 246}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 16}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 146}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 144}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 152}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 106}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 112}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12086, -- (Chef Assistant#prt prontera, 156, 212)
+			{ "morocc", 13935, 154}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 144}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 171}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 130}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 132}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 196}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 20}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 21}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 67}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 52}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 52}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 173}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 49}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 175}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 171}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 216}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 36}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 36}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 51}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 203}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 151}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12087, -- (Hypnotist#2 prontera, 146, 232)
+			{ "morocc", 13935, 164}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 124}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 151}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 123}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 139}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 206}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 13}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 28}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 75}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 49}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 41}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 175}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 41}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 180}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 182}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 209}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 46}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 44}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 58}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 183}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 158}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12088, -- (Kafra Employee prontera, 152, 326)
+			{ "morocc", 13935, 2}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 30}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 83}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 133}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 147}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 44}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 109}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 110}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 178}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 94}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 93}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 235}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 119}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 240}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 242}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 12}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 142}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 140}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 148}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 110}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 113}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12089, -- (Healer#prt prontera, 162, 193)
+			{ "morocc", 13935, 125}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 164}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 181}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 136}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 123}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 167}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 40}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 26}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 47}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 72}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 85}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 144}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 55}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 146}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 142}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 191}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 26}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 13}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 42}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 231}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 142}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+		{ 12090, -- (Cornfarmer prontera, 155, 180)
+			{ "morocc", 13935, 112}, -- (prontera, 156, 97)
+			{ "prt_castle", 14169, 176}, -- (prontera, 102, 16)
+			{ "prt_church", 14193, 188}, -- (prontera, 100, 56)
+			{ "prt_fild05", 14232, 129}, -- (prontera, 373, 205)
+			{ "prt_fild06", 14233, 130}, -- (prontera, 23, 193)
+			{ "prt_fild08", 14246, 154}, -- (prontera, 170, 378)
+			{ "prt_in", 14267, 39}, -- (prontera, 135, 71)
+			{ "prt_in", 14268, 38}, -- (prontera, 168, 124)
+			{ "prt_in", 14269, 53}, -- (prontera, 172, 33)
+			{ "prt_in", 14270, 84}, -- (prontera, 181, 55)
+			{ "prt_in", 14271, 84}, -- (prontera, 183, 97)
+			{ "prt_in", 14272, 131}, -- (prontera, 208, 179)
+			{ "prt_in", 14275, 52}, -- (prontera, 240, 141)
+			{ "prt_in", 14276, 133}, -- (prontera, 248, 173)
+			{ "prt_in", 14281, 129}, -- (prontera, 282, 179)
+			{ "prt_in", 14283, 178}, -- (prontera, 47, 29)
+			{ "prt_in", 14285, 19}, -- (prontera, 53, 105)
+			{ "prt_in", 14286, 20}, -- (prontera, 60, 77)
+			{ "prt_in", 14287, 49}, -- (prontera, 68, 130)
+			{ "prt_in", 14291, 224}, -- (prontera, 80, 113)
+			{ "prt_in", 14293, 149}, -- (prontera, 227, 15)
+			{"", 0, 0}
+		},
+	},
+	"prt_fild05", 2,
+	{
+		{ 12091, -- (Kafra Employee prt_fild05, 290, 224)
+			{ "mjolnir_09", 13803, 10}, -- (prt_fild05, 106, 28)
+			{ "mjolnir_09", 13806, 158}, -- (prt_fild05, 300, 28)
+			{ "prontera", 14156, 77}, -- (prt_fild05, 22, 203)
+			{ "prt_fild04", 14222, 22}, -- (prt_fild05, 378, 72)
+			{ "prt_fild04", 14223, 16}, -- (prt_fild05, 384, 155)
+			{ "prt_fild04", 14224, 26}, -- (prt_fild05, 384, 334)
+			{ "prt_fild07", 14236, 2}, -- (prt_fild05, 132, 381)
+			{ "prt_fild07", 14240, 208}, -- (prt_fild05, 248, 376)
+			{ "prt_sewb1", 14420, 16}, -- (prt_fild05, 135, 248)
+			{"", 0, 0}
+		},
+		{ 12092, -- (Bulletin Board#16 prt_fild05, 278, 220)
+			{ "mjolnir_09", 13803, 11}, -- (prt_fild05, 106, 28)
+			{ "mjolnir_09", 13806, 164}, -- (prt_fild05, 300, 28)
+			{ "prontera", 14156, 89}, -- (prt_fild05, 22, 203)
+			{ "prt_fild04", 14222, 17}, -- (prt_fild05, 378, 72)
+			{ "prt_fild04", 14223, 11}, -- (prt_fild05, 384, 155)
+			{ "prt_fild04", 14224, 26}, -- (prt_fild05, 384, 334)
+			{ "prt_fild07", 14236, 253}, -- (prt_fild05, 132, 381)
+			{ "prt_fild07", 14240, 204}, -- (prt_fild05, 248, 376)
+			{ "prt_sewb1", 14420, 12}, -- (prt_fild05, 135, 248)
+			{"", 0, 0}
+		},
+	},
+	"prt_fild07", 2,
+	{
+		{ 12093, -- (Jake#swordman2 prt_fild07, 376, 244)
+			{ "gef_fild02", 13521, 127}, -- (prt_fild07, 380, 156)
+			{ "gef_fild02", 13522, 102}, -- (prt_fild07, 380, 289)
+			{ "gef_fild02", 13523, 184}, -- (prt_fild07, 380, 68)
+			{ "prt_fild05", 14227, 170}, -- (prt_fild07, 134, 14)
+			{ "prt_fild05", 14230, 133}, -- (prt_fild07, 255, 14)
+			{ "prt_fild08", 14244, 99}, -- (prt_fild07, 16, 187)
+			{ "prt_fild08", 14245, 5}, -- (prt_fild07, 16, 239)
+			{ "prt_fild09", 14252, 2}, -- (prt_fild07, 224, 380)
+			{ "prt_fild09", 14256, 122}, -- (prt_fild07, 87, 380)
+			{"", 0, 0}
+		},
+		{ 12094, -- (Jake#swordman3 prt_fild07, 376, 220)
+			{"", 0, 0}
+		},
+	},
+	"prt_in", 1,
+	{
+		{ 12095, -- (Jovovich prt_in, 243, 168)
+			{ "prontera", 14162, 5}, -- (prt_in, 74, 90)
+			{ "prt_in", 14273, 16}, -- (prt_in, 217, 163)
+			{ "prt_in", 14280, 18}, -- (prt_in, 274, 163)
+			{"", 0, 0}
+		},
+	},
+	"prt_maze03", 4,
+	{
+		{ 12096, -- (#mazewarp5346 prt_maze03, 139, 45)
+			{ "prt_maze03", 14360, 26}, -- (prt_maze03, 102, 165)
+			{ "prt_maze03", 14362, 3}, -- (prt_maze03, 154, 181)
+			{"", 0, 0}
+		},
+		{ 12097, -- (#mazewarp5303 prt_maze03, 58, 194)
+			{ "prt_maze03", 14388, 3}, -- (prt_maze03, 125, 105)
+			{"", 0, 0}
+		},
+		{ 12098, -- (#mazewarp5339 prt_maze03, 74, 74)
+			{ "prt_maze03", 14374, 3}, -- (prt_maze03, 137, 125)
+			{ "prt_maze03", 14404, 30}, -- (prt_maze03, 16, 34)
+			{"", 0, 0}
+		},
+		{ 12099, -- (#mazewarp5358 prt_maze03, 154, 22)
+			{ "prt_maze03", 14390, 3}, -- (prt_maze03, 194, 94)
+			{"", 0, 0}
+		},
+	},
+	"xmas", 2,
+	{
+		{ 12102, -- (Bulletin Board#23 xmas, 147, 311)
+			{ "xmas_dun01", 14485, 4}, -- (xmas, 205, 13)
+			{ "xmas_fild01", 14488, 17}, -- (xmas, 69, 252)
+			{ "xmas_fild01", 14489, 17}, -- (xmas, 90, 252)
+			{ "xmas_in", 14491, 180}, -- (xmas, 46, 33)
+			{ "xmas_in", 14492, 180}, -- (xmas, 153, 32)
+			{ "xmas_in", 14493, 157}, -- (xmas, 38, 89)
+			{ "xmas_in", 14494, 58}, -- (xmas, 168, 160)
+			{ "xmas_in", 14495, 156}, -- (xmas, 163, 93)
+			{ "xmas_in", 14496, 181}, -- (xmas, 179, 109)
+			{ "xmas_in", 14497, 88}, -- (xmas, 94, 83)
+			{ "xmas_in", 14498, 88}, -- (xmas, 104, 83)
+			{ "xmas_in", 14499, 51}, -- (xmas, 94, 117)
+			{ "xmas_in", 14500, 51}, -- (xmas, 104, 117)
+			{ "xmas_in", 14501, 59}, -- (xmas, 30, 161)
+			{"", 0, 0}
+		},
+		{ 12103, -- (Healer#xmas xmas, 143, 136)
+			{ "xmas_dun01", 14485, 175}, -- (xmas, 205, 13)
+			{ "xmas_fild01", 14488, 101}, -- (xmas, 69, 252)
+			{ "xmas_fild01", 14489, 101}, -- (xmas, 90, 252)
+			{ "xmas_in", 14491, 20}, -- (xmas, 46, 33)
+			{ "xmas_in", 14492, 29}, -- (xmas, 153, 32)
+			{ "xmas_in", 14493, 23}, -- (xmas, 38, 89)
+			{ "xmas_in", 14494, 149}, -- (xmas, 168, 160)
+			{ "xmas_in", 14495, 29}, -- (xmas, 163, 93)
+			{ "xmas_in", 14496, 51}, -- (xmas, 179, 109)
+			{ "xmas_in", 14497, 101}, -- (xmas, 94, 83)
+			{ "xmas_in", 14498, 101}, -- (xmas, 104, 83)
+			{ "xmas_in", 14499, 136}, -- (xmas, 94, 117)
+			{ "xmas_in", 14500, 136}, -- (xmas, 104, 117)
+			{ "xmas_in", 14501, 150}, -- (xmas, 30, 161)
+			{"", 0, 0}
+		},
+	},
+	"cmd_fild07", 1,
+	{
+		{ 12104, -- (Kafra Employee cmd_fild07, 136, 134)
+			{ "morocc", 13939, 9}, -- (cmd_fild07, 156, 97)
+			{ "cmd_fild06", 14528, 29}, -- (cmd_fild07, 151, 27)
+			{ "cmd_fild09", 14544, 171}, -- (cmd_fild07, 12, 170)
+			{ "in_rogue", 14950, 78}, -- (cmd_fild07, 375, 46)
+			{ "in_rogue", 14953, 110}, -- (cmd_fild07, 247, 122)
+			{"", 0, 0}
+		},
+	},
+	"comodo", 5,
+	{
+		{ 12105, -- (Kafra Employee comodo, 195, 150)
+			{ "morocc", 13938, 15}, -- (comodo, 156, 97)
+			{ "beach_dun", 14502, 166}, -- (comodo, 276, 67)
+			{ "beach_dun2", 14503, 208}, -- (comodo, 154, 13)
+			{ "beach_dun3", 14505, 136}, -- (comodo, 17, 265)
+			{ "cmd_in01", 14548, 124}, -- (comodo, 90, 174)
+			{ "cmd_in01", 14549, 112}, -- (comodo, 123, 186)
+			{ "cmd_in01", 14550, 137}, -- (comodo, 109, 125)
+			{ "cmd_in01", 14551, 151}, -- (comodo, 183, 123)
+			{ "cmd_in01", 14552, 216}, -- (comodo, 120, 67)
+			{ "cmd_in01", 14553, 147}, -- (comodo, 183, 81)
+			{ "cmd_in01", 14554, 14}, -- (comodo, 17, 34)
+			{ "cmd_in02", 14555, 72}, -- (comodo, 139, 169)
+			{ "cmd_in02", 14558, 171}, -- (comodo, 69, 129)
+			{ "cmd_in02", 14559, 81}, -- (comodo, 178, 136)
+			{ "cmd_in02", 14560, 95}, -- (comodo, 216, 97)
+			{ "cmd_in02", 14561, 188}, -- (comodo, 139, 97)
+			{ "job_duncer", 14958, 10}, -- (comodo, 69, 43)
+			{"", 0, 0}
+		},
+		{ 12106, -- (Comodo Guide#cmd comodo, 322, 178)
+			{ "morocc", 13938, 113}, -- (comodo, 156, 97)
+			{ "beach_dun", 14502, 35}, -- (comodo, 276, 67)
+			{ "beach_dun2", 14503, 184}, -- (comodo, 154, 13)
+			{ "beach_dun3", 14505, 6}, -- (comodo, 17, 265)
+			{ "cmd_in01", 14548, 251}, -- (comodo, 90, 174)
+			{ "cmd_in01", 14549, 208}, -- (comodo, 123, 186)
+			{ "cmd_in01", 14550, 96}, -- (comodo, 109, 125)
+			{ "cmd_in01", 14551, 127}, -- (comodo, 183, 123)
+			{ "cmd_in01", 14552, 187}, -- (comodo, 120, 67)
+			{ "cmd_in01", 14553, 119}, -- (comodo, 183, 81)
+			{ "cmd_in01", 14554, 137}, -- (comodo, 17, 34)
+			{ "cmd_in02", 14555, 197}, -- (comodo, 139, 169)
+			{ "cmd_in02", 14558, 213}, -- (comodo, 69, 129)
+			{ "cmd_in02", 14559, 208}, -- (comodo, 178, 136)
+			{ "cmd_in02", 14560, 191}, -- (comodo, 216, 97)
+			{ "cmd_in02", 14561, 59}, -- (comodo, 139, 97)
+			{ "job_duncer", 14958, 137}, -- (comodo, 69, 43)
+			{"", 0, 0}
+		},
+		{ 12107, -- (Comodo Guide#2cmd comodo, 176, 350)
+			{ "morocc", 13938, 214}, -- (comodo, 156, 97)
+			{ "beach_dun", 14502, 176}, -- (comodo, 276, 67)
+			{ "beach_dun2", 14503, 3}, -- (comodo, 154, 13)
+			{ "beach_dun3", 14505, 214}, -- (comodo, 17, 265)
+			{ "cmd_in01", 14548, 239}, -- (comodo, 90, 174)
+			{ "cmd_in01", 14549, 61}, -- (comodo, 123, 186)
+			{ "cmd_in01", 14550, 115}, -- (comodo, 109, 125)
+			{ "cmd_in01", 14551, 56}, -- (comodo, 183, 123)
+			{ "cmd_in01", 14552, 42}, -- (comodo, 120, 67)
+			{ "cmd_in01", 14553, 92}, -- (comodo, 183, 81)
+			{ "cmd_in01", 14554, 211}, -- (comodo, 17, 34)
+			{ "cmd_in02", 14555, 174}, -- (comodo, 139, 169)
+			{ "cmd_in02", 14558, 100}, -- (comodo, 69, 129)
+			{ "cmd_in02", 14559, 249}, -- (comodo, 178, 136)
+			{ "cmd_in02", 14560, 46}, -- (comodo, 216, 97)
+			{ "cmd_in02", 14561, 41}, -- (comodo, 139, 97)
+			{ "job_duncer", 14958, 211}, -- (comodo, 69, 43)
+			{"", 0, 0}
+		},
+		{ 12108, -- (Guide#2cmd comodo, 37, 219)
+			{ "morocc", 13938, 179}, -- (comodo, 156, 97)
+			{ "beach_dun", 14502, 6}, -- (comodo, 276, 67)
+			{ "beach_dun2", 14503, 186}, -- (comodo, 154, 13)
+			{ "beach_dun3", 14505, 35}, -- (comodo, 17, 265)
+			{ "cmd_in01", 14548, 108}, -- (comodo, 90, 174)
+			{ "cmd_in01", 14549, 249}, -- (comodo, 123, 186)
+			{ "cmd_in01", 14550, 237}, -- (comodo, 109, 125)
+			{ "cmd_in01", 14551, 174}, -- (comodo, 183, 123)
+			{ "cmd_in01", 14552, 142}, -- (comodo, 120, 67)
+			{ "cmd_in01", 14553, 206}, -- (comodo, 183, 81)
+			{ "cmd_in01", 14554, 157}, -- (comodo, 17, 34)
+			{ "cmd_in02", 14555, 90}, -- (comodo, 139, 169)
+			{ "cmd_in02", 14558, 88}, -- (comodo, 69, 129)
+			{ "cmd_in02", 14559, 143}, -- (comodo, 178, 136)
+			{ "cmd_in02", 14560, 226}, -- (comodo, 216, 97)
+			{ "cmd_in02", 14561, 172}, -- (comodo, 139, 97)
+			{ "job_duncer", 14958, 155}, -- (comodo, 69, 43)
+			{"", 0, 0}
+		},
+		{ 12109, -- (Healer#com comodo, 184, 158)
+			{ "morocc", 13938, 26}, -- (comodo, 156, 97)
+			{ "beach_dun", 14502, 155}, -- (comodo, 276, 67)
+			{ "beach_dun2", 14503, 214}, -- (comodo, 154, 13)
+			{ "beach_dun3", 14505, 145}, -- (comodo, 17, 265)
+			{ "cmd_in01", 14548, 113}, -- (comodo, 90, 174)
+			{ "cmd_in01", 14549, 120}, -- (comodo, 123, 186)
+			{ "cmd_in01", 14550, 146}, -- (comodo, 109, 125)
+			{ "cmd_in01", 14551, 157}, -- (comodo, 183, 123)
+			{ "cmd_in01", 14552, 205}, -- (comodo, 120, 67)
+			{ "cmd_in01", 14553, 152}, -- (comodo, 183, 81)
+			{ "cmd_in01", 14554, 10}, -- (comodo, 17, 34)
+			{ "cmd_in02", 14555, 61}, -- (comodo, 139, 169)
+			{ "cmd_in02", 14558, 160}, -- (comodo, 69, 129)
+			{ "cmd_in02", 14559, 71}, -- (comodo, 178, 136)
+			{ "cmd_in02", 14560, 103}, -- (comodo, 216, 97)
+			{ "cmd_in02", 14561, 177}, -- (comodo, 139, 97)
+			{ "job_duncer", 14958, 2}, -- (comodo, 69, 43)
+			{"", 0, 0}
+		},
+	},
+	"aldeg_cas04", 1,
+	{
+		{ 12110, -- (aldeg-4-15_aldeg-4- aldeg_cas04, 132, 231)
+			{ "aldeg_cas04", 14645, 25}, -- (aldeg_cas04, 185, 87)
+			{ "aldeg_cas04", 14646, 25}, -- (aldeg_cas04, 171, 100)
+			{ "aldeg_cas04", 14652, 71}, -- (aldeg_cas04, 21, 123)
+			{ "aldeg_cas04", 14657, 3}, -- (aldeg_cas04, 17, 196)
+			{"", 0, 0}
+		},
+	},
+	"job_sword1", 11,
+	{
+		{ 12111, -- (Test Hall Staff#swd_8 job_sword1, 193, 207)
+			{ "job_sword1", 14781, 182}, -- (job_sword1, 223, 243)
+			{ "job_sword1", 14784, 182}, -- (job_sword1, 98, 27)
+			{ "job_sword1", 14785, 182}, -- (job_sword1, 161, 27)
+			{"", 0, 0}
+		},
+		{ 12112, -- (Test Hall Staff#swd_9 job_sword1, 193, 168)
+			{ "job_sword1", 14782, 182}, -- (job_sword1, 223, 205)
+			{ "job_sword1", 14786, 182}, -- (job_sword1, 239, 117)
+			{"", 0, 0}
+		},
+		{ 12113, -- (Test Hall Staff#swd_4 job_sword1, 7, 245)
+			{ "job_sword1", 14783, 3}, -- (job_sword1, 65, 117)
+			{"", 0, 0}
+		},
+		{ 12114, -- (Test Hall Staff#swd_5 job_sword1, 8, 207)
+			{ "job_sword1", 14781, 3}, -- (job_sword1, 223, 243)
+			{ "job_sword1", 14784, 3}, -- (job_sword1, 98, 27)
+			{ "job_sword1", 14785, 3}, -- (job_sword1, 161, 27)
+			{"", 0, 0}
+		},
+		{ 12115, -- (Test Hall Staff#swd_6 job_sword1, 8, 169)
+			{ "job_sword1", 14782, 3}, -- (job_sword1, 223, 205)
+			{ "job_sword1", 14786, 3}, -- (job_sword1, 239, 117)
+			{"", 0, 0}
+		},
+		{ 12116, -- (Test Hall Staff#swd_7 job_sword1, 192, 244)
+			{ "job_sword1", 14783, 182}, -- (job_sword1, 65, 117)
+			{"", 0, 0}
+		},
+		{ 12117, -- (Médico#swd_1 job_sword1, 230, 245)
+			{"", 0, 0}
+		},
+		{ 12118, -- (Equipe do Salão de Testes#swd_2 job_sword1, 230, 242)
+			{"", 0, 0}
+		},
+		{ 12119, -- (Médico#2swd_2 job_sword1, 230, 207)
+			{"", 0, 0}
+		},
+		{ 12120, -- (Equipe do Salão de Testes#2swd_3 job_sword1, 230, 204)
+			{"", 0, 0}
+		},
+		{ 12121, -- (Mae#swd_1_success job_sword1, 223, 167)
+			{"", 0, 0}
+		},
+	},
+	"alde_alche", 1,
+	{
+		{ 12122, -- (Material Seller#alche alde_alche, 38, 184)
+			{ "aldebaran", 13444, 18}, -- (alde_alche, 65, 53)
+			{ "aldebaran", 13445, 9}, -- (alde_alche, 53, 65)
+			{ "alde_alche", 14937, 10}, -- (alde_alche, 114, 183)
+			{ "alde_alche", 14939, 25}, -- (alde_alche, 88, 117)
+			{"", 0, 0}
+		},
+	},
+	"yuno", 7,
+	{
+		{ 12123, -- (Kafra Employee yuno, 152, 187)
+			{ "yuno_fild04", 15008, 170}, -- (yuno, 231, 288)
+			{ "yuno_in01", 15010, 49}, -- (yuno, 116, 40)
+			{ "yuno_in01", 15011, 101}, -- (yuno, 40, 176)
+			{ "yuno_in01", 15014, 101}, -- (yuno, 34, 100)
+			{ "yuno_in01", 15015, 48}, -- (yuno, 32, 36)
+			{ "yuno_in01", 15016, 112}, -- (yuno, 168, 104)
+			{ "yuno_in01", 15019, 93}, -- (yuno, 101, 85)
+			{ "yuno_in02", 15020, 165}, -- (yuno, 172, 61)
+			{ "yuno_in03", 15022, 7}, -- (yuno, 167, 19)
+			{ "yuno_in03", 15035, 217}, -- (yuno, 25, 11)
+			{ "yuno_in03", 15038, 35}, -- (yuno, 224, 19)
+			{ "yuno_in04", 15047, 57}, -- (yuno, 33, 130)
+			{ "yuno_in04", 15048, 14}, -- (yuno, 29, 58)
+			{ "yuno_in04", 15061, 103}, -- (yuno, 192, 28)
+			{ "que_god01", 15467, 66}, -- (yuno, 99, 81)
+			{ "yuno_pre", 15623, 130}, -- (yuno, 69, 10)
+			{ "y_airport", 15751, 103}, -- (yuno, 143, 16)
+			{ "kh_rossi", 15912, 118}, -- (yuno, 15, 92)
+			{ "sch_gld", 16228, 136}, -- (yuno, 354, 89)
+			{"", 0, 0}
+		},
+		{ 12124, -- (Kafra Employee yuno, 327, 108)
+			{ "yuno_fild04", 15008, 206}, -- (yuno, 231, 288)
+			{ "yuno_in01", 15010, 209}, -- (yuno, 116, 40)
+			{ "yuno_in01", 15011, 20}, -- (yuno, 40, 176)
+			{ "yuno_in01", 15014, 27}, -- (yuno, 34, 100)
+			{ "yuno_in01", 15015, 139}, -- (yuno, 32, 36)
+			{ "yuno_in01", 15016, 63}, -- (yuno, 168, 104)
+			{ "yuno_in01", 15019, 89}, -- (yuno, 101, 85)
+			{ "yuno_in02", 15020, 97}, -- (yuno, 172, 61)
+			{ "yuno_in03", 15022, 172}, -- (yuno, 167, 19)
+			{ "yuno_in03", 15035, 191}, -- (yuno, 25, 11)
+			{ "yuno_in03", 15038, 20}, -- (yuno, 224, 19)
+			{ "yuno_in04", 15047, 247}, -- (yuno, 33, 130)
+			{ "yuno_in04", 15048, 95}, -- (yuno, 29, 58)
+			{ "yuno_in04", 15061, 129}, -- (yuno, 192, 28)
+			{ "que_god01", 15467, 129}, -- (yuno, 99, 81)
+			{ "yuno_pre", 15623, 46}, -- (yuno, 69, 10)
+			{ "y_airport", 15751, 39}, -- (yuno, 143, 16)
+			{ "kh_rossi", 15912, 62}, -- (yuno, 15, 92)
+			{ "sch_gld", 16228, 57}, -- (yuno, 354, 89)
+			{"", 0, 0}
+		},
+		{ 12125, -- (Kafra Employee yuno, 277, 221)
+			{ "yuno_fild04", 15008, 75}, -- (yuno, 231, 288)
+			{ "yuno_in01", 15010, 53}, -- (yuno, 116, 40)
+			{ "yuno_in01", 15011, 145}, -- (yuno, 40, 176)
+			{ "yuno_in01", 15014, 68}, -- (yuno, 34, 100)
+			{ "yuno_in01", 15015, 8}, -- (yuno, 32, 36)
+			{ "yuno_in01", 15016, 188}, -- (yuno, 168, 104)
+			{ "yuno_in01", 15019, 214}, -- (yuno, 101, 85)
+			{ "yuno_in02", 15020, 230}, -- (yuno, 172, 61)
+			{ "yuno_in03", 15022, 67}, -- (yuno, 167, 19)
+			{ "yuno_in03", 15035, 69}, -- (yuno, 25, 11)
+			{ "yuno_in03", 15038, 161}, -- (yuno, 224, 19)
+			{ "yuno_in04", 15047, 24}, -- (yuno, 33, 130)
+			{ "yuno_in04", 15048, 65}, -- (yuno, 29, 58)
+			{ "yuno_in04", 15061, 254}, -- (yuno, 192, 28)
+			{ "que_god01", 15467, 254}, -- (yuno, 99, 81)
+			{ "yuno_pre", 15623, 179}, -- (yuno, 69, 10)
+			{ "y_airport", 15751, 66}, -- (yuno, 143, 16)
+			{ "kh_rossi", 15912, 187}, -- (yuno, 15, 92)
+			{ "sch_gld", 16228, 182}, -- (yuno, 354, 89)
+			{"", 0, 0}
+		},
+		{ 12126, -- (Festival Manager#gq_fes0 yuno, 1, 1)
+			{"", 0, 0}
+		},
+		{ 12127, -- (Rmimi Ravies#gq_fes01 yuno, 118, 192)
+			{ "yuno_fild04", 15008, 178}, -- (yuno, 231, 288)
+			{ "yuno_in01", 15010, 54}, -- (yuno, 116, 40)
+			{ "yuno_in01", 15011, 96}, -- (yuno, 40, 176)
+			{ "yuno_in01", 15014, 69}, -- (yuno, 34, 100)
+			{ "yuno_in01", 15015, 77}, -- (yuno, 32, 36)
+			{ "yuno_in01", 15016, 157}, -- (yuno, 168, 104)
+			{ "yuno_in01", 15019, 129}, -- (yuno, 101, 85)
+			{ "yuno_in02", 15020, 163}, -- (yuno, 172, 61)
+			{ "yuno_in03", 15022, 5}, -- (yuno, 167, 19)
+			{ "yuno_in03", 15035, 215}, -- (yuno, 25, 11)
+			{ "yuno_in03", 15038, 33}, -- (yuno, 224, 19)
+			{ "yuno_in04", 15047, 25}, -- (yuno, 33, 130)
+			{ "yuno_in04", 15048, 48}, -- (yuno, 29, 58)
+			{ "yuno_in04", 15061, 111}, -- (yuno, 192, 28)
+			{ "que_god01", 15467, 100}, -- (yuno, 99, 81)
+			{ "yuno_pre", 15623, 128}, -- (yuno, 69, 10)
+			{ "y_airport", 15751, 66}, -- (yuno, 143, 16)
+			{ "kh_rossi", 15912, 154}, -- (yuno, 15, 92)
+			{ "sch_gld", 16228, 105}, -- (yuno, 354, 89)
+			{"", 0, 0}
+		},
+		{ 12128, -- (Juno Guide#yuno yuno, 153, 47)
+			{ "yuno_fild04", 15008, 30}, -- (yuno, 231, 288)
+			{ "yuno_in01", 15010, 101}, -- (yuno, 116, 40)
+			{ "yuno_in01", 15011, 113}, -- (yuno, 40, 176)
+			{ "yuno_in01", 15014, 140}, -- (yuno, 34, 100)
+			{ "yuno_in01", 15015, 100}, -- (yuno, 32, 36)
+			{ "yuno_in01", 15016, 126}, -- (yuno, 168, 104)
+			{ "yuno_in01", 15019, 120}, -- (yuno, 101, 85)
+			{ "yuno_in02", 15020, 49}, -- (yuno, 172, 61)
+			{ "yuno_in03", 15022, 105}, -- (yuno, 167, 19)
+			{ "yuno_in03", 15035, 101}, -- (yuno, 25, 11)
+			{ "yuno_in03", 15038, 175}, -- (yuno, 224, 19)
+			{ "yuno_in04", 15047, 168}, -- (yuno, 33, 130)
+			{ "yuno_in04", 15048, 28}, -- (yuno, 29, 58)
+			{ "yuno_in04", 15061, 61}, -- (yuno, 192, 28)
+			{ "que_god01", 15467, 143}, -- (yuno, 99, 81)
+			{ "yuno_pre", 15623, 14}, -- (yuno, 69, 10)
+			{ "y_airport", 15751, 201}, -- (yuno, 143, 16)
+			{ "kh_rossi", 15912, 145}, -- (yuno, 15, 92)
+			{ "sch_gld", 16228, 148}, -- (yuno, 354, 89)
+			{"", 0, 0}
+		},
+		{ 12129, -- (Healer#yuno yuno, 164, 45)
+			{ "yuno_fild04", 15008, 28}, -- (yuno, 231, 288)
+			{ "yuno_in01", 15010, 103}, -- (yuno, 116, 40)
+			{ "yuno_in01", 15011, 130}, -- (yuno, 40, 176)
+			{ "yuno_in01", 15014, 133}, -- (yuno, 34, 100)
+			{ "yuno_in01", 15015, 102}, -- (yuno, 32, 36)
+			{ "yuno_in01", 15016, 113}, -- (yuno, 168, 104)
+			{ "yuno_in01", 15019, 126}, -- (yuno, 101, 85)
+			{ "yuno_in02", 15020, 51}, -- (yuno, 172, 61)
+			{ "yuno_in03", 15022, 90}, -- (yuno, 167, 19)
+			{ "yuno_in03", 15035, 103}, -- (yuno, 25, 11)
+			{ "yuno_in03", 15038, 177}, -- (yuno, 224, 19)
+			{ "yuno_in04", 15047, 152}, -- (yuno, 33, 130)
+			{ "yuno_in04", 15048, 13}, -- (yuno, 29, 58)
+			{ "yuno_in04", 15061, 63}, -- (yuno, 192, 28)
+			{ "que_god01", 15467, 153}, -- (yuno, 99, 81)
+			{ "yuno_pre", 15623, 16}, -- (yuno, 69, 10)
+			{ "y_airport", 15751, 182}, -- (yuno, 143, 16)
+			{ "kh_rossi", 15912, 128}, -- (yuno, 15, 92)
+			{ "sch_gld", 16228, 168}, -- (yuno, 354, 89)
+			{"", 0, 0}
+		},
+	},
+	"yuno_fild03", 1,
+	{
+		{ 12130, -- (Bulletin Board#24 yuno_fild03, 37, 143)
+			{ "mag_dun01", 14959, 4}, -- (yuno_fild03, 126, 66)
+			{ "yuno_fild02", 14993, 180}, -- (yuno_fild03, 18, 337)
+			{ "yuno_fild04", 15006, 90}, -- (yuno_fild03, 375, 84)
+			{ "yuno_fild04", 15007, 221}, -- (yuno_fild03, 375, 150)
+			{ "yuno_fild07", 15482, 215}, -- (yuno_fild03, 179, 354)
+			{ "yuno_fild06", 15784, 112}, -- (yuno_fild03, 217, 27)
+			{"", 0, 0}
+		},
+	},
+	"yuno_in05", 13,
+	{
+		{ 12131, -- (#yun65 yuno_in05, 181, 116)
+			{"", 0, 0}
+		},
+		{ 12132, -- (#yun66 yuno_in05, 165, 102)
+			{"", 0, 0}
+		},
+		{ 12133, -- (#yun67 yuno_in05, 181, 91)
+			{"", 0, 0}
+		},
+		{ 12134, -- (#yun68 yuno_in05, 148, 82)
+			{"", 0, 0}
+		},
+		{ 12135, -- (#yun69 yuno_in05, 125, 82)
+			{"", 0, 0}
+		},
+		{ 12136, -- (#yun70 yuno_in05, 136, 71)
+			{"", 0, 0}
+		},
+		{ 12137, -- (#yun71 yuno_in05, 16, 188)
+			{"", 0, 0}
+		},
+		{ 12138, -- (#yun72 yuno_in05, 176, 9)
+			{"", 0, 0}
+		},
+		{ 12139, -- (#yun73 yuno_in05, 176, 52)
+			{"", 0, 0}
+		},
+		{ 12140, -- (#yun74 yuno_in05, 40, 178)
+			{"", 0, 0}
+		},
+		{ 12141, -- (#yun75 yuno_in05, 47, 186)
+			{"", 0, 0}
+		},
+		{ 12142, -- (#yun63 yuno_in05, 153, 141)
+			{ "yuno_in02", 15021, 156}, -- (yuno_in05, 82, 14)
+			{"", 0, 0}
+		},
+		{ 12143, -- (#yun64 yuno_in05, 196, 102)
+			{"", 0, 0}
+		},
+	},
+	"amatsu", 4,
+	{
+		{ 12144, -- (Kafra Employee amatsu, 102, 149)
+			{ "ama_fild01", 15069, 202}, -- (amatsu, 75, 30)
+			{ "ama_in01", 15072, 82}, -- (amatsu, 31, 176)
+			{ "ama_in01", 15073, 143}, -- (amatsu, 76, 178)
+			{ "ama_in01", 15074, 71}, -- (amatsu, 34, 96)
+			{ "ama_in01", 15075, 74}, -- (amatsu, 88, 94)
+			{ "ama_in01", 15076, 34}, -- (amatsu, 33, 24)
+			{ "ama_in01", 15077, 33}, -- (amatsu, 86, 23)
+			{ "ama_in01", 15078, 112}, -- (amatsu, 157, 25)
+			{ "ama_in02", 15083, 208}, -- (amatsu, 226, 45)
+			{ "que_ng", 15980, 45}, -- (amatsu, 20, 138)
+			{"", 0, 0}
+		},
+		{ 12145, -- (Amatsu Guide#ama amatsu, 207, 89)
+			{ "ama_fild01", 15069, 212}, -- (amatsu, 75, 30)
+			{ "ama_in01", 15072, 51}, -- (amatsu, 31, 176)
+			{ "ama_in01", 15073, 83}, -- (amatsu, 76, 178)
+			{ "ama_in01", 15074, 96}, -- (amatsu, 34, 96)
+			{ "ama_in01", 15075, 175}, -- (amatsu, 88, 94)
+			{ "ama_in01", 15076, 110}, -- (amatsu, 33, 24)
+			{ "ama_in01", 15077, 99}, -- (amatsu, 86, 23)
+			{ "ama_in01", 15078, 27}, -- (amatsu, 157, 25)
+			{ "ama_in02", 15083, 38}, -- (amatsu, 226, 45)
+			{ "que_ng", 15980, 62}, -- (amatsu, 20, 138)
+			{"", 0, 0}
+		},
+		{ 12146, -- (Guide Man#2ama amatsu, 251, 283)
+			{ "ama_fild01", 15069, 7}, -- (amatsu, 75, 30)
+			{ "ama_in01", 15072, 146}, -- (amatsu, 31, 176)
+			{ "ama_in01", 15073, 123}, -- (amatsu, 76, 178)
+			{ "ama_in01", 15074, 145}, -- (amatsu, 34, 96)
+			{ "ama_in01", 15075, 9}, -- (amatsu, 88, 94)
+			{ "ama_in01", 15076, 217}, -- (amatsu, 33, 24)
+			{ "ama_in01", 15077, 202}, -- (amatsu, 86, 23)
+			{ "ama_in01", 15078, 168}, -- (amatsu, 157, 25)
+			{ "ama_in02", 15083, 194}, -- (amatsu, 226, 45)
+			{ "que_ng", 15980, 167}, -- (amatsu, 20, 138)
+			{"", 0, 0}
+		},
+		{ 12147, -- (Healer#ama amatsu, 200, 79)
+			{ "ama_fild01", 15069, 222}, -- (amatsu, 75, 30)
+			{ "ama_in01", 15072, 59}, -- (amatsu, 31, 176)
+			{ "ama_in01", 15073, 93}, -- (amatsu, 76, 178)
+			{ "ama_in01", 15074, 100}, -- (amatsu, 34, 96)
+			{ "ama_in01", 15075, 178}, -- (amatsu, 88, 94)
+			{ "ama_in01", 15076, 103}, -- (amatsu, 33, 24)
+			{ "ama_in01", 15077, 92}, -- (amatsu, 86, 23)
+			{ "ama_in01", 15078, 37}, -- (amatsu, 157, 25)
+			{ "ama_in02", 15083, 48}, -- (amatsu, 226, 45)
+			{ "que_ng", 15980, 66}, -- (amatsu, 20, 138)
+			{"", 0, 0}
+		},
+	},
+	"gonryun", 3,
+	{
+		{ 12148, -- (Kafra Employee gonryun, 159, 122)
+			{ "gon_dun01", 15102, 76}, -- (gonryun, 153, 45)
+			{ "gon_fild01", 15127, 111}, -- (gonryun, 192, 265)
+			{ "gon_in", 15128, 62}, -- (gonryun, 109, 98)
+			{ "gon_in", 15129, 37}, -- (gonryun, 95, 26)
+			{ "gon_in", 15130, 66}, -- (gonryun, 72, 67)
+			{ "gon_in", 15131, 53}, -- (gonryun, 149, 24)
+			{ "gon_in", 15136, 47}, -- (gonryun, 47, 24)
+			{"", 0, 0}
+		},
+		{ 12149, -- (Kunlun Guide#gon gonryun, 163, 60)
+			{ "gon_dun01", 15102, 138}, -- (gonryun, 153, 45)
+			{ "gon_fild01", 15127, 49}, -- (gonryun, 192, 265)
+			{ "gon_in", 15128, 106}, -- (gonryun, 109, 98)
+			{ "gon_in", 15129, 44}, -- (gonryun, 95, 26)
+			{ "gon_in", 15130, 135}, -- (gonryun, 72, 67)
+			{ "gon_in", 15131, 61}, -- (gonryun, 149, 24)
+			{ "gon_in", 15136, 87}, -- (gonryun, 47, 24)
+			{"", 0, 0}
+		},
+		{ 12150, -- (Healer#gon gonryun, 156, 122)
+			{ "gon_dun01", 15102, 76}, -- (gonryun, 153, 45)
+			{ "gon_fild01", 15127, 111}, -- (gonryun, 192, 265)
+			{ "gon_in", 15128, 65}, -- (gonryun, 109, 98)
+			{ "gon_in", 15129, 40}, -- (gonryun, 95, 26)
+			{ "gon_in", 15130, 66}, -- (gonryun, 72, 67)
+			{ "gon_in", 15131, 56}, -- (gonryun, 149, 24)
+			{ "gon_in", 15136, 47}, -- (gonryun, 47, 24)
+			{"", 0, 0}
+		},
+	},
+	"umbala", 4,
+	{
+		{ 12152, -- (um_shaman1-1 umbala, 220, 189)
+			{ "um_dun01", 15154, 129}, -- (umbala, 42, 27)
+			{ "um_fild04", 15182, 175}, -- (umbala, 215, 339)
+			{ "um_in", 15183, 7}, -- (umbala, 38, 110)
+			{ "um_in", 15184, 140}, -- (umbala, 99, 111)
+			{ "um_in", 15185, 130}, -- (umbala, 155, 111)
+			{ "um_in", 15186, 189}, -- (umbala, 141, 39)
+			{ "um_in", 15187, 158}, -- (umbala, 166, 69)
+			{ "um_in", 15188, 149}, -- (umbala, 99, 63)
+			{ "um_in", 15189, 3}, -- (umbala, 29, 71)
+			{"", 0, 0}
+		},
+		{ 12153, -- (Adventurer#um umbala, 128, 94)
+			{ "um_dun01", 15154, 10}, -- (umbala, 42, 27)
+			{ "um_fild04", 15182, 12}, -- (umbala, 215, 339)
+			{ "um_in", 15183, 205}, -- (umbala, 38, 110)
+			{ "um_in", 15184, 63}, -- (umbala, 99, 111)
+			{ "um_in", 15185, 90}, -- (umbala, 155, 111)
+			{ "um_in", 15186, 130}, -- (umbala, 141, 39)
+			{ "um_in", 15187, 152}, -- (umbala, 166, 69)
+			{ "um_in", 15188, 89}, -- (umbala, 99, 63)
+			{ "um_in", 15189, 179}, -- (umbala, 29, 71)
+			{"", 0, 0}
+		},
+		{ 12154, -- (Kafra Employee umbala, 87, 160)
+			{ "um_dun01", 15154, 200}, -- (umbala, 42, 27)
+			{ "um_fild04", 15182, 111}, -- (umbala, 215, 339)
+			{ "um_in", 15183, 99}, -- (umbala, 38, 110)
+			{ "um_in", 15184, 50}, -- (umbala, 99, 111)
+			{ "um_in", 15185, 43}, -- (umbala, 155, 111)
+			{ "um_in", 15186, 31}, -- (umbala, 141, 39)
+			{ "um_in", 15187, 53}, -- (umbala, 166, 69)
+			{ "um_in", 15188, 50}, -- (umbala, 99, 63)
+			{ "um_in", 15189, 169}, -- (umbala, 29, 71)
+			{"", 0, 0}
+		},
+		{ 12155, -- (Healer#umb umbala, 105, 148)
+			{ "um_dun01", 15154, 210}, -- (umbala, 42, 27)
+			{ "um_fild04", 15182, 114}, -- (umbala, 215, 339)
+			{ "um_in", 15183, 117}, -- (umbala, 38, 110)
+			{ "um_in", 15184, 41}, -- (umbala, 99, 111)
+			{ "um_in", 15185, 34}, -- (umbala, 155, 111)
+			{ "um_in", 15186, 35}, -- (umbala, 141, 39)
+			{ "um_in", 15187, 57}, -- (umbala, 166, 69)
+			{ "um_in", 15188, 41}, -- (umbala, 99, 63)
+			{ "um_in", 15189, 160}, -- (umbala, 29, 71)
+			{"", 0, 0}
+		},
+	},
+	"niflheim", 3,
+	{
+		{ 12156, -- (Kafra Employee niflheim, 202, 180)
+			{ "nif_fild02", 15202, 182}, -- (niflheim, 379, 235)
+			{ "nif_in", 15203, 17}, -- (niflheim, 11, 88)
+			{ "nif_in", 15204, 25}, -- (niflheim, 134, 12)
+			{ "nif_in", 15205, 61}, -- (niflheim, 78, 74)
+			{ "nif_in", 15206, 27}, -- (niflheim, 23, 12)
+			{ "nif_in", 15209, 254}, -- (niflheim, 18, 154)
+			{ "nif_in", 15214, 35}, -- (niflheim, 154, 78)
+			{ "que_sign01", 15597, 78}, -- (niflheim, 45, 15)
+			{ "que_sign02", 15598, 172}, -- (niflheim, 22, 313)
+			{"", 0, 0}
+		},
+		{ 12157, -- (Roaming Man#nif niflheim, 107, 156)
+			{ "nif_fild02", 15202, 87}, -- (niflheim, 379, 235)
+			{ "nif_in", 15203, 111}, -- (niflheim, 11, 88)
+			{ "nif_in", 15204, 118}, -- (niflheim, 134, 12)
+			{ "nif_in", 15205, 119}, -- (niflheim, 78, 74)
+			{ "nif_in", 15206, 89}, -- (niflheim, 23, 12)
+			{ "nif_in", 15209, 63}, -- (niflheim, 18, 154)
+			{ "nif_in", 15214, 62}, -- (niflheim, 154, 78)
+			{ "que_sign01", 15597, 116}, -- (niflheim, 45, 15)
+			{ "que_sign02", 15598, 77}, -- (niflheim, 22, 313)
+			{"", 0, 0}
+		},
+		{ 12158, -- (Healer#nif niflheim, 212, 182)
+			{ "nif_fild02", 15202, 193}, -- (niflheim, 379, 235)
+			{ "nif_in", 15203, 13}, -- (niflheim, 11, 88)
+			{ "nif_in", 15204, 15}, -- (niflheim, 134, 12)
+			{ "nif_in", 15205, 59}, -- (niflheim, 78, 74)
+			{ "nif_in", 15206, 29}, -- (niflheim, 23, 12)
+			{ "nif_in", 15209, 252}, -- (niflheim, 18, 154)
+			{ "nif_in", 15214, 46}, -- (niflheim, 154, 78)
+			{ "que_sign01", 15597, 82}, -- (niflheim, 45, 15)
+			{ "que_sign02", 15598, 183}, -- (niflheim, 22, 313)
+			{"", 0, 0}
+		},
+	},
+	"louyang", 5,
+	{
+		{ 12159, -- (Kafra Employee louyang, 210, 104)
+			{ "lou_in01", 15221, 148}, -- (louyang, 101, 119)
+			{ "lou_in01", 15224, 199}, -- (louyang, 28, 19)
+			{ "lou_in02", 15226, 121}, -- (louyang, 58, 170)
+			{ "lou_in02", 15231, 95}, -- (louyang, 126, 165)
+			{ "lou_in02", 15232, 76}, -- (louyang, 249, 173)
+			{ "lou_in02", 15233, 50}, -- (louyang, 242, 59)
+			{ "lou_in02", 15234, 120}, -- (louyang, 189, 74)
+			{ "lou_in02", 15237, 93}, -- (louyang, 72, 28)
+			{ "lou_in02", 15238, 136}, -- (louyang, 121, 28)
+			{ "lou_dun01", 15242, 70}, -- (louyang, 221, 195)
+			{ "lou_fild01", 15244, 82}, -- (louyang, 233, 356)
+			{"", 0, 0}
+		},
+		{ 12160, -- (Soldier#BA louyang, 213, 213)
+			{ "lou_in01", 15221, 39}, -- (louyang, 101, 119)
+			{ "lou_in01", 15224, 90}, -- (louyang, 28, 19)
+			{ "lou_in02", 15226, 108}, -- (louyang, 58, 170)
+			{ "lou_in02", 15231, 97}, -- (louyang, 126, 165)
+			{ "lou_in02", 15232, 114}, -- (louyang, 249, 173)
+			{ "lou_in02", 15233, 120}, -- (louyang, 242, 59)
+			{ "lou_in02", 15234, 221}, -- (louyang, 189, 74)
+			{ "lou_in02", 15237, 200}, -- (louyang, 72, 28)
+			{ "lou_in02", 15238, 159}, -- (louyang, 121, 28)
+			{ "lou_dun01", 15242, 179}, -- (louyang, 221, 195)
+			{ "lou_fild01", 15244, 191}, -- (louyang, 233, 356)
+			{"", 0, 0}
+		},
+		{ 12161, -- (Soldier#BB louyang, 160, 175)
+			{ "lou_in01", 15221, 121}, -- (louyang, 101, 119)
+			{ "lou_in01", 15224, 172}, -- (louyang, 28, 19)
+			{ "lou_in02", 15226, 137}, -- (louyang, 58, 170)
+			{ "lou_in02", 15231, 15}, -- (louyang, 126, 165)
+			{ "lou_in02", 15232, 76}, -- (louyang, 249, 173)
+			{ "lou_in02", 15233, 140}, -- (louyang, 242, 59)
+			{ "lou_in02", 15234, 203}, -- (louyang, 189, 74)
+			{ "lou_in02", 15237, 162}, -- (louyang, 72, 28)
+			{ "lou_in02", 15238, 188}, -- (louyang, 121, 28)
+			{ "lou_dun01", 15242, 141}, -- (louyang, 221, 195)
+			{ "lou_fild01", 15244, 169}, -- (louyang, 233, 356)
+			{"", 0, 0}
+		},
+		{ 12162, -- (Representative#lou louyang, 224, 104)
+			{ "lou_in01", 15221, 148}, -- (louyang, 101, 119)
+			{ "lou_in01", 15224, 199}, -- (louyang, 28, 19)
+			{ "lou_in02", 15226, 84}, -- (louyang, 58, 170)
+			{ "lou_in02", 15231, 118}, -- (louyang, 126, 165)
+			{ "lou_in02", 15232, 88}, -- (louyang, 249, 173)
+			{ "lou_in02", 15233, 37}, -- (louyang, 242, 59)
+			{ "lou_in02", 15234, 112}, -- (louyang, 189, 74)
+			{ "lou_in02", 15237, 98}, -- (louyang, 72, 28)
+			{ "lou_in02", 15238, 123}, -- (louyang, 121, 28)
+			{ "lou_dun01", 15242, 77}, -- (louyang, 221, 195)
+			{ "lou_fild01", 15244, 82}, -- (louyang, 233, 356)
+			{"", 0, 0}
+		},
+		{ 12163, -- (Healer#lou louyang, 226, 103)
+			{ "lou_in01", 15221, 149}, -- (louyang, 101, 119)
+			{ "lou_in01", 15224, 200}, -- (louyang, 28, 19)
+			{ "lou_in02", 15226, 83}, -- (louyang, 58, 170)
+			{ "lou_in02", 15231, 119}, -- (louyang, 126, 165)
+			{ "lou_in02", 15232, 90}, -- (louyang, 249, 173)
+			{ "lou_in02", 15233, 36}, -- (louyang, 242, 59)
+			{ "lou_in02", 15234, 111}, -- (louyang, 189, 74)
+			{ "lou_in02", 15237, 100}, -- (louyang, 72, 28)
+			{ "lou_in02", 15238, 122}, -- (louyang, 121, 28)
+			{ "lou_dun01", 15242, 79}, -- (louyang, 221, 195)
+			{ "lou_fild01", 15244, 81}, -- (louyang, 233, 356)
+			{"", 0, 0}
+		},
+	},
+	"jawaii", 1,
+	{
+		{ 12164, -- (Healer#jaw jawaii, 250, 139)
+			{ "jawaii_in", 15325, 141}, -- (jawaii, 90, 78)
+			{ "jawaii_in", 15326, 118}, -- (jawaii, 113, 61)
+			{ "jawaii_in", 15327, 145}, -- (jawaii, 133, 107)
+			{ "jawaii_in", 15328, 147}, -- (jawaii, 88, 117)
+			{"", 0, 0}
+		},
+	},
+	"jawaii_in", 1,
+	{
+		{ 12165, -- (jawaiiwarp006 jawaii_in, 27, 91)
+			{ "jawaii", 15324, 3}, -- (jawaii_in, 192, 215)
+			{"", 0, 0}
+		},
+	},
+	"payon", 5,
+	{
+		{ 12166, -- (Kafra Employee payon, 175, 226)
+			{ "morocc", 13936, 168}, -- (payon, 156, 97)
+			{ "pay_arche", 14095, 116}, -- (payon, 81, 18)
+			{ "pay_fild01", 14111, 204}, -- (payon, 333, 360)
+			{ "pay_fild08", 14136, 201}, -- (payon, 17, 75)
+			{ "pay_gld", 14787, 204}, -- (payon, 374, 149)
+			{ "payon_in01", 15360, 128}, -- (payon, 172, 11)
+			{ "payon_in01", 15367, 141}, -- (payon, 17, 51)
+			{ "payon_in01", 15372, 78}, -- (payon, 23, 129)
+			{ "payon_in01", 15373, 98}, -- (payon, 13, 139)
+			{ "payon_in01", 15374, 106}, -- (payon, 56, 50)
+			{ "payon_in01", 15375, 83}, -- (payon, 42, 11)
+			{ "payon_in01", 15376, 153}, -- (payon, 86, 9)
+			{ "payon_in03", 15388, 22}, -- (payon, 98, 114)
+			{ "payon_in03", 15395, 11}, -- (payon, 146, 39)
+			{ "payon_in03", 15402, 44}, -- (payon, 85, 19)
+			{ "payon_in03", 15409, 158}, -- (payon, 165, 140)
+			{ "payon_in03", 15412, 152}, -- (payon, 19, 60)
+			{"", 0, 0}
+		},
+		{ 12167, -- (Kafra Employee payon, 181, 104)
+			{ "morocc", 13936, 46}, -- (payon, 156, 97)
+			{ "pay_arche", 14095, 226}, -- (payon, 81, 18)
+			{ "pay_fild01", 14111, 92}, -- (payon, 333, 360)
+			{ "pay_fild08", 14136, 85}, -- (payon, 17, 75)
+			{ "pay_gld", 14787, 171}, -- (payon, 374, 149)
+			{ "payon_in01", 15360, 41}, -- (payon, 172, 11)
+			{ "payon_in01", 15367, 38}, -- (payon, 17, 51)
+			{ "payon_in01", 15372, 64}, -- (payon, 23, 129)
+			{ "payon_in01", 15373, 88}, -- (payon, 13, 139)
+			{ "payon_in01", 15374, 30}, -- (payon, 56, 50)
+			{ "payon_in01", 15375, 193}, -- (payon, 42, 11)
+			{ "payon_in01", 15376, 92}, -- (payon, 86, 9)
+			{ "payon_in03", 15388, 141}, -- (payon, 98, 114)
+			{ "payon_in03", 15395, 129}, -- (payon, 146, 39)
+			{ "payon_in03", 15402, 107}, -- (payon, 85, 19)
+			{ "payon_in03", 15409, 225}, -- (payon, 165, 140)
+			{ "payon_in03", 15412, 219}, -- (payon, 19, 60)
+			{"", 0, 0}
+		},
+		{ 12168, -- (Guide#pay payon, 162, 67)
+			{ "morocc", 13936, 9}, -- (payon, 156, 97)
+			{ "pay_arche", 14095, 6}, -- (payon, 81, 18)
+			{ "pay_fild01", 14111, 54}, -- (payon, 333, 360)
+			{ "pay_fild08", 14136, 104}, -- (payon, 17, 75)
+			{ "pay_gld", 14787, 179}, -- (payon, 374, 149)
+			{ "payon_in01", 15360, 61}, -- (payon, 172, 11)
+			{ "payon_in01", 15367, 26}, -- (payon, 17, 51)
+			{ "payon_in01", 15372, 102}, -- (payon, 23, 129)
+			{ "payon_in01", 15373, 126}, -- (payon, 13, 139)
+			{ "payon_in01", 15374, 58}, -- (payon, 56, 50)
+			{ "payon_in01", 15375, 229}, -- (payon, 42, 11)
+			{ "payon_in01", 15376, 128}, -- (payon, 86, 9)
+			{ "payon_in03", 15388, 179}, -- (payon, 98, 114)
+			{ "payon_in03", 15395, 167}, -- (payon, 146, 39)
+			{ "payon_in03", 15402, 145}, -- (payon, 85, 19)
+			{ "payon_in03", 15409, 7}, -- (payon, 165, 140)
+			{ "payon_in03", 15412, 1}, -- (payon, 19, 60)
+			{"", 0, 0}
+		},
+		{ 12169, -- (Chef Assistant#pay payon, 206, 119)
+			{ "morocc", 13936, 61}, -- (payon, 156, 97)
+			{ "pay_arche", 14095, 209}, -- (payon, 81, 18)
+			{ "pay_fild01", 14111, 107}, -- (payon, 333, 360)
+			{ "pay_fild08", 14136, 84}, -- (payon, 17, 75)
+			{ "pay_gld", 14787, 196}, -- (payon, 374, 149)
+			{ "payon_in01", 15360, 13}, -- (payon, 172, 11)
+			{ "payon_in01", 15367, 63}, -- (payon, 17, 51)
+			{ "payon_in01", 15372, 68}, -- (payon, 23, 129)
+			{ "payon_in01", 15373, 91}, -- (payon, 13, 139)
+			{ "payon_in01", 15374, 55}, -- (payon, 56, 50)
+			{ "payon_in01", 15375, 176}, -- (payon, 42, 11)
+			{ "payon_in01", 15376, 75}, -- (payon, 86, 9)
+			{ "payon_in03", 15388, 144}, -- (payon, 98, 114)
+			{ "payon_in03", 15395, 124}, -- (payon, 146, 39)
+			{ "payon_in03", 15402, 110}, -- (payon, 85, 19)
+			{ "payon_in03", 15409, 220}, -- (payon, 165, 140)
+			{ "payon_in03", 15412, 222}, -- (payon, 19, 60)
+			{"", 0, 0}
+		},
+		{ 12170, -- (Healer#pay payon, 179, 106)
+			{ "morocc", 13936, 48}, -- (payon, 156, 97)
+			{ "pay_arche", 14095, 220}, -- (payon, 81, 18)
+			{ "pay_fild01", 14111, 94}, -- (payon, 333, 360)
+			{ "pay_fild08", 14136, 87}, -- (payon, 17, 75)
+			{ "pay_gld", 14787, 169}, -- (payon, 374, 149)
+			{ "payon_in01", 15360, 42}, -- (payon, 172, 11)
+			{ "payon_in01", 15367, 36}, -- (payon, 17, 51)
+			{ "payon_in01", 15372, 62}, -- (payon, 23, 129)
+			{ "payon_in01", 15373, 86}, -- (payon, 13, 139)
+			{ "payon_in01", 15374, 28}, -- (payon, 56, 50)
+			{ "payon_in01", 15375, 187}, -- (payon, 42, 11)
+			{ "payon_in01", 15376, 90}, -- (payon, 86, 9)
+			{ "payon_in03", 15388, 139}, -- (payon, 98, 114)
+			{ "payon_in03", 15395, 127}, -- (payon, 146, 39)
+			{ "payon_in03", 15402, 105}, -- (payon, 85, 19)
+			{ "payon_in03", 15409, 223}, -- (payon, 165, 140)
+			{ "payon_in03", 15412, 217}, -- (payon, 19, 60)
+			{"", 0, 0}
+		},
+	},
+	"payon_in02", 2,
+	{
+		{ 12171, -- (Mestre Da Guilda#archer payon_in02, 64, 71)
+			{ "pay_arche", 14099, 16}, -- (payon_in02, 145, 165)
+			{ "payon_in02", 15379, 10}, -- (payon_in02, 10, 25)
+			{ "payon_in02", 15380, 10}, -- (payon_in02, 35, 67)
+			{"", 0, 0}
+		},
+		{ 12172, -- (Instrutor#archer payon_in02, 22, 31)
+			{ "payon_in02", 15386, 12}, -- (payon_in02, 75, 67)
+			{"", 0, 0}
+		},
+	},
+	"ayothaya", 3,
+	{
+		{ 12173, -- (Kafra Employee ayothaya, 212, 169)
+			{ "ayo_in01", 15440, 108}, -- (ayothaya, 46, 183)
+			{ "ayo_in01", 15441, 120}, -- (ayothaya, 23, 176)
+			{ "ayo_in01", 15443, 110}, -- (ayothaya, 73, 174)
+			{ "ayo_in01", 15444, 99}, -- (ayothaya, 98, 175)
+			{ "ayo_in01", 15445, 121}, -- (ayothaya, 85, 149)
+			{ "ayo_in01", 15446, 115}, -- (ayothaya, 137, 195)
+			{ "ayo_in01", 15447, 10}, -- (ayothaya, 31, 111)
+			{ "ayo_in01", 15448, 19}, -- (ayothaya, 50, 94)
+			{ "ayo_in01", 15449, 38}, -- (ayothaya, 31, 78)
+			{ "ayo_in01", 15450, 31}, -- (ayothaya, 10, 94)
+			{ "ayo_in01", 15459, 129}, -- (ayothaya, 177, 129)
+			{ "ayo_in01", 15460, 190}, -- (ayothaya, 194, 183)
+			{ "ayo_in02", 15461, 111}, -- (ayothaya, 100, 148)
+			{ "ayo_fild01", 15462, 61}, -- (ayothaya, 32, 240)
+			{"", 0, 0}
+		},
+		{ 12174, -- (Noi#ayo ayothaya, 203, 169)
+			{ "ayo_in01", 15440, 99}, -- (ayothaya, 46, 183)
+			{ "ayo_in01", 15441, 111}, -- (ayothaya, 23, 176)
+			{ "ayo_in01", 15443, 101}, -- (ayothaya, 73, 174)
+			{ "ayo_in01", 15444, 102}, -- (ayothaya, 98, 175)
+			{ "ayo_in01", 15445, 124}, -- (ayothaya, 85, 149)
+			{ "ayo_in01", 15446, 122}, -- (ayothaya, 137, 195)
+			{ "ayo_in01", 15447, 5}, -- (ayothaya, 31, 111)
+			{ "ayo_in01", 15448, 26}, -- (ayothaya, 50, 94)
+			{ "ayo_in01", 15449, 42}, -- (ayothaya, 31, 78)
+			{ "ayo_in01", 15450, 22}, -- (ayothaya, 10, 94)
+			{ "ayo_in01", 15459, 120}, -- (ayothaya, 177, 129)
+			{ "ayo_in01", 15460, 181}, -- (ayothaya, 194, 183)
+			{ "ayo_in02", 15461, 111}, -- (ayothaya, 100, 148)
+			{ "ayo_fild01", 15462, 70}, -- (ayothaya, 32, 240)
+			{"", 0, 0}
+		},
+		{ 12175, -- (Healer#ayo ayothaya, 207, 169)
+			{ "ayo_in01", 15440, 103}, -- (ayothaya, 46, 183)
+			{ "ayo_in01", 15441, 115}, -- (ayothaya, 23, 176)
+			{ "ayo_in01", 15443, 105}, -- (ayothaya, 73, 174)
+			{ "ayo_in01", 15444, 102}, -- (ayothaya, 98, 175)
+			{ "ayo_in01", 15445, 124}, -- (ayothaya, 85, 149)
+			{ "ayo_in01", 15446, 118}, -- (ayothaya, 137, 195)
+			{ "ayo_in01", 15447, 5}, -- (ayothaya, 31, 111)
+			{ "ayo_in01", 15448, 22}, -- (ayothaya, 50, 94)
+			{ "ayo_in01", 15449, 41}, -- (ayothaya, 31, 78)
+			{ "ayo_in01", 15450, 26}, -- (ayothaya, 10, 94)
+			{ "ayo_in01", 15459, 124}, -- (ayothaya, 177, 129)
+			{ "ayo_in01", 15460, 185}, -- (ayothaya, 194, 183)
+			{ "ayo_in02", 15461, 116}, -- (ayothaya, 100, 148)
+			{ "ayo_fild01", 15462, 66}, -- (ayothaya, 32, 240)
+			{"", 0, 0}
+		},
+	},
+	"einbech", 4,
+	{
+		{ 12176, -- (Kafra Employee#ein3 einbech, 181, 132)
+			{ "ein_dun01", 15540, 129}, -- (einbech, 22, 11)
+			{ "ein_fild09", 15560, 177}, -- (einbech, 71, 352)
+			{ "ein_in01", 15563, 4}, -- (einbech, 190, 38)
+			{ "ein_in01", 15564, 23}, -- (einbech, 187, 99)
+			{ "ein_in01", 15565, 40}, -- (einbech, 205, 83)
+			{ "ein_in01", 15566, 36}, -- (einbech, 288, 89)
+			{ "ein_in01", 15567, 43}, -- (einbech, 265, 104)
+			{ "ein_in01", 15568, 79}, -- (einbech, 144, 153)
+			{"", 0, 0}
+		},
+		{ 12177, -- (Guide#4ein einbech, 67, 37)
+			{ "ein_dun01", 15540, 212}, -- (einbech, 22, 11)
+			{ "ein_fild09", 15560, 5}, -- (einbech, 71, 352)
+			{ "ein_in01", 15563, 169}, -- (einbech, 190, 38)
+			{ "ein_in01", 15564, 194}, -- (einbech, 187, 99)
+			{ "ein_in01", 15565, 205}, -- (einbech, 205, 83)
+			{ "ein_in01", 15566, 157}, -- (einbech, 288, 89)
+			{ "ein_in01", 15567, 131}, -- (einbech, 265, 104)
+			{ "ein_in01", 15568, 244}, -- (einbech, 144, 153)
+			{"", 0, 0}
+		},
+		{ 12178, -- (Guide#5ein einbech, 48, 214)
+			{ "ein_dun01", 15540, 114}, -- (einbech, 22, 11)
+			{ "ein_fild09", 15560, 230}, -- (einbech, 71, 352)
+			{ "ein_in01", 15563, 144}, -- (einbech, 190, 38)
+			{ "ein_in01", 15564, 171}, -- (einbech, 187, 99)
+			{ "ein_in01", 15565, 181}, -- (einbech, 205, 83)
+			{ "ein_in01", 15566, 163}, -- (einbech, 288, 89)
+			{ "ein_in01", 15567, 151}, -- (einbech, 265, 104)
+			{ "ein_in01", 15568, 220}, -- (einbech, 144, 153)
+			{"", 0, 0}
+		},
+		{ 12179, -- (Healer#einbe einbech, 57, 36)
+			{ "ein_dun01", 15540, 214}, -- (einbech, 22, 11)
+			{ "ein_fild09", 15560, 5}, -- (einbech, 71, 352)
+			{ "ein_in01", 15563, 171}, -- (einbech, 190, 38)
+			{ "ein_in01", 15564, 196}, -- (einbech, 187, 99)
+			{ "ein_in01", 15565, 207}, -- (einbech, 205, 83)
+			{ "ein_in01", 15566, 159}, -- (einbech, 288, 89)
+			{ "ein_in01", 15567, 133}, -- (einbech, 265, 104)
+			{ "ein_in01", 15568, 246}, -- (einbech, 144, 153)
+			{"", 0, 0}
+		},
+	},
+	"einbroch", 6,
+	{
+		{ 12180, -- (Kafra Employee#ein2 einbroch, 242, 205)
+			{ "airport", 15513, 216}, -- (einbroch, 143, 14)
+			{ "einbroch", 15525, 55}, -- (einbroch, 233, 312)
+			{ "einbroch", 15527, 55}, -- (einbroch, 269, 312)
+			{ "ein_fild08", 15555, 208}, -- (einbroch, 164, 380)
+			{ "ein_in01", 15569, 216}, -- (einbroch, 13, 213)
+			{ "ein_in01", 15570, 164}, -- (einbroch, 81, 198)
+			{ "ein_in01", 15571, 26}, -- (einbroch, 108, 13)
+			{ "ein_in01", 15572, 12}, -- (einbroch, 195, 224)
+			{ "ein_in01", 15585, 46}, -- (einbroch, 103, 95)
+			{ "ein_in01", 15588, 48}, -- (einbroch, 121, 77)
+			{ "ein_in01", 15589, 147}, -- (einbroch, 11, 147)
+			{ "ein_in01", 15590, 62}, -- (einbroch, 286, 25)
+			{ "ein_in01", 15591, 95}, -- (einbroch, 14, 14)
+			{ "ein_fild04", 15603, 174}, -- (einbroch, 184, 26)
+			{ "que_ng", 15975, 179}, -- (einbroch, 130, 166)
+			{"", 0, 0}
+		},
+		{ 12181, -- (Kafra Employee#ein1 einbroch, 59, 203)
+			{ "airport", 15513, 5}, -- (einbroch, 143, 14)
+			{ "einbroch", 15525, 171}, -- (einbroch, 233, 312)
+			{ "einbroch", 15527, 207}, -- (einbroch, 269, 312)
+			{ "ein_fild08", 15555, 231}, -- (einbroch, 164, 380)
+			{ "ein_in01", 15569, 180}, -- (einbroch, 13, 213)
+			{ "ein_in01", 15570, 240}, -- (einbroch, 81, 198)
+			{ "ein_in01", 15571, 229}, -- (einbroch, 108, 13)
+			{ "ein_in01", 15572, 227}, -- (einbroch, 195, 224)
+			{ "ein_in01", 15585, 2}, -- (einbroch, 103, 95)
+			{ "ein_in01", 15588, 4}, -- (einbroch, 121, 77)
+			{ "ein_in01", 15589, 87}, -- (einbroch, 11, 147)
+			{ "ein_in01", 15590, 225}, -- (einbroch, 286, 25)
+			{ "ein_in01", 15591, 238}, -- (einbroch, 14, 14)
+			{ "ein_fild04", 15603, 188}, -- (einbroch, 184, 26)
+			{ "que_ng", 15975, 73}, -- (einbroch, 130, 166)
+			{"", 0, 0}
+		},
+		{ 12182, -- (Guide#ein einbroch, 72, 202)
+			{ "airport", 15513, 8}, -- (einbroch, 143, 14)
+			{ "einbroch", 15525, 158}, -- (einbroch, 233, 312)
+			{ "einbroch", 15527, 194}, -- (einbroch, 269, 312)
+			{ "ein_fild08", 15555, 222}, -- (einbroch, 164, 380)
+			{ "ein_in01", 15569, 171}, -- (einbroch, 13, 213)
+			{ "ein_in01", 15570, 231}, -- (einbroch, 81, 198)
+			{ "ein_in01", 15571, 216}, -- (einbroch, 108, 13)
+			{ "ein_in01", 15572, 214}, -- (einbroch, 195, 224)
+			{ "ein_in01", 15585, 245}, -- (einbroch, 103, 95)
+			{ "ein_in01", 15588, 247}, -- (einbroch, 121, 77)
+			{ "ein_in01", 15589, 74}, -- (einbroch, 11, 147)
+			{ "ein_in01", 15590, 224}, -- (einbroch, 286, 25)
+			{ "ein_in01", 15591, 229}, -- (einbroch, 14, 14)
+			{ "ein_fild04", 15603, 175}, -- (einbroch, 184, 26)
+			{ "que_ng", 15975, 60}, -- (einbroch, 130, 166)
+			{"", 0, 0}
+		},
+		{ 12183, -- (Guide#2ein einbroch, 155, 43)
+			{ "airport", 15513, 218}, -- (einbroch, 143, 14)
+			{ "einbroch", 15525, 243}, -- (einbroch, 233, 312)
+			{ "einbroch", 15527, 243}, -- (einbroch, 269, 312)
+			{ "ein_fild08", 15555, 15}, -- (einbroch, 164, 380)
+			{ "ein_in01", 15569, 36}, -- (einbroch, 13, 213)
+			{ "ein_in01", 15570, 31}, -- (einbroch, 81, 198)
+			{ "ein_in01", 15571, 194}, -- (einbroch, 108, 13)
+			{ "ein_in01", 15572, 182}, -- (einbroch, 195, 224)
+			{ "ein_in01", 15585, 221}, -- (einbroch, 103, 95)
+			{ "ein_in01", 15588, 236}, -- (einbroch, 121, 77)
+			{ "ein_in01", 15589, 192}, -- (einbroch, 11, 147)
+			{ "ein_in01", 15590, 137}, -- (einbroch, 286, 25)
+			{ "ein_in01", 15591, 119}, -- (einbroch, 14, 14)
+			{ "ein_fild04", 15603, 50}, -- (einbroch, 184, 26)
+			{ "que_ng", 15975, 160}, -- (einbroch, 130, 166)
+			{"", 0, 0}
+		},
+		{ 12184, -- (Guide#3ein einbroch, 162, 317)
+			{ "airport", 15513, 173}, -- (einbroch, 143, 14)
+			{ "einbroch", 15525, 114}, -- (einbroch, 233, 312)
+			{ "einbroch", 15527, 150}, -- (einbroch, 269, 312)
+			{ "ein_fild08", 15555, 55}, -- (einbroch, 164, 380)
+			{ "ein_in01", 15569, 4}, -- (einbroch, 13, 213)
+			{ "ein_in01", 15570, 64}, -- (einbroch, 81, 198)
+			{ "ein_in01", 15571, 172}, -- (einbroch, 108, 13)
+			{ "ein_in01", 15572, 170}, -- (einbroch, 195, 224)
+			{ "ein_in01", 15585, 210}, -- (einbroch, 103, 95)
+			{ "ein_in01", 15588, 203}, -- (einbroch, 121, 77)
+			{ "ein_in01", 15589, 104}, -- (einbroch, 11, 147)
+			{ "ein_in01", 15590, 90}, -- (einbroch, 286, 25)
+			{ "ein_in01", 15591, 3}, -- (einbroch, 14, 14)
+			{ "ein_fild04", 15603, 10}, -- (einbroch, 184, 26)
+			{ "que_ng", 15975, 136}, -- (einbroch, 130, 166)
+			{"", 0, 0}
+		},
+		{ 12185, -- (Healer#einbr einbroch, 57, 202)
+			{ "airport", 15513, 7}, -- (einbroch, 143, 14)
+			{ "einbroch", 15525, 173}, -- (einbroch, 233, 312)
+			{ "einbroch", 15527, 209}, -- (einbroch, 269, 312)
+			{ "ein_fild08", 15555, 230}, -- (einbroch, 164, 380)
+			{ "ein_in01", 15569, 179}, -- (einbroch, 13, 213)
+			{ "ein_in01", 15570, 239}, -- (einbroch, 81, 198)
+			{ "ein_in01", 15571, 231}, -- (einbroch, 108, 13)
+			{ "ein_in01", 15572, 229}, -- (einbroch, 195, 224)
+			{ "ein_in01", 15585, 4}, -- (einbroch, 103, 95)
+			{ "ein_in01", 15588, 6}, -- (einbroch, 121, 77)
+			{ "ein_in01", 15589, 89}, -- (einbroch, 11, 147)
+			{ "ein_in01", 15590, 224}, -- (einbroch, 286, 25)
+			{ "ein_in01", 15591, 237}, -- (einbroch, 14, 14)
+			{ "ein_fild04", 15603, 190}, -- (einbroch, 184, 26)
+			{ "que_ng", 15975, 75}, -- (einbroch, 130, 166)
+			{"", 0, 0}
+		},
+	},
+	"lighthalzen", 7,
+	{
+		{ 12186, -- (Kafra Employee lighthalzen, 164, 100)
+			{ "lhz_fild01", 15624, 224}, -- (lighthalzen, 210, 18)
+			{ "lhz_in01", 15648, 147}, -- (lighthalzen, 111, 121)
+			{ "lhz_in01", 15649, 147}, -- (lighthalzen, 116, 121)
+			{ "lhz_in02", 15668, 157}, -- (lighthalzen, 44, 28)
+			{ "lhz_in02", 15669, 175}, -- (lighthalzen, 129, 199)
+			{ "lhz_in02", 15670, 120}, -- (lighthalzen, 27, 265)
+			{ "lhz_in02", 15675, 68}, -- (lighthalzen, 108, 26)
+			{ "lhz_in02", 15676, 65}, -- (lighthalzen, 288, 30)
+			{ "lhz_in02", 15677, 55}, -- (lighthalzen, 282, 79)
+			{ "lhz_in02", 15680, 29}, -- (lighthalzen, 232, 261)
+			{ "lhz_in02", 15693, 60}, -- (lighthalzen, 21, 191)
+			{ "lhz_in03", 15710, 109}, -- (lighthalzen, 50, 31)
+			{ "lhz_in03", 15713, 214}, -- (lighthalzen, 93, 21)
+			{ "lhz_airport", 15756, 101}, -- (lighthalzen, 143, 13)
+			{ "kh_mansion", 15910, 101}, -- (lighthalzen, 88, 50)
+			{"", 0, 0}
+		},
+		{ 12187, -- (Kafra Employee lighthalzen, 191, 320)
+			{ "lhz_fild01", 15624, 30}, -- (lighthalzen, 210, 18)
+			{ "lhz_in01", 15648, 73}, -- (lighthalzen, 111, 121)
+			{ "lhz_in01", 15649, 73}, -- (lighthalzen, 116, 121)
+			{ "lhz_in02", 15668, 63}, -- (lighthalzen, 44, 28)
+			{ "lhz_in02", 15669, 45}, -- (lighthalzen, 129, 199)
+			{ "lhz_in02", 15670, 123}, -- (lighthalzen, 27, 265)
+			{ "lhz_in02", 15675, 17}, -- (lighthalzen, 108, 26)
+			{ "lhz_in02", 15676, 29}, -- (lighthalzen, 288, 30)
+			{ "lhz_in02", 15677, 19}, -- (lighthalzen, 282, 79)
+			{ "lhz_in02", 15680, 209}, -- (lighthalzen, 232, 261)
+			{ "lhz_in02", 15693, 160}, -- (lighthalzen, 21, 191)
+			{ "lhz_in03", 15710, 61}, -- (lighthalzen, 50, 31)
+			{ "lhz_in03", 15713, 56}, -- (lighthalzen, 93, 21)
+			{ "lhz_airport", 15756, 1}, -- (lighthalzen, 143, 13)
+			{ "kh_mansion", 15910, 133}, -- (lighthalzen, 88, 50)
+			{"", 0, 0}
+		},
+		{ 12188, -- (Guide#lhz lighthalzen, 207, 310)
+			{ "lhz_fild01", 15624, 14}, -- (lighthalzen, 210, 18)
+			{ "lhz_in01", 15648, 63}, -- (lighthalzen, 111, 121)
+			{ "lhz_in01", 15649, 63}, -- (lighthalzen, 116, 121)
+			{ "lhz_in02", 15668, 53}, -- (lighthalzen, 44, 28)
+			{ "lhz_in02", 15669, 35}, -- (lighthalzen, 129, 199)
+			{ "lhz_in02", 15670, 113}, -- (lighthalzen, 27, 265)
+			{ "lhz_in02", 15675, 7}, -- (lighthalzen, 108, 26)
+			{ "lhz_in02", 15676, 19}, -- (lighthalzen, 288, 30)
+			{ "lhz_in02", 15677, 9}, -- (lighthalzen, 282, 79)
+			{ "lhz_in02", 15680, 199}, -- (lighthalzen, 232, 261)
+			{ "lhz_in02", 15693, 150}, -- (lighthalzen, 21, 191)
+			{ "lhz_in03", 15710, 51}, -- (lighthalzen, 50, 31)
+			{ "lhz_in03", 15713, 40}, -- (lighthalzen, 93, 21)
+			{ "lhz_airport", 15756, 247}, -- (lighthalzen, 143, 13)
+			{ "kh_mansion", 15910, 123}, -- (lighthalzen, 88, 50)
+			{"", 0, 0}
+		},
+		{ 12189, -- (Guide#2lhz lighthalzen, 220, 311)
+			{ "lhz_fild01", 15624, 14}, -- (lighthalzen, 210, 18)
+			{ "lhz_in01", 15648, 64}, -- (lighthalzen, 111, 121)
+			{ "lhz_in01", 15649, 64}, -- (lighthalzen, 116, 121)
+			{ "lhz_in02", 15668, 54}, -- (lighthalzen, 44, 28)
+			{ "lhz_in02", 15669, 36}, -- (lighthalzen, 129, 199)
+			{ "lhz_in02", 15670, 114}, -- (lighthalzen, 27, 265)
+			{ "lhz_in02", 15675, 8}, -- (lighthalzen, 108, 26)
+			{ "lhz_in02", 15676, 20}, -- (lighthalzen, 288, 30)
+			{ "lhz_in02", 15677, 10}, -- (lighthalzen, 282, 79)
+			{ "lhz_in02", 15680, 200}, -- (lighthalzen, 232, 261)
+			{ "lhz_in02", 15693, 151}, -- (lighthalzen, 21, 191)
+			{ "lhz_in03", 15710, 52}, -- (lighthalzen, 50, 31)
+			{ "lhz_in03", 15713, 40}, -- (lighthalzen, 93, 21)
+			{ "lhz_airport", 15756, 248}, -- (lighthalzen, 143, 13)
+			{ "kh_mansion", 15910, 124}, -- (lighthalzen, 88, 50)
+			{"", 0, 0}
+		},
+		{ 12190, -- (Guide#3lhz lighthalzen, 154, 100)
+			{ "lhz_fild01", 15624, 235}, -- (lighthalzen, 210, 18)
+			{ "lhz_in01", 15648, 146}, -- (lighthalzen, 111, 121)
+			{ "lhz_in01", 15649, 146}, -- (lighthalzen, 116, 121)
+			{ "lhz_in02", 15668, 166}, -- (lighthalzen, 44, 28)
+			{ "lhz_in02", 15669, 186}, -- (lighthalzen, 129, 199)
+			{ "lhz_in02", 15670, 133}, -- (lighthalzen, 27, 265)
+			{ "lhz_in02", 15675, 58}, -- (lighthalzen, 108, 26)
+			{ "lhz_in02", 15676, 71}, -- (lighthalzen, 288, 30)
+			{ "lhz_in02", 15677, 61}, -- (lighthalzen, 282, 79)
+			{ "lhz_in02", 15680, 29}, -- (lighthalzen, 232, 261)
+			{ "lhz_in02", 15693, 70}, -- (lighthalzen, 21, 191)
+			{ "lhz_in03", 15710, 99}, -- (lighthalzen, 50, 31)
+			{ "lhz_in03", 15713, 225}, -- (lighthalzen, 93, 21)
+			{ "lhz_airport", 15756, 111}, -- (lighthalzen, 143, 13)
+			{ "kh_mansion", 15910, 105}, -- (lighthalzen, 88, 50)
+			{"", 0, 0}
+		},
+		{ 12191, -- (Guide#4lhz lighthalzen, 307, 224)
+			{ "lhz_in03", 15702, 74}, -- (lighthalzen, 237, 100)
+			{ "lhz_in03", 15705, 40}, -- (lighthalzen, 10, 216)
+			{ "lhz_in03", 15706, 37}, -- (lighthalzen, 188, 11)
+			{ "lhz_in03", 15709, 32}, -- (lighthalzen, 180, 90)
+			{ "lhz_cube", 15726, 78}, -- (lighthalzen, 231, 12)
+			{ "lhz_cube", 15727, 78}, -- (lighthalzen, 177, 96)
+			{"", 0, 0}
+		},
+		{ 12192, -- (Healer#lhz lighthalzen, 152, 100)
+			{ "lhz_fild01", 15624, 233}, -- (lighthalzen, 210, 18)
+			{ "lhz_in01", 15648, 144}, -- (lighthalzen, 111, 121)
+			{ "lhz_in01", 15649, 144}, -- (lighthalzen, 116, 121)
+			{ "lhz_in02", 15668, 164}, -- (lighthalzen, 44, 28)
+			{ "lhz_in02", 15669, 184}, -- (lighthalzen, 129, 199)
+			{ "lhz_in02", 15670, 131}, -- (lighthalzen, 27, 265)
+			{ "lhz_in02", 15675, 56}, -- (lighthalzen, 108, 26)
+			{ "lhz_in02", 15676, 73}, -- (lighthalzen, 288, 30)
+			{ "lhz_in02", 15677, 63}, -- (lighthalzen, 282, 79)
+			{ "lhz_in02", 15680, 29}, -- (lighthalzen, 232, 261)
+			{ "lhz_in02", 15693, 68}, -- (lighthalzen, 21, 191)
+			{ "lhz_in03", 15710, 98}, -- (lighthalzen, 50, 31)
+			{ "lhz_in03", 15713, 223}, -- (lighthalzen, 93, 21)
+			{ "lhz_airport", 15756, 113}, -- (lighthalzen, 143, 13)
+			{ "kh_mansion", 15910, 105}, -- (lighthalzen, 88, 50)
+			{"", 0, 0}
+		},
+	},
+	"lhz_in02", 3,
+	{
+		{ 12193, -- (Kafra Employee lhz_in02, 237, 284)
+			{ "lighthalzen", 15635, 26}, -- (lhz_in02, 159, 133)
+			{ "lhz_in02", 15682, 45}, -- (lhz_in02, 236, 219)
+			{ "lhz_in02", 15684, 13}, -- (lhz_in02, 261, 278)
+			{"", 0, 0}
+		},
+		{ 12194, -- (Hair Dresser#li lhz_in02, 100, 143)
+			{ "lhz_in02", 15698, 12}, -- (lhz_in02, 49, 154)
+			{ "lhz_in02", 15700, 6}, -- (lhz_in02, 94, 212)
+			{"", 0, 0}
+		},
+		{ 12195, -- (Jeweler#lhz lhz_in02, 105, 21)
+			{ "lighthalzen", 15632, 5}, -- (lhz_in02, 93, 110)
+			{"", 0, 0}
+		},
+	},
+	"lhz_dun02", 1,
+	{
+		{ 12196, -- (lhz_dun5-1 lhz_dun02, 149, 149)
+			{ "lhz_dun01", 15717, 166}, -- (lhz_dun02, 281, 150)
+			{ "lhz_dun01", 15718, 213}, -- (lhz_dun02, 149, 9)
+			{ "lhz_dun01", 15719, 207}, -- (lhz_dun02, 18, 145)
+			{ "lhz_dun03", 15724, 7}, -- (lhz_dun02, 139, 137)
+			{ "lhz_cube", 15725, 49}, -- (lhz_dun02, 231, 96)
+			{"", 0, 0}
+		},
+	},
+	"lhz_cube", 23,
+	{
+		{ 12197, -- (cubew01-4 lhz_cube, 66, 82)
+			{"", 0, 0}
+		},
+		{ 12198, -- (cubew04-3 lhz_cube, 59, 18)
+			{ "lhz_cube", 15736, 7}, -- (lhz_cube, 3, 74)
+			{ "lhz_cube", 15739, 7}, -- (lhz_cube, 10, 200)
+			{"", 0, 0}
+		},
+		{ 12199, -- (cubew01-1 lhz_cube, 74, 74)
+			{"", 0, 0}
+		},
+		{ 12200, -- (cubew02-2 lhz_cube, 66, 129)
+			{"", 0, 0}
+		},
+		{ 12201, -- (cubew02-3 lhz_cube, 59, 136)
+			{"", 0, 0}
+		},
+		{ 12202, -- (cubew05-3 lhz_cube, 3, 18)
+			{ "lhz_cube", 15728, 7}, -- (lhz_cube, 66, 67)
+			{ "lhz_cube", 15731, 7}, -- (lhz_cube, 66, 11)
+			{"", 0, 0}
+		},
+		{ 12203, -- (cubew05-4 lhz_cube, 10, 26)
+			{ "lhz_cube", 15728, 8}, -- (lhz_cube, 66, 67)
+			{ "lhz_cube", 15731, 8}, -- (lhz_cube, 66, 11)
+			{"", 0, 0}
+		},
+		{ 12204, -- (cubew06-1 lhz_cube, 18, 74)
+			{ "lhz_cube", 15737, 8}, -- (lhz_cube, 18, 136)
+			{ "lhz_cube", 15738, 8}, -- (lhz_cube, 3, 192)
+			{"", 0, 0}
+		},
+		{ 12205, -- (cubew02-4 lhz_cube, 66, 144)
+			{"", 0, 0}
+		},
+		{ 12206, -- (cubew03-1 lhz_cube, 74, 192)
+			{"", 0, 0}
+		},
+		{ 12207, -- (cubew06-4 lhz_cube, 10, 82)
+			{ "lhz_cube", 15737, 8}, -- (lhz_cube, 18, 136)
+			{ "lhz_cube", 15738, 8}, -- (lhz_cube, 3, 192)
+			{"", 0, 0}
+		},
+		{ 12208, -- (cubew03-2 lhz_cube, 67, 185)
+			{"", 0, 0}
+		},
+		{ 12209, -- (cubew07-2 lhz_cube, 10, 129)
+			{ "lhz_cube", 15730, 7}, -- (lhz_cube, 67, 200)
+			{"", 0, 0}
+		},
+		{ 12210, -- (cubew07-3 lhz_cube, 3, 136)
+			{ "lhz_cube", 15730, 7}, -- (lhz_cube, 67, 200)
+			{"", 0, 0}
+		},
+		{ 12211, -- (cubew07-4 lhz_cube, 10, 144)
+			{ "lhz_cube", 15730, 8}, -- (lhz_cube, 67, 200)
+			{"", 0, 0}
+		},
+		{ 12212, -- (cubew08-1 lhz_cube, 18, 192)
+			{ "lhz_cube", 15729, 8}, -- (lhz_cube, 74, 136)
+			{ "lhz_cube", 15733, 8}, -- (lhz_cube, 18, 18)
+			{"", 0, 0}
+		},
+		{ 12213, -- (cubew08-2 lhz_cube, 10, 185)
+			{ "lhz_cube", 15729, 8}, -- (lhz_cube, 74, 136)
+			{ "lhz_cube", 15733, 8}, -- (lhz_cube, 18, 18)
+			{"", 0, 0}
+		},
+		{ 12214, -- (cubew03-3 lhz_cube, 59, 192)
+			{"", 0, 0}
+		},
+		{ 12215, -- (cubew01-3 lhz_cube, 59, 74)
+			{"", 0, 0}
+		},
+		{ 12216, -- (cubew09-1 lhz_cube, 130, 18)
+			{ "lhz_cube", 15732, 7}, -- (lhz_cube, 66, 26)
+			{ "lhz_cube", 15734, 7}, -- (lhz_cube, 10, 11)
+			{ "lhz_cube", 15735, 7}, -- (lhz_cube, 10, 67)
+			{"", 0, 0}
+		},
+		{ 12217, -- (cubew09-2 lhz_cube, 123, 11)
+			{ "lhz_cube", 15732, 7}, -- (lhz_cube, 66, 26)
+			{ "lhz_cube", 15734, 7}, -- (lhz_cube, 10, 11)
+			{ "lhz_cube", 15735, 7}, -- (lhz_cube, 10, 67)
+			{"", 0, 0}
+		},
+		{ 12218, -- (cubew04-1 lhz_cube, 74, 18)
+			{ "lhz_cube", 15736, 8}, -- (lhz_cube, 3, 74)
+			{ "lhz_cube", 15739, 8}, -- (lhz_cube, 10, 200)
+			{"", 0, 0}
+		},
+		{ 12219, -- (cubew09-4 lhz_cube, 123, 26)
+			{ "lhz_cube", 15732, 8}, -- (lhz_cube, 66, 26)
+			{ "lhz_cube", 15734, 8}, -- (lhz_cube, 10, 11)
+			{ "lhz_cube", 15735, 8}, -- (lhz_cube, 10, 67)
+			{"", 0, 0}
+		},
+	},
+	"hu_fild05", 1,
+	{
+		{ 12220, -- (AbyssWarp hu_fild05, 196, 210)
+			{ "abyss_01", 15788, 19}, -- (hu_fild05, 265, 274)
+			{"", 0, 0}
+		},
+	},
+	"hugel", 2,
+	{
+		{ 12221, -- (Hugel Guide Granny#huge hugel, 98, 56)
+			{ "hu_in01", 15827, 91}, -- (hugel, 211, 173)
+			{ "hu_in01", 15832, 126}, -- (hugel, 287, 227)
+			{ "hu_in01", 15835, 107}, -- (hugel, 246, 359)
+			{ "hu_in01", 15842, 128}, -- (hugel, 231, 301)
+			{ "hu_in01", 15843, 102}, -- (hugel, 110, 369)
+			{ "hu_in01", 15846, 47}, -- (hugel, 30, 299)
+			{ "hu_in01", 15849, 21}, -- (hugel, 231, 107)
+			{ "hu_in01", 15852, 73}, -- (hugel, 37, 90)
+			{ "hu_in01", 15856, 202}, -- (hugel, 381, 363)
+			{ "hu_in01", 15859, 73}, -- (hugel, 177, 90)
+			{ "hu_in01", 15860, 73}, -- (hugel, 107, 90)
+			{ "hu_in01", 15865, 36}, -- (hugel, 345, 107)
+			{ "hu_in01", 15868, 173}, -- (hugel, 301, 379)
+			{ "hu_in01", 15871, 189}, -- (hugel, 24, 361)
+			{ "que_bingo", 15872, 165}, -- (hugel, 49, 7)
+			{ "hu_fild06", 15893, 19}, -- (hugel, 200, 372)
+			{"", 0, 0}
+		},
+		{ 12222, -- (Healer#hug hugel, 89, 150)
+			{ "hu_in01", 15827, 89}, -- (hugel, 211, 173)
+			{ "hu_in01", 15832, 64}, -- (hugel, 287, 227)
+			{ "hu_in01", 15835, 15}, -- (hugel, 246, 359)
+			{ "hu_in01", 15842, 36}, -- (hugel, 231, 301)
+			{ "hu_in01", 15843, 19}, -- (hugel, 110, 369)
+			{ "hu_in01", 15846, 47}, -- (hugel, 30, 299)
+			{ "hu_in01", 15849, 73}, -- (hugel, 231, 107)
+			{ "hu_in01", 15852, 76}, -- (hugel, 37, 90)
+			{ "hu_in01", 15856, 151}, -- (hugel, 381, 363)
+			{ "hu_in01", 15859, 76}, -- (hugel, 177, 90)
+			{ "hu_in01", 15860, 76}, -- (hugel, 107, 90)
+			{ "hu_in01", 15865, 88}, -- (hugel, 345, 107)
+			{ "hu_in01", 15868, 99}, -- (hugel, 301, 379)
+			{ "hu_in01", 15871, 97}, -- (hugel, 24, 361)
+			{ "que_bingo", 15872, 67}, -- (hugel, 49, 7)
+			{ "hu_fild06", 15893, 113}, -- (hugel, 200, 372)
+			{"", 0, 0}
+		},
+	},
+	"que_ng", 5,
+	{
+		{ 12224, -- (Magazine Dealer Kenny que_ng, 187, 149)
+			{ "einbroch", 15539, 81}, -- (que_ng, 136, 199)
+			{ "que_ng", 15977, 12}, -- (que_ng, 166, 85)
+			{ "que_ng", 15979, 27}, -- (que_ng, 172, 42)
+			{"", 0, 0}
+		},
+		{ 12225, -- (Bullet Dealer Tony#ng que_ng, 187, 156)
+			{ "einbroch", 15539, 74}, -- (que_ng, 136, 199)
+			{ "que_ng", 15977, 5}, -- (que_ng, 166, 85)
+			{ "que_ng", 15979, 32}, -- (que_ng, 172, 42)
+			{"", 0, 0}
+		},
+		{ 12226, -- (Johnny Waiker que_ng, 180, 79)
+			{ "que_ng", 15976, 8}, -- (que_ng, 178, 162)
+			{"", 0, 0}
+		},
+		{ 12227, -- (Boonji#nin que_ng, 72, 31)
+			{"", 0, 0}
+		},
+		{ 12228, -- (Boonray#nin que_ng, 73, 26)
+			{"", 0, 0}
+		},
+	},
+	"rachel", 4,
+	{
+		{ 12229, -- (Festival Manager#gq_fes2 rachel, 1, 1)
+			{"", 0, 0}
+		},
+		{ 12230, -- (Rhehe Ravies#gq_fes03 rachel, 132, 117)
+			{ "ra_in01", 16019, 109}, -- (rachel, 237, 202)
+			{ "ra_in01", 16020, 109}, -- (rachel, 181, 202)
+			{ "ra_in01", 16021, 124}, -- (rachel, 250, 38)
+			{ "ra_in01", 16022, 112}, -- (rachel, 295, 348)
+			{ "ra_in01", 16023, 135}, -- (rachel, 339, 193)
+			{ "ra_in01", 16024, 101}, -- (rachel, 135, 286)
+			{ "ra_in01", 16025, 104}, -- (rachel, 171, 355)
+			{ "ra_in01", 16026, 90}, -- (rachel, 172, 392)
+			{ "ra_in01", 16027, 72}, -- (rachel, 249, 262)
+			{ "ra_in01", 16028, 33}, -- (rachel, 386, 39)
+			{ "ra_in01", 16029, 105}, -- (rachel, 192, 152)
+			{ "ra_in01", 16030, 94}, -- (rachel, 213, 79)
+			{ "ra_in01", 16047, 86}, -- (rachel, 309, 70)
+			{ "ra_fild11", 16072, 102}, -- (rachel, 360, 226)
+			{ "ra_fild12", 16076, 138}, -- (rachel, 36, 225)
+			{ "ra_temple", 16103, 127}, -- (rachel, 120, 22)
+			{ "ve_fild02", 16166, 92}, -- (rachel, 195, 382)
+			{"", 0, 0}
+		},
+		{ 12231, -- (Rachel Guide rachel, 138, 146)
+			{ "ra_in01", 16019, 139}, -- (rachel, 237, 202)
+			{ "ra_in01", 16020, 147}, -- (rachel, 181, 202)
+			{ "ra_in01", 16021, 128}, -- (rachel, 250, 38)
+			{ "ra_in01", 16022, 85}, -- (rachel, 295, 348)
+			{ "ra_in01", 16023, 105}, -- (rachel, 339, 193)
+			{ "ra_in01", 16024, 78}, -- (rachel, 135, 286)
+			{ "ra_in01", 16025, 110}, -- (rachel, 171, 355)
+			{ "ra_in01", 16026, 96}, -- (rachel, 172, 392)
+			{ "ra_in01", 16027, 101}, -- (rachel, 249, 262)
+			{ "ra_in01", 16028, 23}, -- (rachel, 386, 39)
+			{ "ra_in01", 16029, 75}, -- (rachel, 192, 152)
+			{ "ra_in01", 16030, 64}, -- (rachel, 213, 79)
+			{ "ra_in01", 16047, 56}, -- (rachel, 309, 70)
+			{ "ra_fild11", 16072, 108}, -- (rachel, 360, 226)
+			{ "ra_fild12", 16076, 134}, -- (rachel, 36, 225)
+			{ "ra_temple", 16103, 100}, -- (rachel, 120, 22)
+			{ "ve_fild02", 16166, 121}, -- (rachel, 195, 382)
+			{"", 0, 0}
+		},
+		{ 12232, -- (Healer#rac rachel, 125, 116)
+			{ "ra_in01", 16019, 108}, -- (rachel, 237, 202)
+			{ "ra_in01", 16020, 109}, -- (rachel, 181, 202)
+			{ "ra_in01", 16021, 131}, -- (rachel, 250, 38)
+			{ "ra_in01", 16022, 119}, -- (rachel, 295, 348)
+			{ "ra_in01", 16023, 135}, -- (rachel, 339, 193)
+			{ "ra_in01", 16024, 108}, -- (rachel, 135, 286)
+			{ "ra_in01", 16025, 97}, -- (rachel, 171, 355)
+			{ "ra_in01", 16026, 83}, -- (rachel, 172, 392)
+			{ "ra_in01", 16027, 72}, -- (rachel, 249, 262)
+			{ "ra_in01", 16028, 28}, -- (rachel, 386, 39)
+			{ "ra_in01", 16029, 105}, -- (rachel, 192, 152)
+			{ "ra_in01", 16030, 94}, -- (rachel, 213, 79)
+			{ "ra_in01", 16047, 86}, -- (rachel, 309, 70)
+			{ "ra_fild11", 16072, 95}, -- (rachel, 360, 226)
+			{ "ra_fild12", 16076, 145}, -- (rachel, 36, 225)
+			{ "ra_temple", 16103, 134}, -- (rachel, 120, 22)
+			{ "ve_fild02", 16166, 91}, -- (rachel, 195, 382)
+			{"", 0, 0}
+		},
+	},
+	"ra_san01", 1,
+	{
+		{ 12233, -- (sanctuary01 ra_san01, 139, 13)
+			{ "ra_san02", 16082, 6}, -- (ra_san01, 213, 280)
+			{ "ra_san03", 16086, 6}, -- (ra_san01, 123, 283)
+			{ "ra_san04", 16090, 6}, -- (ra_san01, 119, 104)
+			{"", 0, 0}
+		},
+	},
+	"veins", 3,
+	{
+		{ 12235, -- (Veins Guide#1 veins, 210, 345)
+			{ "ve_in", 16140, 0}, -- (veins, 251, 283)
+			{ "ve_in", 16143, 232}, -- (veins, 349, 219)
+			{ "ve_in", 16146, 117}, -- (veins, 183, 203)
+			{ "ve_in", 16147, 126}, -- (veins, 206, 211)
+			{ "ve_in", 16148, 155}, -- (veins, 99, 215)
+			{ "ve_in", 16151, 195}, -- (veins, 256, 127)
+			{ "ve_in", 16154, 146}, -- (veins, 351, 317)
+			{ "ve_in", 16155, 247}, -- (veins, 77, 291)
+			{ "ve_in", 16158, 167}, -- (veins, 194, 369)
+			{ "ve_in02", 16159, 149}, -- (veins, 13, 19)
+			{ "ve_fild06", 16177, 10}, -- (veins, 153, 220)
+			{ "ve_fild07", 16178, 111}, -- (veins, 147, 371)
+			{"", 0, 0}
+		},
+		{ 12236, -- (Veins Guide#2 veins, 189, 101)
+			{ "ve_in", 16140, 93}, -- (veins, 251, 283)
+			{ "ve_in", 16143, 76}, -- (veins, 349, 219)
+			{ "ve_in", 16146, 191}, -- (veins, 183, 203)
+			{ "ve_in", 16147, 211}, -- (veins, 206, 211)
+			{ "ve_in", 16148, 178}, -- (veins, 99, 215)
+			{ "ve_in", 16151, 139}, -- (veins, 256, 127)
+			{ "ve_in", 16154, 201}, -- (veins, 351, 317)
+			{ "ve_in", 16155, 140}, -- (veins, 77, 291)
+			{ "ve_in", 16158, 159}, -- (veins, 194, 369)
+			{ "ve_in02", 16159, 153}, -- (veins, 13, 19)
+			{ "ve_fild06", 16177, 27}, -- (veins, 153, 220)
+			{ "ve_fild07", 16178, 73}, -- (veins, 147, 371)
+			{"", 0, 0}
+		},
+		{ 12237, -- (Healer#ve veins, 217, 121)
+			{ "ve_in", 16140, 65}, -- (veins, 251, 283)
+			{ "ve_in", 16143, 71}, -- (veins, 349, 219)
+			{ "ve_in", 16146, 186}, -- (veins, 183, 203)
+			{ "ve_in", 16147, 206}, -- (veins, 206, 211)
+			{ "ve_in", 16148, 173}, -- (veins, 99, 215)
+			{ "ve_in", 16151, 134}, -- (veins, 256, 127)
+			{ "ve_in", 16154, 181}, -- (veins, 351, 317)
+			{ "ve_in", 16155, 135}, -- (veins, 77, 291)
+			{ "ve_in", 16158, 131}, -- (veins, 194, 369)
+			{ "ve_in02", 16159, 125}, -- (veins, 13, 19)
+			{ "ve_fild06", 16177, 255}, -- (veins, 153, 220)
+			{ "ve_fild07", 16178, 98}, -- (veins, 147, 371)
+			{"", 0, 0}
+		},
+	},
+	"ve_fild06", 1,
+	{
+		{ 12238, -- (ve_fild6-2 ve_fild06, 81, 177)
+			{ "veins", 16139, 97}, -- (ve_fild06, 218, 361)
+			{ "ve_fild04", 16174, 6}, -- (ve_fild06, 115, 50)
+			{ "ve_fild05", 16176, 6}, -- (ve_fild06, 359, 192)
+			{"", 0, 0}
+		},
+	},
+	"moscovia", 3,
+	{
+		{ 12239, -- (Kafra Employee moscovia, 223, 191)
+			{ "mosk_in", 16200, 51}, -- (moscovia, 93, 61)
+			{ "mosk_in", 16203, 37}, -- (moscovia, 12, 179)
+			{ "mosk_in", 16204, 24}, -- (moscovia, 89, 180)
+			{ "mosk_in", 16205, 15}, -- (moscovia, 11, 246)
+			{ "mosk_in", 16206, 16}, -- (moscovia, 142, 175)
+			{ "mosk_in", 16209, 31}, -- (moscovia, 211, 111)
+			{ "mosk_in", 16212, 232}, -- (moscovia, 214, 252)
+			{"", 0, 0}
+		},
+		{ 12240, -- (Moscovia Guide#mosk moscovia, 161, 76)
+			{ "mosk_in", 16200, 40}, -- (moscovia, 93, 61)
+			{ "mosk_in", 16203, 247}, -- (moscovia, 12, 179)
+			{ "mosk_in", 16204, 11}, -- (moscovia, 89, 180)
+			{ "mosk_in", 16205, 4}, -- (moscovia, 11, 246)
+			{ "mosk_in", 16206, 250}, -- (moscovia, 142, 175)
+			{ "mosk_in", 16209, 20}, -- (moscovia, 211, 111)
+			{ "mosk_in", 16212, 44}, -- (moscovia, 214, 252)
+			{"", 0, 0}
+		},
+		{ 12241, -- (Healer#mos moscovia, 220, 191)
+			{ "mosk_in", 16200, 53}, -- (moscovia, 93, 61)
+			{ "mosk_in", 16203, 34}, -- (moscovia, 12, 179)
+			{ "mosk_in", 16204, 22}, -- (moscovia, 89, 180)
+			{ "mosk_in", 16205, 15}, -- (moscovia, 11, 246)
+			{ "mosk_in", 16206, 16}, -- (moscovia, 142, 175)
+			{ "mosk_in", 16209, 33}, -- (moscovia, 211, 111)
+			{ "mosk_in", 16212, 231}, -- (moscovia, 214, 252)
+			{"", 0, 0}
+		},
+	},
+	"mosk_dun02", 4,
+	{
+		{ 12242, -- (#babayagain mosk_dun02, 53, 220)
+			{ "mosk_in", 16215, 3}, -- (mosk_dun02, 215, 36)
+			{"", 0, 0}
+		},
+		{ 12243, -- (Soldier1#mos mosk_dun02, 53, 215)
+			{ "mosk_in", 16215, 2}, -- (mosk_dun02, 215, 36)
+			{"", 0, 0}
+		},
+		{ 12244, -- (Soldier2#mos mosk_dun02, 50, 217)
+			{ "mosk_in", 16215, 7}, -- (mosk_dun02, 215, 36)
+			{"", 0, 0}
+		},
+		{ 12245, -- (Soldier3#mos mosk_dun02, 56, 217)
+			{ "mosk_in", 16215, 6}, -- (mosk_dun02, 215, 36)
+			{"", 0, 0}
+		},
+	},
+	"mid_camp", 1,
+	{
+		{ 12246, -- (Healer#mid mid_camp, 203, 289)
+			{ "mid_campin", 16257, 78}, -- (mid_camp, 232, 123)
+			{ "mid_campin", 16259, 63}, -- (mid_camp, 89, 99)
+			{ "mid_campin", 16275, 60}, -- (mid_camp, 282, 124)
+			{ "mid_campin", 16276, 62}, -- (mid_camp, 376, 136)
+			{ "man_fild01", 16277, 155}, -- (mid_camp, 35, 232)
+			{ "spl_fild02", 16281, 189}, -- (mid_camp, 382, 143)
+			{ "spl_fild02", 16282, 213}, -- (mid_camp, 383, 216)
+			{"", 0, 0}
+		},
+	},
+	"schg_dun01", 4,
+	{
+		{ 12306, -- (Monster Controler#sch_gd schg_dun01, 1, 1)
+			{"", 0, 0}
+		},
+		{ 12307, -- (Monster Controler1#sch schg_dun01, 1, 2)
+			{"", 0, 0}
+		},
+		{ 12308, -- (Dwarf#sch_gd schg_dun01, 194, 148)
+			{"", 0, 0}
+		},
+		{ 12309, -- (Event controller#sch_gd schg_dun01, 5, 5)
+			{"", 0, 0}
+		},
+	},
+	"arug_dun01", 4,
+	{
+		{ 12369, -- (Monster Controler#aru_gd arug_dun01, 1, 1)
+			{"", 0, 0}
+		},
+		{ 12370, -- (Monster Controler1#aru arug_dun01, 1, 2)
+			{"", 0, 0}
+		},
+		{ 12371, -- (Dwarf#aru_gd arug_dun01, 199, 195)
+			{ "arug_que01", 16290, 3}, -- (arug_dun01, 104, 140)
+			{"", 0, 0}
+		},
+		{ 12372, -- (Event controller#aru_gd arug_dun01, 5, 5)
+			{"", 0, 0}
+		},
+	},
+	"manuk", 1,
+	{
+		{ 12373, -- (Healer#man manuk, 272, 144)
+			{ "man_fild02", 16305, 107}, -- (manuk, 139, 41)
+			{ "man_in01", 16306, 37}, -- (manuk, 275, 41)
+			{ "man_in01", 16307, 55}, -- (manuk, 358, 119)
+			{ "man_in01", 16308, 34}, -- (manuk, 5, 61)
+			{ "man_in01", 16315, 83}, -- (manuk, 130, 265)
+			{ "man_in01", 16316, 91}, -- (manuk, 180, 265)
+			{ "man_in01", 16317, 101}, -- (manuk, 230, 265)
+			{ "man_in01", 16318, 103}, -- (manuk, 280, 265)
+			{ "man_in01", 16319, 97}, -- (manuk, 330, 265)
+			{ "man_in01", 16320, 88}, -- (manuk, 380, 265)
+			{ "man_in01", 16321, 52}, -- (manuk, 26, 284)
+			{ "man_in01", 16322, 38}, -- (manuk, 70, 169)
+			{ "man_in01", 16323, 27}, -- (manuk, 123, 226)
+			{"", 0, 0}
+		},
+	},
+	"splendide", 1,
+	{
+		{ 12374, -- (Healer#spl splendide, 201, 153)
+			{ "spl_fild02", 16285, 193}, -- (splendide, 6, 241)
+			{ "spl_in01", 16350, 40}, -- (splendide, 110, 17)
+			{ "spl_in01", 16357, 31}, -- (splendide, 190, 299)
+			{ "spl_in01", 16360, 62}, -- (splendide, 171, 187)
+			{ "spl_in01", 16361, 85}, -- (splendide, 110, 299)
+			{ "spl_in01", 16362, 57}, -- (splendide, 30, 213)
+			{ "spl_in01", 16363, 27}, -- (splendide, 30, 299)
+			{ "spl_in02", 16364, 165}, -- (splendide, 222, 232)
+			{ "spl_in02", 16365, 147}, -- (splendide, 207, 193)
+			{ "spl_in02", 16366, 161}, -- (splendide, 180, 221)
+			{ "spl_in02", 16367, 187}, -- (splendide, 108, 211)
+			{ "spl_in02", 16368, 184}, -- (splendide, 62, 227)
+			{ "spl_in02", 16369, 250}, -- (splendide, 234, 64)
+			{ "spl_in02", 16370, 19}, -- (splendide, 187, 42)
+			{ "spl_in02", 16371, 147}, -- (splendide, 135, 66)
+			{ "spl_in02", 16372, 138}, -- (splendide, 139, 91)
+			{ "spl_in02", 16373, 19}, -- (splendide, 44, 54)
+			{"", 0, 0}
+		},
+	},
+}

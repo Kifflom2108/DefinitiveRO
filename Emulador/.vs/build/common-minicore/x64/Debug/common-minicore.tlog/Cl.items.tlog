@@ -1,0 +1,15 @@
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\cli.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\cli.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\conf.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\conf.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\core.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\core.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\des.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\des.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\grfio.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\grfio.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\malloc.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\malloc.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\mapindex.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\mapindex.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\md5calc.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\md5calc.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\msg_conf.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\msg_conf.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\nullpo.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\nullpo.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\random.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\random.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\showmsg.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\showmsg.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\strlib.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\strlib.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\utils.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\utils.obj
+C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\src\common\winapi.cpp;C:\Users\felip\OneDrive\Documents\DefinitiveRO\DefinitiveRO\Emulador\.vs\build\common-minicore\x64\Debug\winapi.obj
