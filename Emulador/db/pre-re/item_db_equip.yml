@@ -11216,8 +11216,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 4
     Refineable: true
-    Script: |
-      bonus3 bAutoSpell,"AC_DOUBLE",1,1000;
   - Id: 1702
     AegisName: Bow_
     Name: Bow
@@ -11239,8 +11237,6 @@ Body:
     WeaponLevel: 1
     EquipLevelMin: 4
     Refineable: true
-    Script: |
-      bonus3 bAutoSpell,"AC_DOUBLE",10,1000;
   - Id: 1703
     AegisName: Bow__
     Name: Bow

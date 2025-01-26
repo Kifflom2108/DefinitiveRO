@@ -7805,7 +7805,361 @@ Body:
       skill "AC_VULTURE",10;
 
 ############################################## LV 60 - 80 ####################################################
+
+  - Id: 210106
+    AegisName: Faca_do_Malandro
+    Name: Faca do Malandro
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 1
+    Slots: 2
+    Jobs:
+      Rogue: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+      if (getskilllv("SM_SWORD") == 10) {
+         bonus3 bAutoSpell,"SM_BASH",3,150;
+      }
+
+  - Id: 210107
+    AegisName: Relíquia_do_Bandido_
+    Name: Relíquia do Bandido
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 175
+    Range: 1
+    Slots: 2
+    Jobs:
+      Rogue: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bDex,2;
+      if (getskilllv("AC_VULTURE") == 10) {
+         bonus3 bAutoSpell,"AC_DOUBLE",3,100;
+      }
+      
+
+  - Id: 210108
+    AegisName: Faca_do_Malandro_
+    Name: Faca do Malandro
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 1
+    Slots: 3
+    Jobs:
+      Rogue: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+      if (getskilllv("SM_SWORD") == 10) {
+         bonus3 bAutoSpell,"SM_BASH",3,150;
+      }
+
+  - Id: 210109
+    AegisName: Relíquia_do_Bandido_
+    Name: Relíquia do Bandido
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 175
+    Range: 1
+    Slots: 3
+    Jobs:
+      Rogue: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bDex,2;
+      if (getskilllv("AC_VULTURE") == 10) {
+         bonus3 bAutoSpell,"AC_DOUBLE",3,100;
+      }
+
+  - Id: 210110
+    AegisName: Punhal_do_Predador_Noturno
+    Name: Punhal do Predador Noturno
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 130
+    Range: 1
+    Slots: 2
+    Jobs:
+      Assassin: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bCritical,10;
+
+  - Id: 210111
+    AegisName: Lâmina_do_Traidor
+    Name: Lâmina do Traidor
+    Type: Weapon
+    SubType: Katar
+    Buy: 1
+    Weight: 1200
+    Attack: 115
+    Range: 1
+    Slots: 2
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+
+  - Id: 210112
+    AegisName: Punhal_do_Predador_Noturno_
+    Name: Punhal do Predador Noturno
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 130
+    Range: 1
+    Slots: 3
+    Jobs:
+      Assassin: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bCritical,10;
+
+  - Id: 210113
+    AegisName: Lâmina_do_Traidor_
+    Name: Lâmina do Traidor
+    Type: Weapon
+    SubType: Katar
+    Buy: 1
+    Weight: 1200
+    Attack: 115
+    Range: 1
+    Slots: 3
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bFlee,10;
+
 ############################################## LV 80 - 99 ####################################################
+
+  - Id: 210114
+    AegisName: Adaga_do_Trapaceiro
+    Name: Adaga do Trapaceiro
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 160
+    Range: 1
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,15;
+      bonus bHit,10;
+      if (getskilllv("SM_SWORD") == 10) {
+         bonus3 bAutoSpell,"SM_BASH",7,150;
+      }
+
+  - Id: 210115
+    AegisName: Relíquia_da_Trapaça
+    Name: Relíquia da Trapaça
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 185
+    Range: 1
+    Slots: 1
+    Jobs:
+      Rogue: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bDex,5;
+      if (getskilllv("AC_VULTURE") == 10) {
+         bonus3 bAutoSpell,"AC_DOUBLE",7,100;
+      }
+      
+
+  - Id: 210116
+    AegisName: Adaga_do_Trapaceiro_
+    Name: Adaga do Trapaceiro
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 160
+    Range: 1
+    Slots: 2
+    Jobs:
+      Rogue: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,15;
+      bonus bHit,10;
+      if (getskilllv("SM_SWORD") == 10) {
+         bonus3 bAutoSpell,"SM_BASH",7,150;
+      }
+
+  - Id: 210117
+    AegisName: Relíquia_da_Trapaça_
+    Name: Relíquia da Trapaça
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 185
+    Range: 1
+    Slots: 2
+    Jobs:
+      Rogue: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bDex,5;
+      if (getskilllv("AC_VULTURE") == 10) {
+         bonus3 bAutoSpell,"AC_DOUBLE",7,100;
+      }
+
+  - Id: 210118
+    AegisName: Punhal_dos_Condenados
+    Name: Punhal dos Condenados
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 155
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bCritical,15;
+      bonus bHit,10;
+
+  - Id: 210119
+    AegisName: Garras_do_Assassino
+    Name: Garras do Assassino
+    Type: Weapon
+    SubType: Katar
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 1
+    Slots: 1
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,15;
+      bonus bCritical,5;
+
+  - Id: 210120
+    AegisName: Punhal_dos_Condenados_
+    Name: Punhal dos Condenados
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 155
+    Range: 1
+    Slots: 2
+    Jobs:
+      Assassin: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bCritical,15;
+      bonus bHit,10;
+
+  - Id: 210121
+    AegisName: Garras_do_Assassino_
+    Name: Garras do Assassino
+    Type: Weapon
+    SubType: Katar
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 1
+    Slots: 2
+    Jobs:
+      Assassin: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,15;
+      bonus bCritical,5;
+
 ############################################## ARQUEIRO ######################################################
 ############################################## LV 01 - 40 ####################################################
 ############################################## LV 40 - 60 ####################################################
