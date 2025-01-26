@@ -7717,7 +7717,93 @@ Body:
 
 ############################################## GATUNO ######################################################
 ############################################## LV 01 - 40 ####################################################
+
+  - Id: 210102
+    AegisName: Adaga_do_Treinamento
+    Name: Adaga do Treinamento
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 120
+    Range: 1
+    Slots: 4
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+  - Id: 210103
+    AegisName: Arco_do_Treinamento
+    Name: Arco do Treinamento
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 90
+    Range: 1
+    Slots: 4
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      skill "AC_VULTURE",7;
+
 ############################################## LV 40 - 60 ####################################################
+
+  - Id: 210104
+    AegisName: Adaga_do_Treinamento_
+    Name: Adaga do Treinamento
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 140
+    Range: 1
+    Slots: 3
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 2
+    Refineable: true
+
+  - Id: 210105
+    AegisName: Arco_do_Treinamento_II
+    Name: Arco do Treinamento
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 110
+    Range: 1
+    Slots: 3
+    Jobs:
+      Assassin: true
+      Rogue: true
+      Thief: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 2
+    Refineable: true
+    Script: |
+      skill "AC_VULTURE",10;
+
 ############################################## LV 60 - 80 ####################################################
 ############################################## LV 80 - 99 ####################################################
 ############################################## ARQUEIRO ######################################################
