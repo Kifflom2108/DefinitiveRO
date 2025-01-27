@@ -297,16 +297,6 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 1
-        Item: Traje_do_Caos_
-        RequiredItems:
-          - Index: 0
-            Item: Traje_do_Caos
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 1
-      - Index: 2
         Item: Sobrepeliz_do_Caminhante_Noturno_
         RequiredItems:
           - Index: 0
@@ -316,21 +306,31 @@ Body:
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
-      - Index: 3
-        Item: Sobrepeliz_do_Caos_
+      - Index: 2
+        Item: Sapatos_do_Caminhante_Noturno_
         RequiredItems:
           - Index: 0
-            Item: Sobrepeliz_do_Caos
+            Item: Sapatos_do_Caminhante_Noturno
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 3
+        Item: Traje_do_Caos_
+        RequiredItems:
+          - Index: 0
+            Item: Traje_do_Caos
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 4
-        Item: Sapatos_do_Caminhante_Noturno_
+        Item: Sobrepeliz_do_Caos_
         RequiredItems:
           - Index: 0
-            Item: Sapatos_do_Caminhante_Noturno
+            Item: Sobrepeliz_do_Caos
             Refine: 7
             Amount: 1
           - Index: 1
@@ -357,6 +357,26 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 7
+        Item: Capa_do_Andarilho_
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Andarilho
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 8
+        Item: Sapatos_do_Andarilho_
+        RequiredItems:
+          - Index: 0
+            Item: Sapatos_do_Andarilho
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 9
         Item: Casaco_do_Saqueador_
         RequiredItems: 
           - Index: 0
@@ -366,31 +386,11 @@ Body:
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
-      - Index: 8
-        Item: Capa_do_Andarilho_
-        RequiredItems: 
-          - Index: 0
-            Item: Capa_do_Andarilho
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 4
-      - Index: 9
+      - Index: 10
         Item: Capa_do_Saqueador_
         RequiredItems: 
           - Index: 0
             Item: Capa_do_Saqueador
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 4
-      - Index: 10
-        Item: Sapatos_do_Andarilho_
-        RequiredItems: 
-          - Index: 0
-            Item: Sapatos_do_Andarilho
             Refine: 7
             Amount: 1
           - Index: 1
@@ -417,16 +417,6 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 13
-        Item: Traje_do_Executor_
-        RequiredItems: 
-          - Index: 0
-            Item: Traje_do_Executor
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 7
-      - Index: 14
         Item: Capuz_do_Espreitador_
         RequiredItems: 
           - Index: 0
@@ -436,21 +426,31 @@ Body:
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
-      - Index: 15
-        Item: Capuz_do_Executor_
+      - Index: 14
+        Item: Botas_do_Espreitador_
         RequiredItems: 
           - Index: 0
-            Item: Capuz_do_Executor
+            Item: Botas_do_Espreitador
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 15
+        Item: Traje_do_Executor_
+        RequiredItems: 
+          - Index: 0
+            Item: Traje_do_Executor
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 16
-        Item: Botas_do_Espreitador_
+        Item: Capuz_do_Executor_
         RequiredItems: 
           - Index: 0
-            Item: Botas_do_Espreitador
+            Item: Capuz_do_Executor
             Refine: 7
             Amount: 1
           - Index: 1
@@ -467,6 +467,7 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 7
 
+
   - Name: Comerciante Mercador#2
     Map: moc_para01 
     X: 33
@@ -475,185 +476,187 @@ Body:
     Sprite: 1_M_SIGNMCNT
     Items:
       - Index: 0
-        Item: Armadura_do_Discípulo_
+        Item: Capote_do_Acumulador_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Discípulo
+            Item: Capote_do_Acumulador
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 1
-        Item: Armadura_do_Aspirante_
+        Item: Sobrepeliz_do_Acumulador_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Aspirante
+            Item: Sobrepeliz_do_Acumulador
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 2
-        Item: Capa_do_Discípulo_
+        Item: Sapatos_do_Acumulador_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Discípulo
+            Item: Sapatos_do_Acumulador
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 3
-        Item: Capa_do_Aspirante_       
+        Item: Manto_da_Barganha_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Aspirante
+            Item: Manto_da_Barganha
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 4
-        Item: Sapatos_do_Discípulo_
+        Item: Capa_da_Barganha_
         RequiredItems:
           - Index: 0
-            Item: Sapatos_do_Discípulo
+            Item: Capa_da_Barganha
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 5
-        Item: Botas_do_Aspirante_
+        Item: Sapatos_da_Barganha_
         RequiredItems:
           - Index: 0
-            Item: Botas_do_Aspirante
+            Item: Sapatos_da_Barganha
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 6
-        Item: Armadura_da_Ordem_
-        RequiredItems:
+        Item: Traje_do_Engenho_Metálico_
+        RequiredItems: 
           - Index: 0
-            Item: Armadura_da_Ordem
+            Item: Traje_do_Engenho_Metálico
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 7
-        Item: Armadura_do_Cruzado_
+        Item: Sobrepeliz_do_Engenho_Metálico_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Cruzado
+            Item: Sobrepeliz_do_Engenho_Metálico
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 4
+            Amount: 7
       - Index: 8
-        Item: Capa_da_Ordem_
+        Item: Sapato_do_Engenho_Metálico_
         RequiredItems: 
           - Index: 0
-            Item: Capa_da_Ordem
+            Item: Sapato_do_Engenho_Metálico
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 4
+            Amount: 7
       - Index: 9
-        Item: Capa_do_Cruzado_
-        RequiredItems: 
+        Item: Peitoral_do_Mestre_dos_Metais_
+        RequiredItems:
           - Index: 0
-            Item: Capa_do_Cruzado
+            Item: Peitoral_do_Mestre_dos_Metais
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 10
-        Item: Grevas_da_Ordem_
+        Item: Capa_do_Mestre_dos_Metais_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_da_Ordem
+            Item: Capa_do_Mestre_dos_Metais
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 4
+            Amount: 7
       - Index: 11
-        Item: Grevas_do_Cruzado_
+        Item: Grevas_do_Mestre_dos_Metais_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Cruzado
+            Item: Grevas_do_Mestre_dos_Metais
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 12
-        Item: Armadura_do_Protetor_
+        Item: Traje_do_Mestre_dos_Elixires_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Protetor
+            Item: Traje_do_Mestre_dos_Elixires
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 13
-        Item: Armadura_do_Guardião_
+        Item: Sobrepeliz_do_Mestre_dos_Elixires_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Guardião
+            Item: Sobrepeliz_do_Mestre_dos_Elixires
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 7
+            Amount: 4
       - Index: 14
-        Item: Capa_do_Protetor_
+        Item: Sapato_do_Mestre_dos_Elixires_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Protetor
+            Item: Sapato_do_Mestre_dos_Elixires
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 7
+            Amount: 4
       - Index: 15
-        Item: Capa_do_Guardião_
+        Item: Peitoral_da_Transmutação_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Guardião
+            Item: Peitoral_da_Transmutação
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 16
-        Item: Grevas_do_Protetor_
+        Item: Capa_da_Transmutação_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Protetor
+            Item: Capa_da_Transmutação
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 17
-        Item: Grevas_do_Guardião_
+        Item: Grevas_da_Transmutação_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Guardião
+            Item: Grevas_da_Transmutação
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 7
+            Amount: 4
+
+
 
   - Name: Comerciante Mago#2
     Map: moc_para01 
