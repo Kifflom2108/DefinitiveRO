@@ -11210,7 +11210,6 @@ Body:
       Hunter: true
       Rogue: true
       Thief: true
-      Assassin: true
     Locations:
       Both_Hand: true
     WeaponLevel: 1

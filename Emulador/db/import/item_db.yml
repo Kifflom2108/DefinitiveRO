@@ -2702,7 +2702,7 @@ Body:
       bonus bMaxSP,100;
 
   - Id: 110099
-    AegisName: Traje_Executor_
+    AegisName: Traje_do_Executor_
     Name: Traje do Executor
     Type: Armor
     Buy: 1
@@ -2868,8 +2868,8 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110108
-    AegisName: Traje_do_Acumulador
-    Name: Traje do Acumulador
+    AegisName: Capote_do_Acumulador
+    Name: Capote do Acumulador
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -2888,8 +2888,8 @@ Body:
       bonus bBaseAtk,7;
 
   - Id: 110109
-    AegisName: Traje_do_Acumulador_
-    Name: Traje do Acumulador
+    AegisName: Capote_do_Acumulador_
+    Name: Capote do Acumulador
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -2909,8 +2909,8 @@ Body:
       bonus bBaseAtk,7;
 
   - Id: 110110
-    AegisName: Peitoral_da_Barganha 
-    Name: Peitoral da Barganha 
+    AegisName: Manto_da_Barganha 
+    Name: Manto da Barganha 
     Type: Armor
     Buy: 1
     Weight: 1100
@@ -2929,8 +2929,8 @@ Body:
       bonus bBaseAtk,10;
 
   - Id: 110111
-    AegisName: Peitoral_da_Barganha_ 
-    Name: Peitoral da Barganha
+    AegisName: Manto_da_Barganha_ 
+    Name: Manto da Barganha
     Type: Armor
     Buy: 1
     Weight: 1100
@@ -3030,8 +3030,8 @@ Body:
 ########################################### SAPATO #############################################
 
   - Id: 110116
-    AegisName: Sapato_do_Acumulador
-    Name: Sapato do Acumulador
+    AegisName: Sapatos_do_Acumulador
+    Name: Sapatos do Acumulador
     Type: Armor
     Buy: 1
     Weight: 400
@@ -3048,8 +3048,8 @@ Body:
     Script: |
     
   - Id: 110117
-    AegisName: Sapato_do_Acumulador_
-    Name: Sapato do Acumulador
+    AegisName: Sapatos_do_Acumulador_
+    Name: Sapatos do Acumulador
     Type: Armor
     Buy: 1
     Weight: 400
@@ -3069,8 +3069,8 @@ Body:
 ##############
 
   - Id: 110118
-    AegisName: Grevas_da_Barganha
-    Name: Grevas da Barganha
+    AegisName: Sapatos_da_Barganha
+    Name: Sapatos da Barganha
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -3087,8 +3087,8 @@ Body:
     Script: |
     
   - Id: 110119
-    AegisName: Grevas_da_Barganha_
-    Name: Grevas da Barganha
+    AegisName: Sapatos_da_Barganha_
+    Name: Sapatos da Barganha
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -7746,7 +7746,7 @@ Body:
     Buy: 1
     Weight: 1200
     Attack: 90
-    Range: 1
+    Range: 5
     Slots: 4
     Jobs:
       Assassin: true
@@ -7790,7 +7790,7 @@ Body:
     Buy: 1
     Weight: 1200
     Attack: 110
-    Range: 1
+    Range: 5
     Slots: 3
     Jobs:
       Assassin: true
@@ -7830,14 +7830,14 @@ Body:
       }
 
   - Id: 210107
-    AegisName: Relíquia_do_Bandido_
+    AegisName: Relíquia_do_Bandido
     Name: Relíquia do Bandido
     Type: Weapon
     SubType: Bow
     Buy: 1
     Weight: 1200
     Attack: 175
-    Range: 1
+    Range: 5
     Slots: 2
     Jobs:
       Rogue: true
@@ -7884,7 +7884,7 @@ Body:
     Buy: 1
     Weight: 1200
     Attack: 175
-    Range: 1
+    Range: 5
     Slots: 3
     Jobs:
       Rogue: true
@@ -8013,7 +8013,7 @@ Body:
     Buy: 1
     Weight: 1200
     Attack: 185
-    Range: 1
+    Range: 5
     Slots: 1
     Jobs:
       Rogue: true
@@ -8061,7 +8061,7 @@ Body:
     Buy: 1
     Weight: 1200
     Attack: 185
-    Range: 1
+    Range: 5
     Slots: 2
     Jobs:
       Rogue: true
@@ -8162,11 +8162,948 @@ Body:
 
 ############################################## ARQUEIRO ######################################################
 ############################################## LV 01 - 40 ####################################################
+
+  - Id: 210122
+    AegisName: Arco_de_Treinamento
+    Name: Arco de Treinamento
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 185
+    Range: 5
+    Slots: 2
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+
 ############################################## LV 40 - 60 ####################################################
+
+  - Id: 210123
+    AegisName: Arco_de_Treinamento_II
+    Name: Arco de Treinamento II
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 185
+    Range: 5
+    Slots: 2
+    Jobs:
+      Archer: true
+      BardDancer: true
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+
 ############################################## LV 60 - 80 ####################################################
+
+  - Id: 210124
+    AegisName: Arco_do_Predador
+    Name: Arco do Predador
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 130
+    Range: 5
+    Slots: 2
+    Jobs:
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"HT_CLAYMORETRAP",300;
+      bonus2 bSkillAtk,"HT_FREEZINGTRAP",300;
+      bonus2 bSkillAtk,"HT_LANDMINE",300;
+      bonus2 bSkillAtk,"HT_BLASTMINE",300;
+
+  - Id: 210125
+    AegisName: Arco_da_Precisão
+    Name: Arco da Precisão
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 120
+    Range: 5
+    Slots: 2
+    Jobs:
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+
+  - Id: 210126
+    AegisName: Arco_do_Predador_
+    Name: Arco do Predador
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 130
+    Range: 5
+    Slots: 3
+    Jobs:
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"HT_CLAYMORETRAP",300;
+      bonus2 bSkillAtk,"HT_FREEZINGTRAP",300;
+      bonus2 bSkillAtk,"HT_LANDMINE",300;
+      bonus2 bSkillAtk,"HT_BLASTMINE",300;
+
+  - Id: 210127
+    AegisName: Arco_da_Precisão_
+    Name: Arco da Precisão
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 120
+    Range: 5
+    Slots: 3
+    Jobs:
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus bAgi,2;
+
+  - Id: 210128
+    AegisName: Canção_do_Vento
+    Name: Canção do Vento
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 130
+    Range: 5
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"AC_DOUBLE",20;
+      bonus bInt,3;
+
+  - Id: 210129
+    AegisName: Alaúde_da_Inspiração
+    Name: Alaúde da Inspiração
+    Type: Weapon
+    SubType: Musical
+    Buy: 1
+    Weight: 1200
+    Attack: 185
+    Range: 3
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"BA_DISSONANCE",10;
+      bonus bVit,3;
+
+  - Id: 210130
+    AegisName: Canção_do_Vento_
+    Name: Canção do Vento
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 130
+    Range: 5
+    Slots: 3
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"AC_DOUBLE",20;
+      bonus bInt,3;
+
+  - Id: 210131
+    AegisName: Alaúde_da_Inspiração_
+    Name: Alaúde da Inspiração
+    Type: Weapon
+    SubType: Musical
+    Buy: 1
+    Weight: 1200
+    Attack: 185
+    Range: 3
+    Slots: 3
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"BA_DISSONANCE",10;
+      bonus bVit,3;
+
+  - Id: 210132
+    AegisName: Arco_do_Ritmo_Mortal
+    Name: Arco do Ritmo Mortal
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 135
+    Range: 5
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"AC_SHOWER",40;
+      bonus bDex,3;
+
+  - Id: 210133
+    AegisName: Relíquia_da_Dançarina
+    Name: Relíquia da Dançarina
+    Type: Weapon
+    SubType: Whip
+    Buy: 1
+    Weight: 1200
+    Attack: 185
+    Range: 3
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"DC_THROWARROW",10;
+      bonus bVit,3;
+
+  - Id: 210134
+    AegisName: Arco_do_Ritmo_Mortal_
+    Name: Arco do Ritmo Mortal
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 135
+    Range: 5
+    Slots: 3
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"AC_SHOWER",40;
+      bonus bDex,3;
+
+  - Id: 210135
+    AegisName: Relíquia_da_Dançarina_
+    Name: Relíquia da Dançarina
+    Type: Weapon
+    SubType: Whip
+    Buy: 1
+    Weight: 1200
+    Attack: 185
+    Range: 3
+    Slots: 3
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 3
+    EquipLevelMin: 60
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"DC_THROWARROW",10;
+      bonus bVit,3;
+
 ############################################## LV 80 - 99 ####################################################
+
+  - Id: 210136
+    AegisName: Arco_das_Presas
+    Name: Arco das Presas
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 5
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"HT_CLAYMORETRAP",400;
+      bonus2 bSkillAtk,"HT_FREEZINGTRAP",400;
+      bonus2 bSkillAtk,"HT_LANDMINE",400;
+      bonus2 bSkillAtk,"HT_BLASTMINE",400;
+
+  - Id: 210137
+    AegisName: Arco_da_Liberdade
+    Name: Arco da Liberdade
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 130
+    Range: 5
+    Slots: 1
+    Jobs:
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAgi,4;
+
+  - Id: 210138
+    AegisName: Arco_das_Presas_
+    Name: Arco das Presas
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 5
+    Slots: 2
+    Jobs:
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"HT_CLAYMORETRAP",400;
+      bonus2 bSkillAtk,"HT_FREEZINGTRAP",400;
+      bonus2 bSkillAtk,"HT_LANDMINE",400;
+      bonus2 bSkillAtk,"HT_BLASTMINE",400;
+
+  - Id: 210139
+    AegisName: Arco_da_Liberdade_
+    Name: Arco da Liberdade
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 130
+    Range: 5
+    Slots: 2
+    Jobs:
+      Hunter: true
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAgi,4;
+
+  - Id: 210140
+    AegisName: Voz_do_Destino
+    Name: Voz do Destino
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 5
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"AC_DOUBLE",30;
+      bonus bInt,3;
+
+  - Id: 210141
+    AegisName: Harpa_do_Crepúsculo
+    Name: Harpa do Crepúsculo
+    Type: Weapon
+    SubType: Musical
+    Buy: 1
+    Weight: 1200
+    Attack: 205
+    Range: 3
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"BA_DISSONANCE",20;
+      bonus bVit,3;
+
+  - Id: 210142
+    AegisName: Voz_do_Destino_
+    Name: Voz do Destino
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 5
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"AC_DOUBLE",30;
+      bonus bInt,3;
+
+  - Id: 210143
+    AegisName: Harpa_do_Crepúsculo_
+    Name: Harpa do Crepúsculo
+    Type: Weapon
+    SubType: Musical
+    Buy: 1
+    Weight: 1200
+    Attack: 205
+    Range: 3
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Male
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"BA_DISSONANCE",20;
+      bonus bVit,3;
+
+  - Id: 210144
+    AegisName: Arco_da_Harmonia
+    Name: Arco da Harmonia
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 5
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"AC_SHOWER",55;
+      bonus bDex,3;
+
+  - Id: 210145
+    AegisName: Flor_da_Perdição
+    Name: Flor da Perdição
+    Type: Weapon
+    SubType: Whip
+    Buy: 1
+    Weight: 1200
+    Attack: 205
+    Range: 3
+    Slots: 1
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"DC_THROWARROW",20;
+      bonus bVit,3;
+
+  - Id: 210146
+    AegisName: Arco_da_Harmonia_
+    Name: Arco da Harmonia
+    Type: Weapon
+    SubType: Bow
+    Buy: 1
+    Weight: 1200
+    Attack: 145
+    Range: 5
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Both_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"AC_SHOWER",55;
+      bonus bDex,3;
+
+  - Id: 210147
+    AegisName: Flor_da_Perdição_
+    Name: Flor da Perdição
+    Type: Weapon
+    SubType: Whip
+    Buy: 1
+    Weight: 1200
+    Attack: 205
+    Range: 3
+    Slots: 2
+    Jobs:
+      BardDancer: true
+    Gender: Female
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus2 bSkillAtk,"DC_THROWARROW",20;
+      bonus bVit,3;
+
 ############################################## APRENDIZ ######################################################
-############################################## LV 01 - 40 ####################################################
-############################################## LV 40 - 60 ####################################################
-############################################## LV 60 - 80 ####################################################
+############################################## LV 01 - 45 ####################################################
+
+  - Id: 210148
+    AegisName: Adaga_do_Aprendizado
+    Name: Adaga do Aprendizado
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 110
+    Range: 1
+    Slots: 4
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+  - Id: 210149
+    AegisName: Espada_do_Aprendizado
+    Name: Espada do Aprendizado
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 150
+    Range: 1
+    Slots: 4
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+  - Id: 210150
+    AegisName: Machado_do_Aprendizado
+    Name: Machado do Aprendizado
+    Type: Weapon
+    SubType: 1hAxe
+    Buy: 1
+    Weight: 1200
+    Attack: 170
+    Range: 1
+    Slots: 4
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+############################################## LV 45 - 80 ####################################################
+
+  - Id: 210151
+    AegisName: Adaga_da_Persistência
+    Name: Adaga da Persistência
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 195
+    Range: 1
+    Slots: 3
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 2
+    EquipLevelMin: 45
+    Refineable: true
+
+  - Id: 210152
+    AegisName: Espada_da_Persistência
+    Name: Espada da Persistência
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 205
+    Range: 1
+    Slots: 3
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 2
+    EquipLevelMin: 45
+    Refineable: true
+
+  - Id: 210153
+    AegisName: Machado_da_Persistência
+    Name: Machado da Persistência
+    Type: Weapon
+    SubType: 1hAxe
+    Buy: 1
+    Weight: 1200
+    Attack: 225
+    Range: 1
+    Slots: 4
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+  - Id: 210154
+    AegisName: Maça_da_Persistência
+    Name: Maça da Persistência
+    Type: Weapon
+    SubType: Mace
+    Buy: 1
+    Weight: 1200
+    Attack: 195
+    Range: 1
+    Slots: 4
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+
+  - Id: 210155
+    AegisName: Cajado_da_Persistência
+    Name: Cajado da Persistência
+    Type: Weapon
+    SubType: Staff
+    Buy: 1
+    Weight: 1200
+    Attack: 100
+    Range: 1
+    Slots: 4
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 1
+    EquipLevelMin: 1
+    Refineable: true
+    Script: |
+      bonus bMatkRate,15;
+
 ############################################## LV 80 - 99 ####################################################
+
+  - Id: 210156
+    AegisName: Punhal_do_Multitarefa
+    Name: Punhal do Multitarefa
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 230
+    Range: 1
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,15;
+    
+
+  - Id: 210157
+    AegisName: Lâmina_da_Evolução
+    Name: Lâmina da Evolução
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 250
+    Range: 1
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAspd,3;
+
+  - Id: 210158
+    AegisName: Martelo_da_Esperança
+    Name: Martelo da Esperança
+    Type: Weapon
+    SubType: 1hAxe
+    Buy: 1
+    Weight: 1200
+    Attack: 270
+    Range: 1
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bHit,25;
+
+  - Id: 210159
+    AegisName: Maça_dos_Desafios
+    Name: Maça dos Desafios
+    Type: Weapon
+    SubType: Mace
+    Buy: 1
+    Weight: 1200
+    Attack: 230
+    Range: 1
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bCritical,10;
+
+  - Id: 210160
+    AegisName: Bastão_do_Despertar
+    Name: Bastão do Despertar
+    Type: Weapon
+    SubType: Staff
+    Buy: 1
+    Weight: 1200
+    Attack: 100
+    Range: 1
+    Slots: 1
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMatkRate,25;
+      bonus bDex,3;
+
+  - Id: 210161
+    AegisName: Punhal_do_Multitarefa_
+    Name: Punhal do Multitarefa
+    Type: Weapon
+    SubType: Dagger
+    Buy: 1
+    Weight: 1200
+    Attack: 230
+    Range: 1
+    Slots: 2
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bFlee,15;
+    
+
+  - Id: 210162
+    AegisName: Lâmina_da_Evolução_
+    Name: Lâmina da Evolução
+    Type: Weapon
+    SubType: 1hSword
+    Buy: 1
+    Weight: 1200
+    Attack: 250
+    Range: 1
+    Slots: 2
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bAspd,3;
+
+  - Id: 210163
+    AegisName: Martelo_da_Esperança_
+    Name: Martelo da Esperança
+    Type: Weapon
+    SubType: 1hAxe
+    Buy: 1
+    Weight: 1200
+    Attack: 270
+    Range: 1
+    Slots: 2
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bHit,25;
+
+  - Id: 210164
+    AegisName: Maça_dos_Desafios_
+    Name: Maça dos Desafios
+    Type: Weapon
+    SubType: Mace
+    Buy: 1
+    Weight: 1200
+    Attack: 230
+    Range: 1
+    Slots: 2
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bCritical,10;
+
+  - Id: 210165
+    AegisName: Bastão_do_Despertar_
+    Name: Bastão do Despertar
+    Type: Weapon
+    SubType: Staff
+    Buy: 1
+    Weight: 1200
+    Attack: 100
+    Range: 1
+    Slots: 2
+    Jobs:
+      Novice: true
+      SuperNovice: true
+    Locations:
+      Right_Hand: true
+    WeaponLevel: 4
+    EquipLevelMin: 80
+    Refineable: true
+    Script: |
+      bonus bMatkRate,25;
+      bonus bDex,3;

@@ -287,41 +287,185 @@ Body:
     Sprite: 4_M_THIEF_RUMIN
     Items:
       - Index: 0
-        Item: VPS
+        Item: Traje_do_Caminhante_Noturno_
         RequiredItems:
           - Index: 0
-            Item: Copper_Coin
-            Amount: 32
-      - Index: 1
-        Item: VPA
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 16
-      - Index: 2
-        Item: VPB
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 8
-      - Index: 3
-        Item: VPC        
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 4
-      - Index: 4
-        Item: VPD
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 2
-      - Index: 5
-        Item: VPF
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
+            Item: Traje_do_Caminhante_Noturno
+            Refine: 7
             Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 1
+        Item: Traje_do_Caos_
+        RequiredItems:
+          - Index: 0
+            Item: Traje_do_Caos
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 2
+        Item: Sobrepeliz_do_Caminhante_Noturno_
+        RequiredItems:
+          - Index: 0
+            Item: Sobrepeliz_do_Caminhante_Noturno
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 3
+        Item: Sobrepeliz_do_Caos_
+        RequiredItems:
+          - Index: 0
+            Item: Sobrepeliz_do_Caos
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 4
+        Item: Sapatos_do_Caminhante_Noturno_
+        RequiredItems:
+          - Index: 0
+            Item: Sapatos_do_Caminhante_Noturno
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 5
+        Item: Sapatos_do_Caos_
+        RequiredItems:
+          - Index: 0
+            Item: Sapatos_do_Caos
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 6
+        Item: Gibão_do_Andarilho_
+        RequiredItems:
+          - Index: 0
+            Item: Gibão_do_Andarilho
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 7
+        Item: Casaco_do_Saqueador_
+        RequiredItems: 
+          - Index: 0
+            Item: Casaco_do_Saqueador
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 8
+        Item: Capa_do_Andarilho_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Andarilho
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 9
+        Item: Capa_do_Saqueador_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Saqueador
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 10
+        Item: Sapatos_do_Andarilho_
+        RequiredItems: 
+          - Index: 0
+            Item: Sapatos_do_Andarilho
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 11
+        Item: Sapatos_do_Saqueador_
+        RequiredItems: 
+          - Index: 0
+            Item: Sapatos_do_Saqueador
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 12
+        Item: Traje_do_Espreitador_
+        RequiredItems: 
+          - Index: 0
+            Item: Traje_do_Espreitador
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 13
+        Item: Traje_do_Executor_
+        RequiredItems: 
+          - Index: 0
+            Item: Traje_do_Executor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 14
+        Item: Capuz_do_Espreitador_
+        RequiredItems: 
+          - Index: 0
+            Item: Capuz_do_Espreitador
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 15
+        Item: Capuz_do_Executor_
+        RequiredItems: 
+          - Index: 0
+            Item: Capuz_do_Executor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 16
+        Item: Botas_do_Espreitador_
+        RequiredItems: 
+          - Index: 0
+            Item: Botas_do_Espreitador
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 17
+        Item: Botas_do_Executor_
+        RequiredItems: 
+          - Index: 0
+            Item: Botas_do_Executor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
 
   - Name: Comerciante Mercador#2
     Map: moc_para01 
@@ -331,41 +475,185 @@ Body:
     Sprite: 1_M_SIGNMCNT
     Items:
       - Index: 0
-        Item: VPS
+        Item: Armadura_do_Discípulo_
         RequiredItems:
           - Index: 0
-            Item: Copper_Coin
-            Amount: 32
-      - Index: 1
-        Item: VPA
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 16
-      - Index: 2
-        Item: VPB
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 8
-      - Index: 3
-        Item: VPC        
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 4
-      - Index: 4
-        Item: VPD
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 2
-      - Index: 5
-        Item: VPF
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
+            Item: Armadura_do_Discípulo
+            Refine: 7
             Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 1
+        Item: Armadura_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 2
+        Item: Capa_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 3
+        Item: Capa_do_Aspirante_       
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 4
+        Item: Sapatos_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Sapatos_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 5
+        Item: Botas_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Botas_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 6
+        Item: Armadura_da_Ordem_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 7
+        Item: Armadura_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 8
+        Item: Capa_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 9
+        Item: Capa_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 10
+        Item: Grevas_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 11
+        Item: Grevas_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 12
+        Item: Armadura_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 13
+        Item: Armadura_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 14
+        Item: Capa_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 15
+        Item: Capa_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 16
+        Item: Grevas_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 17
+        Item: Grevas_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
 
   - Name: Comerciante Mago#2
     Map: moc_para01 
@@ -375,41 +663,185 @@ Body:
     Sprite: 2_F_MAGICMASTER
     Items:
       - Index: 0
-        Item: VPS
+        Item: Armadura_do_Discípulo_
         RequiredItems:
           - Index: 0
-            Item: Copper_Coin
-            Amount: 32
-      - Index: 1
-        Item: VPA
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 16
-      - Index: 2
-        Item: VPB
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 8
-      - Index: 3
-        Item: VPC        
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 4
-      - Index: 4
-        Item: VPD
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 2
-      - Index: 5
-        Item: VPF
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
+            Item: Armadura_do_Discípulo
+            Refine: 7
             Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 1
+        Item: Armadura_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 2
+        Item: Capa_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 3
+        Item: Capa_do_Aspirante_       
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 4
+        Item: Sapatos_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Sapatos_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 5
+        Item: Botas_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Botas_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 6
+        Item: Armadura_da_Ordem_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 7
+        Item: Armadura_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 8
+        Item: Capa_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 9
+        Item: Capa_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 10
+        Item: Grevas_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 11
+        Item: Grevas_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 12
+        Item: Armadura_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 13
+        Item: Armadura_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 14
+        Item: Capa_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 15
+        Item: Capa_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 16
+        Item: Grevas_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 17
+        Item: Grevas_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
 
   - Name: Comerciante Noviço#2
     Map: moc_para01 
@@ -419,41 +851,185 @@ Body:
     Sprite: 4_F_ACOLYTE
     Items:
       - Index: 0
-        Item: VPS
+        Item: Armadura_do_Discípulo_
         RequiredItems:
           - Index: 0
-            Item: Copper_Coin
-            Amount: 32
-      - Index: 1
-        Item: VPA
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 16
-      - Index: 2
-        Item: VPB
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 8
-      - Index: 3
-        Item: VPC        
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 4
-      - Index: 4
-        Item: VPD
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 2
-      - Index: 5
-        Item: VPF
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
+            Item: Armadura_do_Discípulo
+            Refine: 7
             Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 1
+        Item: Armadura_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 2
+        Item: Capa_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 3
+        Item: Capa_do_Aspirante_       
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 4
+        Item: Sapatos_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Sapatos_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 5
+        Item: Botas_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Botas_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 6
+        Item: Armadura_da_Ordem_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 7
+        Item: Armadura_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 8
+        Item: Capa_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 9
+        Item: Capa_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 10
+        Item: Grevas_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 11
+        Item: Grevas_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 12
+        Item: Armadura_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 13
+        Item: Armadura_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 14
+        Item: Capa_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 15
+        Item: Capa_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 16
+        Item: Grevas_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 17
+        Item: Grevas_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
 
   - Name: Comerciante Arqueiro#2
     Map: moc_para01 
@@ -463,41 +1039,185 @@ Body:
     Sprite: 4_M_ARCHER
     Items:
       - Index: 0
-        Item: VPS
+        Item: Armadura_do_Discípulo_
         RequiredItems:
           - Index: 0
-            Item: Copper_Coin
-            Amount: 32
-      - Index: 1
-        Item: VPA
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 16
-      - Index: 2
-        Item: VPB
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 8
-      - Index: 3
-        Item: VPC        
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 4
-      - Index: 4
-        Item: VPD
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 2
-      - Index: 5
-        Item: VPF
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
+            Item: Armadura_do_Discípulo
+            Refine: 7
             Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 1
+        Item: Armadura_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 2
+        Item: Capa_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 3
+        Item: Capa_do_Aspirante_       
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 4
+        Item: Sapatos_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Sapatos_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 5
+        Item: Botas_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Botas_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 6
+        Item: Armadura_da_Ordem_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 7
+        Item: Armadura_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 8
+        Item: Capa_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 9
+        Item: Capa_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 10
+        Item: Grevas_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 11
+        Item: Grevas_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 12
+        Item: Armadura_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 13
+        Item: Armadura_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 14
+        Item: Capa_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 15
+        Item: Capa_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 16
+        Item: Grevas_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 17
+        Item: Grevas_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
 
   - Name: Comerciante Aprendiz#2
     Map: moc_para01 
@@ -507,41 +1227,185 @@ Body:
     Sprite: 4_M_SIT_NOVICE
     Items:
       - Index: 0
-        Item: VPS
+        Item: Armadura_do_Discípulo_
         RequiredItems:
           - Index: 0
-            Item: Copper_Coin
-            Amount: 32
-      - Index: 1
-        Item: VPA
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 16
-      - Index: 2
-        Item: VPB
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 8
-      - Index: 3
-        Item: VPC        
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 4
-      - Index: 4
-        Item: VPD
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
-            Amount: 2
-      - Index: 5
-        Item: VPF
-        RequiredItems:
-          - Index: 0
-            Item: Copper_Coin
+            Item: Armadura_do_Discípulo
+            Refine: 7
             Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 1
+        Item: Armadura_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 2
+        Item: Capa_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 3
+        Item: Capa_do_Aspirante_       
+        RequiredItems:
+          - Index: 0
+            Item: Capa_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 4
+        Item: Sapatos_do_Discípulo_
+        RequiredItems:
+          - Index: 0
+            Item: Sapatos_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 5
+        Item: Botas_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Botas_do_Aspirante
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 6
+        Item: Armadura_da_Ordem_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 7
+        Item: Armadura_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 8
+        Item: Capa_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 9
+        Item: Capa_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 10
+        Item: Grevas_da_Ordem_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 11
+        Item: Grevas_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Cruzado
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 12
+        Item: Armadura_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 13
+        Item: Armadura_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 14
+        Item: Capa_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 15
+        Item: Capa_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 16
+        Item: Grevas_do_Protetor_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 17
+        Item: Grevas_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_do_Guardião
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
 
   - Name: Consumíveis#2
     Map: moc_para01 

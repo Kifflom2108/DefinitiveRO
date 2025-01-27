@@ -8770,10 +8770,10 @@ Body:
     Flags:
       AllowWhenPerforming: true
     Range: 9
-    Hit: Single
-    HitCount: 1
+    Hit: Multi_Hit
+    HitCount: 3
     Element: Weapon
-    CastTime: 1500
+    CastTime: 1000
     Requires:
       SpCost:
         - Level: 1
@@ -8785,7 +8785,7 @@ Body:
         - Level: 4
           Amount: 7
         - Level: 5
-          Amount: 9
+          Amount: 7
       Weapon:
         Whip: true
       Ammo:
