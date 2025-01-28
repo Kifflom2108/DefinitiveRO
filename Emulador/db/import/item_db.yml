@@ -3112,11 +3112,11 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110120
-    AegisName: Traje_do_Engenho_Metálico
-    Name: Traje do Engenho Metálico
+    AegisName: Armadura_de_Hephaestus
+    Name: Armadura de Hephaestus
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1800
     Defense: 5
     Jobs:
       Blacksmith: true
@@ -3127,14 +3127,14 @@ Body:
     Refineable: true
     Script: |
       bonus bMaxSP,100;
-      bonus bBaseAtk,10;
+      bonus bBaseAtk,12;
 
   - Id: 110121
-    AegisName: Traje_do_Engenho_Metálico_
-    Name: Traje do Engenho Metálico
+    AegisName: Armadura_de_Hephaestus_
+    Name: Armadura de Hephaestus
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1800
     Defense: 5
     Slots: 1
     Jobs:
@@ -3146,14 +3146,14 @@ Body:
     Refineable: true
     Script: |
       bonus bMaxSP,100;
-      bonus bBaseAtk,10;
+      bonus bBaseAtk,12;
 
   - Id: 110122
-    AegisName: Peitoral_do_Mestre_dos_Metais
-    Name: Peitoral do Mestre dos Metais
+    AegisName: Armadura_do_Mestre_dos_Metais
+    Name: Armadura do Mestre dos Metais
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2200
     Defense: 6
     Jobs:
       Blacksmith: true
@@ -3167,11 +3167,11 @@ Body:
       bonus bBaseAtk,15;
 
   - Id: 110123
-    AegisName: Peitoral_do_Mestre_dos_Metais_ 
-    Name: Peitoral do Mestre dos Metais
+    AegisName: Armadura_do_Mestre_dos_Metais_ 
+    Name: Armadurado Mestre dos Metais
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2200
     Defense: 6
     Slots: 1
     Jobs:
@@ -3188,8 +3188,8 @@ Body:
 ########################################### CAPA ###############################################
 
   - Id: 110124
-    AegisName: Sobrepeliz_do_Engenho_Metálico
-    Name: Sobrepeliz do Engenho Metálico
+    AegisName: Capa_de_Hephaestus
+    Name: Capa de Hephaestus
     Type: Armor
     Buy: 1
     Weight: 600
@@ -3199,14 +3199,14 @@ Body:
     Locations:
       Garment: true
     ArmorLevel: 1
-    EquipLevelMin: 20
+    EquipLevelMin: 60
     Refineable: true
     Script: |
       bonus bStr,2;
 
   - Id: 110125
-    AegisName: Sobrepeliz_do_Engenho_Metálico_
-    Name: Sobrepeliz do Engenho Metálico
+    AegisName: Capa_de_Hephaestus_
+    Name: Capa de Hephaestus
     Type: Armor
     Buy: 1
     Weight: 600
@@ -3217,7 +3217,7 @@ Body:
     Locations:
       Garment: true
     ArmorLevel: 1
-    EquipLevelMin: 20
+    EquipLevelMin: 60
     Refineable: true
     Script: |
       bonus bStr,2;
@@ -3236,7 +3236,7 @@ Body:
     Locations:
       Garment: true
     ArmorLevel: 1
-    EquipLevelMin: 40
+    EquipLevelMin: 80
     Refineable: true
     Script: |
       bonus bStr,3;
@@ -3254,7 +3254,7 @@ Body:
     Locations:
       Garment: true
     ArmorLevel: 1
-    EquipLevelMin: 40
+    EquipLevelMin: 80
     Refineable: true
     Script: |
       bonus bStr,3;
@@ -3262,11 +3262,11 @@ Body:
 ########################################### SAPATO #############################################
 
   - Id: 110128
-    AegisName: Sapato_do_Engenho_Metálico
-    Name: Sapato do Engenho Metálico
+    AegisName: Botas_de_Hephaestus
+    Name: Botas de Hephaestus
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 1200
     Defense: 3
     Jobs:
       Blacksmith: true
@@ -3279,11 +3279,11 @@ Body:
       bonus bStr,1;
     
   - Id: 110129
-    AegisName: Sapato_do_Engenho_Metálico_
-    Name: Sapato do Engenho Metálico
+    AegisName: Botas_de_Hephaestus_
+    Name: Botas de Hephaestus
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 1200
     Defense: 3
     Slots: 1
     Jobs:
@@ -3299,11 +3299,11 @@ Body:
 ##############
 
   - Id: 110130
-    AegisName: Grevas_do_Mestre_dos_Metais
-    Name: Grevas do Mestre dos Metais
+    AegisName: Botas_do_Mestre_dos_Metais
+    Name: Botas do Mestre dos Metais
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1300
     Defense: 4
     Jobs:
       Blacksmith: true
@@ -3316,11 +3316,11 @@ Body:
       bonus bStr,2;
     
   - Id: 110131
-    AegisName: Grevas_do_Mestre_dos_Metais_
-    Name: Grevas do Mestre dos Metais
+    AegisName: Botas_do_Mestre_dos_Metais_
+    Name: Botas do Mestre dos Metais
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1300
     Defense: 4
     Slots: 1
     Jobs:
@@ -3338,7 +3338,7 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110132
-    AegisName: Traje_do_Mestre_dos_Elixires
+    AegisName: Traje__da_Transmutação
     Name: Traje do Mestre dos Elixires
     Type: Armor
     Buy: 1
@@ -3356,7 +3356,7 @@ Body:
       bonus bAspd,3;
 
   - Id: 110133
-    AegisName: Traje_do_Mestre_dos_Elixires_
+    AegisName: Traje_da_Transmutação_
     Name: Traje do Mestre dos Elixires
     Type: Armor
     Buy: 1
@@ -3375,7 +3375,7 @@ Body:
       bonus bAspd,3;
 
   - Id: 110134
-    AegisName: Peitoral_da_Transmutação
+    AegisName: Peitoral_do_Mestre_dos_Elixires
     Name: Peitoral da Transmutação
     Type: Armor
     Buy: 1
@@ -3393,7 +3393,7 @@ Body:
       bonus bAspd,4;
 
   - Id: 110135
-    AegisName: Peitoral_da_Transmutação_ 
+    AegisName: Peitoral_do_Mestre_dos_Elixires_ 
     Name: Peitoral da Transmutação
     Type: Armor
     Buy: 1
@@ -3414,7 +3414,7 @@ Body:
 ########################################### CAPA ###############################################
 
   - Id: 110136
-    AegisName: Sobrepeliz_do_Mestre_dos_Elixires
+    AegisName: Sobrepeliz_da_Transmutação
     Name: Sobrepeliz do Mestre dos Elixires
     Type: Armor
     Buy: 1
@@ -3431,7 +3431,7 @@ Body:
       bonus bBaseAtk,10;
     
   - Id: 110137
-    AegisName: Sobrepeliz_do_Mestre_dos_Elixires_
+    AegisName: Sobrepeliz_da_Transmutação_
     Name: Sobrepeliz do Mestre dos Elixires
     Type: Armor
     Buy: 1
@@ -3451,7 +3451,7 @@ Body:
 ###############################
 
   - Id: 110138
-    AegisName: Capa_da_Transmutação
+    AegisName: Capa_do_Mestre_dos_Elixires
     Name: Capa da Transmutação
     Type: Armor
     Buy: 1
@@ -3468,7 +3468,7 @@ Body:
       bonus bBaseAtk,15;
     
   - Id: 110139
-    AegisName: Capa_da_Transmutação_ 
+    AegisName: Capa_do_Mestre_dos_Elixires_ 
     Name: Capa da Transmutação
     Type: Armor
     Buy: 1
@@ -3488,7 +3488,7 @@ Body:
 ########################################### SAPATO #############################################
 
   - Id: 110140
-    AegisName: Sapato_do_Mestre_dos_Elixires
+    AegisName: Sapato_da_Transmutação
     Name: Sapato do Mestre dos Elixires
     Type: Armor
     Buy: 1
@@ -3505,7 +3505,7 @@ Body:
       bonus bBaseAtk,5;
     
   - Id: 110141
-    AegisName: Sapato_do_Mestre_dos_Elixires_
+    AegisName: Sapato_da_Transmutação_
     Name: Sapato do Mestre dos Elixires
     Type: Armor
     Buy: 1
@@ -3525,7 +3525,7 @@ Body:
 ##############
 
   - Id: 110142
-    AegisName: Grevas_da_Transmutação
+    AegisName: Grevas_do_Mestre_dos_Elixires
     Name: Grevas da Transmutação
     Type: Armor
     Buy: 1
@@ -3543,7 +3543,7 @@ Body:
       bonus bStr,3;
     
   - Id: 110143
-    AegisName: Grevas_da_Transmutação_
+    AegisName: Grevas_do_Mestre_dos_Elixires_
     Name: Grevas da Transmutação
     Type: Armor
     Buy: 1
@@ -3694,13 +3694,14 @@ Body:
 
 ############################
 
-    - Id: 110150
+  - Id: 110150
     AegisName: Capa_do_Protegido_Celestial
     Name: Capa do Protegido Celestial
     Type: Armor
     Buy: 1
     Weight: 600
     Defense: 3
+    Slots: 0
     Jobs:
       Acolyte: true
       Monk: true
@@ -3712,6 +3713,8 @@ Body:
     Refineable: true
     Script: |
       
+##################################
+
   - Id: 110151
     AegisName: Capa_do_Protegido_Celestial_
     Name: Capa do Protegido Celestial

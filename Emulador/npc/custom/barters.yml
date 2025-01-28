@@ -109,16 +109,6 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 1
-        Item: Armadura_do_Aspirante_
-        RequiredItems:
-          - Index: 0
-            Item: Armadura_do_Aspirante
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 1
-      - Index: 2
         Item: Capa_do_Discípulo_
         RequiredItems:
           - Index: 0
@@ -128,21 +118,31 @@ Body:
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
-      - Index: 3
-        Item: Capa_do_Aspirante_       
+      - Index: 2
+        Item: Sapatos_do_Discípulo_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Aspirante
+            Item: Sapatos_do_Discípulo
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 1
+      - Index: 3
+        Item: Armadura_do_Aspirante_
+        RequiredItems:
+          - Index: 0
+            Item: Armadura_do_Aspirante
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 4
-        Item: Sapatos_do_Discípulo_
+        Item: Capa_do_Aspirante_
         RequiredItems:
           - Index: 0
-            Item: Sapatos_do_Discípulo
+            Item: Capa_do_Aspirante
             Refine: 7
             Amount: 1
           - Index: 1
@@ -169,16 +169,6 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 7
-        Item: Armadura_do_Cruzado_
-        RequiredItems: 
-          - Index: 0
-            Item: Armadura_do_Cruzado
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 4
-      - Index: 8
         Item: Capa_da_Ordem_
         RequiredItems: 
           - Index: 0
@@ -188,21 +178,31 @@ Body:
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
-      - Index: 9
-        Item: Capa_do_Cruzado_
+      - Index: 8
+        Item: Grevas_da_Ordem_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Cruzado
+            Item: Grevas_da_Ordem
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 4
+      - Index: 9
+        Item: Armadura_do_Cruzado_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Cruzado
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 10
-        Item: Grevas_da_Ordem_
+        Item: Capa_do_Cruzado_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_da_Ordem
+            Item: Capa_do_Cruzado
             Refine: 7
             Amount: 1
           - Index: 1
@@ -229,16 +229,6 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 13
-        Item: Armadura_do_Guardião_
-        RequiredItems: 
-          - Index: 0
-            Item: Armadura_do_Guardião
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 7
-      - Index: 14
         Item: Capa_do_Protetor_
         RequiredItems: 
           - Index: 0
@@ -248,21 +238,31 @@ Body:
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
-      - Index: 15
-        Item: Capa_do_Guardião_
+      - Index: 14
+        Item: Grevas_do_Protetor_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Guardião
+            Item: Grevas_do_Protetor
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+      - Index: 15
+        Item: Armadura_do_Guardião_
+        RequiredItems: 
+          - Index: 0
+            Item: Armadura_do_Guardião
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 16
-        Item: Grevas_do_Protetor_
+        Item: Capa_do_Guardião_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Protetor
+            Item: Capa_do_Guardião
             Refine: 7
             Amount: 1
           - Index: 1
@@ -666,180 +666,180 @@ Body:
     Sprite: 2_F_MAGICMASTER
     Items:
       - Index: 0
-        Item: Armadura_do_Discípulo_
+        Item: Robe_da_Conjuração_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Discípulo
+            Item: Robe_da_Conjuração
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 1
-        Item: Armadura_do_Aspirante_
+        Item: Capuz_da_Conjuração_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Aspirante
+            Item: Capuz_da_Conjuração
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 2
-        Item: Capa_do_Discípulo_
+        Item: Sapatos_da_Conjuração_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Discípulo
+            Item: Sapatos_da_Conjuração
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 3
-        Item: Capa_do_Aspirante_       
+        Item: Robe_do_Foco_Arcano_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Aspirante
+            Item: Robe_do_Foco_Arcano
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 4
-        Item: Sapatos_do_Discípulo_
+        Item: Capuz_do_Foco_Arcano_
         RequiredItems:
           - Index: 0
-            Item: Sapatos_do_Discípulo
+            Item: Capuz_do_Foco_Arcano
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 5
-        Item: Botas_do_Aspirante_
+        Item: Sapatos_do_Foco_Arcano_
         RequiredItems:
           - Index: 0
-            Item: Botas_do_Aspirante
+            Item: Sapatos_do_Foco_Arcano
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 6
-        Item: Armadura_da_Ordem_
+        Item: Robe_do_Fluxo_de_Mana_
         RequiredItems:
           - Index: 0
-            Item: Armadura_da_Ordem
+            Item: Robe_do_Fluxo_de_Mana
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 7
-        Item: Armadura_do_Cruzado_
+        Item: Capuz_do_Fluxo_de_Mana_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Cruzado
+            Item: Capuz_do_Fluxo_de_Mana
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 8
-        Item: Capa_da_Ordem_
+        Item: Sapatos_do_Fluxo_de_Mana_
         RequiredItems: 
           - Index: 0
-            Item: Capa_da_Ordem
+            Item: Sapatos_do_Fluxo_de_Mana
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 9
-        Item: Capa_do_Cruzado_
+        Item: Robe_da_Explosão_Arcana_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Cruzado
+            Item: Robe_da_Explosão_Arcana
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 10
-        Item: Grevas_da_Ordem_
+        Item: Capa_da_Explosão_Arcana_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_da_Ordem
+            Item: Capa_da_Explosão_Arcana
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 11
-        Item: Grevas_do_Cruzado_
+        Item: Sapatos_da_Explosão_Arcana_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Cruzado
+            Item: Sapatos_da_Explosão_Arcana
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 12
-        Item: Armadura_do_Protetor_
+        Item: Robe_do_Fluxo_Temporal_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Protetor
+            Item: Robe_do_Fluxo_Temporal
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 13
-        Item: Armadura_do_Guardião_
+        Item: Capa_do_Fluxo_Temporal_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Guardião
+            Item: Capa_do_Fluxo_Temporal
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 14
-        Item: Capa_do_Protetor_
+        Item: Botas_do_Fluxo_Temporal_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Protetor
+            Item: Botas_do_Fluxo_Temporal
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 15
-        Item: Capa_do_Guardião_
+        Item: Robe_do_Observador_das_Eras_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Guardião
+            Item: Robe_do_Observador_das_Eras
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 16
-        Item: Grevas_do_Protetor_
+        Item: Capa_do_Observador_das_Eras_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Protetor
+            Item: Capa_do_Observador_das_Eras
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 17
-        Item: Grevas_do_Guardião_
+        Item: Botas_do_Observador_das_Eras_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Guardião
+            Item: Botas_do_Observador_das_Eras
             Refine: 7
             Amount: 1
           - Index: 1
@@ -847,192 +847,192 @@ Body:
             Amount: 7
 
   - Name: Comerciante Noviço#2
-    Map: moc_para01 
+    Map: moc_para01
     X: 27
     Y: 95
     Direction: South
     Sprite: 4_F_ACOLYTE
     Items:
       - Index: 0
-        Item: Armadura_do_Discípulo_
+        Item: Armadura_do_Discípulo_Divino_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Discípulo
+            Item: Armadura_do_Discípulo_Divino
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 1
-        Item: Armadura_do_Aspirante_
+        Item: Capa_do_Discípulo_Divino_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Aspirante
+            Item: Capa_do_Discípulo_Divino
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 2
-        Item: Capa_do_Discípulo_
+        Item: Sapatos_do_Discípulo_Divino_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Discípulo
+            Item: Sapatos_do_Discípulo_Divino
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 3
-        Item: Capa_do_Aspirante_       
+        Item: Armadura_do_Protegido_Celestial_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Aspirante
+            Item: Armadura_do_Protegido_Celestial
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 4
-        Item: Sapatos_do_Discípulo_
+        Item: Capa_do_Protegido_Celestial_
         RequiredItems:
           - Index: 0
-            Item: Sapatos_do_Discípulo
+            Item: Capa_do_Protegido_Celestial
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 5
-        Item: Botas_do_Aspirante_
+        Item: Botas_do_Protegido_Celestial_
         RequiredItems:
           - Index: 0
-            Item: Botas_do_Aspirante
+            Item: Botas_do_Protegido_Celestial
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 6
-        Item: Armadura_da_Ordem_
+        Item: Traje_do_Discípulo_Combatente_
         RequiredItems:
           - Index: 0
-            Item: Armadura_da_Ordem
+            Item: Traje_do_Discípulo_Combatente
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 7
-        Item: Armadura_do_Cruzado_
-        RequiredItems: 
+        Item: Sobrepeliz_do_Discípulo_Combatente_
+        RequiredItems:
           - Index: 0
-            Item: Armadura_do_Cruzado
+            Item: Sobrepeliz_do_Discípulo_Combatente
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 8
-        Item: Capa_da_Ordem_
-        RequiredItems: 
+        Item: Sapato_do_Discípulo_Combatente_
+        RequiredItems:
           - Index: 0
-            Item: Capa_da_Ordem
+            Item: Sapato_do_Discípulo_Combatente
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 9
-        Item: Capa_do_Cruzado_
-        RequiredItems: 
+        Item: Peitoral_do_Mestre_da_Luz_
+        RequiredItems:
           - Index: 0
-            Item: Capa_do_Cruzado
+            Item: Peitoral_do_Mestre_da_Luz
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 10
-        Item: Grevas_da_Ordem_
-        RequiredItems: 
+        Item: Capa_do_Mestre_da_Luz_
+        RequiredItems:
           - Index: 0
-            Item: Grevas_da_Ordem
+            Item: Capa_do_Mestre_da_Luz
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 11
-        Item: Grevas_do_Cruzado_
-        RequiredItems: 
+        Item: Grevas_do_Mestre_da_Luz_
+        RequiredItems:
           - Index: 0
-            Item: Grevas_do_Cruzado
+            Item: Grevas_do_Mestre_da_Luz
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 4
+            Amount: 7
       - Index: 12
-        Item: Armadura_do_Protetor_
-        RequiredItems: 
+        Item: Traje_do_Redentor_de_Almas_
+        RequiredItems:
           - Index: 0
-            Item: Armadura_do_Protetor
+            Item: Traje_do_Redentor_de_Almas
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 13
-        Item: Armadura_do_Guardião_
-        RequiredItems: 
+        Item: Sobrepeliz_do_Redentor_de_Almas_
+        RequiredItems:
           - Index: 0
-            Item: Armadura_do_Guardião
+            Item: Sobrepeliz_do_Redentor_de_Almas
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 14
-        Item: Capa_do_Protetor_
-        RequiredItems: 
+        Item: Sapato_do_Redentor_de_Almas_
+        RequiredItems:
           - Index: 0
-            Item: Capa_do_Protetor
+            Item: Sapato_do_Redentor_de_Almas
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 15
-        Item: Capa_do_Guardião_
-        RequiredItems: 
+        Item: Peitoral_do_Apóstolo_Celestial_
+        RequiredItems:
           - Index: 0
-            Item: Capa_do_Guardião
+            Item: Peitoral_do_Apóstolo_Celestial
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 7
+            Amount: 10
       - Index: 16
-        Item: Grevas_do_Protetor_
-        RequiredItems: 
+        Item: Capa_do_Apóstolo_Celestial_
+        RequiredItems:
           - Index: 0
-            Item: Grevas_do_Protetor
+            Item: Capa_do_Apóstolo_Celestial
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 7
+            Amount: 10
       - Index: 17
-        Item: Grevas_do_Guardião_
-        RequiredItems: 
+        Item: Grevas_do_Apóstolo_Celestial_
+        RequiredItems:
           - Index: 0
-            Item: Grevas_do_Guardião
+            Item: Grevas_do_Apóstolo_Celestial
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 7
+            Amount: 10
 
   - Name: Comerciante Arqueiro#2
     Map: moc_para01 
