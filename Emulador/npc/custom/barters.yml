@@ -1786,7 +1786,7 @@ Body:
 
   - Name: Comerciante Escudeiro#1
     Map: moc_para01 
-    X: 16
-    Y: 79
+    X: 18
+    Y: 95
     Direction: South
     Sprite: 4_M_ROYALGUARD
