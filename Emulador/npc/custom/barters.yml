@@ -1041,181 +1041,275 @@ Body:
     Direction: South
     Sprite: 4_M_ARCHER
     Items:
+      #----------------------------------------- ARQUEIRO TIER 1 ---------------------------------#
+      ## Conjunto Atirador Preciso (1 coupon)
       - Index: 0
-        Item: Armadura_do_Discípulo_
+        Item: Armadura_do_Atirador_Preciso_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Discípulo
+            Item: Armadura_do_Atirador_Preciso
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
+
       - Index: 1
-        Item: Armadura_do_Aspirante_
+        Item: Capa_do_Atirador_Preciso_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Aspirante
+            Item: Capa_do_Atirador_Preciso
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
+
       - Index: 2
-        Item: Capa_do_Discípulo_
+        Item: Sapatos_do_Atirador_Preciso_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Discípulo
+            Item: Sapatos_do_Atirador_Preciso
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
+
+      ## Conjunto Guardião das Florestas (1 coupon)
       - Index: 3
-        Item: Capa_do_Aspirante_       
+        Item: Armadura_do_Guardião_das_Florestas_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Aspirante
+            Item: Armadura_do_Guardião_das_Florestas
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
+
       - Index: 4
-        Item: Sapatos_do_Discípulo_
+        Item: Capa_do_Guardião_das_Florestas_       
         RequiredItems:
           - Index: 0
-            Item: Sapatos_do_Discípulo
+            Item: Capa_do_Guardião_das_Florestas
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
+
       - Index: 5
-        Item: Botas_do_Aspirante_
+        Item: Botas_do_Guardião_das_Florestas_
         RequiredItems:
           - Index: 0
-            Item: Botas_do_Aspirante
+            Item: Botas_do_Guardião_das_Florestas
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
+
+      #----------------------------------------- CAÇADOR TIER 2 ----------------------------------#
+      ## Conjunto Falcão da Noite (4 coupons)
       - Index: 6
-        Item: Armadura_da_Ordem_
+        Item: Traje_do_Falcão_da_Noite_
         RequiredItems:
           - Index: 0
-            Item: Armadura_da_Ordem
+            Item: Traje_do_Falcão_da_Noite
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
+
       - Index: 7
-        Item: Armadura_do_Cruzado_
+        Item: Sobrepeliz_do_Falcão_da_Noite_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Cruzado
+            Item: Sobrepeliz_do_Falcão_da_Noite
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
+
       - Index: 8
-        Item: Capa_da_Ordem_
+        Item: Sapato_do_Falcão_da_Noite_
         RequiredItems: 
           - Index: 0
-            Item: Capa_da_Ordem
+            Item: Sapato_do_Falcão_da_Noite
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
+
+      ## Conjunto Mestre da Selva (4 coupons)
       - Index: 9
-        Item: Capa_do_Cruzado_
+        Item: Peitoral_do_Mestre_da_Selva_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Cruzado
+            Item: Peitoral_do_Mestre_da_Selva
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
+
       - Index: 10
-        Item: Grevas_da_Ordem_
+        Item: Capa_do_Mestre_da_Selva_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_da_Ordem
+            Item: Capa_do_Mestre_da_Selva
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
+
       - Index: 11
-        Item: Grevas_do_Cruzado_
+        Item: Grevas_do_Mestre_da_Selva_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Cruzado
+            Item: Grevas_do_Mestre_da_Selva
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
+
+      #----------------------------------------- BARDO/Odalisica TIER 3 --------------------------#
+      ## Conjunto Poeta Errante (Bardo - 7 coupons)
       - Index: 12
-        Item: Armadura_do_Protetor_
+        Item: Traje_do_Poeta_Errante_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Protetor
+            Item: Traje_do_Poeta_Errante
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
+
       - Index: 13
-        Item: Armadura_do_Guardião_
+        Item: Sobrepeliz_do_Poeta_Errante_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Guardião
+            Item: Sobrepeliz_do_Poeta_Errante
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
+
       - Index: 14
-        Item: Capa_do_Protetor_
+        Item: Sapato_do_Poeta_Errante_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Protetor
+            Item: Sapato_do_Poeta_Errante
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
+
+      ## Conjunto Balada Eterna (Bardo - 7 coupons)
       - Index: 15
-        Item: Capa_do_Guardião_
+        Item: Peitoral_da_Balada_Eterna_
         RequiredItems: 
           - Index: 0
-            Item: Capa_do_Guardião
+            Item: Peitoral_da_Balada_Eterna
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
+
       - Index: 16
-        Item: Grevas_do_Protetor_
+        Item: Capa_da_Balada_Eterna_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Protetor
+            Item: Capa_da_Balada_Eterna
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
+
       - Index: 17
-        Item: Grevas_do_Guardião_
+        Item: Grevas_da_Balada_Eterna_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Guardião
+            Item: Grevas_da_Balada_Eterna
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+
+      ## Conjunto Musa dos Ventos (Odalisica - 7 coupons)
+      - Index: 18
+        Item: Traje_da_Musa_dos_Ventos_
+        RequiredItems: 
+          - Index: 0
+            Item: Traje_da_Musa_dos_Ventos
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+
+      - Index: 19
+        Item: Sobrepeliz_da_Musa_dos_Ventos_
+        RequiredItems: 
+          - Index: 0
+            Item: Sobrepeliz_da_Musa_dos_Ventos
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+
+      - Index: 20
+        Item: Sapato_da_Musa_dos_Ventos_
+        RequiredItems: 
+          - Index: 0
+            Item: Sapato_da_Musa_dos_Ventos
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+
+      ## Conjunto Beleza Mortal (Odalisica - 7 coupons)
+      - Index: 21
+        Item: Peitoral_da_Beleza_Mortal_
+        RequiredItems: 
+          - Index: 0
+            Item: Peitoral_da_Beleza_Mortal
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+
+      - Index: 22
+        Item: Capa_da_Beleza_Mortal_
+        RequiredItems: 
+          - Index: 0
+            Item: Capa_da_Beleza_Mortal
+            Refine: 7
+            Amount: 1
+          - Index: 1
+            Item: Special_Exchange_Coupon
+            Amount: 7
+
+      - Index: 23
+        Item: Grevas_da_Beleza_Mortal_
+        RequiredItems: 
+          - Index: 0
+            Item: Grevas_da_Beleza_Mortal
             Refine: 7
             Amount: 1
           - Index: 1

@@ -4399,11 +4399,10 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 20
     Refineable: true
-    Script: |
 
 ############################
 
-    - Id: 110186
+  - Id: 110186
     AegisName: Capa_do_Guardião_das_Florestas
     Name: Capa do Guardião das Florestas
     Type: Armor
@@ -4419,7 +4418,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 40
     Refineable: true
-    Script: |
       
   - Id: 110187
     AegisName: Capa_do_Guardião_das_Florestas_
@@ -4438,7 +4436,6 @@ Body:
     ArmorLevel: 1
     EquipLevelMin: 40
     Refineable: true
-    Script: |
 
 ########################################### SAPATO #############################################
 
