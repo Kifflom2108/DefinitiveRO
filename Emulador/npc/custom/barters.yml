@@ -536,40 +536,40 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 6
-        Item: Traje_do_Engenho_Metálico_
+        Item: Armadura_de_Hephaestus_
         RequiredItems: 
           - Index: 0
-            Item: Traje_do_Engenho_Metálico
+            Item: Armadura_de_Hephaestus
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 7
-        Item: Sobrepeliz_do_Engenho_Metálico_
+        Item: Capa_de_Hephaestus_
         RequiredItems: 
           - Index: 0
-            Item: Sobrepeliz_do_Engenho_Metálico
+            Item: Capa_de_Hephaestus
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 8
-        Item: Sapato_do_Engenho_Metálico_
+        Item: Botas_de_Hephaestus_
         RequiredItems: 
           - Index: 0
-            Item: Sapato_do_Engenho_Metálico
+            Item: Botas_de_Hephaestus
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 9
-        Item: Peitoral_do_Mestre_dos_Metais_
+        Item: Armadura_do_Mestre_dos_Metais_
         RequiredItems:
           - Index: 0
-            Item: Peitoral_do_Mestre_dos_Metais
+            Item: Armadura_do_Mestre_dos_Metais
             Refine: 7
             Amount: 1
           - Index: 1
@@ -586,70 +586,70 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 11
-        Item: Grevas_do_Mestre_dos_Metais_
+        Item: Botas_do_Mestre_dos_Metais_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Mestre_dos_Metais
+            Item: Botas_do_Mestre_dos_Metais
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 12
-        Item: Traje_do_Mestre_dos_Elixires_
+        Item: Peitoral_do_Mestre_dos_Elixires_
         RequiredItems: 
           - Index: 0
-            Item: Traje_do_Mestre_dos_Elixires
+            Item: Peitoral_do_Mestre_dos_Elixires
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 13
-        Item: Sobrepeliz_do_Mestre_dos_Elixires_
+        Item: Capa_do_Mestre_dos_Elixires_
         RequiredItems: 
           - Index: 0
-            Item: Sobrepeliz_do_Mestre_dos_Elixires
+            Item: Capa_do_Mestre_dos_Elixires
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 14
-        Item: Sapato_do_Mestre_dos_Elixires_
+        Item: Grevas_do_Mestre_dos_Elixires_
         RequiredItems: 
           - Index: 0
-            Item: Sapato_do_Mestre_dos_Elixires
+            Item: Grevas_do_Mestre_dos_Elixires
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 15
-        Item: Peitoral_da_Transmutação_
+        Item: Traje_da_Transmutação_
         RequiredItems: 
           - Index: 0
-            Item: Peitoral_da_Transmutação
+            Item: Traje_da_Transmutação
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 16
-        Item: Capa_da_Transmutação_
+        Item: Sobrepeliz_da_Transmutação_
         RequiredItems: 
           - Index: 0
-            Item: Capa_da_Transmutação
+            Item: Sobrepeliz_da_Transmutação
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 17
-        Item: Grevas_da_Transmutação_
+        Item: Sapato_da_Transmutação_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_da_Transmutação
+            Item: Sapato_da_Transmutação
             Refine: 7
             Amount: 1
           - Index: 1
@@ -1324,185 +1324,96 @@ Body:
     Sprite: 4_M_SIT_NOVICE
     Items:
       - Index: 0
-        Item: Armadura_do_Discípulo_
+        Item: Traje_do_Aspirante_Aventureiro_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Discípulo
+            Item: Traje_do_Aspirante_Aventureiro
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 1
-        Item: Armadura_do_Aspirante_
+        Item: Sobrepeliz_do_Aspirante_Aventureiro_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Aspirante
+            Item: Sobrepeliz_do_Aspirante_Aventureiro
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 2
-        Item: Capa_do_Discípulo_
+        Item: Sapato_do_Aspirante_Aventureiro_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Discípulo
+            Item: Sapato_do_Aspirante_Aventureiro
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 3
-        Item: Capa_do_Aspirante_       
+        Item: Peitoral_do_Iniciante_Persistente_       
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Aspirante
+            Item: Peitoral_do_Iniciante_Persistente
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 1
+            Amount: 4
       - Index: 4
-        Item: Sapatos_do_Discípulo_
+        Item: Capa_do_Iniciante_Persistente_
         RequiredItems:
           - Index: 0
-            Item: Sapatos_do_Discípulo
+            Item: Capa_do_Iniciante_Persistente
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 1
+            Amount: 4
       - Index: 5
-        Item: Botas_do_Aspirante_
+        Item: Grevas_do_Iniciante_Persistente_
         RequiredItems:
           - Index: 0
-            Item: Botas_do_Aspirante
+            Item: Grevas_do_Iniciante_Persistente
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
-            Amount: 1
+            Amount: 4
       - Index: 6
-        Item: Armadura_da_Ordem_
+        Item: Peitoral_do_Curioso_Veterano_
         RequiredItems:
           - Index: 0
-            Item: Armadura_da_Ordem
+            Item: Peitoral_do_Curioso_Veterano
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 7
-        Item: Armadura_do_Cruzado_
+        Item: Capa_do_Curioso_Veterano_
         RequiredItems: 
           - Index: 0
-            Item: Armadura_do_Cruzado
+            Item: Capa_do_Curioso_Veterano
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 8
-        Item: Capa_da_Ordem_
+        Item: Grevas_do_Curioso_Veterano_
         RequiredItems: 
           - Index: 0
-            Item: Capa_da_Ordem
+            Item: Grevas_do_Curioso_Veterano
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
-      - Index: 9
-        Item: Capa_do_Cruzado_
-        RequiredItems: 
-          - Index: 0
-            Item: Capa_do_Cruzado
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 4
-      - Index: 10
-        Item: Grevas_da_Ordem_
-        RequiredItems: 
-          - Index: 0
-            Item: Grevas_da_Ordem
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 4
-      - Index: 11
-        Item: Grevas_do_Cruzado_
-        RequiredItems: 
-          - Index: 0
-            Item: Grevas_do_Cruzado
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 4
-      - Index: 12
-        Item: Armadura_do_Protetor_
-        RequiredItems: 
-          - Index: 0
-            Item: Armadura_do_Protetor
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 7
-      - Index: 13
-        Item: Armadura_do_Guardião_
-        RequiredItems: 
-          - Index: 0
-            Item: Armadura_do_Guardião
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 7
-      - Index: 14
-        Item: Capa_do_Protetor_
-        RequiredItems: 
-          - Index: 0
-            Item: Capa_do_Protetor
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 7
-      - Index: 15
-        Item: Capa_do_Guardião_
-        RequiredItems: 
-          - Index: 0
-            Item: Capa_do_Guardião
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 7
-      - Index: 16
-        Item: Grevas_do_Protetor_
-        RequiredItems: 
-          - Index: 0
-            Item: Grevas_do_Protetor
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 7
-      - Index: 17
-        Item: Grevas_do_Guardião_
-        RequiredItems: 
-          - Index: 0
-            Item: Grevas_do_Guardião
-            Refine: 7
-            Amount: 1
-          - Index: 1
-            Item: Special_Exchange_Coupon
-            Amount: 7
+
 
   - Name: Consumíveis#2
     Map: moc_para01 
@@ -1823,3 +1734,59 @@ Body:
           - Index: 0
             Item: Copper_Coin
             Amount: 1
+
+  - Name: Comerciante Espadachim#3
+    Map: moc_para01 
+    X: 16
+    Y: 93
+    Direction: South
+    Sprite: 4_M_SWORDMAN
+
+  - Name: Comerciante Gatuno#3
+    Map: moc_para01 
+    X: 16
+    Y: 91
+    Direction: South
+    Sprite: 4_M_THIEF_RUMIN
+
+  - Name: Comerciante Mercador#3
+    Map: moc_para01 
+    X: 16
+    Y: 89
+    Direction: South
+    Sprite: 1_M_SIGNMCNT
+
+  - Name: Comerciante Mago#3
+    Map: moc_para01 
+    X: 16
+    Y: 87
+    Direction: South
+    Sprite: 2_F_MAGICMASTER
+
+  - Name: Comerciante Noviço#3
+    Map: moc_para01 
+    X: 16
+    Y: 85
+    Direction: South
+    Sprite: 4_F_ACOLYTE
+
+  - Name: Comerciante Arqueiro#3
+    Map: moc_para01 
+    X: 16
+    Y: 83
+    Direction: South
+    Sprite: 4_M_ARCHER
+
+  - Name: Comerciante Aprendiz#3
+    Map: moc_para01 
+    X: 16
+    Y: 81
+    Direction: South
+    Sprite: 4_M_SIT_NOVICE
+
+  - Name: Comerciante Escudeiro#1
+    Map: moc_para01 
+    X: 16
+    Y: 79
+    Direction: South
+    Sprite: 4_M_ROYALGUARD

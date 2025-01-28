@@ -3338,11 +3338,11 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110132
-    AegisName: Traje__da_Transmutação
-    Name: Traje do Mestre dos Elixires
+    AegisName: Traje_da_Transmutação
+    Name: Traje da Transmutação
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1800
     Defense: 5
     Jobs:
       Alchemist: true
@@ -3357,10 +3357,10 @@ Body:
 
   - Id: 110133
     AegisName: Traje_da_Transmutação_
-    Name: Traje do Mestre dos Elixires
+    Name: Traje da Transmutação
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1800
     Defense: 5
     Slots: 1
     Jobs:
