@@ -1741,6 +1741,187 @@ Body:
     Y: 93
     Direction: South
     Sprite: 4_M_SWORDMAN
+    Items:
+      - Index: 0
+        Item: Espada_de_Treinamento
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 1
+        Item: Espada_de_Treinamento_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 2
+        Item: Lança_de_Treinamento
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 3
+        Item: Lança_de_Treinamento_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 4
+        Item: Espada_de_Treinamento_II
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 5
+        Item: Espada_de_Treinamento_II_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 6
+        Item: Lança_de_Treinamento_II
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 7
+        Item: Lança_de_Treinamento_II_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 8
+        Item: Espada_da_Lua_Crescente
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 9
+        Item: Guardiã_dos_Reinos
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 10
+        Item: Lança_da_Fortaleza
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 11
+        Item: Lança_do_Inquisidor
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 12
+        Item: Espada_da_Lua_Crescente_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 13
+        Item: Guardiã_dos_Reinos_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 14
+        Item: Lança_da_Fortaleza_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 15
+        Item: Lança_do_Inquisidor_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 16
+        Item: Chama_do_Arcanjo
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 17
+        Item: Lança_do_Fulgor_Divino
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 18
+        Item: Lança_do_Rei_Guerreiro_Sagrado
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 19
+        Item: Chama_do_Arcanjo_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 20
+        Item: Lança_do_Fulgor_Divino_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 21
+        Item: Lança_do_Rei_Guerreiro_Sagrado_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 22
+        Item: Gume_Reluzente
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 23
+        Item: Juramento_de_Aço
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 24
+        Item: Ponta_da_Glória
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 25
+        Item: Lança_do_Rei_Guerreiro
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 26
+        Item: Gume_Reluzente_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 27
+        Item: Juramento_de_Aço_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 28
+        Item: Ponta_da_Glória_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 29
+        Item: Lança_do_Rei_Guerreiro_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
 
   - Name: Comerciante Gatuno#3
     Map: moc_para01 
@@ -1748,6 +1929,187 @@ Body:
     Y: 91
     Direction: South
     Sprite: 4_M_THIEF_RUMIN
+    Items:
+      - Index: 0
+        Item: Maça_de_Treinamento
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 1
+        Item: Machado_de_Treinamento
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 2
+        Item: Machado_de_Treinamento_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 3
+        Item: Maça_de_Treinamento_II
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 4
+        Item: Machado_de_Treinamento_II
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 5
+        Item: Machado_de_Treinamento_II_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 6
+        Item: Maça_de_Ferro Fundido
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 7
+        Item: Machado_do_Criador_de_Armas
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 8
+        Item: Machado_da_Balança_Justa
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 9
+        Item: Espada_do_Condutor_Elemental
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 10
+        Item: Machado_do_Sopro_Etéreo
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 11
+        Item: Machado_de_Cristal_Líquido
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 12
+        Item: Maça_de_Ferro Fundido_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 13
+        Item: Machado_do_Criador_de_Armas_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 14
+        Item: Machado_da_Balança_Justa_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 15
+        Item: Espada_do_Condutor_Elemental_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 16
+        Item: Machado_do_Sopro_Etéreo_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 17
+        Item: Machado_de_Cristal_Líquido_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 18
+        Item: Maça_do_Senhor_das_Forjas
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 19
+        Item: Machado_Moldador_de_Chamas
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 20
+        Item: Machado_da_Fornalha
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 21
+        Item: Espada_da_Transmutação
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 22
+        Item: Machado_de_Ouro_Vivo
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 23
+        Item: Machado_do_Elixir_Perdido
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 24
+        Item: Maça_do_Senhor_das_Forjas_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 25
+        Item: Machado_Moldador_de_Chamas_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 26
+        Item: Machado_da_Fornalha_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 27
+        Item: Espada_da_Transmutação_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 28
+        Item: Machado_de_Ouro_Vivo_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
+      - Index: 29
+        Item: Machado_do_Elixir_Perdido_
+        RequiredItems:
+          - Index: 0
+            Item: Copper_Coin
+            Amount: 1
 
   - Name: Comerciante Mercador#3
     Map: moc_para01 

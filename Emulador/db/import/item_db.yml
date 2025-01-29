@@ -3338,8 +3338,8 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110132
-    AegisName: Traje_da_Transmutação
-    Name: Traje da Transmutação
+    AegisName: Jaqueta_da_Transmutação
+    Name: Jaqueta da Transmutação
     Type: Armor
     Buy: 1
     Weight: 1800
@@ -3356,8 +3356,8 @@ Body:
       bonus bAspd,3;
 
   - Id: 110133
-    AegisName: Traje_da_Transmutação_
-    Name: Traje da Transmutação
+    AegisName: Jaqueta_da_Transmutação_
+    Name: Jaqueta da Transmutação
     Type: Armor
     Buy: 1
     Weight: 1800
@@ -3375,11 +3375,11 @@ Body:
       bonus bAspd,3;
 
   - Id: 110134
-    AegisName: Peitoral_do_Mestre_dos_Elixires
-    Name: Peitoral da Transmutação
+    AegisName: Jaqueta_do_Mestre_dos_Elixires
+    Name: Jaqueta do Mestre dos Elixires
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2400
     Defense: 6
     Jobs:
       Alchemist: true
@@ -3393,11 +3393,11 @@ Body:
       bonus bAspd,4;
 
   - Id: 110135
-    AegisName: Peitoral_do_Mestre_dos_Elixires_ 
-    Name: Peitoral da Transmutação
+    AegisName: Jaqueta_do_Mestre_dos_Elixires_ 
+    Name: Jaqueta do Mestre dos Elixires
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2400
     Defense: 6
     Slots: 1
     Jobs:
@@ -3414,8 +3414,8 @@ Body:
 ########################################### CAPA ###############################################
 
   - Id: 110136
-    AegisName: Sobrepeliz_da_Transmutação
-    Name: Sobrepeliz do Mestre dos Elixires
+    AegisName: Capa_da_Transmutação
+    Name: Capa da Transmutação
     Type: Armor
     Buy: 1
     Weight: 600
@@ -3431,8 +3431,8 @@ Body:
       bonus bBaseAtk,10;
     
   - Id: 110137
-    AegisName: Sobrepeliz_da_Transmutação_
-    Name: Sobrepeliz do Mestre dos Elixires
+    AegisName: Capa_da_Transmutação_
+    Name: Capa da Transmutação
     Type: Armor
     Buy: 1
     Weight: 600
@@ -3452,7 +3452,7 @@ Body:
 
   - Id: 110138
     AegisName: Capa_do_Mestre_dos_Elixires
-    Name: Capa da Transmutação
+    Name: Capa do Mestre dos Elixires
     Type: Armor
     Buy: 1
     Weight: 600
@@ -3469,7 +3469,7 @@ Body:
     
   - Id: 110139
     AegisName: Capa_do_Mestre_dos_Elixires_ 
-    Name: Capa da Transmutação
+    Name: Capa do Mestre dos Elixires
     Type: Armor
     Buy: 1
     Weight: 600
@@ -3488,11 +3488,11 @@ Body:
 ########################################### SAPATO #############################################
 
   - Id: 110140
-    AegisName: Sapato_da_Transmutação
-    Name: Sapato do Mestre dos Elixires
+    AegisName: Botas_da_Transmutação
+    Name: Botas da Transmutação
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 1400
     Defense: 3
     Jobs:
       Alchemist: true
@@ -3505,11 +3505,11 @@ Body:
       bonus bBaseAtk,5;
     
   - Id: 110141
-    AegisName: Sapato_da_Transmutação_
-    Name: Sapato do Mestre dos Elixires
+    AegisName: Botas_da_Transmutação_
+    Name: Botas da Transmutação
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 1400
     Defense: 3
     Slots: 1
     Jobs:
@@ -3525,11 +3525,11 @@ Body:
 ##############
 
   - Id: 110142
-    AegisName: Grevas_do_Mestre_dos_Elixires
-    Name: Grevas da Transmutação
+    AegisName: Botas_do_Mestre_dos_Elixires
+    Name: Botas do Mestre dos Elixires
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 2000
     Defense: 4
     Jobs:
       Alchemist: true
@@ -3543,11 +3543,11 @@ Body:
       bonus bStr,3;
     
   - Id: 110143
-    AegisName: Grevas_do_Mestre_dos_Elixires_
-    Name: Grevas da Transmutação
+    AegisName: Botas_do_Mestre_dos_Elixires_
+    Name: Botas do Mestre dos Elixires
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 2000
     Defense: 4
     Slots: 1
     Jobs:
@@ -3565,11 +3565,11 @@ Body:
 ##----------------------------------------- NOVIÇO -------------------------------------------##
 
   - Id: 110144
-    AegisName: Armadura_do_Discípulo_Divino
-    Name: Armadura do Discípulo Divino
+    AegisName: Manto_do_Discípulo_Divino
+    Name: Manto do Discípulo Divino
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1600
     Defense: 3
     Jobs:
       Acolyte: true
@@ -3586,11 +3586,11 @@ Body:
       bonus bBaseAtk,5;
 
   - Id: 110145
-    AegisName: Armadura_do_Discípulo_Divino_
-    Name: Armadura do Discípulo Divino
+    AegisName: Manto_do_Discípulo_Divino_
+    Name: Manto do Discípulo Divino
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 16600
     Defense: 3
     Slots: 1
     Jobs:
@@ -3609,8 +3609,8 @@ Body:
 
     
   - Id: 110146
-    AegisName: Armadura_do_Protegido_Celestial
-    Name: Armadura do Protegido Celestial
+    AegisName: Manto_do_Protegido_Celestial
+    Name: Manto do Protegido Celestial
     Type: Armor
     Buy: 1
     Weight: 2800
@@ -3631,8 +3631,8 @@ Body:
 
 
   - Id: 110147
-    AegisName: Armadura_do_Protegido_Celestial_
-    Name: Armadura do Protegido Celestial
+    AegisName: Manto_do_Protegido_Celestial_
+    Name: Manto do Protegido Celestial
     Type: Armor
     Buy: 1
     Weight: 2800
@@ -3656,8 +3656,8 @@ Body:
 ########################################### CAPA ###############################################
 
   - Id: 110148
-    AegisName: Capa_do_Discípulo_Divino
-    Name: Capa do Discípulo Divino
+    AegisName: Véu_do_Discípulo_Divino
+    Name: Véu do Discípulo Divino
     Type: Armor
     Buy: 1
     Weight: 600
@@ -3674,8 +3674,8 @@ Body:
     Script: |
       
   - Id: 110149
-    AegisName: Capa_do_Discípulo_Divino_
-    Name: Capa do Discípulo Divino
+    AegisName: Véu_do_Discípulo_Divino_
+    Name: Véu do Discípulo Divino
     Type: Armor
     Buy: 1
     Weight: 600
@@ -3776,8 +3776,8 @@ Body:
 ########################################################
 
   - Id: 110154
-    AegisName: Botas_do_Protegido_Celestial
-    Name: Botas do Protegido Celestial
+    AegisName: Sapatos_do_Protegido_Celestial
+    Name: Sapatos do Protegido Celestial
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -3795,8 +3795,8 @@ Body:
     Script: |
      
   - Id: 110155
-    AegisName: Botas_do_Protegido_Celestial_
-    Name: Botas do Protegido Celestial
+    AegisName: Sapatos_do_Protegido_Celestial_
+    Name: Sapatos do Protegido Celestial
     Type: Armor
     Buy: 1
     Weight: 1000
