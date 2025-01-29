@@ -3819,11 +3819,11 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110156
-    AegisName: Traje_do_Discípulo_Combatente
-    Name: Traje do Discípulo Combatente
+    AegisName: Manto_do_Discípulo_Combatente
+    Name: Manto do Discípulo Combatente
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1800
     Defense: 4
     Jobs:
       Monk: true
@@ -3837,8 +3837,8 @@ Body:
       bonus bAspd,2;
 
   - Id: 110157
-    AegisName: Traje_do_Discípulo_Combatente_
-    Name: Traje do Discípulo Combatente
+    AegisName: Manto_do_Discípulo_Combatente_
+    Name: Manto do Discípulo Combatente
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -3856,11 +3856,11 @@ Body:
       bonus bAspd,2;
 
   - Id: 110158
-    AegisName: Peitoral_do_Mestre_da_Luz
-    Name: Peitoral do Mestre da Luz
+    AegisName: Manto_do_Mestre_da_Luz
+    Name: Manto do Mestre da Luz
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2000
     Defense: 5
     Jobs:
       Monk: true
@@ -3874,11 +3874,11 @@ Body:
       bonus bAspd,3;
 
   - Id: 110159
-    AegisName: Peitoral_do_Mestre_da_Luz_ 
-    Name: Peitoral do Mestre da Luz
+    AegisName: Manto_do_Mestre_da_Luz_ 
+    Name: Manto do Mestre da Luz
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2000
     Defense: 5
     Slots: 1
     Jobs:
@@ -3969,11 +3969,11 @@ Body:
 ########################################### SAPATO #############################################
 
   - Id: 110164
-    AegisName: Sapato_do_Discípulo_Combatente
-    Name: Sapato do Discípulo Combatente
+    AegisName: Botas_do_Discípulo_Combatente
+    Name: Botas do Discípulo Combatente
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 800
     Defense: 2
     Jobs:
       Monk: true
@@ -3986,11 +3986,11 @@ Body:
       bonus bHit,10;
     
   - Id: 110165
-    AegisName: Sapato_do_Discípulo_Combatente_
-    Name: Sapato do Discípulo Combatente
+    AegisName: Botas_do_Discípulo_Combatente_
+    Name: Botas do Discípulo Combatente
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 800
     Defense: 2
     Slots: 1
     Jobs:
@@ -4006,8 +4006,8 @@ Body:
 ##############
 
   - Id: 110166
-    AegisName: Grevas_do_Mestre_da_Luz
-    Name: Grevas do Mestre da Luz
+    AegisName: Sapatos_do_Mestre_da_Luz
+    Name: Sapatos do Mestre da Luz
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -4023,8 +4023,8 @@ Body:
       bonus bHit,20;
     
   - Id: 110167
-    AegisName: Grevas_do_Mestre_da_Luz_
-    Name: Grevas do Mestre da Luz
+    AegisName: Sapatos_do_Mestre_da_Luz_
+    Name: Sapatos do Mestre da Luz
     Type: Armor
     Buy: 1
     Weight: 1000
