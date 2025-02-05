@@ -4046,11 +4046,11 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110168
-    AegisName: Traje_do_Redentor_de_Almas
-    Name: Traje do Redentor de Almas
+    AegisName: Bata_do_Redentor_de_Almas
+    Name: Bata do Redentor de Almas
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 2000
     Defense: 3
     Jobs:
       Priest: true
@@ -4065,11 +4065,11 @@ Body:
       bonus bHealPower,10;
 
   - Id: 110169
-    AegisName: Traje_do_Redentor_de_Almas_
-    Name: Traje do Redentor de Almas
+    AegisName: Bata_do_Redentor_de_Almas_
+    Name: Bata do Redentor de Almas
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 2000
     Defense: 3
     Slots: 1
     Jobs:
@@ -4085,11 +4085,11 @@ Body:
       bonus bHealPower,10;
 
   - Id: 110170
-    AegisName: Peitoral_do_Apóstolo_Celestial
-    Name: Peitoral do Apóstolo Celestial
+    AegisName: Bata_do_Apóstolo_Celestial
+    Name: Bata do Apóstolo Celestial
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2400
     Defense: 4
     Jobs:
       Priest: true
@@ -4104,11 +4104,11 @@ Body:
       bonus bHealPower,15;
 
   - Id: 110171
-    AegisName: Peitoral_do_Apóstolo_Celestial_ 
-    Name: Peitoral do Apóstolo Celestial
+    AegisName: Bata_do_Apóstolo_Celestial_ 
+    Name: Bata do Apóstolo Celestial
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2400
     Defense: 4
     Slots: 1
     Jobs:
@@ -4127,8 +4127,8 @@ Body:
 ########################################### CAPA ###############################################
 
   - Id: 110172
-    AegisName: Sobrepeliz_do_Redentor_de_Almas
-    Name: Sobrepeliz do Redentor de Almas
+    AegisName: Capa_do_Redentor_de_Almas
+    Name: Capa do Redentor de Almas
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4145,8 +4145,8 @@ Body:
       bonus bMdef,3;
     
   - Id: 110173
-    AegisName: Sobrepeliz_do_Redentor_de_Almas_
-    Name: Sobrepeliz do Redentor de Almas
+    AegisName: Capa_do_Redentor_de_Almas_
+    Name: Capa do Redentor de Almas
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4205,11 +4205,11 @@ Body:
 ########################################### SAPATO #############################################
 
   - Id: 110176
-    AegisName: Sapato_do_Redentor_de_Almas
-    Name: Sapato do Redentor de Almas
+    AegisName: Botas_do_Redentor_de_Almas
+    Name: Botas do Redentor de Almas
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 1000
     Defense: 2
     Jobs:
       Priest: true
@@ -4222,8 +4222,8 @@ Body:
       bonus bHit,10;
     
   - Id: 110177
-    AegisName: Sapato_do_Redentor_de_Almas_
-    Name: Sapato do Redentor de Almas
+    AegisName: Botas_do_Redentor_de_Almas_
+    Name: Botas do Redentor de Almas
     Type: Armor
     Buy: 1
     Weight: 400
@@ -4242,11 +4242,11 @@ Body:
 ##############
 
   - Id: 110178
-    AegisName: Grevas_do_Apóstolo_Celestial
-    Name: Grevas do Apóstolo Celestial
+    AegisName: Botas_do_Apóstolo_Celestial
+    Name: Botas do Apóstolo Celestial
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1200
     Defense: 3
     Jobs:
       Priest: true
@@ -4259,11 +4259,11 @@ Body:
       bonus bHit,15;
     
   - Id: 110179
-    AegisName: Grevas_do_Apóstolo_Celestial_
-    Name: Grevas do Apóstolo Celestial
+    AegisName: Botas_do_Apóstolo_Celestial_
+    Name: Botas do Apóstolo Celestial
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1200
     Defense: 3
     Slots: 1
     Jobs:
@@ -4282,8 +4282,8 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110180
-    AegisName: Armadura_do_Atirador_Preciso
-    Name: Armadura do Atirador Preciso
+    AegisName: Camisa_do_Atirador
+    Name: Camisa do Atirador
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -4301,8 +4301,8 @@ Body:
       bonus bMaxSP,40;
 
   - Id: 110181
-    AegisName: Armadura_do_Atirador_Preciso_
-    Name: Armadura do Atirador Preciso
+    AegisName: Camisa_do_Atirador_
+    Name: Camisa do Atirador
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -4322,11 +4322,11 @@ Body:
 
     
   - Id: 110182
-    AegisName: Armadura_do_Guardião_das_Florestas
-    Name: Armadura do Guardião das Florestas
+    AegisName: Gibão_do_Vigilante
+    Name: Gibão do Vigilante
     Type: Armor
     Buy: 1
-    Weight: 2800
+    Weight: 1300
     Defense: 3
     Jobs:
       Archer: true
@@ -4342,11 +4342,11 @@ Body:
 
 
   - Id: 110183
-    AegisName: Armadura_do_Guardião_das_Florestas_
-    Name: Armadura do Guardião das Florestas
+    AegisName: Gibão_do_Vigilante_
+    Name: Gibão do Vigilante
     Type: Armor
     Buy: 1
-    Weight: 2800
+    Weight: 1300
     Defense: 3
     Slots: 1
     Jobs:
@@ -4365,8 +4365,8 @@ Body:
 ########################################### CAPA ###############################################
 
   - Id: 110184
-    AegisName: Capa_do_Atirador_Preciso
-    Name: Capa do Atirador Preciso
+    AegisName: Sobrepeliz_do_Atirador
+    Name: Sobrepeliz do Atirador
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4383,8 +4383,8 @@ Body:
     Script: |
       
   - Id: 110185
-    AegisName: Capa_do_Atirador_Preciso_
-    Name: Capa do Atirador Preciso
+    AegisName: Sobrepeliz_do_Atirador_
+    Name: Sobrepeliz do Atirador
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4403,8 +4403,8 @@ Body:
 ############################
 
   - Id: 110186
-    AegisName: Capa_do_Guardião_das_Florestas
-    Name: Capa do Guardião das Florestas
+    AegisName: Capa_do_Vigilante
+    Name: Capa do Vigilante
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4420,8 +4420,8 @@ Body:
     Refineable: true
       
   - Id: 110187
-    AegisName: Capa_do_Guardião_das_Florestas_
-    Name: Capa do Guardião das Florestas
+    AegisName: Capa_do_Vigilante_
+    Name: Capa do Vigilante
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4440,8 +4440,8 @@ Body:
 ########################################### SAPATO #############################################
 
   - Id: 110188
-    AegisName: Sapatos_do_Atirador_Preciso
-    Name: Sapatos do Atirador Preciso
+    AegisName: Botas_do_Atirador
+    Name: Botas do Atirador
     Type: Armor
     Buy: 1
     Weight: 400
@@ -4458,8 +4458,8 @@ Body:
     Script: |
       
   - Id: 110189
-    AegisName: Sapatos_do_Atirador_Preciso_
-    Name: Sapatos do Atirador Preciso
+    AegisName: Botas_do_Atirador_
+    Name: Botas do Atirador
     Type: Armor
     Buy: 1
     Weight: 400
@@ -4479,11 +4479,11 @@ Body:
 ########################################################
 
   - Id: 110190
-    AegisName: Botas_do_Guardião_das_Florestas
-    Name: Botas do Guardião das Florestas
+    AegisName: Botas_do_Vigilante
+    Name: Botas do Vigilante
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 800
     Defense: 2
     Slots: 1
     Jobs:
@@ -4498,11 +4498,11 @@ Body:
     Script: |
      
   - Id: 110191
-    AegisName: Botas_do_Guardião_das_Florestas_
-    Name: Botas do Guardião das Florestas
+    AegisName: Botas_do_Vigilante_
+    Name: Botas do Vigilante
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 800
     Defense: 2
     Slots: 1
     Jobs:

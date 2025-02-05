@@ -596,10 +596,10 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 12
-        Item: Peitoral_do_Mestre_dos_Elixires_
+        Item: Jaqueta_do_Mestre_dos_Elixires_
         RequiredItems: 
           - Index: 0
-            Item: Peitoral_do_Mestre_dos_Elixires
+            Item: Jaqueta_do_Mestre_dos_Elixires
             Refine: 7
             Amount: 1
           - Index: 1
@@ -616,40 +616,40 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 14
-        Item: Grevas_do_Mestre_dos_Elixires_
+        Item: Botas_do_Mestre_dos_Elixires_
         RequiredItems: 
           - Index: 0
-            Item: Grevas_do_Mestre_dos_Elixires
+            Item: Botas_do_Mestre_dos_Elixires
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 15
-        Item: Traje_da_Transmutação_
+        Item: Jaqueta_da_Transmutação_
         RequiredItems: 
           - Index: 0
-            Item: Traje_da_Transmutação
+            Item: Jaqueta_da_Transmutação
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 16
-        Item: Sobrepeliz_da_Transmutação_
+        Item: Capa_da_Transmutação_
         RequiredItems: 
           - Index: 0
-            Item: Sobrepeliz_da_Transmutação
+            Item: Capa_da_Transmutação
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 17
-        Item: Sapato_da_Transmutação_
+        Item: Botas_da_Transmutação_
         RequiredItems: 
           - Index: 0
-            Item: Sapato_da_Transmutação
+            Item: Botas_da_Transmutação
             Refine: 7
             Amount: 1
           - Index: 1
@@ -854,20 +854,20 @@ Body:
     Sprite: 4_F_ACOLYTE
     Items:
       - Index: 0
-        Item: Armadura_do_Discípulo_Divino_
+        Item: Manto_do_Discípulo_Divino_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Discípulo_Divino
+            Item: Manto_do_Discípulo_Divino
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 1
-        Item: Capa_do_Discípulo_Divino_
+        Item: Véu_do_Discípulo_Divino_
         RequiredItems:
           - Index: 0
-            Item: Capa_do_Discípulo_Divino
+            Item: Véu_do_Discípulo_Divino
             Refine: 7
             Amount: 1
           - Index: 1
@@ -884,10 +884,10 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 3
-        Item: Armadura_do_Protegido_Celestial_
+        Item: Manto_do_Protegido_Celestial_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Protegido_Celestial
+            Item: Manto_do_Protegido_Celestial
             Refine: 7
             Amount: 1
           - Index: 1
@@ -904,20 +904,20 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 5
-        Item: Botas_do_Protegido_Celestial_
+        Item: Sapatos_do_Protegido_Celestial_
         RequiredItems:
           - Index: 0
-            Item: Botas_do_Protegido_Celestial
+            Item: Sapatos_do_Protegido_Celestial
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 1
       - Index: 6
-        Item: Traje_do_Discípulo_Combatente_
+        Item: Manto_do_Discípulo_Combatente_
         RequiredItems:
           - Index: 0
-            Item: Traje_do_Discípulo_Combatente
+            Item: Manto_do_Discípulo_Combatente
             Refine: 7
             Amount: 1
           - Index: 1
@@ -934,20 +934,20 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 8
-        Item: Sapato_do_Discípulo_Combatente_
+        Item: Botas_do_Discípulo_Combatente_
         RequiredItems:
           - Index: 0
-            Item: Sapato_do_Discípulo_Combatente
+            Item: Botas_do_Discípulo_Combatente
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 9
-        Item: Peitoral_do_Mestre_da_Luz_
+        Item: Manto_do_Mestre_da_Luz_
         RequiredItems:
           - Index: 0
-            Item: Peitoral_do_Mestre_da_Luz
+            Item: Manto_do_Mestre_da_Luz
             Refine: 7
             Amount: 1
           - Index: 1
@@ -964,10 +964,10 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 4
       - Index: 11
-        Item: Grevas_do_Mestre_da_Luz_
+        Item: Sapatos_do_Mestre_da_Luz_
         RequiredItems:
           - Index: 0
-            Item: Grevas_do_Mestre_da_Luz
+            Item: Sapatos_do_Mestre_da_Luz
             Refine: 7
             Amount: 1
           - Index: 1
