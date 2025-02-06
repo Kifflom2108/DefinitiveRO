@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ROADMAP DEV DEFINITIVERO.md",
+                "file": "Maps/Abyss Lake Dungeon.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ROADMAP DEV DEFINITIVERO"
+              "title": "Abyss Lake Dungeon"
             }
           }
         ]
@@ -164,8 +164,8 @@
   },
   "active": "5320b96c9a078ae0",
   "lastOpenFiles": [
-    "Sem título.md",
     "ROADMAP DEV DEFINITIVERO.md",
+    "Sem título.md",
     "Maps/Al De Baran.md",
     "Maps/Abyss Lake Dungeon.md",
     "Maps/Comodo.md",
