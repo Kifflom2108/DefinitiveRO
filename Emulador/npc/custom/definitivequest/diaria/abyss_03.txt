@@ -1,4 +1,4 @@
-hu_fild05,243,123,5	script	Caçador de Monstros#abyss_03	4_M_GENIE,{
+abyss_03,114,35,5	script	Caçador de Monstros#abyss_03	4_M_GENIE,{
 	// Obtém a data atual no formato AAAAMMDD
 	set .@today, gettime(7) * 10000 + gettime(6) * 100 + gettime(5);
 
@@ -19,7 +19,7 @@ hu_fild05,243,123,5	script	Caçador de Monstros#abyss_03	4_M_GENIE,{
 	// Verifica se o jogador já tem uma caçada em andamento
 	if (checkquest(60000) == 1) {
 		mes "[Caçador de Monstros]";
-		mes "Você já está caçando " + ((#abyss_03_current_hunt_monster == 1715) ? "^FF0000Novus Vermelhos^000000" : "^FF0000Novus Amarelo^000000") + ".";
+		mes "Você já está caçando " + ((#abyss_03_current_hunt_monster == 1716) ? "^FF0000Acidus Azuls^000000" : "^FF0000Acidus Dourado^000000") + ".";
 		mes "Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount;
 		close;
 	}
@@ -28,14 +28,14 @@ hu_fild05,243,123,5	script	Caçador de Monstros#abyss_03	4_M_GENIE,{
     mes "Você tem " + ( 3 - #daily_hunts) + " caçadas disponivel. ";
     if (#daily_hunts < 3) erasequest(60000);
 	mes "Escolha o monstro que deseja caçar:";
-	set .@choice, select("Novus Vermelho:Novus Amarelo");
+	set .@choice, select("Acidus Azul:Acidus Dourado");
 	if (.@choice == 1) {
-        set .@monster, 1715;
-        set .@monsternome, "Novus Vermelho"; 
+        set .@monster, 1716;
+        set .@monsternome, "Acidus Azul"; 
         }
 	else if (.@choice == 2) {
-        set .@monster, 1718;
-        set .@monsternome, "Novus Amarelo"; 
+        set .@monster, 1713;
+        set .@monsternome, "Acidus Dourado"; 
         }
 
 	// Pergunta a quantidade de monstros para matar
@@ -48,7 +48,7 @@ hu_fild05,243,123,5	script	Caçador de Monstros#abyss_03	4_M_GENIE,{
 
 	// Inicia a missão de caça ao monstro selecionado
 	mes "[Caçador de Monstros]";
-	mes "Mate " + .@amount + " " + ((.@monster == 1715) ? "Novus Vermelhos" : "Novus Amarelo") + " e volte para receber sua recompensa.";
+	mes "Mate " + .@amount + " " + ((.@monster == 1716) ? "Acidus Azuls" : "Acidus Dourado") + " e volte para receber sua recompensa.";
 	setquest 60000; // ID da quest fictícia (substituir pelo correto)
 	set #abyss_03_current_hunt_monster, .@monster;
 	set #current_hunt_amount, .@amount;
@@ -61,15 +61,15 @@ hu_fild05,243,123,5	script	Caçador de Monstros#abyss_03	4_M_GENIE,{
 OnNPCKillEvent:
 	if (killedrid == #abyss_03_current_hunt_monster) {
 		set #current_hunt_kills, #current_hunt_kills + 1;
-		announce "[Caçador de Monstros]: Você matou um " + ((#abyss_03_current_hunt_monster == 1715) ? "Novus Vermelho" : "Novus Amarelo") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
+		announce "[Caçador de Monstros]: Você matou um " + ((#abyss_03_current_hunt_monster == 1716) ? "Acidus Azul" : "Acidus Dourado") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
 
 		if (#current_hunt_kills >= #current_hunt_amount) {
 			announce "[Caçador de Monstros]: Parabéns! Você completou a caçada.", bc_self;
-            if (#abyss_03_current_hunt_monster == 1715){
-                getexp (1320 * (#current_hunt_amount * 3)), (1003 * (#current_hunt_amount * 3));
+            if (#abyss_03_current_hunt_monster == 1716){
+                getexp (14392 * (#current_hunt_amount * 3)), (4203 * (#current_hunt_amount * 3));
              
             } else {
-                getexp (1411 * (#current_hunt_amount * 3)), (1100 * (#current_hunt_amount * 3));
+                getexp (28043 * (#current_hunt_amount * 3)), (8023 * (#current_hunt_amount * 3));
             }
             getitem 673, (#current_hunt_amount / 2); // Dá maçãs como recompensa
 			set #daily_hunts, #daily_hunts + 1;
