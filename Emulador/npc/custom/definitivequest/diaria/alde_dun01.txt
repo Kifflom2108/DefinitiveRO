@@ -28,14 +28,14 @@ alde_dun01,293,30,5	script	Caçador de Monstros#alde_dun01	4_M_GENIE,{
     mes "Você tem " + ( 3 - #daily_hunts) + " caçadas disponível. ";
     if (#daily_hunts < 3) erasequest(60000);
 	mes "Escolha o monstro que deseja caçar:";
-	set .@choice, select("Clock:Owl Duke");
+	set .@choice, select("High Orc:Orc Archer");
 	if (.@choice == 1) {
-        set .@monster, 1269;
-        setd "#current_hunt_name$", "Clock"; 
+        set .@monster, 1213;
+        setd "#current_hunt_name$", "High Orc"; 
         }
 	else if (.@choice == 2) {
-        set .@monster, 1320;
-        setd "#current_hunt_name$", "Owl Duke"; 
+        set .@monster, 1189;
+        setd "#current_hunt_name$", "Orc Archer"; 
         }
 
 	// Pergunta a quantidade de monstros para matar
@@ -48,7 +48,7 @@ alde_dun01,293,30,5	script	Caçador de Monstros#alde_dun01	4_M_GENIE,{
 
 	// Inicia a missão de caça ao monstro selecionado
 	mes "[Caçador de Monstros]";
-	mes "Mate " + .@amount + " " + ((.@monster == 1269) ? "Clocks" : "Owl Duke") + " e volte para receber sua recompensa.";
+	mes "Mate " + .@amount + " " + ((.@monster == 1213) ? "High Orcs" : "Orc Archer") + " e volte para receber sua recompensa.";
 	setquest 60000; // ID da quest fictícia (substituir pelo correto)
 	set #alde_dun01_current_hunt_monster, .@monster;
 	set #current_hunt_amount, .@amount;
@@ -60,15 +60,15 @@ alde_dun01,293,30,5	script	Caçador de Monstros#alde_dun01	4_M_GENIE,{
 OnNPCKillEvent:
 	if (killedrid == #alde_dun01_current_hunt_monster) {
 		set #current_hunt_kills, #current_hunt_kills + 1;
-		announce "[Caçador de Monstros]: Você matou um " + ((#alde_dun01_current_hunt_monster == 1269) ? "Clock" : "Owl Duke") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
+		announce "[Caçador de Monstros]: Você matou um " + ((#alde_dun01_current_hunt_monster == 1213) ? "High Orc" : "Orc Archer") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
 
 		if (#current_hunt_kills >= #current_hunt_amount) {
 			announce "[Caçador de Monstros]: Parabéns! Você completou a caçada.", bc_self;
-            if (#alde_dun01_current_hunt_monster == 1269){
-                getexp (3410 * (#current_hunt_amount * 3)), (2904 * (#current_hunt_amount * 3));
+            if (#alde_dun01_current_hunt_monster == 1213){
+                getexp (3618 * (#current_hunt_amount * 3)), (1639 * (#current_hunt_amount * 3));
              
             } else {
-                getexp (7217 * (#current_hunt_amount * 3)), (3474 * (#current_hunt_amount * 3));
+                getexp (1729 * (#current_hunt_amount * 3)), (1787 * (#current_hunt_amount * 3));
             }
             getitem 673, (#current_hunt_amount / 2); // Dá maçãs como recompensa
 			set #daily_hunts, #daily_hunts + 1;
