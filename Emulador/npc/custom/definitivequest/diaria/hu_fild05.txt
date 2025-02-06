@@ -19,7 +19,7 @@ hu_fild05,243,123,5	script	Caçador de Monstros#hu_fild05	4_M_GENIE,{
 	// Verifica se o jogador já tem uma caçada em andamento
 	if (checkquest(60000) == 1) {
 		mes "[Caçador de Monstros]";
-		mes "Você já está caçando " + ((#current_hunt_monster == 1002) ? "^FF0000Porings^000000" : "^FF0000Drops^000000") + ".";
+		mes "Você já está caçando " + ((#hu_fild05_current_hunt_monster == 1715) ? "^FF0000Novus Vermelhos^000000" : "^FF0000Novus Amarelo^000000") + ".";
 		mes "Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount;
 		close;
 	}
@@ -28,14 +28,14 @@ hu_fild05,243,123,5	script	Caçador de Monstros#hu_fild05	4_M_GENIE,{
     mes "Você tem " + ( 3 - #daily_hunts) + " caçadas disponivel. ";
     if (#daily_hunts < 3) erasequest(60000);
 	mes "Escolha o monstro que deseja caçar:";
-	set .@choice, select("Poring:Drops");
+	set .@choice, select("Novus Vermelho:Novus Amarelo");
 	if (.@choice == 1) {
-        set .@monster, 1002;
-        set .@monsternome, "Poring"; 
+        set .@monster, 1715;
+        set .@monsternome, "Novus Vermelho"; 
         }
 	else if (.@choice == 2) {
-        set .@monster, 1113;
-        set .@monsternome, "Drops"; 
+        set .@monster, 1718;
+        set .@monsternome, "Novus Amarelo"; 
         }
 
 	// Pergunta a quantidade de monstros para matar
@@ -48,9 +48,9 @@ hu_fild05,243,123,5	script	Caçador de Monstros#hu_fild05	4_M_GENIE,{
 
 	// Inicia a missão de caça ao monstro selecionado
 	mes "[Caçador de Monstros]";
-	mes "Mate " + .@amount + " " + ((.@monster == 1002) ? "Porings" : "Drops") + " e volte para receber sua recompensa.";
+	mes "Mate " + .@amount + " " + ((.@monster == 1715) ? "Novus Vermelhos" : "Novus Amarelo") + " e volte para receber sua recompensa.";
 	setquest 60000; // ID da quest fictícia (substituir pelo correto)
-	set #current_hunt_monster, .@monster;
+	set #hu_fild05_current_hunt_monster, .@monster;
 	set #current_hunt_amount, .@amount;
     set #current_hunt_name, .@monsternome;
 	set #current_hunt_kills, 0;
@@ -59,21 +59,21 @@ hu_fild05,243,123,5	script	Caçador de Monstros#hu_fild05	4_M_GENIE,{
 
 // Evento de verificação de kills
 OnNPCKillEvent:
-	if (killedrid == #current_hunt_monster) {
+	if (killedrid == #hu_fild05_current_hunt_monster) {
 		set #current_hunt_kills, #current_hunt_kills + 1;
-		announce "[Caçador de Monstros]: Você matou um " + ((#current_hunt_monster == 1002) ? "Poring" : "Drops") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
+		announce "[Caçador de Monstros]: Você matou um " + ((#hu_fild05_current_hunt_monster == 1715) ? "Novus Vermelho" : "Novus Amarelo") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
 
 		if (#current_hunt_kills >= #current_hunt_amount) {
 			announce "[Caçador de Monstros]: Parabéns! Você completou a caçada.", bc_self;
-            if (#current_hunt_monster == 1002){
-                getexp (1320 * #current_hunt_amount), (1003 * #current_hunt_amount);
+            if (#hu_fild05_current_hunt_monster == 1715){
+                getexp (1320 * (#current_hunt_amount * 3)), (1003 * (#current_hunt_amount * 3));
              
             } else {
-                getexp (1411 * #current_hunt_amount), (1100 * #current_hunt_amount);
+                getexp (1411 * (#current_hunt_amount * 3)), (1100 * (#current_hunt_amount * 3));
             }
-            getitem 501, #current_hunt_amount; // Dá maçãs como recompensa
+            getitem 673, (#current_hunt_amount / 2); // Dá maçãs como recompensa
 			set #daily_hunts, #daily_hunts + 1;
-			set #current_hunt_monster, 0;
+			set #hu_fild05_current_hunt_monster, 0;
 			set #current_hunt_amount, 0;
 			set #current_hunt_kills, 0;
 			completequest 60000; // Finaliza a quest
