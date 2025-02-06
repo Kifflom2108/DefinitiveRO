@@ -36,7 +36,7 @@ c_tower2,0,0	monster	Clock Tower Manager	1270,1,5000
 c_tower3,0,0	monster	Alarm	1193,109,5000
 c_tower3,0,0	monster	Mimic	1191,9,5000
 c_tower3,0,0	monster	Rideword	1195,8,5000
-c_tower3,0,0	monster	Clock Tower Manager	1270,4,5000
+c_tower3,0,0	monster	Clock Tower Manager	1270,15,5000
 
 //==================================================
 // c_tower4 - Clock Tower 4f

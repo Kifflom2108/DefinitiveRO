@@ -19,23 +19,23 @@ abyss_02,266,274,5	script	Caçador de Monstros#abyss_02	4_M_GENIE,{
 	// Verifica se o jogador já tem uma caçada em andamento
 	if (checkquest(60000) == 1) {
 		mes "[Caçador de Monstros]";
-		mes "Você já está caçando " + ((#abyss_02_current_hunt_monster == 1716) ? "^FF0000Acidus Azuls^000000" : "^FF0000Ferus Escarlate^000000") + ".";
+		mes "Você já está caçando ^FF0000" +  getd("#current_hunt_name$") + "^000000.";
 		mes "Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount;
 		close;
 	}
 
 	// Pergunta qual monstro o jogador quer caçar
-    mes "Você tem " + ( 3 - #daily_hunts) + " caçadas disponivel. ";
+    mes "Você tem " + ( 3 - #daily_hunts) + " caçadas disponível. ";
     if (#daily_hunts < 3) erasequest(60000);
 	mes "Escolha o monstro que deseja caçar:";
 	set .@choice, select("Acidus Azul:Ferus Escarlate");
 	if (.@choice == 1) {
         set .@monster, 1716;
-        set .@monsternome, "Acidus Azul"; 
+        setd "#current_hunt_name$", "Acidus Azul"; 
         }
 	else if (.@choice == 2) {
         set .@monster, 1714;
-        set .@monsternome, "Ferus Escarlate"; 
+        setd "#current_hunt_name$", "Ferus Escarlate"; 
         }
 
 	// Pergunta a quantidade de monstros para matar
@@ -52,7 +52,6 @@ abyss_02,266,274,5	script	Caçador de Monstros#abyss_02	4_M_GENIE,{
 	setquest 60000; // ID da quest fictícia (substituir pelo correto)
 	set #abyss_02_current_hunt_monster, .@monster;
 	set #current_hunt_amount, .@amount;
-    set #current_hunt_name, .@monsternome;
 	set #current_hunt_kills, 0;
 	close;
 

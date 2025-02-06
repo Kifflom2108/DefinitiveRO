@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maps/Abyss Lake Dungeon.md",
+                "file": "Maps/Al De Baran.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Abyss Lake Dungeon"
+              "title": "Al De Baran"
             }
           }
         ]
@@ -164,10 +164,10 @@
   },
   "active": "5320b96c9a078ae0",
   "lastOpenFiles": [
+    "Maps/Abyss Lake Dungeon.md",
     "ROADMAP DEV DEFINITIVERO.md",
     "Sem título.md",
     "Maps/Al De Baran.md",
-    "Maps/Abyss Lake Dungeon.md",
     "Maps/Comodo.md",
     "Mobs/Grove.md",
     "Mobs/Anopheles.md",
