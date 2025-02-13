@@ -25,12 +25,14 @@
             "id": "b97f23ce16590fbf",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.8.4"
+                "file": "Maps/Alberta.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.4"
+              "icon": "lucide-file",
+              "title": "Alberta"
             }
           }
         ],
@@ -178,10 +180,10 @@
   },
   "active": "b97f23ce16590fbf",
   "lastOpenFiles": [
+    "Maps/Al De Baran.md",
     "Maps/Abyss Lake Dungeon.md",
     "ROADMAP DEV DEFINITIVERO.md",
     "Sem título.md",
-    "Maps/Al De Baran.md",
     "Maps/Comodo.md",
     "Mobs/Grove.md",
     "Mobs/Anopheles.md",
