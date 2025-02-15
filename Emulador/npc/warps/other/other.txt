@@ -35,5 +35,5 @@
 //guild_vs5,0,0,0	warp	warp4	0,0,hoge,0,0
 moc_para01,48,86,0	warp	warp4	2,2,prontera,150,150
 prontera,155,195,0	warp	warp5	2,2,moc_para01,42,86
-alde_dun03,264,16,0	warp	warp4	2,2,c_tower4,195,184
-c_tower3,10,250,0	warp	warp4	2,2,alde_dun04,163,46
+alde_dun03,264,16,0	warp	warp6	2,2,c_tower4,195,184
+c_tower3,10,250,0	warp	warp7	2,2,alde_dun04,163,46

@@ -1,4 +1,4 @@
-alde_dun04,148,45,5	script	Caçador de Monstros#alde_dun04	4_M_GENIE,{
+tur_dun02,151,263,3	script	Caçador de Monstros#tur_dun02	4_M_GENIE,{
 	// Obtém a data atual no formato AAAAMMDD
 	set .@today, gettime(7) * 10000 + gettime(6) * 100 + gettime(5);
 
@@ -28,14 +28,14 @@ alde_dun04,148,45,5	script	Caçador de Monstros#alde_dun04	4_M_GENIE,{
     mes "Você tem " + ( 3 - #daily_hunts) + " caçadas disponível. ";
     if (#daily_hunts < 3) erasequest(60000);
 	mes "Escolha o monstro que deseja caçar:";
-	set .@choice, select("Bathory:Joker");
+	set .@choice, select("Solider:Permeter");
 	if (.@choice == 1) {
-        set .@monster, 1102;
-        setd "#current_hunt_name$", "Bathory"; 
+        set .@monster, 1316;
+        setd "#current_hunt_name$", "Solider"; 
         }
 	else if (.@choice == 2) {
-        set .@monster, 1131;
-        setd "#current_hunt_name$", "Joker"; 
+        set .@monster, 1314;
+        setd "#current_hunt_name$", "Permeter"; 
         }
 
 	// Pergunta a quantidade de monstros para matar
@@ -48,9 +48,9 @@ alde_dun04,148,45,5	script	Caçador de Monstros#alde_dun04	4_M_GENIE,{
 
 	// Inicia a missão de caça ao monstro selecionado
 	mes "[Caçador de Monstros]";
-	mes "Mate " + .@amount + " " + ((.@monster == 1102) ? "Bathorys" : "Joker") + " e volte para receber sua recompensa.";
+	mes "Mate " + .@amount + " " + ((.@monster == 1316) ? "Soliders" : "Permeter") + " e volte para receber sua recompensa.";
 	setquest 60000; // ID da quest fictícia (substituir pelo correto)
-	set #alde_dun04_current_hunt_monster, .@monster;
+	set #tur_dun02_current_hunt_monster, .@monster;
 	set #current_hunt_amount, .@amount;
 	set #current_hunt_kills, 0;
 	close;
@@ -58,21 +58,21 @@ alde_dun04,148,45,5	script	Caçador de Monstros#alde_dun04	4_M_GENIE,{
 
 // Evento de verificação de kills
 OnNPCKillEvent:
-	if (killedrid == #alde_dun04_current_hunt_monster) {
+	if (killedrid == #tur_dun02_current_hunt_monster) {
 		set #current_hunt_kills, #current_hunt_kills + 1;
-		announce "[Caçador de Monstros]: Você matou um " + ((#alde_dun04_current_hunt_monster == 1102) ? "Bathory" : "Joker") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
+		announce "[Caçador de Monstros]: Você matou um " + ((#tur_dun02_current_hunt_monster == 1316) ? "Solider" : "Permeter") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
 
 		if (#current_hunt_kills >= #current_hunt_amount) {
 			announce "[Caçador de Monstros]: Parabéns! Você completou a caçada.", bc_self;
-            if (#alde_dun04_current_hunt_monster == 1102){
-                getexp (2503 * (#current_hunt_amount * 3)), (1034 * (#current_hunt_amount * 3));
+            if (#tur_dun02_current_hunt_monster == 1316){
+                getexp (4458 * (#current_hunt_amount * 3)), (1951 * (#current_hunt_amount * 3));
              
             } else {
-                getexp (3706 * (#current_hunt_amount * 3)), (2362 * (#current_hunt_amount * 3));
+                getexp (3756 * (#current_hunt_amount * 3)), (1955 * (#current_hunt_amount * 3));
             }
             getitem 673, (#current_hunt_amount / 2); // Dá maçãs como recompensa
 			set #daily_hunts, #daily_hunts + 1;
-			set #alde_dun04_current_hunt_monster, 0;
+			set #tur_dun02_current_hunt_monster, 0;
 			set #current_hunt_amount, 0;
 			set #current_hunt_kills, 0;
 			completequest 60000; // Finaliza a quest
