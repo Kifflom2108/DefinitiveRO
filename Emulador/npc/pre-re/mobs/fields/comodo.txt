@@ -16,8 +16,8 @@
 //==================================================
 // cmd_fild01 - Papuchicha Forest
 //==================================================
-cmd_fild01,0,0	monster	Grove	1687,202,5000
-cmd_fild01,0,0	monster	Flora	1118,67,5000
+cmd_fild01,0,0	monster	Grove	1687,222,5000
+cmd_fild01,0,0	monster	Flora	1118,130,5000
 cmd_fild01,313,213,10,10	monster	Shining Plant	1083,1,1800000,900000
 cmd_fild01,313,213,10,10	monster	Blue Plant	1079,1,1800000,900000
 cmd_fild01,171,339,10,10	monster	Blue Plant	1079,2,1800000,900000

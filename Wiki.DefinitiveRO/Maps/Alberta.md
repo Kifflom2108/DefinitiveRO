@@ -1,7 +1,7 @@
-|   |   |
-|---|---|
-|**Entrance to Sunken Ship / Treasure Island**  <br>- Map: alb2trea -|   |
-|![](https://file5s.ratemyserver.net/maps/alb2trea.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=alb2trea&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Indicate Position of this map in World Map](https://ratemyserver.net/worldmap.php?selected_map=alb2trea&re_mob=0)|**No monster on this map.**|
+|                                                                                                                                                                                                                                                                                                                                                                                        |                             |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| **Entrance to Sunken Ship / Treasure Island**  <br>- Map: alb2trea -                                                                                                                                                                                                                                                                                                                   |                             |
+| ![](https://file5s.ratemyserver.net/maps/alb2trea.gif)  <br>![](https://ratemyserver.net/images/bu2.gif) [Detailed View of This Map](https://ratemyserver.net/index.php?page=npc_shop_warp&map=alb2trea&re_mob=0)  <br>![](https://ratemyserver.net/images/bu2.gif) [Indicate Position of this map in World Map](https://ratemyserver.net/worldmap.php?selected_map=alb2trea&re_mob=0) | **No monster on this map.** |
 
   
 

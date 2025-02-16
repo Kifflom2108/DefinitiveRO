@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Maps/Alberta.md",
+                "file": "Maps/Comodo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Alberta"
+              "title": "Comodo"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "b97f23ce16590fbf",
   "lastOpenFiles": [
+    "Maps/Alberta.md",
     "Maps/Al De Baran.md",
     "Maps/Abyss Lake Dungeon.md",
     "ROADMAP DEV DEFINITIVERO.md",
@@ -217,7 +218,6 @@
     "Maps/Nifflheim.md",
     "Maps/Umbala.md",
     "Maps/Juperos Ruins.md",
-    "Maps/Yuno.md",
     "Portais",
     "Img/Mobs/Normais",
     "Img/Mobs/MVPs",
