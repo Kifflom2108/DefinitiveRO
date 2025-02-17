@@ -1,0 +1,87 @@
+cmd_fild08,26,280,5	script	Caçador de Monstros#cmd_fild08	4_M_GENIE,{
+	// Obtém a data atual no formato AAAAMMDD
+	set .@today, gettime(7) * 10000 + gettime(6) * 100 + gettime(5);
+
+	// Se for um novo dia, reseta o contador de quests diárias
+	if (#last_hunt_day != .@today) {
+		set #last_hunt_day, .@today;
+		set #daily_hunts, 0;
+	}
+
+	// Verifica se o jogador atingiu o limite diário de 3 vezes
+	if (#daily_hunts >= 3) {
+		mes "[Caçador de Monstros]";
+		mes "Você já completou sua cota de 3 caçadas hoje.";
+		close;
+	}
+
+
+	// Verifica se o jogador já tem uma caçada em andamento
+	if (checkquest(60000) == 1) {
+		mes "[Caçador de Monstros]";
+		mes "Você já está caçando ^FF0000" +  getd("#current_hunt_name$") + "^000000.";
+		mes "Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount;
+		close;
+	}
+
+	// Pergunta qual monstro o jogador quer caçar
+    mes "Você tem " + ( 3 - #daily_hunts) + " caçadas disponível. ";
+    if (#daily_hunts < 3) erasequest(60000);
+	mes "Escolha o monstro que deseja caçar:";
+	set .@choice, select("Sea Otter:Galapago");
+	if (.@choice == 1) {
+        set .@monster, 1323;
+        setd "#current_hunt_name$", "Sea Otter"; 
+        }
+	else if (.@choice == 2) {
+        set .@monster, 1391;
+        setd "#current_hunt_name$", "Galapago"; 
+        }
+
+	// Pergunta a quantidade de monstros para matar
+	mes "Escolha a quantidade de monstros para caçar:";
+	set .@amount_choice, select("50 monstros:200 monstros:350 monstros:500 monstros");
+	if (.@amount_choice == 1) set .@amount, 50;
+	else if (.@amount_choice == 2) set .@amount, 200;
+	else if (.@amount_choice == 3) set .@amount, 350;
+    else if (.@amount_choice == 4) set .@amount, 500;
+
+	// Inicia a missão de caça ao monstro selecionado
+	mes "[Caçador de Monstros]";
+	mes "Mate " + .@amount + " " + ((.@monster == 1323) ? "Sea Otters" : "Galapago") + " e volte para receber sua recompensa.";
+	setquest 60000; // ID da quest fictícia (substituir pelo correto)
+	set #cmd_fild08_current_hunt_monster, .@monster;
+	set #current_hunt_amount, .@amount;
+	set #current_hunt_kills, 0;
+	close;
+
+
+// Evento de verificação de kills
+OnNPCKillEvent:
+	if (killedrid == #cmd_fild08_current_hunt_monster) {
+		set #current_hunt_kills, #current_hunt_kills + 1;
+		announce "[Caçador de Monstros]: Você matou um " + ((#cmd_fild08_current_hunt_monster == 1323) ? "Sea Otter" : "Galapago") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
+
+		if (#current_hunt_kills >= #current_hunt_amount) {
+			announce "[Caçador de Monstros]: Parabéns! Você completou a caçada.", bc_self;
+            if (#cmd_fild08_current_hunt_monster == 1323){
+                getexp (3048 * (#current_hunt_amount * 3)), (1642 * (#current_hunt_amount * 3));
+             
+            } else {
+                getexp (3204 * (#current_hunt_amount * 3)), (1966 * (#current_hunt_amount * 3));
+            }
+            getitem 673, (#current_hunt_amount / 2); // Dá maçãs como recompensa
+			set #daily_hunts, #daily_hunts + 1;
+			set #cmd_fild08_current_hunt_monster, 0;
+			set #current_hunt_amount, 0;
+			set #current_hunt_kills, 0;
+			completequest 60000; // Finaliza a quest
+		}
+	}
+    end;
+
+
+OnInit:
+    questinfo QTYPE_DAILYQUEST,QMARK_PURPLE;
+    end;
+}

@@ -1,4 +1,4 @@
-beach_dun3,29,261,3	script	Caçador de Monstros#beach_dun3	4_M_GENIE,{
+cmd_fild01,34,323,3	script	Caçador de Monstros#cmd_fild01	4_M_GENIE,{
 	// Obtém a data atual no formato AAAAMMDD
 	set .@today, gettime(7) * 10000 + gettime(6) * 100 + gettime(5);
 
@@ -28,14 +28,14 @@ beach_dun3,29,261,3	script	Caçador de Monstros#beach_dun3	4_M_GENIE,{
     mes "Você tem " + ( 3 - #daily_hunts) + " caçadas disponível. ";
     if (#daily_hunts < 3) erasequest(60000);
 	mes "Escolha o monstro que deseja caçar:";
-	set .@choice, select("Thara Frog:Megalodon");
+	set .@choice, select("Grove:Flora");
 	if (.@choice == 1) {
-        set .@monster, 1034;
-        setd "#current_hunt_name$", "Thara Frog"; 
+        set .@monster, 1687;
+        setd "#current_hunt_name$", "Grove"; 
         }
 	else if (.@choice == 2) {
-        set .@monster, 1064;
-        setd "#current_hunt_name$", "Megalodon"; 
+        set .@monster, 1118;
+        setd "#current_hunt_name$", "Flora"; 
         }
 
 	// Pergunta a quantidade de monstros para matar
@@ -48,9 +48,9 @@ beach_dun3,29,261,3	script	Caçador de Monstros#beach_dun3	4_M_GENIE,{
 
 	// Inicia a missão de caça ao monstro selecionado
 	mes "[Caçador de Monstros]";
-	mes "Mate " + .@amount + " " + ((.@monster == 1034) ? "Thara Frogs" : "Megalodon") + " e volte para receber sua recompensa.";
+	mes "Mate " + .@amount + " " + ((.@monster == 1687) ? "Groves" : "Flora") + " e volte para receber sua recompensa.";
 	setquest 60000; // ID da quest fictícia (substituir pelo correto)
-	set #beach_dun3_current_hunt_monster, .@monster;
+	set #cmd_fild01_current_hunt_monster, .@monster;
 	set #current_hunt_amount, .@amount;
 	set #current_hunt_kills, 0;
 	close;
@@ -58,21 +58,21 @@ beach_dun3,29,261,3	script	Caçador de Monstros#beach_dun3	4_M_GENIE,{
 
 // Evento de verificação de kills
 OnNPCKillEvent:
-	if (killedrid == #beach_dun3_current_hunt_monster) {
+	if (killedrid == #cmd_fild01_current_hunt_monster) {
 		set #current_hunt_kills, #current_hunt_kills + 1;
-		announce "[Caçador de Monstros]: Você matou um " + ((#beach_dun3_current_hunt_monster == 1034) ? "Thara Frog" : "Megalodon") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
+		announce "[Caçador de Monstros]: Você matou um " + ((#cmd_fild01_current_hunt_monster == 1687) ? "Grove" : "Flora") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
 
 		if (#current_hunt_kills >= #current_hunt_amount) {
 			announce "[Caçador de Monstros]: Parabéns! Você completou a caçada.", bc_self;
-            if (#beach_dun3_current_hunt_monster == 1034){
-                getexp (219 * (#current_hunt_amount * 3)), (138 * (#current_hunt_amount * 3));
+            if (#cmd_fild01_current_hunt_monster == 1687){
+                getexp (2400 * (#current_hunt_amount * 3)), (2050 * (#current_hunt_amount * 3));
              
             } else {
-                getexp (215 * (#current_hunt_amount * 3)), (132 * (#current_hunt_amount * 3));
+                getexp (357 * (#current_hunt_amount * 3)), (226 * (#current_hunt_amount * 3));
             }
             getitem 673, (#current_hunt_amount / 2); // Dá maçãs como recompensa
 			set #daily_hunts, #daily_hunts + 1;
-			set #beach_dun3_current_hunt_monster, 0;
+			set #cmd_fild01_current_hunt_monster, 0;
 			set #current_hunt_amount, 0;
 			set #current_hunt_kills, 0;
 			completequest 60000; // Finaliza a quest
