@@ -1,4 +1,4 @@
-cmd_fild08,26,280,5	script	Caçador de Monstros#cmd_fild08	4_M_GENIE,{
+cmd_fild08,328,328,5	script	Caçador de Monstros#cmd_fild08	4_M_GENIE,{
 	// Obtém a data atual no formato AAAAMMDD
 	set .@today, gettime(7) * 10000 + gettime(6) * 100 + gettime(5);
 

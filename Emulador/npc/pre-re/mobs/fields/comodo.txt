@@ -80,9 +80,9 @@ cmd_fild07,0,0	monster	Crab	1073,84,5000
 //==================================================
 // cmd_fild08 - Fortress Saint Darmain (East)
 //==================================================
-cmd_fild08,0,0	monster	Deniro	1105,92,5000
-cmd_fild08,0,0	monster	Piere	1160,92,5000
-cmd_fild08,0,0	monster	Andre	1095,92,5000
+cmd_fild08,0,0	monster	Deniro	1105,102,5000
+cmd_fild08,0,0	monster	Piere	1160,102,5000
+cmd_fild08,0,0	monster	Andre	1095,42,5000
 cmd_fild08,0,0	monster	Ant Egg	1097,87,5000
 cmd_fild08,0,0	monster	Golem	1040,2,5000
 cmd_fild08,60,143,10,10	monster	Yellow Plant	1081,4,1800000,900000
@@ -94,5 +94,5 @@ cmd_fild08,130,201,10,10	monster	Yellow Plant	1081,4,1800000,900000
 cmd_fild09,0,0	monster	Metaller	1058,205,5000
 cmd_fild09,0,0	monster	Deniro	1105,16,5000
 cmd_fild09,0,0	monster	Piere	1160,16,5000
-cmd_fild09,0,0	monster	Andre	1095,70,5000
+cmd_fild09,0,0	monster	Andre	1095,90,5000
 cmd_fild09,0,0	monster	Ant Egg	1097,10,5000

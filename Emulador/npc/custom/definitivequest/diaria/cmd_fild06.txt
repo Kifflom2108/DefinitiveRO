@@ -28,14 +28,14 @@ cmd_fild06,153,51,5	script	Caçador de Monstros#cmd_fild06	4_M_GENIE,{
     mes "Você tem " + ( 3 - #daily_hunts) + " caçadas disponível. ";
     if (#daily_hunts < 3) erasequest(60000);
 	mes "Escolha o monstro que deseja caçar:";
-	set .@choice, select("Sea Otter:Galapago");
+	set .@choice, select("Golem:Metaller");
 	if (.@choice == 1) {
-        set .@monster, 1323;
-        setd "#current_hunt_name$", "Sea Otter"; 
+        set .@monster, 1040;
+        setd "#current_hunt_name$", "Golem"; 
         }
 	else if (.@choice == 2) {
-        set .@monster, 1391;
-        setd "#current_hunt_name$", "Galapago"; 
+        set .@monster, 1058;
+        setd "#current_hunt_name$", "Metaller"; 
         }
 
 	// Pergunta a quantidade de monstros para matar
@@ -48,7 +48,7 @@ cmd_fild06,153,51,5	script	Caçador de Monstros#cmd_fild06	4_M_GENIE,{
 
 	// Inicia a missão de caça ao monstro selecionado
 	mes "[Caçador de Monstros]";
-	mes "Mate " + .@amount + " " + ((.@monster == 1323) ? "Sea Otters" : "Galapago") + " e volte para receber sua recompensa.";
+	mes "Mate " + .@amount + " " + ((.@monster == 1040) ? "Golems" : "Metaller") + " e volte para receber sua recompensa.";
 	setquest 60000; // ID da quest fictícia (substituir pelo correto)
 	set #cmd_fild06_current_hunt_monster, .@monster;
 	set #current_hunt_amount, .@amount;
@@ -60,15 +60,15 @@ cmd_fild06,153,51,5	script	Caçador de Monstros#cmd_fild06	4_M_GENIE,{
 OnNPCKillEvent:
 	if (killedrid == #cmd_fild06_current_hunt_monster) {
 		set #current_hunt_kills, #current_hunt_kills + 1;
-		announce "[Caçador de Monstros]: Você matou um " + ((#cmd_fild06_current_hunt_monster == 1323) ? "Sea Otter" : "Galapago") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
+		announce "[Caçador de Monstros]: Você matou um " + ((#cmd_fild06_current_hunt_monster == 1040) ? "Golem" : "Metaller") + "! Progresso: " + #current_hunt_kills + "/" + #current_hunt_amount, bc_self;
 
 		if (#current_hunt_kills >= #current_hunt_amount) {
 			announce "[Caçador de Monstros]: Parabéns! Você completou a caçada.", bc_self;
-            if (#cmd_fild06_current_hunt_monster == 1323){
-                getexp (3048 * (#current_hunt_amount * 3)), (1642 * (#current_hunt_amount * 3));
+            if (#cmd_fild06_current_hunt_monster == 1040){
+                getexp (465 * (#current_hunt_amount * 3)), (94 * (#current_hunt_amount * 3));
              
             } else {
-                getexp (3204 * (#current_hunt_amount * 3)), (1966 * (#current_hunt_amount * 3));
+                getexp (241 * (#current_hunt_amount * 3)), (152 * (#current_hunt_amount * 3));
             }
             getitem 673, (#current_hunt_amount / 2); // Dá maçãs como recompensa
 			set #daily_hunts, #daily_hunts + 1;
