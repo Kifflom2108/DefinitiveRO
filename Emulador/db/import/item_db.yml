@@ -4523,11 +4523,11 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110192
-    AegisName: Traje_do_Falcão_da_Noite
-    Name: Traje do Falcão da Noite
+    AegisName: Malha_do_Falcão_da_Noite
+    Name: Malha do Falcão da Noite
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1800
     Defense: 4
     Jobs:
       Hunter: true
@@ -4541,11 +4541,11 @@ Body:
       bonus bBaseAtk,5;
 
   - Id: 110193
-    AegisName: Traje_do_Falcão_da_Noite_
-    Name: Traje do Falcão da Noite
+    AegisName: Malha_do_Falcão_da_Noite_
+    Name: Malha do Falcão da Noite
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1800
     Defense: 4
     Slots: 1
     Jobs:
@@ -4560,11 +4560,11 @@ Body:
       bonus bBaseAtk,5;
 
   - Id: 110194
-    AegisName: Peitoral_do_Mestre_da_Selva
-    Name: Peitoral do Mestre da Selva
+    AegisName: Malha_do_Mestre_da_Selva
+    Name: Malha do Mestre da Selva
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2000
     Defense: 4
     Jobs:
       Hunter: true
@@ -4578,11 +4578,11 @@ Body:
       bonus bBaseAtk,10;
 
   - Id: 110195
-    AegisName: Peitoral_do_Mestre_da_Selva_ 
-    Name: Peitoral do Mestre da Selva
+    AegisName: Malha_do_Mestre_da_Selva_ 
+    Name: Malha do Mestre da Selva
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 2000
     Defense: 4
     Slots: 1
     Jobs:
@@ -4637,8 +4637,8 @@ Body:
 ###############################
 
   - Id: 110198
-    AegisName: Capa_do_Mestre_da_Selva
-    Name: Capa do Mestre da Selva
+    AegisName: Sobrepeliz_do_Mestre_da_Selva
+    Name: Sobrepeliz do Mestre da Selva
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4654,8 +4654,8 @@ Body:
       bonus bLuk,3;
     
   - Id: 110199
-    AegisName: Capa_do_Mestre_da_Selva_
-    Name: Capa do Mestre da Selva
+    AegisName: Sobrepeliz_do_Mestre_da_Selva_
+    Name: Sobrepeliz do Mestre da Selva
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4674,11 +4674,11 @@ Body:
 ########################################### SAPATO #############################################
 
   - Id: 110200
-    AegisName: Sapato_do_Falcão_da_Noite
-    Name: Sapato do Falcão da Noite
+    AegisName: Sapatos_do_Falcão_da_Noite
+    Name: Sapatos do Falcão da Noite
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 600
     Defense: 2
     Jobs:
       Hunter: true
@@ -4691,11 +4691,11 @@ Body:
       bonus bLuk,1;
     
   - Id: 110201
-    AegisName: Sapato_do_Falcão_da_Noite_
-    Name: Sapato do Falcão da Noite
+    AegisName: Sapatos_do_Falcão_da_Noite_
+    Name: Sapatos do Falcão da Noite
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 600
     Defense: 2
     Slots: 1
     Jobs:
@@ -4711,8 +4711,8 @@ Body:
 ##############
 
   - Id: 110202
-    AegisName: Grevas_do_Mestre_da_Selva
-    Name: Grevas do Mestre da Selva
+    AegisName: Sapatos_do_Mestre_da_Selva
+    Name: Sapatos do Mestre da Selva
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -4728,8 +4728,8 @@ Body:
       bonus bLuk,2;
     
   - Id: 110203
-    AegisName: Grevas_do_Mestre_da_Selva_
-    Name: Grevas do Mestre da Selva
+    AegisName: Sapatos_do_Mestre_da_Selva_
+    Name: Sapatos do Mestre da Selva
     Type: Armor
     Buy: 1
     Weight: 1000
