@@ -4752,11 +4752,11 @@ Body:
 ########################################### ARMADURA ###########################################
 
   - Id: 110204
-    AegisName: Traje_do_Poeta_Errante
-    Name: Traje do Poeta Errante
+    AegisName: Túnica_do_Poeta_Errante
+    Name: Túnica do Poeta Errante
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1200
     Defense: 4
     Jobs:
       BardDancer: true
@@ -4771,11 +4771,11 @@ Body:
       bonus bBaseAtk,10;
 
   - Id: 110205
-    AegisName: Traje_do_Poeta_Errante_
-    Name: Traje do Poeta Errante
+    AegisName: Túnica_do_Poeta_Errante_
+    Name: Túnica do Poeta Errante
     Type: Armor
     Buy: 1
-    Weight: 1000
+    Weight: 1200
     Defense: 4
     Slots: 1
     Jobs:
@@ -4791,11 +4791,11 @@ Body:
       bonus bBaseAtk,10;
 
   - Id: 110206
-    AegisName: Peitoral_da_Balada_Eterna
-    Name: Peitoral da Balada Eterna
+    AegisName: Túnica_da_Balada_Eterna
+    Name: Túnica da Balada Eterna
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 1400
     Defense: 4
     Jobs:
       BardDancer: true
@@ -4811,11 +4811,11 @@ Body:
 
 
   - Id: 110207
-    AegisName: Peitoral_da_Balada_Eterna_ 
-    Name: Peitoral da Balada Eterna
+    AegisName: Túnica_da_Balada_Eterna_ 
+    Name: Túnica da Balada Eterna
     Type: Armor
     Buy: 1
-    Weight: 1100
+    Weight: 1400
     Defense: 4
     Slots: 1
     Jobs:
@@ -4873,8 +4873,8 @@ Body:
 ###############################
 
   - Id: 110210
-    AegisName: Capa_da_Balada_Eterna
-    Name: Capa da Balada Eterna
+    AegisName: Sobrepeliz_da_Balada_Eterna
+    Name: Sobrepeliz da Balada Eterna
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4891,8 +4891,8 @@ Body:
       bonus bVit,3;
     
   - Id: 110211
-    AegisName: Capa_da_Balada_Eterna_
-    Name: Capa da Balada Eterna
+    AegisName: Sobrepeliz_da_Balada_Eterna_
+    Name: Sobrepeliz da Balada Eterna
     Type: Armor
     Buy: 1
     Weight: 600
@@ -4912,11 +4912,11 @@ Body:
 ########################################### SAPATO #############################################
 
   - Id: 110212
-    AegisName: Sapato_do_Poeta_Errante
-    Name: Sapato do Poeta Errante
+    AegisName: Sapatos_do_Poeta_Errante
+    Name: Sapatos do Poeta Errante
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 500
     Defense: 3
     Jobs:
       BardDancer: true
@@ -4930,11 +4930,11 @@ Body:
       bonus bVit,1;
     
   - Id: 110213
-    AegisName: Sapato_do_Poeta_Errante_
-    Name: Sapato do Poeta Errante
+    AegisName: Sapatos_do_Poeta_Errante_
+    Name: Sapatos do Poeta Errante
     Type: Armor
     Buy: 1
-    Weight: 400
+    Weight: 500
     Defense: 3
     Slots: 1
     Jobs:
@@ -4951,8 +4951,8 @@ Body:
 ##############
 
   - Id: 110214
-    AegisName: Grevas_da_Balada_Eterna
-    Name: Grevas da Balada Eterna
+    AegisName: Sapatos_da_Balada_Eterna
+    Name: Sapatos da Balada Eterna
     Type: Armor
     Buy: 1
     Weight: 1000
@@ -4969,8 +4969,8 @@ Body:
       bonus bVit,3;
     
   - Id: 110215
-    AegisName: Grevas_da_Balada_Eterna_
-    Name: Grevas da Balada Eterna
+    AegisName: Sapatos_da_Balada_Eterna_
+    Name: Sapatos da Balada Eterna
     Type: Armor
     Buy: 1
     Weight: 1000
