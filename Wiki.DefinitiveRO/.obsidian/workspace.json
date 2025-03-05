@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Roadmap Sistema MyLife.md",
+                "file": "ROADMAP DEV DEFINITIVERO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Roadmap Sistema MyLife"
+              "title": "ROADMAP DEV DEFINITIVERO"
             }
           }
         ],
@@ -192,13 +192,13 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "bb4a6224a5c1db09",
+  "active": "f2c47d5a5c68f100",
   "lastOpenFiles": [
+    "Roadmap Sistema MyLife.md",
     "Maps/Alberta.md",
     "Maps/Al De Baran.md",
     "Maps/Abyss Lake Dungeon.md",
     "ROADMAP DEV DEFINITIVERO.md",
-    "Roadmap Sistema MyLife.md",
     "Maps/Comodo.md",
     "Mobs/Grove.md",
     "Mobs/Anopheles.md",

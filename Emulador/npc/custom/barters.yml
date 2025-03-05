@@ -974,30 +974,30 @@ Body:
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 12
-        Item: Traje_do_Redentor_de_Almas_
+        Item: Bata_do_Redentor_de_Almas_
         RequiredItems:
           - Index: 0
-            Item: Traje_do_Redentor_de_Almas
+            Item: Bata_do_Redentor_de_Almas
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 13
-        Item: Sobrepeliz_do_Redentor_de_Almas_
+        Item: Capa_do_Redentor_de_Almas_
         RequiredItems:
           - Index: 0
-            Item: Sobrepeliz_do_Redentor_de_Almas
+            Item: Capa_do_Redentor_de_Almas
             Refine: 7
             Amount: 1
           - Index: 1
             Item: Special_Exchange_Coupon
             Amount: 7
       - Index: 14
-        Item: Sapato_do_Redentor_de_Almas_
+        Item: Botas_do_Redentor_de_Almas_
         RequiredItems:
           - Index: 0
-            Item: Sapato_do_Redentor_de_Almas
+            Item: Botas_do_Redentor_de_Almas
             Refine: 7
             Amount: 1
           - Index: 1
@@ -1044,10 +1044,10 @@ Body:
       #----------------------------------------- ARQUEIRO TIER 1 ---------------------------------#
       ## Conjunto Atirador Preciso (1 coupon)
       - Index: 0
-        Item: Armadura_do_Atirador_Preciso_
+        Item: Camisa_do_Atirador_
         RequiredItems:
           - Index: 0
-            Item: Armadura_do_Atirador_Preciso
+            Item: Camisa_do_Atirador
             Refine: 7
             Amount: 1
           - Index: 1
